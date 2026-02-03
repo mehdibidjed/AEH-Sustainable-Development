@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { Assets } from "../../assets/Asset";
 import { Link } from "react-router-dom";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Menu, X, Plus, Minus } from "lucide-react";
 
 function NavBar() {
   const [activeDropdown, setActiveDropdown] = useState(null);
-  const [languageDropdownOpen, setLanguageDropdownOpen] = useState(null);
+  const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
 
   const navItems = [
     { id: "services", label: "Services" },
@@ -15,13 +17,6 @@ function NavBar() {
     { id: "about", label: "About us" },
   ];
 
-  // Services data from the second image
-  const services = [
-    "Machine Learning & AI",
-    "Software Development",
-    "E-Commerce Solutions",
-    "Creative Design",
-  ];
   const servicesData = {
     "Machine Learning & AI": [
       "Machine Learning Models",
@@ -54,20 +49,10 @@ function NavBar() {
     ],
   };
 
-  const handleMouseEnter = (itemId) => {
-    if (itemId === "services") {
-      setActiveDropdown("services");
-    }
-  };
-
-  const handleMouseLeave = () => {
-    setActiveDropdown(null);
-  };
-
   return (
     <>
-      <div className="fixed top-0 left-0 right-0 z-50 transition-transform duration-300 md:px-10 md:py-5 flex items-center justify-between bg-white shadow-sm">
-        {/* Logo part */}
+      <div className="fixed top-0 left-0 right-0 z-[60] transition-transform duration-300 px-6 md:px-10 py-4 md:py-5 flex items-center justify-between bg-white shadow-sm">
+        {/* Logo */}
         <div className="relative flex gap-3 items-center">
           <img
             src={Assets.Icons.AppIcon}
@@ -75,32 +60,35 @@ function NavBar() {
             className="h-10 w-10"
           />
           <div className="font-Poppins text-PrimaryBlue">
-            <h1 className="text-xl">A E H</h1>
-            <p className="text-xs">sustainable development</p>
+            <h1 className="text-xl font-bold leading-tight">A E H</h1>
+            <p className="text-[10px]  tracking-tighter">
+              sustainable development
+            </p>
           </div>
         </div>
 
-        {/* Nav */}
+        {/* Desktop Nav */}
         <nav className="hidden md:flex items-center space-x-6">
           {navItems.map((item) => (
             <div
               key={item.id}
               className="relative"
-              onMouseEnter={() => handleMouseEnter(item.id)}
-              onMouseLeave={handleMouseLeave}
+              onClick={() => {
+                if (item.id == "services" && activeDropdown == null) {
+                  setActiveDropdown(item.id);
+                } else {
+                  setActiveDropdown(null);
+                }
+              }}
             >
               <button
-                className={`py-2 px-3 text-black hover:text-PrimaryBlue transition-colors font-medium flex items-center gap-1 ${
-                  activeDropdown === "services" && item.id === "services"
-                    ? "text-PrimaryBlue"
-                    : ""
-                }`}
+                className={`py-2 px-3 text-black hover:text-blue-600 transition-colors font-medium flex items-center gap-1`}
               >
                 {item.label}
                 {item.id === "services" && (
                   <ChevronDown
                     className={`w-4 h-4 transition-transform ${
-                      activeDropdown === "services" ? "rotate-180" : ""
+                      activeDropdown ? "rotate-180" : ""
                     }`}
                   />
                 )}
@@ -109,108 +97,145 @@ function NavBar() {
           ))}
         </nav>
 
-        {/* Contact Button */}
-        <div className="hidden md:flex items-center gap-2">
+        {/* Desktop Actions */}
+        <div className="hidden md:flex items-center gap-6">
           <button
-            className="flex items-center gap-4 relative"
-            onClick={() => setLanguageDropdownOpen((prev) => !prev)}
+            className="relative flex items-center gap-1 font-medium"
+            onClick={() => setLanguageDropdownOpen(!languageDropdownOpen)}
           >
-            <div className="flex items-center space-x-2">
-              English
-              <ChevronDown className="w-4 h-4 ml-1" />
-            </div>
+            English <ChevronDown className="w-4 h-4" />
             {languageDropdownOpen && (
-              <div className="absolute top-8 right-0 bg-[#080808] text-white rounded-md z-10">
-                <ul className="flex flex-col gap-2 px-2 py-1">
-                  <li
-                    className="hover:text-white hover:bg-primary_blue px-4 py-2 rounded-md cursor-pointer"
-                    onClick={() => {
-                      setLanguageDropdownOpen((prev) => !prev);
-                    }}
+              <div className="absolute top-10 right-0 bg-black text-white rounded-lg py-2 w-32 shadow-xl">
+                {["French", "English", "Arabic"].map((lang) => (
+                  <div
+                    key={lang}
+                    className="px-4 py-2 hover:bg-blue-600 cursor-pointer text-sm"
                   >
-                    French
-                  </li>
-                  <li
-                    className="hover:text-white hover:bg-primary_blue px-4 py-2 rounded-md cursor-pointer"
-                    onClick={() => {
-                      setLanguageDropdownOpen((prev) => !prev);
-                    }}
-                  >
-                    English
-                  </li>
-                  <li
-                    className="hover:text-white hover:bg-primary_blue px-4 py-2 rounded-md cursor-pointer"
-                    onClick={() => {
-                      setLanguageDropdownOpen((prev) => !prev);
-                    }}
-                  >
-                    Arabic
-                  </li>
-                </ul>
+                    {lang}
+                  </div>
+                ))}
               </div>
             )}
           </button>
           <Link
             to="/contact"
-            className="bg-YellowGreen text-PrimaryGreen rounded-full px-6 py-4 hover:bg-opacity-80"
+            className="bg-YellowGreen text-PrimaryGreen font-bold rounded-full px-6 py-3 hover:scale-105 transition-transform"
           >
             Contact with us
           </Link>
         </div>
 
-        {/* Mobile menu button */}
-        <button className="md:hidden text-gray-700 p-2">
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
+        {/* Mobile Toggle Button */}
+        <button
+          className="md:hidden p-2 text-black"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        >
+          {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
-      {/* Full-width Services Dropdown - Fixed outside of main nav */}
-      {activeDropdown === "services" && (
-        <div
-          className="fixed top-16 left-0 right-0 w-full h-screen bg-[#080808] text-white shadow-xl border-t border-gray-200 z-50"
-          onMouseEnter={() => setActiveDropdown("services")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <div className="max-w-7xl mx-auto px-10 py-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-h-[60vh] overflow-y-auto scrollbar-hide">
-              {services.map((service, index) => (
+      {/* MOBILE MENU OVERLAY (The "Accenture" Style) */}
+      <div
+        className={`fixed inset-0 bg-[#080808] z-50 transform transition-transform duration-500 ease-in-out ${
+          isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+        } md:hidden overflow-y-auto`}
+      >
+        <div className="pt-24 px-8 pb-10">
+          <div className="flex flex-col space-y-6">
+            {navItems.map((item) => (
+              <div key={item.id} className="border-b border-white/10 pb-4">
                 <div
-                  key={index}
-                  className="space-y-4 border-l border-[#fff9f9] pl-4 py-0"
+                  className="flex justify-between items-center text-white text-2xl font-semibold py-2"
+                  onClick={() =>
+                    item.id === "services" &&
+                    setMobileServicesOpen(!mobileServicesOpen)
+                  }
                 >
                   <Link
-                    to={`/services/${service
-                      .toLowerCase()
-                      .replace(/ & /g, "-")
-                      .replace(/\s+/g, "-")}`}
-                    className="text-lg font-semibold text-white hover:text-blue-400 transition-colors block mb-4"
+                    to={`/${item.id}`}
+                    onClick={() =>
+                      item.id !== "services" && setIsMobileMenuOpen(false)
+                    }
                   >
-                    {service}
+                    {item.label}
                   </Link>
-                  {/* Correction importante : utiliser le bon service pour les données */}
-                  <ul className="list-disc pl-4 space-y-2">
-                    {servicesData[service]?.map((item, itemIndex) => (
-                      <li key={itemIndex}>
-                        <span className="text-gray-300 text-sm">{item}</span>
-                      </li>
+                  {item.id === "services" &&
+                    (mobileServicesOpen ? (
+                      <Minus className="text-blue-400" />
+                    ) : (
+                      <Plus />
                     ))}
-                  </ul>
                 </div>
-              ))}
+
+                {/* Mobile Sub-menu for Services */}
+                {item.id === "services" && mobileServicesOpen && (
+                  <div className="mt-4 ml-4 flex flex-col space-y-6 animate-fadeIn">
+                    {Object.keys(servicesData).map((category) => (
+                      <div key={category} className="space-y-3">
+                        <h4 className="text-blue-400 font-bold uppercase text-xs tracking-widest">
+                          {category}
+                        </h4>
+                        <ul className="space-y-2">
+                          {servicesData[category].map((subItem) => (
+                            <li
+                              key={subItem}
+                              className="text-gray-400 text-lg hover:text-white"
+                              onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                              {subItem}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+
+          {/* Mobile Footer Actions */}
+          <div className="mt-12 space-y-6">
+            <div className="flex gap-4 text-white font-medium">
+              <span className="text-blue-400">EN</span>
+              <span className="opacity-50">FR</span>
+              <span className="opacity-50">AR</span>
             </div>
+            <Link
+              to="/contact"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block w-full text-center bg-[#D9FF7E] text-black font-bold rounded-full py-4 text-xl"
+            >
+              Connect With Us
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Desktop Services Dropdown Overlay */}
+      {activeDropdown === "services" && (
+        <div className="hidden md:block fixed top-20 left-0 right-0 w-full bg-[#080808] text-white z-50 border-t border-white/10 shadow-2xl animate-slideDown">
+          <div className="max-w-7xl mx-auto px-10 py-12 grid grid-cols-4 gap-8">
+            {Object.keys(servicesData).map((service) => (
+              <div
+                key={service}
+                className="space-y-4 border-l border-white/10 pl-6"
+              >
+                <h3 className="text-lg font-bold text-white hover:text-blue-400 cursor-pointer">
+                  {service}
+                </h3>
+                <ul className="space-y-2">
+                  {servicesData[service].map((item) => (
+                    <li
+                      key={item}
+                      className="text-gray-400 text-sm hover:text-white transition-colors cursor-pointer"
+                    >
+                      • {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       )}
