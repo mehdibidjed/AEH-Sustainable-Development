@@ -29,7 +29,10 @@ import Leptonia from "./icons/services/ml/leptonia.svg";
 import MetaAi from "./icons/services/ml/metaai.svg";
 import Microsoft from "./icons/services/ml/microsoft.svg";
 import OpenAI from "./icons/services/ml/openai.svg";
-
+import MLLG from "./images/common/machine_learning.svg"
+import ECLG from "./images/common/e_comerceLG.svg"
+import CDLG from "./images/common/creative_designLG.svg"
+import SDLG from "./images/common/software_dev.svg"
 export const Assets = {
   Icons: {
     AppIcon: AppIcon,
@@ -62,6 +65,12 @@ export const Assets = {
     },
   },
   Images: {
+    Common:{
+        MachineLearningLG:MLLG,
+        SoftwareDevLG:SDLG,
+        CreativeDesignLG:CDLG,
+        EcomerceLG:ECLG
+    },
     Home: {
       BG1: BG1,
       Techno: Tech,
