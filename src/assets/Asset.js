@@ -33,6 +33,8 @@ import MLLG from "./images/common/machine_learning.svg"
 import ECLG from "./images/common/e_comerceLG.svg"
 import CDLG from "./images/common/creative_designLG.svg"
 import SDLG from "./images/common/software_dev.svg"
+import  CardIcon from "./images/services/ml/iconoir_design-nib.svg";
+
 export const Assets = {
   Icons: {
     AppIcon: AppIcon,
@@ -84,6 +86,7 @@ export const Assets = {
       ML: {
         AiImage: AiImage,
         WomenImage: WomenImage,
+        CardIcon : CardIcon
       },
     },
   },
