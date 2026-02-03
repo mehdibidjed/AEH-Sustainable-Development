@@ -33,6 +33,7 @@ import MLLG from "./images/common/machine_learning.svg"
 import ECLG from "./images/common/e_comerceLG.svg"
 import CDLG from "./images/common/creative_designLG.svg"
 import SDLG from "./images/common/software_dev.svg"
+import WomanHC from "./images/industries/womam_healthcare.svg"
 export const Assets = {
   Icons: {
     AppIcon: AppIcon,
@@ -86,5 +87,8 @@ export const Assets = {
         WomenImage: WomenImage,
       },
     },
+    Industries:{
+        WomanHealthcare:WomanHC
+    }
   },
 };
