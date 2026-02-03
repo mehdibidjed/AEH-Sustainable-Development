@@ -89,5 +89,8 @@ export const Assets = {
         CardIcon : CardIcon
       },
     },
+    Industries:{
+        WomanHealthcare:WomanHC
+    }
   },
 };

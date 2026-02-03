@@ -12,7 +12,9 @@ const ProcessTimeline = ({ sectionTitle, mainTitle, subtitle, steps }) => {
             {mainTitle.before}
             <span className="italic font-serif">{mainTitle.highlighted}</span>
           </h2>
-          <p className="text-base md:text-xl text-black/70 leading-relaxed">{subtitle}</p>
+          <p className="text-base md:text-xl text-black/70 leading-relaxed">
+            {subtitle}
+          </p>
         </div>
 
         {/* RIGHT SIDE - Timeline */}
@@ -28,7 +30,9 @@ const ProcessTimeline = ({ sectionTitle, mainTitle, subtitle, steps }) => {
 
                 {/* Content */}
                 <div className="pl-12 lg:pl-0">
-                  <h3 className="text-lg md:text-2xl font-bold mb-2 md:mb-3">{step.title}</h3>
+                  <h3 className="text-lg md:text-2xl font-bold mb-2 md:mb-3">
+                    {step.title}
+                  </h3>
                   <p className="text-sm md:text-base text-black/70 leading-relaxed">
                     {step.description}
                   </p>
