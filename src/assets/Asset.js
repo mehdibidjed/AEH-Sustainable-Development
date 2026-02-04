@@ -36,6 +36,7 @@ import SDLG from "./images/common/software_dev.svg"
 import WomanHC from "./images/industries/womam_healthcare.svg"
 import HealthCr from "./images/home/healthcare_solution.svg"
 import SmartSec from "./images/home/smart_security.svg"
+import  CardIcon from "./images/services/ml/iconoir_design-nib.svg";
 export const Assets = {
   Icons: {
     AppIcon: AppIcon,
@@ -89,6 +90,7 @@ export const Assets = {
       ML: {
         AiImage: AiImage,
         WomenImage: WomenImage,
+        CardIcon : CardIcon
       },
     },
     Industries:{
