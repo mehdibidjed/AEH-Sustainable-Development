@@ -37,6 +37,11 @@ import WomanHC from "./images/industries/womam_healthcare.svg"
 import HealthCr from "./images/home/healthcare_solution.svg"
 import SmartSec from "./images/home/smart_security.svg"
 import  CardIcon from "./images/services/ml/iconoir_design-nib.svg";
+import Row1 from './images/home/row1.svg'
+import Row2 from './images/home/row2.svg'
+import Row3 from './images/home/row3.svg'
+import ExpT from "./images/home/exceptional_talent.svg"
+import CD from "./images/home/cancer_data.svg"
 export const Assets = {
   Icons: {
     AppIcon: AppIcon,
@@ -84,7 +89,12 @@ export const Assets = {
       CreativeChat: CreativeChat,
       Agriculture: Agriculture,
       SmartSec:SmartSec,
-      HealthCr:HealthCr
+      HealthCr:HealthCr,
+      Row1:Row1,
+      Row2:Row2,
+      Row3:Row3,
+      ExceptionalTalent:ExpT,
+      CancerDetection:CD
     },
     Services: {
       ML: {

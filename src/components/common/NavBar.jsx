@@ -17,37 +17,52 @@ function NavBar() {
     { id: "about", label: "About us" },
   ];
 
-  const servicesData = {
-    "Machine Learning & AI": [
-      "Machine Learning Models",
-      "AI-Powered Applications",
-      "Predictive Analytics",
-      "Data-Driven Decision Systems",
-      "AI Integration in Digital Products",
-    ],
-    "Software Development": [
-      "Web Application Development",
-      "Mobile Application Development",
-      "Custom Software Solutions",
-      "API Development & Integration",
-      "System Architecture & Maintenance",
-    ],
-    "E-Commerce Solutions": [
-      "E-Commerce Website Design",
-      "Online Store Development",
-      "Payment Gateway Integration",
-      "Product & Order Management Systems",
-      "Performance & Conversion Optimizations",
-    ],
-    "Creative Design": [
-      "UI/UX Design",
-      "Web & Mobile App Design",
-      "User Research & Wireframing",
-      "Prototyping & Design Systems",
-      "Visual & Interactive Design",
-      "Branding",
-    ],
-  };
+  const servicesData = [
+ {    name: "Machine Learning & AI",
+      data: [
+        "Machine Learning Models",
+        "AI-Powered Applications",
+        "Predictive Analytics",
+        "Data-Driven Decision Systems",
+        "AI Integration in Digital Products",
+      ],
+      image:Assets.Images.Common.MachineLearningLG
+    },
+    {
+      name:"Software Development",
+      data: [
+        "Web Application Development",
+        "Mobile Application Development",
+        "Custom Software Solutions",
+        "API Development & Integration",
+        "System Architecture & Maintenance",
+      ],
+      image:Assets.Images.Common.SoftwareDevLG
+    },
+    {
+      name:"E-Commerce Solutions",
+      data: [
+        "E-Commerce Website Design",
+        "Online Store Development",
+        "Payment Gateway Integration",
+        "Product & Order Management Systems",
+        "Performance & Conversion Optimizations",
+      ],
+      image:Assets.Images.Common.EcomerceLG
+    },
+    {
+      name:"Crearive Desing",
+      data: [
+        "UI/UX Design",
+        "Web & Mobile App Design",
+        "User Research & Wireframing",
+        "Prototyping & Design Systems",
+        "Visual & Interactive Design",
+        "Branding",
+      ],
+      image:Assets.Images.Common.CreativeDesignLG
+    }
+  ];
 
   return (
     <>
@@ -137,7 +152,7 @@ function NavBar() {
       {/* MOBILE MENU OVERLAY (The "Accenture" Style) */}
       <div
         className={`fixed inset-0 bg-[#080808] z-50 transform transition-transform duration-500 ease-in-out ${
-          isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+          isMobileMenuOpen ? "translate-x-0" : "translate-x-full duration-500"
         } md:hidden overflow-y-auto`}
       >
         <div className="pt-24 px-8 pb-10">
@@ -170,13 +185,13 @@ function NavBar() {
                 {/* Mobile Sub-menu for Services */}
                 {item.id === "services" && mobileServicesOpen && (
                   <div className="mt-4 ml-4 flex flex-col space-y-6 animate-fadeIn">
-                    {Object.keys(servicesData).map((category) => (
-                      <div key={category} className="space-y-3">
-                        <h4 className="text-blue-400 font-bold uppercase text-xs tracking-widest">
-                          {category}
+                    {servicesData.map((service) => (
+                      <div key={service.name} className="space-y-3">
+                        <h4 className="text-PrimaryBlue  font-bold uppercase text-sm tracking-widest">
+                          {service.name}
                         </h4>
                         <ul className="space-y-2">
-                          {servicesData[category].map((subItem) => (
+                          {service.data.map((subItem) => (
                             <li
                               key={subItem}
                               className="text-gray-400 text-lg hover:text-white"
@@ -216,16 +231,17 @@ function NavBar() {
       {activeDropdown === "services" && (
         <div className="hidden md:block fixed top-20 left-0 right-0 w-full bg-[#080808] text-white z-50 border-t border-white/10 shadow-2xl animate-slideDown">
           <div className="max-w-7xl mx-auto px-10 py-12 grid grid-cols-4 gap-8">
-            {Object.keys(servicesData).map((service) => (
+            {servicesData.map((service) => (
               <div
                 key={service}
                 className="space-y-4 border-l border-white/10 pl-6"
               >
                 <h3 className="text-lg font-bold text-white hover:text-blue-400 cursor-pointer">
-                  {service}
+                  {service.name}
                 </h3>
+                <img src={service.image} className="rounded-lg mb-8"/>
                 <ul className="space-y-2">
-                  {servicesData[service].map((item) => (
+                  {service.data.map((item) => (
                     <li
                       key={item}
                       className="text-gray-400 text-sm hover:text-white transition-colors cursor-pointer"
