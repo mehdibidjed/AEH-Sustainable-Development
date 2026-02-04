@@ -34,6 +34,8 @@ import ECLG from "./images/common/e_comerceLG.svg"
 import CDLG from "./images/common/creative_designLG.svg"
 import SDLG from "./images/common/software_dev.svg"
 import WomanHC from "./images/industries/womam_healthcare.svg"
+import HealthCr from "./images/home/healthcare_solution.svg"
+import SmartSec from "./images/home/smart_security.svg"
 export const Assets = {
   Icons: {
     AppIcon: AppIcon,
@@ -80,6 +82,8 @@ export const Assets = {
       CD: CreativeDes,
       CreativeChat: CreativeChat,
       Agriculture: Agriculture,
+      SmartSec:SmartSec,
+      HealthCr:HealthCr
     },
     Services: {
       ML: {

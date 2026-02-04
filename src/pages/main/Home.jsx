@@ -47,6 +47,36 @@ function Home() {
     "Goverment",
     "Intelligence",
   ];
+  const RecentProjects = [
+    {
+      name: "AI-Driven Healthcare Solutions",
+      image: Assets.Images.Home.HealthCr,
+    },
+    {
+      name: "Smart Retail Security with AI",
+      image: Assets.Images.Home.SmartSec,
+    },
+    {
+      name: "Smart Retail Security with AI",
+      image: Assets.Images.Home.SmartSec,
+    },
+    {
+      name: "Smart Retail Security with AI",
+      image: Assets.Images.Home.SmartSec,
+    },
+    {
+      name: "Smart Retail Security with AI",
+      image: Assets.Images.Home.SmartSec,
+    },
+  ];
+  const processes = [
+    { id: 1, title: "Strategy & Research", duration: "1 week", desc: "We start by understanding your goals, challenges, and constraints. Through research and stakeholder alignment, we define a clear direction that turns complexity into opportunity.", side: "right" },
+    { id: 2, title: "Planning & Architecture", duration: "1 week", desc: "We translate insights into structured plans, workflows, and system architecture. Every solution is thoughtfully designed to fit real needs and scale efficiently.", side: "left" },
+    { id: 3, title: "Creative Design", duration: "1 week", desc: "Our team crafts intuitive, engaging experiences that balance usability and aesthetics. Every interface is designed to feel natural, clear, and purposeful.", side: "left" },
+    { id: 4, title: "Development", duration: "1 week", desc: "We build secure, scalable, and high-performance solutions using modern technologies. Clean code, reliability, and long-term maintainability are always priorities.", side: "right" },
+    { id: 5, title: "Launch & Optimization", duration: "1 week", desc: "We deploy with confidence and continue optimizing post-launch. Ongoing support, monitoring, and improvements help your solution grow and evolve.", side: "left" },
+    { id: 6, title: "Quality Assurance", duration: "1 week", desc: "Each product is rigorously tested for performance, security, and stability to ensure stability, compliance, and a seamless user experience.", side: "right" },
+  ];
   return (
     <div className="min-h-screen">
       {/* Changed h-screen to min-h-screen and added pt-20 to account for Navbar height */}
@@ -451,7 +481,68 @@ function Home() {
           </div>
         </div>
       </section>
-      <ContactSection/>
+      <section className="bg-PrimaryGreen py-16 text-center text-white w-full mx-auto space-y-8">
+        <div className="space-y-3">
+          <h6 className="uppercase text-xs">our work</h6>
+          <h1 className="font-Inter md:text-4xl">
+            A Curated Selection Of Our{" "}
+            <span className="font-instrumentSerif italic">Recent Projects</span>{" "}
+            And Case Studies
+          </h1>
+        </div>
+        <div className="flex gap-6 overflow-x-auto pb-10 scrollbar-hide snap-x">
+          {RecentProjects.map((project, index) => (
+            <div
+              key={index}
+              className="group relative flex-shrink-0 w-[85vw] md:w-[450px] snap-start cursor-pointer transition-all duration-500"
+            >
+              {/* Inner Container for Border Effect */}
+              <div className="rounded-2xl p-4 border border-transparent group-hover:border-white/30 transition-all duration-500">
+                {/* Image Wrapper */}
+                <div className="rounded-xl overflow-hidden aspect-[4/3] md:aspect-video mb-4">
+                  <img
+                    src={project.image}
+                    alt={project.name}
+                    className="w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110"
+                  />
+                </div>
+
+                {/* Project Title */}
+                <div className="space-y-3">
+                  <h3 className="text-white text-xl md:text-2xl font-medium leading-tight">
+                    {/* Logic to italicize part of the name based on your image */}
+                    {project.name.split(project.italicPart)[0]}
+                    <span className="font-Instrument_Serif italic font-light">
+                      {project.italicPart}
+                    </span>
+                    {project.name.split(project.italicPart)[1]}
+                  </h3>
+
+                  {/* Hidden "View Case Study" Link (appears on hover) */}
+                  <div className="overflow-hidden h-0 group-hover:h-8 transition-all duration-500">
+                    <button className="flex items-center gap-2 text-white text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                      View Case Study
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2.5"
+                      >
+                        <path d="M7 17L17 7M17 7H7M17 7V17" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="mt-10">
+          
+        </div>
+      </section>
     </div>
   );
 }
