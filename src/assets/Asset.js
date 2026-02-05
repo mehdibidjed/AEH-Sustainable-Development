@@ -44,6 +44,11 @@ import ExpT from "./images/home/exceptional_talent.svg"
 import CD from "./images/home/cancer_data.svg"
 import HD from "./images/home/hardware.svg"
 import BG2 from "./images/contact/bg2.png"
+import Moussa from "./images/common/moussa.svg"
+import Men1 from "./images/about/men1.svg"
+import Men2 from "./images/about/men2.svg"
+import WomanAB from "./images/about/women.svg"
+import Team from "./images/about/team.svg"
 export const Assets = {
   Icons: {
     AppIcon: AppIcon,
@@ -80,7 +85,8 @@ export const Assets = {
         MachineLearningLG:MLLG,
         SoftwareDevLG:SDLG,
         CreativeDesignLG:CDLG,
-        EcomerceLG:ECLG
+        EcomerceLG:ECLG,
+        Moussa:Moussa
     },
     Home: {
       BG1: BG1,
@@ -98,6 +104,13 @@ export const Assets = {
       ExceptionalTalent:ExpT,
       CancerDetection:CD,
       Hardware :HD
+    },
+    About:{
+      Men1:Men1,
+      Men2:Men2,
+      Woman:WomanAB,
+      Team:Team,
+
     },
     ContactUs:{
       Background:BG2
