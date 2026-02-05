@@ -6,7 +6,7 @@ import Contact from "../components/common/ContactSection";
 
 const ServiceLayout = ({ serviceData }) => {
   return (
-    <div className="flex flex-col w-full min-h-screen bg-white pt-24 md:pt-32 px-6 md:px-8 lg:px-12">
+    <div className="flex flex-col w-full   min-h-screen bg-white pt-24 md:pt-32 px-6 md:px-8 lg:px-12">
       <div className="max-w-7xl mx-auto w-full">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-12 leading-tight">
           {serviceData.title}
@@ -27,26 +27,54 @@ const ServiceLayout = ({ serviceData }) => {
         </div>
 
         <img
-          src={Assets.Images.Services.ML.AiImage}
+          src={serviceData.serviceImage}
           className="mt-12 mb-8 w-full object-cover rounded-2xl"
           alt="AI Service"
         />
 
         {/* The tech bar */}
-        <div className="flex flex-wrap justify-between bg-black -mx-6 md:-mx-8 lg:-mx-12 px-6 md:px-8 lg:px-12 py-6 gap-4 md:gap-6">
-          {serviceData.icons.map((icon, index) => (
-            <div
-              key={index}
-              className="flex items-center gap-2 text-white/80 hover:text-white transition-colors"
-            >
-              <img
-                src={icon.icon}
-                alt={icon.label}
-                className="w-6 h-6 md:w-8 md:h-8"
-              />
-              <p className="text-xs md:text-sm font-medium">{icon.label}</p>
+        <div className="overflow-hidden w-full bg-black py-5">
+          <div className="ticker-track">
+            {/* First row */}
+            <div className="flex ">
+              <div className="flex items-center  justify-between  gap-10  pr-10">
+                {serviceData.icons.map((icon, index) => (
+                  <div
+                    key={`first-${index}`}
+                    className="flex items-center gap-1 text-white/80 whitespace-nowrap"
+                  >
+                    <img
+                      src={icon.icon}
+                      alt={icon.label}
+                      className="w-6 h-6 md:w-10 md:h-10"
+                    />
+                    <p className="text-xs md:text-sm font-medium">
+                      {icon.label}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Second row (required) */}
+              <div className="flex items-center justify-between gap-10  pr-10">
+                {serviceData.icons.map((icon, index) => (
+                  <div
+                    key={`second-${index}`}
+                    className="flex items-center gap-1 text-white/80 whitespace-nowrap"
+                  >
+                    <img
+                      src={icon.icon}
+                      alt={icon.label}
+                      className="w-6 h-6 md:w-10 md:h-10"
+                    />
+                    <p className="text-xs md:text-sm font-medium">
+                      {icon.label}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
-          ))}
+          </div>
         </div>
 
         {/* The Hero Section */}

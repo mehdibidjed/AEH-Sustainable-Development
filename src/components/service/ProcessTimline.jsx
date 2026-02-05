@@ -20,8 +20,7 @@ const ProcessTimeline = ({ sectionTitle, mainTitle, subtitle, steps }) => {
         {/* RIGHT SIDE - Timeline */}
         <div className="flex-1 relative">
           {/* Vertical line - shown on lg */}
-          <div className="hidden lg:block absolute left-[13px] top-0 bottom-0 w-[1px] bg-[#1a4d3d]" />
-
+          <div className=" absolute left-[10px] top-0 bottom-0 w-[1px] bg-[#1a4d3d]" />
           <div className="space-y-8 md:space-y-12 lg:space-y-12">
             {steps.map((step, index) => (
               <div key={index} className="relative lg:pl-12">

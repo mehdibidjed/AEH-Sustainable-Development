@@ -33,10 +33,28 @@ import MLLG from "./images/common/machine_learning.svg"
 import ECLG from "./images/common/e_comerceLG.svg"
 import CDLG from "./images/common/creative_designLG.svg"
 import SDLG from "./images/common/software_dev.svg"
+import WomanHC from "./images/industries/womam_healthcare.svg"
+import HealthCr from "./images/home/healthcare_solution.svg"
+import SmartSec from "./images/home/smart_security.svg"
 import  CardIcon from "./images/services/ml/iconoir_design-nib.svg";
+<<<<<<< HEAD
 import WomanHC from "./images/industries/womam_healthcare.svg";
 
 
+=======
+import Row1 from './images/home/row1.svg'
+import Row2 from './images/home/row2.svg'
+import Row3 from './images/home/row3.svg'
+import ExpT from "./images/home/exceptional_talent.svg"
+import CD from "./images/home/cancer_data.svg"
+import HD from "./images/home/hardware.svg"
+import BG2 from "./images/contact/bg2.png"
+import Moussa from "./images/common/moussa.svg"
+import Men1 from "./images/about/men1.svg"
+import Men2 from "./images/about/men2.svg"
+import WomanAB from "./images/about/women.svg"
+import Team from "./images/about/team.svg"
+>>>>>>> bdc3801264e56dfb4e9c0e63e0395e9843013e06
 export const Assets = {
   Icons: {
     AppIcon: AppIcon,
@@ -73,7 +91,8 @@ export const Assets = {
         MachineLearningLG:MLLG,
         SoftwareDevLG:SDLG,
         CreativeDesignLG:CDLG,
-        EcomerceLG:ECLG
+        EcomerceLG:ECLG,
+        Moussa:Moussa
     },
     Home: {
       BG1: BG1,
@@ -83,6 +102,24 @@ export const Assets = {
       CD: CreativeDes,
       CreativeChat: CreativeChat,
       Agriculture: Agriculture,
+      SmartSec:SmartSec,
+      HealthCr:HealthCr,
+      Row1:Row1,
+      Row2:Row2,
+      Row3:Row3,
+      ExceptionalTalent:ExpT,
+      CancerDetection:CD,
+      Hardware :HD
+    },
+    About:{
+      Men1:Men1,
+      Men2:Men2,
+      Woman:WomanAB,
+      Team:Team,
+
+    },
+    ContactUs:{
+      Background:BG2
     },
     Services: {
       ML: {

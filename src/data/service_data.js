@@ -8,6 +8,7 @@ export const aiDeliveryProcessData = {
   },
   subtitle:
     "A structured, data-driven approach that turns complex AI challenges into scalable, production-ready solutions.",
+
   steps: [
     {
       title: "Strategic Discovery",
@@ -84,6 +85,7 @@ export const mlServiceData = {
   description:
     "Empower operations with end-to-end AI services. From consulting to custom apps, " +
     "we optimize workflows for sectors like agriculture, healthcare, and finance.",
+  serviceImage: Assets.Images.Services.ML.AiImage,
   icons: [
     {
       label: "Microsoft ",

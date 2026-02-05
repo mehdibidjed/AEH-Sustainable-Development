@@ -32,3 +32,29 @@
 .scrollbar-hide::-webkit-scrollbar {
   display: none; /* Chrome, Safari and Opera */
 }
+@keyframes infiniteTickerL {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@keyframes infiniteTickerR {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: infiniteTickerL 20s linear infinite;
+}
+.ticker-trackR {
+  display: flex;
+  width: max-content;
+  animation: infiniteTickerR 20s linear infinite;
+}
