@@ -495,6 +495,7 @@ function Home() {
           })}
         </div>
       </section>
+
       <section className="bg-WhiteBg py-10 text-center text-black md:max-w-[80%] mx-auto space-y-8">
         <div className="space-y-3">
           <h6 className="uppercase text-xs">solutions</h6>
@@ -555,6 +556,7 @@ function Home() {
           </div>
         </div>
       </section>
+
       <section className="bg-PrimaryGreen py-16  text-center text-white w-full mx-auto space-y-10">
         <div className="space-y-3">
           <h6 className="uppercase text-xs">our work</h6>
@@ -704,6 +706,7 @@ function Home() {
           </div>
         </div>
       </section>
+
       <section className="bg-YellowBg py-16 px-6 md:pl-16 pr-0   text-PrimaryGreen">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -753,6 +756,7 @@ function Home() {
           </div>
         </div>
       </section>
+
       <section className="bg-white py-12 px-3 md:px-10">
         <div className="max-w-8xl mx-auto">
           <div className="relative group overflow-hidden rounded-[12px] cursor-pointer">
@@ -799,6 +803,7 @@ function Home() {
           </div>
         </div>
       </section>
+      
       <section className="bg-white   py-10 px-3 md:px-10">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
