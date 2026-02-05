@@ -42,6 +42,7 @@ import Row2 from './images/home/row2.svg'
 import Row3 from './images/home/row3.svg'
 import ExpT from "./images/home/exceptional_talent.svg"
 import CD from "./images/home/cancer_data.svg"
+import HD from "./images/home/hardware.svg"
 export const Assets = {
   Icons: {
     AppIcon: AppIcon,
@@ -94,7 +95,8 @@ export const Assets = {
       Row2:Row2,
       Row3:Row3,
       ExceptionalTalent:ExpT,
-      CancerDetection:CD
+      CancerDetection:CD,
+      Hardware :HD
     },
     Services: {
       ML: {

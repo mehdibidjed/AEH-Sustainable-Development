@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Assets } from "../../assets/Asset";
 import {
   ArrowRight,
   Brain,
   ChartPie,
+  ChevronDown,
   ChevronRight,
+  ChevronUp,
   Cloud,
   Headset,
   Layers,
@@ -17,6 +19,25 @@ import {
 import { Link } from "react-router-dom";
 import ContactSection from "../../components/common/ContactSection";
 function Home() {
+  const [openIndex, setOpenIndex] = useState(0);
+  const features = [
+    {
+      title: "Experienced, multidisciplinary experts",
+      desc: "Our team brings together designers, engineers, and technologists with deep experience across product design, development, and intelligent systems ready to integrate seamlessly with your workflow.",
+    },
+    {
+      title: "Practical solutions, not theory",
+      desc: "We focus on what works in production. Every solution is designed to be usable, scalable, and cost-efficient—built to solve real operational challenges, not just look good on paper.",
+    },
+    {
+      title: "Progress you can measure",
+      desc: "We apply modern technologies where they create real value—improving efficiency, unlocking insights, and helping businesses move faster without unnecessary complexity.",
+    },
+    {
+      title: "Credibility through execution",
+      desc: "From internal platforms to customer-facing products, our work supports growth, trust, and long-term performance in competitive digital environments.",
+    },
+  ];
   const serviceData = [
     {
       name: "Machine learning & AI",
@@ -757,7 +778,7 @@ function Home() {
                   information across multiple touchpoints.
                 </p>
 
-                <button className="flex items-center gap-2 text-white border-b border-white/50 pb-1 hover:border-white transition-all group/btn self-start md:self-auto">
+                <button className="flex items-center gap-2 text-white border-b border-[#931145] pb-1 hover:border-white transition-all group/btn self-start md:self-auto">
                   <span className="text-sm font-semibold tracking-wider">
                     View Case Study
                   </span>
@@ -773,6 +794,75 @@ function Home() {
                     <path d="M7 17L17 7M17 7H7M17 7V17" />
                   </svg>
                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-white   py-10 px-3 md:px-10">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
+            {/* Left Side: Hardware Image */}
+            <div className="rounded-[12px] overflow-hidden shadow-2xl sticky top-24">
+              <img
+                src={Assets.Images.Home.Hardware}
+                alt="Hardware Systems"
+                className="w-full h-full object-cover aspect-square md:aspect-[4/5] lg:aspect-square"
+              />
+            </div>
+
+            {/* Right Side: Accordion Content */}
+            <div className="">
+              <p className="uppercase tracking-[0.3em] text-[10px] font-bold text-black mb-6">
+                Why Us
+              </p>
+
+              <h2 className="text-2xl md:text-3xl  text-PrimaryGreen  mb-5 leading-tight">
+                What Sets{" "}
+                <span className="font-instrumentSerif  italic font-light">
+                  AEH S.D
+                </span>{" "}
+                Apart
+              </h2>
+
+              <div className="divide-y divide-black/10">
+                {features.map((feature, index) => (
+                  <div key={index} className="py-6">
+                    <button
+                      onClick={() =>
+                        setOpenIndex(openIndex === index ? -1 : index)
+                      }
+                      className="w-full flex justify-between items-center text-left group"
+                    >
+                      <span
+                        className={`text-lg md:text-xl font-bold transition-colors ${
+                          openIndex === index
+                            ? "text-PrimaryGreen"
+                            : "text-black/80 group-hover:text-PrimaryGreen"
+                        }`}
+                      >
+                        {feature.title}
+                      </span>
+                      {openIndex === index ? (
+                        <ChevronUp className="text-black" size={24} />
+                      ) : (
+                        <ChevronDown className="text-black" size={24} />
+                      )}
+                    </button>
+
+                    <div
+                      className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                        openIndex === index
+                          ? "max-h-40 opacity-100 mt-4"
+                          : "max-h-0 opacity-0"
+                      }`}
+                    >
+                      <p className="text-black/70  leading-relaxed font-light text-sm md:text-md">
+                        {feature.desc}
+                      </p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
