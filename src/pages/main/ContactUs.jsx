@@ -3,22 +3,26 @@ import { Assets } from "../../assets/Asset";
 
 function Contact() {
   return (
-    <div className="min-h-screen">
-      <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden px-6 py-20 md:py-32">
+    <div className="min-h-screen min-w-full">
+      <section className="relative min-h-screen w-full flex item-center justify-start overflow-hidden px-20 py-20 md:py-32">
         {/* Background Layer */}
-        <div className="absolute inset-0 z-0">
+        <div className="absolute h-full inset-0 z-0">
           <img
             src={Assets.Images.ContactUs.Background}
             alt="Background"
-            className="w-full h-full object-cover"
+            className="w-full h-screen object-cover"
           />
           {/* Subtle overlay to match the second image's depth */}
-          <div className="absolute inset-0 bg-black/20"></div>
         </div>
 
         {/* Content Container - Using flex-col and gap for precise vertical spacing */}
-        <div className="relative z-10 flex flex-col items-center text-center text-white max-w-6xl mx-auto gap-10 md:gap-14 lg:gap-16">
-          {/* Top Pill Button - Added glassmorphism style from image 2 */}
+
+        {/* Top Pill Button - Added glassmorphism style from image 2 */}
+        <div className="z-10 flex  justify-start items-center">
+
+        <h3 className="text-white z-10 font-bold font-Popine text-3xl md:text-6xl">
+          Contact
+        </h3>
         </div>
       </section>
       <section className="bg-white py-20 px-6 md:px-16 lg:py-32">
