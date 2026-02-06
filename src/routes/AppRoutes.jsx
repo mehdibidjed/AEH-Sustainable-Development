@@ -6,7 +6,13 @@ import About from "../pages/main/About.jsx";
 import Contact from "../pages/main/ContactUs.jsx";
 import MlService from "../pages/services/MlService.jsx";
 import ServiceLayout from "../layout/ServiceLayout.jsx";
-import { creativeDesignData, mlServiceData, SoftwareDevData } from "../data/service_data.js";
+import {
+  creativeDesignData,
+  EcomerceSolData,
+  ItManagedServiceProviderData,
+  mlServiceData,
+  SoftwareDevData,
+} from "../data/service_data.js";
 import CreativeDesignService from "../pages/services/CreativeDesignService.jsx";
 import SoftwareDev from "../pages/services/SoftwareDev.jsx";
 
@@ -30,11 +36,16 @@ function AppRoutes() {
             />
           </Route>
           <Route element={<ServiceLayout serviceData={SoftwareDevData} />}>
-            <Route
-              path="softdev-service"
-              element={<SoftwareDev />}
-            />
+            <Route path="softdev-service" element={<SoftwareDev />} />
           </Route>
+          <Route
+            path="ecomerce-service"
+            element={<ServiceLayout serviceData={EcomerceSolData} />}
+          />
+          <Route
+            path="it-msp-service"
+            element={<ServiceLayout serviceData={ItManagedServiceProviderData} />}
+          />
         </Route>
       </Routes>
     </HashRouter>

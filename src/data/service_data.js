@@ -402,3 +402,142 @@ export const SoftwareDevData = {
     },
   ],
 };
+export const EcomerceSolData = {
+  title: "E-Commerce Solutions",
+  subtitle: "Launch, Grow & Expand Your Online Business",
+  description:
+    "World-class e-commerce services from strategy to innovation. We help bussiness and brands build, optimize, and scale their online presence.",
+  serviceImage: Assets.Images.Services.EcomerceSol.EcomerceSolImage,
+  cardsType: "3-3",
+  icons: [
+    {
+      label: "Microsoft ",
+      icon: Assets.Icons.Services.ML.Microsoft,
+    },
+    {
+      label: "Metaai ",
+      icon: Assets.Icons.Services.ML.MetaAi,
+    },
+    {
+      label: "Leptonai ",
+      icon: Assets.Icons.Services.ML.Leptonia,
+    },
+    {
+      label: "AWS ",
+      icon: Assets.Icons.Services.ML.AWS,
+    },
+    {
+      label: "Apache ",
+      icon: Assets.Icons.Services.ML.Apache,
+    },
+    {
+      label: "oepani ",
+      icon: Assets.Icons.Services.ML.OpenAI,
+    },
+    {
+      label: "Hugging Face ",
+      icon: Assets.Icons.Services.ML.HaggingFace,
+    },
+  ],
+  heroTitle: "Our E-Commerce Solutions",
+  heroDescription:
+    "Elevate your online business with our end-to-end services tailored for seamless digital retail experiences.",
+  cards: [
+    {
+      title: "E-Commerce Website Design",
+      description:
+        "Beautiful, conversion-optimized storefronts that captivate customers and drive sales.",
+    },
+    {
+      title: "Store Development",
+      description:
+        "Custom Shopify, WooCommerce, and Magento builds designed to fit your unique business needs.",
+    },
+    {
+      title: "Payment Integration",
+      description:
+        "Secure payment gateways and smooth checkout flows to ensure safe and efficient transactions.",
+    },
+
+    {
+      title: "Analytics & Insights",
+      description:
+        "Detailed sales tracking and customer behavior analysis to inform strategic decisions.",
+    },
+    {
+      title: "SEO Optimization",
+      description:
+        "Targeted search engine strategies to improve visibility, attract organic traffic, and boost your store's rankings on major platforms.",
+    },
+    {
+      title: "Customer Experience",
+      description:
+        "Engaging loyalty programs and personalization features to build lasting relationships and encourage repeat business.",
+    },
+  ],
+};
+export const ItManagedServiceProviderData = {
+  title: "IT managed services providers (MSP)",
+  subtitle: "Elevate Your Tech Infrastructure",
+  description:
+    "Techno helps growing businesses adapt and thrive amidst ever-changing technology. With 24/7 access to more than 700 IT experts, we solve your biggest IT challenges to keep your business running.",
+  serviceImage: Assets.Images.Services.ItMSP.ItMSP,
+  cardsType: "2-2",
+  icons: [
+    {
+      label: "Microsoft ",
+      icon: Assets.Icons.Services.ML.Microsoft,
+    },
+    {
+      label: "Metaai ",
+      icon: Assets.Icons.Services.ML.MetaAi,
+    },
+    {
+      label: "Leptonai ",
+      icon: Assets.Icons.Services.ML.Leptonia,
+    },
+    {
+      label: "AWS ",
+      icon: Assets.Icons.Services.ML.AWS,
+    },
+    {
+      label: "Apache ",
+      icon: Assets.Icons.Services.ML.Apache,
+    },
+    {
+      label: "oepani ",
+      icon: Assets.Icons.Services.ML.OpenAI,
+    },
+    {
+      label: "Hugging Face ",
+      icon: Assets.Icons.Services.ML.HaggingFace,
+    },
+  ],
+  heroTitle: "What’s included in Dataprise Fully Managed IT Services?",
+  heroDescription:
+    "Our fully managed business IT services include 24/7 monitoring, help desk support, proactive patching, endpoint security, backups, onsite support, and IT strategy planning, all designed to reduce downtime and keep your business secure.",
+  cards: [
+    {
+      title: "Managed IT Support",
+      description:
+        "Proactive monitoring, 24/7 helpdesk assistance, and on-demand troubleshooting to keep your systems running smoothly and minimize downtime for uninterrupted operations.",
+    },
+    {
+      title: "Cybersecurity Management",
+      description:
+        "Advanced threat detection, vulnerability assessments, firewall management, and compliance services to protect your data and networks from evolving cyber risks.",
+    },
+    {
+      title: "Backup & Disaster Recovery",
+      description:
+        "Automated data backups, rapid recovery planning, and business continuity strategies to safeguard against data loss and ensure quick restoration after disruptions.",
+    },
+
+    {
+      title: "Cloud Services",
+      description:
+        "Seamless cloud migration, infrastructure management, and optimization for platforms like AWS, Azure, or Google Cloud, enabling flexible scaling and cost efficiency.",
+    },
+
+  ],
+};

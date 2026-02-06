@@ -51,6 +51,8 @@ import WomanAB from "./images/about/women.svg";
 import Team from "./images/about/team.svg";
 import CreativeDesign from "./images/services/creative_design/creative_design.svg";
 import SoftwareDev from "./images/services/soft_dev/soft_dev.svg"
+import EcomerceSol from "./images/services/ecomerce/ecomerce_sol.svg"
+import ItMSP from "./images/services/it_managed_service/it_managed_service.svg"
 export const Assets = {
   Icons: {
     AppIcon: AppIcon,
@@ -128,6 +130,12 @@ export const Assets = {
       },
       SoftDev:{
         SoftwareDevImage:SoftwareDev
+      },
+      EcomerceSol:{
+        EcomerceSolImage:EcomerceSol
+      },
+      ItMSP:{
+        ItMSP:ItMSP
       }
     },
     Industries: {

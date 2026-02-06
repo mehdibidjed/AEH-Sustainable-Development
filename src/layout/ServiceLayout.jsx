@@ -8,12 +8,12 @@ const ServiceLayout = ({ serviceData }) => {
   return (
     <div className="flex flex-col w-full   min-h-screen bg-white pt-24 md:pt-32 px-6 md:px-8 lg:px-12">
       <div className="max-w-7xl mx-auto w-full">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-12 leading-tight">
+        <h1 className="text-xl md:text-3xl lg:text-4xl font-bold text-black mb-12 leading-tight">
           {serviceData.title}
         </h1>
 
         <div className="flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-12 mb-16">
-          <p className="text-2xl md:text-3xl lg:text-4xl italic font-semibold text-black leading-snug max-w-2xl flex-shrink-0">
+          <p className="text-2xl md:text-3xl lg:text-4xl italic font-instrument font-regular text-black leading-snug max-w-2xl flex-shrink-0">
             {serviceData.subtitle}
           </p>
           <div className="flex-1 min-w-0">
@@ -78,7 +78,7 @@ const ServiceLayout = ({ serviceData }) => {
         </div>
 
         {/* The Hero Section */}
-        <div className="flex flex-col items-center text-center mt-24 md:mt-32 mb-20 md:mb-24">
+        <div className="flex flex-col  items-center text-center mt-24 md:mt-32 mb-16 md:mb-20">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6 leading-tight">
             {serviceData.heroTitle}
           </h2>
