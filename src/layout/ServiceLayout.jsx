@@ -88,38 +88,109 @@ const ServiceLayout = ({ serviceData }) => {
         </div>
 
         {/* Cards and Image Grid */}
-        <div className="flex flex-col lg:flex-row gap-8 mb-20 md:mb-24">
-          {/* LEFT SIDE (first 2 cards) */}
-          <div className="flex-1 flex flex-col gap-8">
-            {serviceData.cards.slice(0, 2).map((card, index) => (
-              <ServiceCard
-                key={index}
-                title={card.title}
-                description={card.description}
-              />
-            ))}
-          </div>
 
-          {/* IMAGE */}
-          <div className="flex-1 flex justify-center items-center overflow-hidden">
-            <img
-              src={Assets.Images.Services.ML.WomenImage}
-              className="w-full h-full object-cover rounded-2xl"
-              alt="AI Illustration"
-            />
-          </div>
+        {serviceData.cardsType == "2-2" && (
+          <div className="flex flex-col lg:flex-row gap-8 mb-20 md:mb-24">
+            {/* LEFT SIDE (first 2 cards) */}
+            <div className="flex-1 flex flex-col gap-8">
+              {serviceData.cards.slice(0, 2).map((card, index) => (
+                <ServiceCard
+                  key={index}
+                  title={card.title}
+                  description={card.description}
+                />
+              ))}
+            </div>
 
-          {/* RIGHT SIDE (last 2 cards) */}
-          <div className="flex-1 flex flex-col gap-8">
-            {serviceData.cards.slice(2, 4).map((card, index) => (
-              <ServiceCard
-                key={index}
-                title={card.title}
-                description={card.description}
+            {/* IMAGE */}
+            <div className="flex-1 flex justify-center items-center overflow-hidden">
+              <img
+                src={Assets.Images.Services.ML.WomenImage}
+                className="w-full h-full object-cover rounded-2xl"
+                alt="AI Illustration"
               />
-            ))}
+            </div>
+
+            {/* RIGHT SIDE (last 2 cards) */}
+            <div className="flex-1 flex flex-col gap-8">
+              {serviceData.cards.slice(2, 4).map((card, index) => (
+                <ServiceCard
+                  key={index}
+                  title={card.title}
+                  description={card.description}
+                />
+              ))}
+            </div>
           </div>
-        </div>
+        )}
+        {serviceData.cardsType == "2-3" && (
+          <div className="flex flex-col lg:flex-row gap-8 mb-20 md:mb-24">
+            {/* LEFT SIDE (first 2 cards) */}
+            <div className="flex-1 flex flex-col gap-8">
+              {serviceData.cards.slice(0, 2).map((card, index) => (
+                <ServiceCard
+                  key={index}
+                  title={card.title}
+                  description={card.description}
+                />
+              ))}
+            </div>
+
+            {/* IMAGE */}
+            <div className="flex-1 flex justify-center items-center overflow-hidden">
+              <img
+                src={Assets.Images.Services.ML.WomenImage}
+                className="w-full h-full object-cover rounded-2xl"
+                alt="AI Illustration"
+              />
+            </div>
+
+            {/* RIGHT SIDE (last 2 cards) */}
+            <div className="flex-1 flex flex-col gap-8">
+              {serviceData.cards.slice(2, 5).map((card, index) => (
+                <ServiceCard
+                  key={index}
+                  title={card.title}
+                  description={card.description}
+                />
+              ))}
+            </div>
+          </div>
+        )}
+        {serviceData.cardsType == "3-3" && (
+          <div className="flex flex-col lg:flex-row gap-8 mb-20 md:mb-24">
+            {/* LEFT SIDE (first 2 cards) */}
+            <div className="flex-1 flex flex-col gap-8">
+              {serviceData.cards.slice(0, 3).map((card, index) => (
+                <ServiceCard
+                  key={index}
+                  title={card.title}
+                  description={card.description}
+                />
+              ))}
+            </div>
+
+            {/* IMAGE */}
+            <div className="flex-1 flex justify-center items-center overflow-hidden">
+              <img
+                src={Assets.Images.Services.ML.WomenImage}
+                className="w-full h-full object-cover rounded-2xl"
+                alt="AI Illustration"
+              />
+            </div>
+
+            {/* RIGHT SIDE (last 2 cards) */}
+            <div className="flex-1 flex flex-col gap-8">
+              {serviceData.cards.slice(3, 6).map((card, index) => (
+                <ServiceCard
+                  key={index}
+                  title={card.title}
+                  description={card.description}
+                />
+              ))}
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Process TimeLine */}
@@ -129,7 +200,7 @@ const ServiceLayout = ({ serviceData }) => {
 
       {/* Other Services */}
       <div className="w-screen -mx-6 md:-mx-8 lg:-mx-12">
-        <OtherServices />
+        <OtherServices actual_service={serviceData.title} />
       </div>
 
       {/* Contact Section */}

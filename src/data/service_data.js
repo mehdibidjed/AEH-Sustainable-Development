@@ -42,7 +42,80 @@ export const aiDeliveryProcessData = {
     },
   ],
 };
+export const creativeDesignProcessData = {
+  sectionTitle: "OUR PROCESS",
+  mainTitle: {
+    before: "Full-Cycle Mobile App Development Process at Techno ",
+    highlighted: "Techno",
+  },
+  subtitle:
+    "From audience research, design, and development to ongoing support and maintenance - our team offers full-cycle mobile app development services.",
 
+  steps: [
+    {
+      title: "Discovery and planning",
+      description:
+        "You define your product idea, and we start researching your target market. We outline key features, project roadmap, and budget.",
+    },
+    {
+      title: "Design And Prototyping",
+      description:
+        "After we develop user personas, our designers start drafting UI/UX elements, and we build an interactive prototype.",
+    },
+    {
+      title: "Development and API integration",
+      description:
+        "At this step, we begin your mobile app development. Our developers implement core functionalities and features and integrate APIs.",
+    },
+    {
+      title: "Testing & QA",
+      description:
+        "Once we have your mobile app ready, we begin testing, debugging, fixing identified issues, and optimizing the app's performance. .",
+    },
+    {
+      title: "Launch and support",
+      description:
+        "Once we submit your mobile app to app stores, we monitor its performance and gather user feedback to provide suitable support.",
+    },
+  ],
+};
+export const SoftwareDevProcessData = {
+  sectionTitle: "OUR PROCESS",
+  mainTitle: {
+    before: "Our Software Development Approach at",
+    highlighted: "Techno",
+  },
+  subtitle:
+    "We follow a structured yet flexible process to deliver high-quality custom software solutions tailored to your business needs. This ensures efficiency, scalability, and alignment with your goals from concept to ongoing support.",
+
+  steps: [
+    {
+      title: "Business Planning Stage",
+      description:
+        "This phase, often starting with consultations, evaluates company operations, tools, and culture to align designs with genuine value. It defines objectives, vision, and specs, especially when internal skills are limited.",
+    },
+    {
+      title: "Interface and Experience Design",
+      description:
+        "Emphasizes crafting user-friendly interfaces and scalable products, integrating advanced tech like data analytics or AI to match specific goals.",
+    },
+    {
+      title: "Core Building Phase",
+      description:
+        "Involves creating tailored systems, mobile apps for various platforms, web solutions, and cloud setups. Also includes rapid prototyping for idea validation.",
+    },
+    {
+      title: "Assurance and Validation",
+      description:
+        "Applies thorough checks across the project to secure systems, resolve issues, and uphold standards during ongoing updates.",
+    },
+    {
+      title: "Launch and Upgrades",
+      description:
+        "Handles modernization of old systems while keeping essential logic, manages full rollout, and ensures adaptability for growth with new integrations.",
+    },
+  ],
+};
 export const services = [
   {
     name: "Machine Learning & AI",
@@ -77,6 +150,18 @@ export const services = [
       "Performance & Conversion Optimization",
     ],
   },
+  {
+    name: "Creative Design",
+    subServices: [
+      "UI/UX Design",
+      "Web & Mobile App Design",
+      "User Research & Wireframing",
+      "Prototyping & Design Systems",
+      "Visual & Interactive Design",
+      "Branding",
+    ],
+    image: Assets.Images.Common.CreativeDesignLG,
+  },
 ];
 
 export const mlServiceData = {
@@ -86,6 +171,7 @@ export const mlServiceData = {
     "Empower operations with end-to-end AI services. From consulting to custom apps, " +
     "we optimize workflows for sectors like agriculture, healthcare, and finance.",
   serviceImage: Assets.Images.Services.ML.AiImage,
+  cardsType: "2-2",
   icons: [
     {
       label: "Microsoft ",
@@ -116,12 +202,10 @@ export const mlServiceData = {
       icon: Assets.Icons.Services.ML.HaggingFace,
     },
   ],
-
   heroTitle: "Intelligent AI & Machine Learning Solutions",
   heroDescription:
     "We help businesses unlock the power of artificial intelligence by designing and deploying scalable, data-driven solutions. From automation to advanced " +
     "analytics, our AI services are built to improve efficiency, enhance decision-making, and create measurable business impact.",
-
   cards: [
     {
       title: "Machine Learning Engineering",
@@ -181,6 +265,140 @@ export const mlServiceData = {
       name: "Monitoring & Support",
       description:
         "Post-deployment, we monitor results, retrain models as needed, and continuously optimize performance to ensure ongoing value.",
+    },
+  ],
+};
+export const creativeDesignData = {
+  title: "Creative Design",
+  subtitle: "Crafting Engaging UI/UX for Algerian Innovation",
+  description:
+    "Research-driven designs that balance aesthetics with usability," +
+    "creating engaging experiences that drive conversions and delight users.",
+  serviceImage: Assets.Images.Services.CreativeDesign.CreativeDesignImg,
+  cardsType: "2-2",
+  icons: [
+    {
+      label: "Microsoft ",
+      icon: Assets.Icons.Services.ML.Microsoft,
+    },
+    {
+      label: "Metaai ",
+      icon: Assets.Icons.Services.ML.MetaAi,
+    },
+    {
+      label: "Leptonai ",
+      icon: Assets.Icons.Services.ML.Leptonia,
+    },
+    {
+      label: "AWS ",
+      icon: Assets.Icons.Services.ML.AWS,
+    },
+    {
+      label: "Apache ",
+      icon: Assets.Icons.Services.ML.Apache,
+    },
+    {
+      label: "oepani ",
+      icon: Assets.Icons.Services.ML.OpenAI,
+    },
+    {
+      label: "Hugging Face ",
+      icon: Assets.Icons.Services.ML.HaggingFace,
+    },
+  ],
+  heroTitle: "Creative, Design & Production Services Expert",
+  heroDescription:
+    "We ideate and strategize digital design concepts for web and mobile, blending the right technologies, impactful design, and content to build strong, recognizable brands",
+  cards: [
+    {
+      title: "UI/UX Design",
+      description:
+        "Responsive, user-centered web interfaces designed to convert visitors into customers while ensuring clarity, usability, and performance across all devices.",
+    },
+    {
+      title: "Mobile App Design",
+      description:
+        "Intuitive and engaging mobile experiences crafted for both iOS and Android, focusing on usability, accessibility, and seamless user journeys.",
+    },
+    {
+      title: "Brand Identity",
+      description:
+        "Strategic logos, color palettes, and visual systems built to express your brand’s personality, values, and story with consistency and impact.",
+    },
+
+    {
+      title: "Design Systems",
+      description:
+        "Scalable, well-documented component libraries that ensure visual consistency, faster development, and long-term design alignment across products.",
+    },
+  ],
+};
+export const SoftwareDevData = {
+  title: "Software Development",
+  subtitle:
+    "Growth-Driven & Custom Software Development Solutions for all Businesses",
+  description:
+    "Transform with comprehensive development for web, mobile, and custom solutions. Built with modern technologies and agile methodologies for rapid delivery.",
+  serviceImage: Assets.Images.Services.SoftDev.SoftwareDevImage,
+  cardsType: "2-3",
+  icons: [
+    {
+      label: "Microsoft ",
+      icon: Assets.Icons.Services.ML.Microsoft,
+    },
+    {
+      label: "Metaai ",
+      icon: Assets.Icons.Services.ML.MetaAi,
+    },
+    {
+      label: "Leptonai ",
+      icon: Assets.Icons.Services.ML.Leptonia,
+    },
+    {
+      label: "AWS ",
+      icon: Assets.Icons.Services.ML.AWS,
+    },
+    {
+      label: "Apache ",
+      icon: Assets.Icons.Services.ML.Apache,
+    },
+    {
+      label: "oepani ",
+      icon: Assets.Icons.Services.ML.OpenAI,
+    },
+    {
+      label: "Hugging Face ",
+      icon: Assets.Icons.Services.ML.HaggingFace,
+    },
+  ],
+  heroTitle:
+    "Growth-Driven & Custom Software Development Solutions for all Businesses",
+  heroDescription:
+    "We ideate and strategize digital design concepts for web and mobile, blending the right technologies, impactful design, and content to build strong, recognizable brands",
+  cards: [
+    {
+      title: "Web Application Development",
+      description:
+        "Scalable, responsive web apps with modern frameworks like React, Next.js, and Vue",
+    },
+    {
+      title: "Mobile App Development",
+      description:
+        "Native and cross-platform mobile solutions for iOS and Android",
+    },
+    {
+      title: "Custom Software Solutions",
+      description:
+        "Tailored enterprise software built to your exact specifications",
+    },
+
+    {
+      title: "Cloud Development",
+      description: "Cloud-native applications on AWS, Azure, and Google Cloud",
+    },
+    {
+      title: "API Development",
+      description: "Robust REST and GraphQL APIs for seamless integrations",
     },
   ],
 };

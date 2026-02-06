@@ -6,7 +6,9 @@ import About from "../pages/main/About.jsx";
 import Contact from "../pages/main/ContactUs.jsx";
 import MlService from "../pages/services/MlService.jsx";
 import ServiceLayout from "../layout/ServiceLayout.jsx";
-import { mlServiceData } from "../data/service_data.js";
+import { creativeDesignData, mlServiceData, SoftwareDevData } from "../data/service_data.js";
+import CreativeDesignService from "../pages/services/CreativeDesignService.jsx";
+import SoftwareDev from "../pages/services/SoftwareDev.jsx";
 
 function AppRoutes() {
   return (
@@ -20,6 +22,18 @@ function AppRoutes() {
 
           <Route element={<ServiceLayout serviceData={mlServiceData} />}>
             <Route path="/ml-service" element={<MlService />} />
+          </Route>
+          <Route element={<ServiceLayout serviceData={creativeDesignData} />}>
+            <Route
+              path="/creative-design-service"
+              element={<CreativeDesignService />}
+            />
+          </Route>
+          <Route element={<ServiceLayout serviceData={SoftwareDevData} />}>
+            <Route
+              path="softdev-service"
+              element={<SoftwareDev />}
+            />
           </Route>
         </Route>
       </Routes>
