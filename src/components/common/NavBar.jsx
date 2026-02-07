@@ -72,10 +72,10 @@ function NavBar() {
           <img
             src={Assets.Icons.AppIcon}
             alt="App Icon"
-            className="h-10 w-10"
+            className="h-12 w-12"
           />
           <div className="font-Poppins text-PrimaryBlue">
-            <h1 className="text-xl font-bold leading-tight">A E H</h1>
+            <h1 className="text-xl font-regular font-Popine leading-7 tracking-tight">A E H</h1>
             <p className="text-[10px]  tracking-tighter">
               sustainable development
             </p>
@@ -136,7 +136,7 @@ function NavBar() {
             to="/contact"
             className="bg-YellowGreen text-PrimaryGreen font-bold rounded-full px-6 py-3 hover:scale-105 transition-transform"
           >
-            Contact with us
+            Connect with us
           </Link>
         </div>
 

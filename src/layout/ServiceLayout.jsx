@@ -37,11 +37,11 @@ const ServiceLayout = ({ serviceData }) => {
           <div className="ticker-track">
             {/* First row */}
             <div className="flex ">
-              <div className="flex items-center  justify-between  gap-10  pr-10">
+              <div className="flex items-center  justify-between  gap-20  pr-20">
                 {serviceData.icons.map((icon, index) => (
                   <div
                     key={`first-${index}`}
-                    className="flex items-center gap-1 text-white/80 whitespace-nowrap"
+                    className="flex items-center gap-4 text-white/80 whitespace-nowrap"
                   >
                     <img
                       src={icon.icon}
@@ -56,11 +56,11 @@ const ServiceLayout = ({ serviceData }) => {
               </div>
 
               {/* Second row (required) */}
-              <div className="flex items-center justify-between gap-10  pr-10">
+              <div className="flex items-center justify-between gap-20  pr-20">
                 {serviceData.icons.map((icon, index) => (
                   <div
                     key={`second-${index}`}
-                    className="flex items-center gap-1 text-white/80 whitespace-nowrap"
+                    className="flex items-center gap-4 text-white/80 whitespace-nowrap"
                   >
                     <img
                       src={icon.icon}

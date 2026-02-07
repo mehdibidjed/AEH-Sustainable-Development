@@ -584,7 +584,7 @@ function Home() {
                 </div>
 
                 {/* Project Title */}
-                <div className="space-y-3">
+                <div className="space-y-3 text-start">
                   <h3 className="text-white text-xl md:text-2xl font-medium leading-tight">
                     {/* Logic to italicize part of the name based on your image */}
                     {project.name.split(project.italicPart)[0]}
@@ -804,7 +804,7 @@ function Home() {
         </div>
       </section>
       
-      <section className="bg-white   py-10 px-3 md:px-10">
+      <section className="bg-white   pt-10 px-3 md:px-10">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
             {/* Left Side: Hardware Image */}
@@ -873,6 +873,7 @@ function Home() {
           </div>
         </div>
       </section>
+
     </div>
   );
 }

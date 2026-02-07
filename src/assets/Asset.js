@@ -50,9 +50,11 @@ import Men2 from "./images/about/men2.svg";
 import WomanAB from "./images/about/women.svg";
 import Team from "./images/about/team.svg";
 import CreativeDesign from "./images/services/creative_design/creative_design.svg";
-import SoftwareDev from "./images/services/soft_dev/soft_dev.svg"
-import EcomerceSol from "./images/services/ecomerce/ecomerce_sol.svg"
-import ItMSP from "./images/services/it_managed_service/it_managed_service.svg"
+import SoftwareDev from "./images/services/soft_dev/soft_dev.svg";
+import EcomerceSol from "./images/services/ecomerce/ecomerce_sol.svg";
+import ItMSP from "./images/services/it_managed_service/it_managed_service.svg";
+import VisionL from "./images/about/visionL.svg";
+import VisionR from "./images/about/visionR.svg";
 export const Assets = {
   Icons: {
     AppIcon: AppIcon,
@@ -72,6 +74,9 @@ export const Assets = {
       Icon13: icon13,
       Icon14: icon14,
     },
+    Common: {
+      CardIcon: CardIcon,
+    },
     Services: {
       ML: {
         HaggingFace: HaggingFaceIcon,
@@ -82,7 +87,6 @@ export const Assets = {
         Microsoft: Microsoft,
         OpenAI: OpenAI,
       },
-
     },
   },
   Images: {
@@ -115,6 +119,8 @@ export const Assets = {
       Men2: Men2,
       Woman: WomanAB,
       Team: Team,
+      VisonL: VisionL,
+      VisionR: VisionR,
     },
     ContactUs: {
       Background: BG2,
@@ -123,20 +129,19 @@ export const Assets = {
       ML: {
         AiImage: AiImage,
         WomenImage: WomenImage,
-        CardIcon: CardIcon,
       },
       CreativeDesign: {
         CreativeDesignImg: CreativeDesign,
       },
-      SoftDev:{
-        SoftwareDevImage:SoftwareDev
+      SoftDev: {
+        SoftwareDevImage: SoftwareDev,
       },
-      EcomerceSol:{
-        EcomerceSolImage:EcomerceSol
+      EcomerceSol: {
+        EcomerceSolImage: EcomerceSol,
       },
-      ItMSP:{
-        ItMSP:ItMSP
-      }
+      ItMSP: {
+        ItMSP: ItMSP,
+      },
     },
     Industries: {
       WomanHealthcare: WomanHC,
