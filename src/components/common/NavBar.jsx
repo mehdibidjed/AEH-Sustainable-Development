@@ -18,7 +18,8 @@ function NavBar() {
   ];
 
   const servicesData = [
- {    name: "Machine Learning & AI",
+    {
+      name: "Machine Learning & AI",
       data: [
         "Machine Learning Models",
         "AI-Powered Applications",
@@ -26,10 +27,10 @@ function NavBar() {
         "Data-Driven Decision Systems",
         "AI Integration in Digital Products",
       ],
-      image:Assets.Images.Common.MachineLearningLG
+      image: Assets.Images.Common.MachineLearningLG,
     },
     {
-      name:"Software Development",
+      name: "Software Development",
       data: [
         "Web Application Development",
         "Mobile Application Development",
@@ -37,10 +38,10 @@ function NavBar() {
         "API Development & Integration",
         "System Architecture & Maintenance",
       ],
-      image:Assets.Images.Common.SoftwareDevLG
+      image: Assets.Images.Common.SoftwareDevLG,
     },
     {
-      name:"E-Commerce Solutions",
+      name: "E-Commerce Solutions",
       data: [
         "E-Commerce Website Design",
         "Online Store Development",
@@ -48,10 +49,10 @@ function NavBar() {
         "Product & Order Management Systems",
         "Performance & Conversion Optimizations",
       ],
-      image:Assets.Images.Common.EcomerceLG
+      image: Assets.Images.Common.EcomerceLG,
     },
     {
-      name:"Crearive Desing",
+      name: "Crearive Desing",
       data: [
         "UI/UX Design",
         "Web & Mobile App Design",
@@ -60,26 +61,28 @@ function NavBar() {
         "Visual & Interactive Design",
         "Branding",
       ],
-      image:Assets.Images.Common.CreativeDesignLG
-    }
+      image: Assets.Images.Common.CreativeDesignLG,
+    },
   ];
 
   return (
     <>
-      <div className="fixed top-0 left-0 right-0 z-[60] transition-transform duration-300 px-6 md:px-10 py-4 md:py-5 flex items-center justify-between bg-white shadow-sm">
+      <div className="fixed top-0 left-0 right-0 z-[60] transition-transform duration-300 px-6 md:px-10 py-4 flex items-center justify-between bg-white shadow-sm">
         {/* Logo */}
-        <div className="relative flex gap-3 items-center">
+        <div className="relative flex gap-3 items-center w-[50%] md:w-[15%] ">
           <img
             src={Assets.Icons.AppIcon}
             alt="App Icon"
-            className="h-12 w-12"
+            className="h-20 "
           />
-          <div className="font-Poppins text-PrimaryBlue">
-            <h1 className="text-xl font-regular font-Popine leading-7 tracking-tight">A E H</h1>
+          {/* <div className="font-Poppins text-PrimaryBlue">
+            <h1 className="text-xl font-regular font-Popine leading-7 tracking-tight">
+              A E H
+            </h1>
             <p className="text-[10px]  tracking-tighter">
               sustainable development
             </p>
-          </div>
+          </div> */}
         </div>
 
         {/* Desktop Nav */}
@@ -136,7 +139,7 @@ function NavBar() {
             to="/contact"
             className="bg-YellowGreen text-PrimaryGreen font-bold rounded-full px-6 py-3 hover:scale-105 transition-transform"
           >
-            Connect with us
+            Connec with us
           </Link>
         </div>
 
@@ -145,7 +148,19 @@ function NavBar() {
           className="md:hidden p-2 text-black"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
-          {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+          {isMobileMenuOpen ? (
+            <X size={28} />
+          ) : (
+            <div className=" flex gap-5 items-center">
+              <Link
+                to="/contact"
+                className="bg-YellowGreen text-xs  px-2 py-2  md:text-base text-PrimaryGreen font-bold rounded-full md:px-6 md:py-3 hover:scale-105 transition-transform"
+              >
+                Connect with us
+              </Link>{" "}
+              <Menu size={28} />
+            </div>
+          )}
         </button>
       </div>
 
@@ -239,7 +254,7 @@ function NavBar() {
                 <h3 className="text-lg font-bold text-white hover:text-blue-400 cursor-pointer">
                   {service.name}
                 </h3>
-                <img src={service.image} className="rounded-lg mb-8"/>
+                <img src={service.image} className="rounded-lg mb-8" />
                 <ul className="space-y-2">
                   {service.data.map((item) => (
                     <li
