@@ -6,14 +6,14 @@ import Contact from "../components/common/ContactSection";
 
 const ServiceLayout = ({ serviceData }) => {
   return (
-    <div className="flex flex-col w-full   min-h-screen bg-white pt-24 md:pt-32 px-6 md:px-8 lg:px-12">
+    <div className="flex flex-col w-full   min-h-screen bg-white pt-24 md:pt-32 ">
       <div className="max-w-7xl mx-auto w-full">
-        <h1 className="text-xl md:text-3xl lg:text-4xl font-bold text-black mb-12 leading-tight">
+        <h1 className="text-xl md:text-3xl lg:text-4xl  pt-10 sm:pt-8 font-bold text-black mb-12 leading-tight px-6 md:px-8 lg:px-12">
           {serviceData.title}
         </h1>
 
-        <div className="flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-12 mb-16">
-          <p className="text-2xl md:text-3xl lg:text-4xl italic font-instrument font-regular text-black leading-snug max-w-2xl flex-shrink-0">
+        <div className="flex flex-col lg:flex-row  items-start  mb-16 px-6 md:px-8 lg:px-12">
+          <p className="text-2xl md:text-3xl lg:text-6xl italic font-instrumentSerif  text-black leading-snug max-w-2xl text-start flex-shrink-0">
             {serviceData.subtitle}
           </p>
           <div className="flex-1 min-w-0">
@@ -28,57 +28,84 @@ const ServiceLayout = ({ serviceData }) => {
 
         <img
           src={serviceData.serviceImage}
-          className="mt-12 mb-8 w-full object-cover rounded-2xl"
+          className="mt-12 mb-8 w-full object-cover rounded-2xl px-6 md:px-8 lg:px-12"
           alt="AI Service"
         />
 
         {/* The tech bar */}
-        <div className="overflow-hidden w-full bg-black py-5">
-          <div className="ticker-track">
-            {/* First row */}
-            <div className="flex ">
-              <div className="flex items-center  justify-between  gap-20  pr-20">
-                {serviceData.icons.map((icon, index) => (
-                  <div
-                    key={`first-${index}`}
-                    className="flex items-center gap-4 text-white/80 whitespace-nowrap"
-                  >
-                    <img
-                      src={icon.icon}
-                      alt={icon.label}
-                      className="w-6 h-6 md:w-10 md:h-10"
-                    />
-                    <p className="text-xs md:text-sm font-medium">
-                      {icon.label}
-                    </p>
-                  </div>
-                ))}
+        {serviceData.title == "E-Commerce Solutions" && (
+          <div className="overflow-hidden max-w-6xl  mx-auto bg-[#F5F5F5] py-5 ">
+
+              <div className="flex justify-center items-center ">
+                <div className="flex items-center justify-between gap-20   pr-20">
+                  {serviceData.icons.map((icon, index) => (
+                    <div
+                      key={`second-${index}`}
+                      className="flex items-center justify-center gap-4 text-white/80 whitespace-nowrap"
+                    >
+                      <img
+                        src={icon.icon}
+                        alt={icon.label}
+                        className="w-6 h-6 md:w-10 md:h-10"
+                      />
+                      <p className="text-xs md:text-sm font-medium">
+                        {icon.label}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
 
-              {/* Second row (required) */}
-              <div className="flex items-center justify-between gap-20  pr-20">
-                {serviceData.icons.map((icon, index) => (
-                  <div
-                    key={`second-${index}`}
-                    className="flex items-center gap-4 text-white/80 whitespace-nowrap"
-                  >
-                    <img
-                      src={icon.icon}
-                      alt={icon.label}
-                      className="w-6 h-6 md:w-10 md:h-10"
-                    />
-                    <p className="text-xs md:text-sm font-medium">
-                      {icon.label}
-                    </p>
-                  </div>
-                ))}
+          </div>
+        )}
+        {(serviceData.title == "Machine Learning & AI" ||
+          serviceData.title == "Creative Design") && (
+          <div className="overflow-hidden w-screen bg-black py-5 px-0">
+            <div className="ticker-track">
+              {/* First row */}
+              <div className="flex ">
+                <div className="flex items-center  justify-between  gap-20  pr-20">
+                  {serviceData.icons.map((icon, index) => (
+                    <div
+                      key={`first-${index}`}
+                      className="flex items-center gap-4 text-white/80 whitespace-nowrap"
+                    >
+                      <img
+                        src={icon.icon}
+                        alt={icon.label}
+                        className="w-6 h-6 md:w-10 md:h-10"
+                      />
+                      <p className="text-xs md:text-sm font-medium">
+                        {icon.label}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Second row (required) */}
+                <div className="flex items-center justify-between gap-20  pr-20">
+                  {serviceData.icons.map((icon, index) => (
+                    <div
+                      key={`second-${index}`}
+                      className="flex items-center gap-4 text-white/80 whitespace-nowrap"
+                    >
+                      <img
+                        src={icon.icon}
+                        alt={icon.label}
+                        className="w-6 h-6 md:w-10 md:h-10"
+                      />
+                      <p className="text-xs md:text-sm font-medium">
+                        {icon.label}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
+        )}
         {/* The Hero Section */}
-        <div className="flex flex-col  items-center text-center mt-24 md:mt-32 mb-16 md:mb-20">
+        <div className="flex flex-col  items-center text-center mt-24 md:mt-32 mb-16 md:mb-20 px-6 md:px-8 lg:px-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6 leading-tight">
             {serviceData.heroTitle}
           </h2>
@@ -90,7 +117,7 @@ const ServiceLayout = ({ serviceData }) => {
         {/* Cards and Image Grid */}
 
         {serviceData.cardsType == "2-2" && (
-          <div className="flex flex-col lg:flex-row gap-8 mb-20 md:mb-24">
+          <div className="flex flex-col lg:flex-row gap-8 mb-20 md:mb-24 px-6 md:px-8 lg:px-12">
             {/* LEFT SIDE (first 2 cards) */}
             <div className="flex-1 flex flex-col gap-8">
               {serviceData.cards.slice(0, 2).map((card, index) => (
@@ -124,7 +151,7 @@ const ServiceLayout = ({ serviceData }) => {
           </div>
         )}
         {serviceData.cardsType == "2-3" && (
-          <div className="flex flex-col lg:flex-row gap-8 mb-20 md:mb-24">
+          <div className="flex flex-col lg:flex-row gap-8 mb-20 md:mb-24 px-6 md:px-8 lg:px-12">
             {/* LEFT SIDE (first 2 cards) */}
             <div className="flex-1 flex flex-col gap-8">
               {serviceData.cards.slice(0, 2).map((card, index) => (
@@ -158,7 +185,7 @@ const ServiceLayout = ({ serviceData }) => {
           </div>
         )}
         {serviceData.cardsType == "3-3" && (
-          <div className="flex flex-col lg:flex-row gap-8 mb-20 md:mb-24">
+          <div className="flex flex-col lg:flex-row gap-8 mb-20 md:mb-24 px-6 md:px-8 lg:px-12">
             {/* LEFT SIDE (first 2 cards) */}
             <div className="flex-1 flex flex-col gap-8">
               {serviceData.cards.slice(0, 3).map((card, index) => (
@@ -194,19 +221,19 @@ const ServiceLayout = ({ serviceData }) => {
       </div>
 
       {/* Process TimeLine */}
-      <div className="w-screen -mx-6 md:-mx-8 lg:-mx-12">
+      <div className="w-screen  ">
         <Outlet />
       </div>
 
       {/* Other Services */}
-      <div className="w-screen -mx-6 md:-mx-8 lg:-mx-12">
+      <div className="w-screen ">
         <OtherServices actual_service={serviceData.title} />
       </div>
 
       {/* Contact Section */}
-      <div className="max-w-7xl mx-auto w-full mb-12">
+      {/* <div className="max-w-7xl mx-auto w-full mb-12 px-6 md:px-8 lg:px-12">
         <Contact />
-      </div>
+      </div> */}
     </div>
   );
 };

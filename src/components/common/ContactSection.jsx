@@ -2,7 +2,7 @@ import React from "react";
 
 function ContactSection() {
   return (
-    <section className="bg-YellowBg rounded-3xl py-16 px-8 md:px-20 lg:px-24 my-20">
+    <section className="bg-YellowBg rounded-[12px] py-16 px-8 md:px-20 lg:px-24 my-20">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center space-y-6 mb-20 text-black">

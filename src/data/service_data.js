@@ -278,32 +278,36 @@ export const creativeDesignData = {
   cardsType: "2-2",
   icons: [
     {
-      label: "Microsoft ",
-      icon: Assets.Icons.Services.ML.Microsoft,
+      label: "Adobe Xd ",
+      icon: Assets.Icons.Services.CD.Xd,
     },
     {
-      label: "Metaai ",
-      icon: Assets.Icons.Services.ML.MetaAi,
+      label: "Farmer",
+      icon: Assets.Icons.Services.CD.Farmer,
     },
     {
-      label: "Leptonai ",
-      icon: Assets.Icons.Services.ML.Leptonia,
+      label: "Vscode",
+      icon: Assets.Icons.Services.CD.VsCode,
     },
     {
-      label: "AWS ",
-      icon: Assets.Icons.Services.ML.AWS,
+      label: "Photoshop",
+      icon: Assets.Icons.Services.CD.Phtoshop,
     },
     {
-      label: "Apache ",
-      icon: Assets.Icons.Services.ML.Apache,
+      label: "Notion",
+      icon: Assets.Icons.Services.CD.Notion,
     },
     {
-      label: "oepani ",
-      icon: Assets.Icons.Services.ML.OpenAI,
+      label: "Figma",
+      icon: Assets.Icons.Services.CD.Figma,
     },
     {
-      label: "Hugging Face ",
-      icon: Assets.Icons.Services.ML.HaggingFace,
+      label: "Sketch",
+      icon: Assets.Icons.Services.CD.Sketch,
+    },
+    {
+      label: "Webflow",
+      icon: Assets.Icons.Services.CD.WebFlow,
     },
   ],
   heroTitle: "Creative, Design & Production Services Expert",
@@ -429,15 +433,7 @@ export const EcomerceSolData = {
     {
       label: "Apache ",
       icon: Assets.Icons.Services.ML.Apache,
-    },
-    {
-      label: "oepani ",
-      icon: Assets.Icons.Services.ML.OpenAI,
-    },
-    {
-      label: "Hugging Face ",
-      icon: Assets.Icons.Services.ML.HaggingFace,
-    },
+    }
   ],
   heroTitle: "Our E-Commerce Solutions",
   heroDescription:

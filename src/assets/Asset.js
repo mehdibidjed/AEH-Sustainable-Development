@@ -55,6 +55,14 @@ import EcomerceSol from "./images/services/ecomerce/ecomerce_sol.svg";
 import ItMSP from "./images/services/it_managed_service/it_managed_service.svg";
 import VisionL from "./images/about/visionL.svg";
 import VisionR from "./images/about/visionR.svg";
+import Xd from "./icons/services/cd/xd.svg";
+import Farmer from "./icons/services/cd/framer.svg";
+import VsCode from "./icons/services/cd/vscode.svg";
+import Phtoshop from "./icons/services/cd/photoshop.svg";
+import Notion from "./icons/services/cd/notion.svg";
+import WebFlow from "./icons/services/cd/webflow.svg";
+import Figma from "./icons/services/cd/figma.svg";
+import Sketch from "./icons/services/cd/sketch.svg";
 export const Assets = {
   Icons: {
     AppIcon: AppIcon,
@@ -86,6 +94,16 @@ export const Assets = {
         MetaAi: MetaAi,
         Microsoft: Microsoft,
         OpenAI: OpenAI,
+      },
+      CD: {
+        Xd: Xd,
+        Farmer: Farmer,
+        VsCode: VsCode,
+        Phtoshop: Phtoshop,
+        Notion: Notion,
+        WebFlow: WebFlow,
+        Figma: Figma,
+        Sketch: Sketch,
       },
     },
   },
