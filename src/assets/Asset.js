@@ -63,6 +63,16 @@ import Notion from "./icons/services/cd/notion.svg";
 import WebFlow from "./icons/services/cd/webflow.svg";
 import Figma from "./icons/services/cd/figma.svg";
 import Sketch from "./icons/services/cd/sketch.svg";
+import Woo_C from "./icons/services/ec/woo_comerce.svg"
+import Big_Comm from "./icons/services/ec/big_commerce.svg"
+import Shopify from "./icons/services/ec/shopify.svg"
+import SalesForce from "./icons/services/ec/salesforce.svg"
+import Magneto from "./icons/services/ec/magneto.svg"
+import Autotask from "./icons/services/it_msp/autotask.svg"
+import Autotask2 from "./icons/services/it_msp/autotask2.svg"
+import NinjaOne from "./icons/services/it_msp/ninjaone.svg"
+import Veam from "./icons/services/it_msp/veam.svg"
+import ConnectWise from "./icons/services/it_msp/connectwise.svg"
 export const Assets = {
   Icons: {
     AppIcon: AppIcon,
@@ -105,6 +115,20 @@ export const Assets = {
         Figma: Figma,
         Sketch: Sketch,
       },
+      EC:{
+        Magneto:Magneto,
+        SalesForce:SalesForce,
+        Shopify:Shopify,
+        Big_Commerce:Big_Comm,
+        Woo_Commerce:Woo_C
+      },
+      ITMSP:{
+        Autotask:Autotask,
+        Autotask2:Autotask2,
+        NinjaOne:NinjaOne,
+        Veam:Veam,
+        ConnectWise:ConnectWise
+      }
     },
   },
   Images: {

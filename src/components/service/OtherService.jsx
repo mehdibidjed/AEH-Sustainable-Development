@@ -17,7 +17,7 @@ const OtherServices = ({ actual_service }) => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8">
           {services.map(
             (service, index) =>
               actual_service != service.name && (
@@ -27,7 +27,7 @@ const OtherServices = ({ actual_service }) => {
 
                   <div className="pl-8">
                     {/* Service Title */}
-                    <h3 className="text-xl md:text-2xl font-bold mb-8 leading-tight">
+                    <h3 className="text-lg md:text-xl font-bold mb-8 leading-tight">
                       {service.name}
                     </h3>
 
@@ -42,10 +42,10 @@ const OtherServices = ({ actual_service }) => {
                     <ul className="space-y-3">
                       {service.subServices.map((subService, subIndex) => (
                         <li key={subIndex} className="flex items-start gap-3">
-                          <span className="text-white/50 mt-1.5 flex-shrink-0">
+                          <span className="text-white/50  flex-shrink-0">
                             •
                           </span>
-                          <span className="text-sm md:text-base text-white/90 leading-relaxed">
+                          <span className="text-sm  text-white/90 leading-relaxed">
                             {subService}
                           </span>
                         </li>

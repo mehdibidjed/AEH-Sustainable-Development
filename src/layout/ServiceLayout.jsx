@@ -33,29 +33,98 @@ const ServiceLayout = ({ serviceData }) => {
         />
 
         {/* The tech bar */}
-        {serviceData.title == "E-Commerce Solutions" && (
-          <div className="overflow-hidden max-w-6xl  mx-auto bg-[#F5F5F5] py-5 ">
-
-              <div className="flex justify-center items-center ">
-                <div className="flex items-center justify-between gap-20   pr-20">
-                  {serviceData.icons.map((icon, index) => (
-                    <div
-                      key={`second-${index}`}
-                      className="flex items-center justify-center gap-4 text-white/80 whitespace-nowrap"
-                    >
-                      <img
-                        src={icon.icon}
-                        alt={icon.label}
-                        className="w-6 h-6 md:w-10 md:h-10"
-                      />
-                      <p className="text-xs md:text-sm font-medium">
-                        {icon.label}
-                      </p>
-                    </div>
-                  ))}
-                </div>
+        {serviceData.title == "IT managed services providers (MSP)" && (
+          <div className="overflow-hidden max-w-6xl rounded-[12px ] mx-auto bg-[#F5F5F5] py-5 ">
+            <div className="ticker-track">
+              {/* Row 1 */}
+            <div className="flex justify-center items-center pr-28">
+              <div className="flex items-center justify-between gap-28  ">
+                {serviceData.icons.map((icon, index) => (
+                  <div
+                    key={`second-${index}`}
+                    className="flex items-center justify-center gap-4 text-[#6F6F6F] whitespace-nowrap"
+                  >
+                    <img
+                      src={icon.icon}
+                      alt={icon.label}
+                      className="w-6 h-6 md:w-10 md:h-10"
+                    />
+                    <p className="text-xs md:text-sm font-Inter">
+                      {icon.label}
+                    </p>
+                  </div>
+                ))}
               </div>
+            </div>
+            {/* Row2 */}
+            <div className="flex justify-center items-center pr-28">
+              <div className="flex items-center justify-between gap-28  ">
+                {serviceData.icons.map((icon, index) => (
+                  <div
+                    key={`second-${index}`}
+                    className="flex items-center justify-center gap-4 text-[#6F6F6F] whitespace-nowrap"
+                  >
+                    <img
+                      src={icon.icon}
+                      alt={icon.label}
+                      className="w-6 h-6 md:w-10 md:h-10"
+                    />
+                    <p className="text-xs md:text-sm font-Inter">
+                      {icon.label}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
 
+            </div>
+          </div>
+        )}
+        {serviceData.title == "E-Commerce Solutions" && (
+          <div className="overflow-hidden max-w-6xl rounded-[12px] mx-auto bg-[#F5F5F5] py-5 ">
+            <div className="ticker-track">
+              {/* Row 1 */}
+            <div className="flex justify-center items-center pr-28">
+              <div className="flex items-center justify-between gap-28  ">
+                {serviceData.icons.map((icon, index) => (
+                  <div
+                    key={`second-${index}`}
+                    className="flex items-center justify-center gap-4 text-[#6F6F6F] whitespace-nowrap"
+                  >
+                    <img
+                      src={icon.icon}
+                      alt={icon.label}
+                      className="w-6 h-6 md:w-10 md:h-10"
+                    />
+                    <p className="text-xs md:text-sm font-Inter">
+                      {icon.label}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Row2 */}
+            <div className="flex justify-center items-center pr-28">
+              <div className="flex items-center justify-between gap-28  ">
+                {serviceData.icons.map((icon, index) => (
+                  <div
+                    key={`second-${index}`}
+                    className="flex items-center justify-center gap-4 text-[#6F6F6F] whitespace-nowrap"
+                  >
+                    <img
+                      src={icon.icon}
+                      alt={icon.label}
+                      className="w-6 h-6 md:w-10 md:h-10"
+                    />
+                    <p className="text-xs md:text-sm font-Inter">
+                      {icon.label}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            </div>
           </div>
         )}
         {(serviceData.title == "Machine Learning & AI" ||
@@ -106,7 +175,7 @@ const ServiceLayout = ({ serviceData }) => {
         )}
         {/* The Hero Section */}
         <div className="flex flex-col  items-center text-center mt-24 md:mt-32 mb-16 md:mb-20 px-6 md:px-8 lg:px-12">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6 leading-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-black mb-6 leading-tight">
             {serviceData.heroTitle}
           </h2>
           <p className="text-base md:text-lg text-black/70 max-w-4xl leading-relaxed">

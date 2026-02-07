@@ -162,6 +162,17 @@ export const services = [
     ],
     image: Assets.Images.Common.CreativeDesignLG,
   },
+  {
+    name: "IT managed services providers (MSP)",
+    subServices: [
+      "24/7 Proactive Monitoring & Support",
+      "Cloud Infrastructure Management",
+      "Cybersecurity & Threat Protection",
+      "Data Backup & Disaster Recovery",
+      "Network & IT Strategy Consulting",
+    ],
+    image: Assets.Images.Common.CreativeDesignLG,
+  },
 ];
 
 export const mlServiceData = {
@@ -415,24 +426,24 @@ export const EcomerceSolData = {
   cardsType: "3-3",
   icons: [
     {
-      label: "Microsoft ",
-      icon: Assets.Icons.Services.ML.Microsoft,
+      label: "WooCommerce ",
+      icon: Assets.Icons.Services.EC.Woo_Commerce,
     },
     {
-      label: "Metaai ",
-      icon: Assets.Icons.Services.ML.MetaAi,
+      label: "BigCommerce ",
+      icon: Assets.Icons.Services.EC.Big_Commerce,
     },
     {
-      label: "Leptonai ",
-      icon: Assets.Icons.Services.ML.Leptonia,
+      label: "Shopify",
+      icon: Assets.Icons.Services.EC.Shopify,
     },
     {
-      label: "AWS ",
-      icon: Assets.Icons.Services.ML.AWS,
+      label: "SalesForce",
+      icon: Assets.Icons.Services.EC.SalesForce,
     },
     {
-      label: "Apache ",
-      icon: Assets.Icons.Services.ML.Apache,
+      label: "Magneto",
+      icon: Assets.Icons.Services.EC.Magneto,
     }
   ],
   heroTitle: "Our E-Commerce Solutions",
@@ -481,32 +492,24 @@ export const ItManagedServiceProviderData = {
   cardsType: "2-2",
   icons: [
     {
-      label: "Microsoft ",
-      icon: Assets.Icons.Services.ML.Microsoft,
+      label: "Autotask",
+      icon: Assets.Icons.Services.ITMSP.Autotask,
     },
     {
-      label: "Metaai ",
-      icon: Assets.Icons.Services.ML.MetaAi,
+      label: "Autotask",
+      icon: Assets.Icons.Services.ITMSP.Autotask2,
     },
     {
-      label: "Leptonai ",
-      icon: Assets.Icons.Services.ML.Leptonia,
+      label: "NinjaOne",
+      icon: Assets.Icons.Services.ITMSP.NinjaOne,
     },
     {
-      label: "AWS ",
-      icon: Assets.Icons.Services.ML.AWS,
+      label: "Veam",
+      icon: Assets.Icons.Services.ITMSP.Veam,
     },
     {
-      label: "Apache ",
-      icon: Assets.Icons.Services.ML.Apache,
-    },
-    {
-      label: "oepani ",
-      icon: Assets.Icons.Services.ML.OpenAI,
-    },
-    {
-      label: "Hugging Face ",
-      icon: Assets.Icons.Services.ML.HaggingFace,
+      label: "ConnectWise",
+      icon: Assets.Icons.Services.ITMSP.ConnectWise,
     },
   ],
   heroTitle: "What’s included in Dataprise Fully Managed IT Services?",

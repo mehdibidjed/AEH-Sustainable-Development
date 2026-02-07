@@ -63,6 +63,17 @@ function NavBar() {
       ],
       image: Assets.Images.Common.CreativeDesignLG,
     },
+    {
+      name: "It Managed Services Provider",
+      data: [
+        "24/7 Proactive Monitoring & Support",
+        "Cloud Infrastructure Management",
+        "Cybersecurity & Threat Protection",
+        "Data Backup & Disaster Recovery",
+        "Network & IT Strategy Consulting",
+      ],
+      image: Assets.Images.Common.CreativeDesignLG,
+    },
   ];
 
   return (
@@ -244,8 +255,8 @@ function NavBar() {
 
       {/* Desktop Services Dropdown Overlay */}
       {activeDropdown === "services" && (
-        <div className="hidden md:block fixed top-20 left-0 right-0 w-full bg-[#080808] text-white z-50 border-t border-white/10 shadow-2xl animate-slideDown">
-          <div className="max-w-7xl mx-auto px-10 py-12 grid grid-cols-4 gap-8">
+        <div className="hidden md:block fixed top-20 left-0 right-0 w-full bg-[#080808] text-white z-50 border-t border-white/10 shadow-2xl animate-slideDown overflow-y-scroll">
+          <div className="max-w-7xl mx-auto px-10 py-12 grid grid-cols-4 gap-8 ">
             {servicesData.map((service) => (
               <div
                 key={service}
