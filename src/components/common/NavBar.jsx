@@ -81,11 +81,7 @@ function NavBar() {
       <div className="fixed top-0 left-0 right-0 z-[60] transition-transform duration-300 px-6 md:px-10 py-4 flex items-center justify-between bg-white shadow-sm">
         {/* Logo */}
         <div className="relative flex gap-3 items-center w-[50%] md:w-[15%] ">
-          <img
-            src={Assets.Icons.AppIcon}
-            alt="App Icon"
-            className="h-20 "
-          />
+          <img src={Assets.Icons.AppIcon} alt="App Icon" className="h-20 " />
           {/* <div className="font-Poppins text-PrimaryBlue">
             <h1 className="text-xl font-regular font-Popine leading-7 tracking-tight">
               A E H
@@ -255,29 +251,44 @@ function NavBar() {
 
       {/* Desktop Services Dropdown Overlay */}
       {activeDropdown === "services" && (
-        <div className="hidden md:block fixed top-20 left-0 right-0 w-full bg-[#080808] text-white z-50 border-t border-white/10 shadow-2xl animate-slideDown overflow-y-scroll">
-          <div className="max-w-7xl mx-auto px-10 py-12 grid grid-cols-4 gap-8 ">
-            {servicesData.map((service) => (
-              <div
-                key={service}
-                className="space-y-4 border-l border-white/10 pl-6"
-              >
-                <h3 className="text-lg font-bold text-white hover:text-blue-400 cursor-pointer">
-                  {service.name}
-                </h3>
-                <img src={service.image} className="rounded-lg mb-8" />
-                <ul className="space-y-2">
-                  {service.data.map((item) => (
-                    <li
-                      key={item}
-                      className="text-gray-400 text-sm hover:text-white transition-colors cursor-pointer"
-                    >
-                      • {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+        <div className="hidden md:block fixed top-20 left-0 right-0 w-full bg-[#080808] text-white z-50 border-t border-white/10 shadow-2xl animate-slideDown">
+          {/* Added max-height to ensure it doesn't go off-screen.
+        Added custom scrollbar styling for a "Pro" look.
+    */}
+          <div className="max-h-[85vh] overflow-y-auto scrollbar-thin scrollbar-hide sscrollbar-track-transparent hover:scrollbar-thumb-white/40">
+            <div className="max-w-7xl mx-auto px-10 py-12 grid grid-cols-4 gap-8 ">
+              {servicesData.map((service) => (
+                <div
+                  key={service.name}
+                  className="space-y-4 border-l border-white/10 pl-6"
+                >
+                  <h3 className="text-lg font-bold text-white hover:text-blue-400 cursor-pointer transition-colors">
+                    {service.name}
+                  </h3>
+
+                  {/* Added aspect-ratio to keep images consistent during scroll */}
+                  <div className="rounded-lg overflow-hidden aspect-video mb-4">
+                    <img
+                      src={service.image}
+                      className="w-full h-full object-cover"
+                      alt={service.name}
+                    />
+                  </div>
+
+                  <ul className="space-y-2">
+                    {service.data.map((item) => (
+                      <li
+                        key={item}
+                        className="text-gray-400 text-sm hover:text-white transition-colors cursor-pointer flex items-start"
+                      >
+                        <span className="mr-2">•</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       )}
