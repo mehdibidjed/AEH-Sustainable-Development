@@ -15,6 +15,8 @@ import {
 } from "../data/service_data.js";
 import CreativeDesignService from "../pages/services/CreativeDesignService.jsx";
 import SoftwareDev from "../pages/services/SoftwareDev.jsx";
+import IndustryLayout from '../layout/IndustryLayout';
+import { healthCareData } from "../data/industry_data.js";
 
 function AppRoutes() {
   return (
@@ -44,8 +46,11 @@ function AppRoutes() {
           />
           <Route
             path="it-msp-service"
-            element={<ServiceLayout serviceData={ItManagedServiceProviderData} />}
+            element={
+              <ServiceLayout serviceData={ItManagedServiceProviderData} />
+            }
           />
+        <Route  path="health-industry" element={<IndustryLayout industryData={healthCareData}/>}/>
         </Route>
       </Routes>
     </HashRouter>

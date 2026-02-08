@@ -13,7 +13,6 @@ function NavBar() {
     { id: "services", label: "Services" },
     { id: "work", label: "Our work" },
     { id: "industry", label: "Industry" },
-    { id: "blog", label: "Blog" },
     { id: "about", label: "About us" },
   ];
 

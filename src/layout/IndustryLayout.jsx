@@ -1,19 +1,23 @@
 import React from "react";
 import TechStack from "../components/industry/TechStack";
 import ConnectWithExpert from "../components/industry/ConnectWithExpert";
-import Contact from '../pages/main/ContactUs';
+import Contact from "../pages/main/ContactUs";
+import HealthcareServiceCard from "../components/industry/HealthCareServiceCard";
+import { Assets } from "../assets/Asset";
 
 function IndustryLayout({ industryData }) {
   return (
-    <div className="flex flex-col w-full   min-h-screen bg-white pt-24 md:pt-32 px-6 md:px-8 lg:px-12">
-      <section className="relative py-20 lg:py-32 px-6 bg-white overflow-hidden">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+    <div className="flex flex-col w-full   min-h-screen bg-white pt-12  ">
+      <section className="relative py-20 lg:py-32 px-6 bg-white overflow-hidden px-6 md:px-8 lg:px-12">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-7 items-start">
           {/* Left Content */}
           <div className="text-left">
-            <h1 className="text-5xl lg:text-7xl text-slate-900 mb-8 leading-tight">
-              <span className="font-light block">Pioneering</span>
-              <span className="font-instrumentSerif italic font-medium block mt-2">
-                Healthcare Innovation
+            <h1 className="text-3xl lg:text-5xl font-Inter text-slate-900 mb-8 leading-relaxed">
+              <span className="font-light block">
+                Pioneering{" "}
+                <span className="font-instrumentSerif italic font-medium  mt-2">
+                  Healthcare Innovation
+                </span>{" "}
               </span>
             </h1>
 
@@ -34,10 +38,10 @@ function IndustryLayout({ industryData }) {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <button className="px-8 py-3 bg-[#003B30] text-white rounded-full font-medium hover:bg-[#002a22] transition-colors">
+              <button className="px-8 py-3 bg-[#013934] text-white rounded-full font-medium hover:bg-[#002a22] transition-colors">
                 Get Started
               </button>
-              <button className="px-8 py-3 bg-white text-[#003B30] border border-[#003B30] rounded-full font-medium hover:bg-slate-50 transition-colors">
+              <button className="px-8 py-3 bg-white text-[#013934] border border-[#013934] rounded-full font-medium hover:bg-slate-50 transition-colors">
                 Learn More
               </button>
             </div>
@@ -46,76 +50,63 @@ function IndustryLayout({ industryData }) {
           {/* Right Image */}
           <div className="relative">
             <img
-              src={HeroImage}
+              src={industryData.heroImage}
               alt="Healthcare Innovation"
               className="w-full h-auto rounded-3xl object-cover shadow-lg"
             />
           </div>
         </div>
       </section>
-      {/*if  service .name = healthcare randr somethign else something else  */}
-      {/* if service.name = healthcassrd we render something else no  */}
-      {/* <TechStack/>  stack categories param */}
-      {/* <section className="bg-WhiteBg py-10 text-center text-black md:max-w-[80%] mx-auto space-y-8">
-        <div className="space-y-3">
-          <h6 className="uppercase text-xs">solutions</h6>
-          <h1 className="font-Inter md:text-4xl">
-            Comprehensive{" "}
-            <span className="font-instrumentSerif italic">
-              Technology Solutions,
-            </span>{" "}
-            Built for impact
-          </h1>
-          <p className="text-black opacity-70 font-Inter pt-3 px-10 ">
-            We design and build complete digital solutions that simplify
-            complexity and elevate every interaction. Driven by transparency,
-            advanced research, and skilled professionals, we work
-            collaboratively to deliver products that are intelligent, scalable,
-            and impactful.
-          </p>
-        </div>
-        <div className="flex justify-between items-center">
-          {TechSolutions.map((item, index) => (
-            <Link
-              key={index}
-              to="#"
-              className={`
-              font-inter font-medium p-3
-              ${item === "Agriculture" ? "border-b-2 border-[#06986F]" : ""}
-            `}
-            >
-              {item}
-            </Link>
-          ))}
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2  rounded-[12px] shadow-md">
-          <div className=" bg-white p-6 md:p-8 lg:p-10 flex flex-col justify-start items-start gap-10 space-y-3">
-            <h3 className="text-2xl md:text-3xl font-medium font-Inter text-black leading-tight">
-             {industry.name}
-            </h3>
-
-            <p className="text-black opacity-70  text-sm  leading-relaxed font-Inter text-start">
-              {industry.desc}
+      {industryData.title == "Pioneering Healthcare Innovation" && (
+        <HealthcareServiceCard />
+      )}
+      <section className="py-20  bg-white overflow-hidden px-6 md:px-8 lg:px-12">
+        <div className="max-w-7xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
+              Solutions We’ve Delivered
+            </h2>
+            <p className="text-slate-600 text-lg">
+              We help businesses grow by delivering impactful, user-centered
+              digital solutions
             </p>
-
-            <Link className="inline-flex items-center gap-2 text-gray-900 font-semibold text-sm hover:gap-3 transition-all duration-300 group/button w-fit">
-              View Details
-              <ChevronRight className="w-4 h-4 group-hover/button:translate-x-1 transition-transform duration-300" />
-            </Link>
           </div>
 
-          <div className="relative  md:h-auto m ">
-            <img
-              src={Industry.Image}
-              alt="AI"
-              className="w-full h-full object-cover"
-            />
+          {/* Content */}
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Card */}
+            <div className="group bg-white rounded-[12px] border border-1 border-black/50 overflow-hidden hover:shadow-lg p-2 max-w-md mx-auto lg:mx-0">
+              <div className="relative overflow-hidden rounded-xl bg-slate-100 aspect-video">
+                {/* Placeholder for Dashboard Image */}
+                <div className="absolute inset-0 flex items-center justify-center ">
+                 <img src={Assets.Images.Industries.Dashboard} alt="" />
+                </div>
+              </div>
+              <div className="p-6 font-semibold text-xl">
+                <h3 className=" font-bold text-black mb-2 leading-tight">
+                  An AI-Driven Predictive System for Early Cancer Detection and
+                  Risk Assessment
+                </h3>
+                <p className="text-black mb-6">
+                  A Comprehensive Medical Case Study
+                </p>
+                <button className="px-8 py-3 bg-[#013934] text-white rounded-full text-sm  font-Inter hover:bg-[#002a22] transition-colors">
+                  View Case Studies
+                </button>
+              </div>
+            </div>
+
+            {/* Right side spacer or additional content would go here if defined, 
+              for now keeping it as a grid to allow future expansion or centering if needed. 
+              The design showed one card, but referenced "Solutions" plural. 
+              For now matching the single card visual. */}
           </div>
         </div>
-      </section>  
- */}
+      </section>
+      <TechStack />
+
       <ConnectWithExpert />
-      <Contact/>
     </div>
   );
 }

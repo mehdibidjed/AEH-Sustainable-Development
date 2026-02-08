@@ -63,16 +63,52 @@ import Notion from "./icons/services/cd/notion.svg";
 import WebFlow from "./icons/services/cd/webflow.svg";
 import Figma from "./icons/services/cd/figma.svg";
 import Sketch from "./icons/services/cd/sketch.svg";
-import Woo_C from "./icons/services/ec/woo_comerce.svg"
-import Big_Comm from "./icons/services/ec/big_commerce.svg"
-import Shopify from "./icons/services/ec/shopify.svg"
-import SalesForce from "./icons/services/ec/salesforce.svg"
-import Magneto from "./icons/services/ec/magneto.svg"
-import Autotask from "./icons/services/it_msp/autotask.svg"
-import Autotask2 from "./icons/services/it_msp/autotask2.svg"
-import NinjaOne from "./icons/services/it_msp/ninjaone.svg"
-import Veam from "./icons/services/it_msp/veam.svg"
-import ConnectWise from "./icons/services/it_msp/connectwise.svg"
+import Woo_C from "./icons/services/ec/woo_comerce.svg";
+import Big_Comm from "./icons/services/ec/big_commerce.svg";
+import Shopify from "./icons/services/ec/shopify.svg";
+import SalesForce from "./icons/services/ec/salesforce.svg";
+import Magneto from "./icons/services/ec/magneto.svg";
+import Autotask from "./icons/services/it_msp/autotask.svg";
+import Autotask2 from "./icons/services/it_msp/autotask2.svg";
+import NinjaOne from "./icons/services/it_msp/ninjaone.svg";
+import Veam from "./icons/services/it_msp/veam.svg";
+import ConnectWise from "./icons/services/it_msp/connectwise.svg";
+import Airflow from "./icons/industries/airflow.svg";
+import AmazonS3 from "./icons/industries/amazon_s3.svg";
+import Animal from "./icons/industries/animal.svg";
+import Aws from "./icons/industries/aws.svg";
+import AzureLogo from "./icons/industries/azure-logo.svg";
+import Azure from "./icons/industries/azure.svg";
+import Bigquery from "./icons/industries/bigquery.svg";
+import Cicd from "./icons/industries/cicd.svg";
+import Cloud from "./icons/industries/cloud.svg";
+import Dbt from "./icons/industries/dbt.svg";
+import Devops from "./icons/industries/devops.svg";
+import Docker from "./icons/industries/docker.svg";
+import Eleven from "./icons/industries/eleven.svg";
+import Fastapi from "./icons/industries/fastapi.svg";
+import GoogleCloud from "./icons/industries/google_cloud.svg";
+import Graphql from "./icons/industries/graphql.svg";
+import Grpd from "./icons/industries/grpd.svg";
+import Kafka from "./icons/industries/kafka.svg";
+import Mui from "./icons/industries/mui.svg";
+import Next from "./icons/industries/next.svg";
+import Node from "./icons/industries/node.svg";
+import Pytorch from "./icons/industries/pytorch.svg";
+import React from "./icons/industries/react.svg";
+import Redis from "./icons/industries/redis.svg";
+import Redux from "./icons/industries/redux.svg";
+import Saas from "./icons/industries/saas.svg";
+import Snowflake from "./icons/industries/snowflake.svg";
+import Spark from "./icons/industries/spark.svg";
+import Tailwind from "./icons/industries/tailwind.svg";
+import Tensorflow from "./icons/industries/tensorflow.svg";
+import Trulens from "./icons/industries/trulens.svg";
+import Wandb from "./icons/industries/w&b.svg";
+import Weaviate from "./icons/industries/weaviate.svg";
+import Xgboost from "./icons/industries/xgboost.svg";
+import Moussa2 from "./images/common/moussa2.svg";
+import Dashboard from "./images/industries/dashboard.svg"
 export const Assets = {
   Icons: {
     AppIcon: AppIcon,
@@ -115,20 +151,56 @@ export const Assets = {
         Figma: Figma,
         Sketch: Sketch,
       },
-      EC:{
-        Magneto:Magneto,
-        SalesForce:SalesForce,
-        Shopify:Shopify,
-        Big_Commerce:Big_Comm,
-        Woo_Commerce:Woo_C
+      EC: {
+        Magneto: Magneto,
+        SalesForce: SalesForce,
+        Shopify: Shopify,
+        Big_Commerce: Big_Comm,
+        Woo_Commerce: Woo_C,
       },
-      ITMSP:{
-        Autotask:Autotask,
-        Autotask2:Autotask2,
-        NinjaOne:NinjaOne,
-        Veam:Veam,
-        ConnectWise:ConnectWise
-      }
+      ITMSP: {
+        Autotask: Autotask,
+        Autotask2: Autotask2,
+        NinjaOne: NinjaOne,
+        Veam: Veam,
+        ConnectWise: ConnectWise,
+      },
+    },
+    Industry: {
+      Airflow: Airflow,
+      AmazonS3: AmazonS3,
+      Animal: Animal,
+      Aws: Aws,
+      AzureLogo: AzureLogo,
+      Azure: Azure,
+      Bigquery: Bigquery,
+      Cicd: Cicd,
+      Cloud: Cloud,
+      Dbt: Dbt,
+      Devops: Devops,
+      Docker: Docker,
+      Eleven: Eleven,
+      Fastapi: Fastapi,
+      GoogleCloud: GoogleCloud,
+      Graphql: Graphql,
+      Grpd: Grpd,
+      Kafka: Kafka,
+      Mui: Mui,
+      Next: Next,
+      Node: Node,
+      Pytorch: Pytorch,
+      React: React,
+      Redis: Redis,
+      Redux: Redux,
+      Saas: Saas,
+      Snowflake: Snowflake,
+      Spark: Spark,
+      Tailwind: Tailwind,
+      Tensorflow: Tensorflow,
+      Trulens: Trulens,
+      Wandb: Wandb,
+      Weaviate: Weaviate,
+      Xgboost: Xgboost,
     },
   },
   Images: {
@@ -138,6 +210,7 @@ export const Assets = {
       CreativeDesignLG: CDLG,
       EcomerceLG: ECLG,
       Moussa: Moussa,
+      Moussa2:Moussa2
     },
     Home: {
       BG1: BG1,
@@ -187,6 +260,7 @@ export const Assets = {
     },
     Industries: {
       WomanHealthcare: WomanHC,
+      Dashboard:Dashboard
     },
   },
 };
