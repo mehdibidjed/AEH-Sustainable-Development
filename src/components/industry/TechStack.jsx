@@ -55,9 +55,8 @@ const TechStack = () => {
         {
           name: "Terraform",
           icon: Assets.Icons.Industry.Cloud,
-          name: "Devops",
-          icon: Assets.Icons.Industry.Devops,
         },
+        { name: "Devops", icon: Assets.Icons.Industry.Devops },
       ],
       colSpan: "lg:col-span-2",
     },

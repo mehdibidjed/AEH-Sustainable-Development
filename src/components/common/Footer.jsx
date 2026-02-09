@@ -12,13 +12,13 @@ function Footer() {
           <div className="space-y-6 col-span-1 sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3">
               <img
-                src={Assets.Icons.AppIcon}
+                src={Assets.Icons.Icon2}
                 alt="Logo"
-                className="h-12 w-12"
+                className="h-17  w-17"
               />
-              <div className="font-Poppins">
+              <div className="font-Poppins space-y-2">
                 <h2 className="text-2xl font-bold leading-tight">A E H</h2>
-                <p className="text-[10px] uppercase tracking-widest text-gray-400">
+                <p className="text-[10px] uppercase tracking-widest text-white">
                   sustainable development
                 </p>
               </div>

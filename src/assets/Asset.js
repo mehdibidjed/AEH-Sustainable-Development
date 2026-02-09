@@ -108,10 +108,17 @@ import Wandb from "./icons/industries/w&b.svg";
 import Weaviate from "./icons/industries/weaviate.svg";
 import Xgboost from "./icons/industries/xgboost.svg";
 import Moussa2 from "./images/common/moussa2.svg";
-import Dashboard from "./images/industries/dashboard.svg"
+import Dashboard from "./images/industries/dashboard.svg";
+import AgricultureInd from "./images/industries/agriculture.svg";
+import Intelligence from "./images/industries/intelligent_system.jpg";
+import Goverment from "./images/industries/goverment.jpg";
+import Security from "./images/industries/security.jpg";
+import Satellite from "./images/industries/satellite.jpg"
+import Icon2 from "./icons/app_icon2.svg"
 export const Assets = {
   Icons: {
     AppIcon: AppIcon,
+    Icon2:Icon2,
     Home: {
       Icon1: icon1,
       Icon2: icon2,
@@ -210,7 +217,7 @@ export const Assets = {
       CreativeDesignLG: CDLG,
       EcomerceLG: ECLG,
       Moussa: Moussa,
-      Moussa2:Moussa2
+      Moussa2: Moussa2,
     },
     Home: {
       BG1: BG1,
@@ -260,7 +267,12 @@ export const Assets = {
     },
     Industries: {
       WomanHealthcare: WomanHC,
-      Dashboard:Dashboard
+      Dashboard: Dashboard,
+      Agriculture: AgricultureInd,
+      Intelligence: Intelligence,
+      Goverment: Goverment,
+      Security: Security,
+      Satellite:Satellite
     },
   },
 };

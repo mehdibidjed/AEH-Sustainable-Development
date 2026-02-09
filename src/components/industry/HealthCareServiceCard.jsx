@@ -50,7 +50,7 @@ const services = [
 
 const HealthcareServiceCard = () => {
   return (
-    <section className="py-14 lg: px-6 bg-white px-6 md:px-8 lg:px-12">
+    <section className="py-14  bg-white px-6 md:px-8 lg:px-12">
       <div className="max-w-7xl mx-auto">
         <div className="text-center  mx-auto mb-10">
           <h2 className="text-2xl lg:text-4xl font-Inter font-medium  text-black mb-6">
