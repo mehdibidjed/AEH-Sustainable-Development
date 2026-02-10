@@ -28,7 +28,10 @@ export const healthCareData = {
         "Seamless cloud migration, infrastructure management, and optimization for platforms like AWS, Azure, or Google Cloud, enabling flexible scaling and cost efficiency.",
     },
   ],
-  moreIndustries: "",
+  moreIndustrieTitle: "Agriculture AI App",
+  moreIndustrieText:
+    "The agriculture app is designed to simplify daily farm management by bringing essential tools into one easy-to-use platform. From monitoring crop health and tracking irrigation schedules to analyzing soil data and weather conditions...",
+  moreIndustrieImage:Assets.Images.Industries.Agriculture
 };
 export const agricultureData = {
   title: "Digital Solutions for Smarter, Sustainable Agriculture",
@@ -60,6 +63,10 @@ export const agricultureData = {
         "Automated processes that reduce manual work, minimize errors, and speed up case handling.",
     },
   ],
+  moreIndustrieTitle: "Ai Healthcare App",
+  moreIndustrieText:
+    "The agriculture app is designed to simplify daily farm management by bringing essential tools into one easy-to-use platform. From monitoring crop health and tracking irrigation schedules to analyzing soil data and weather conditions...",
+  moreIndustrieImage:Assets.Images.Industries.WomanHealthcare
 };
 export const satellitesData = {
   title: "Transforming Satellite Data into Meaningful Insights",
@@ -158,7 +165,7 @@ At AEH Sustainable Development, we partner with government institutions to desig
     },
   ],
 };
-;export const intelligenceData = {
+export const intelligenceData = {
   title: "Intelligent Digital Systems for Data-Driven Decision Making",
   desc: `Organizations operating in intelligence-driven environments depend on speed, accuracy, and secure access to information. Fragmented systems and poor usability can slow critical decisions.
 At AEH Sustainable Development, we design and build intelligent platforms that centralize data, enhance analysis, and support real-time decision-making. Our solutions combine advanced data processing with intuitive interfaces, enabling users to interpret complex information quickly and confidently.`,
@@ -190,4 +197,3 @@ At AEH Sustainable Development, we design and build intelligent platforms that c
     },
   ],
 };
-

@@ -115,6 +115,7 @@ import Goverment from "./images/industries/goverment.jpg";
 import Security from "./images/industries/security.jpg";
 import Satellite from "./images/industries/satellite.jpg"
 import Icon2 from "./icons/app_icon2.svg"
+import HealthHero from "./images/case_studies/health_hero.svg"
 export const Assets = {
   Icons: {
     AppIcon: AppIcon,
@@ -274,5 +275,8 @@ export const Assets = {
       Security: Security,
       Satellite:Satellite
     },
+    CaseStudy:{
+      HealthHero:HealthHero
+    }
   },
 };
