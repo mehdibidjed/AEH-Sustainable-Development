@@ -72,19 +72,19 @@ function Home() {
   const RecentProjects = [
     {
       name: "AI-Driven ",
-      italicPart:"Healthcare Solutions  ",
+      italicPart: "Healthcare Solutions  ",
       image: Assets.Images.Home.HealthCr,
     },
     {
       name: "Redefining Vehicle Connectivity",
       image: Assets.Images.Home.Car,
-      italicPart:"Vehicle Connectivity"
+      italicPart: "Vehicle Connectivity",
     },
     {
       name: "Smart Retail Security with AI",
       image: Assets.Images.Home.SmartSec,
-      italicPart:"Retail Security"
-    }
+      italicPart: "Retail Security",
+    },
   ];
   const processes = [
     {
@@ -106,28 +106,28 @@ function Home() {
       title: "Creative Design",
       duration: "1 week",
       desc: "Our team crafts intuitive, engaging experiences that balance usability and aesthetics. Every interface is designed to feel natural, clear, and purposeful.",
-      side: "left",
+      side: "right",
     },
     {
       id: 4,
       title: "Development",
       duration: "1 week",
       desc: "We build secure, scalable, and high-performance solutions using modern technologies. Clean code, reliability, and long-term maintainability are always priorities.",
-      side: "right",
+      side: "left",
     },
     {
       id: 5,
       title: "Launch & Optimization",
       duration: "1 week",
       desc: "We deploy with confidence and continue optimizing post-launch. Ongoing support, monitoring, and improvements help your solution grow and evolve.",
-      side: "left",
+      side: "right",
     },
     {
       id: 6,
       title: "Quality Assurance",
       duration: "1 week",
       desc: "Each product is rigorously tested for performance, security, and stability to ensure stability, compliance, and a seamless user experience.",
-      side: "right",
+      side: "left",
     },
   ];
   const ProcessCard = ({ process, align }) => {
@@ -148,37 +148,37 @@ function Home() {
   };
   const { hash } = useLocation();
 
-useEffect(() => {
-  // 1. Check if this is a fresh reload (type: 'reload')
-  const isReload = window.performance
-    .getEntriesByType('navigation')
-    .map((nav) => nav.type)
-    .includes('reload');
+  useEffect(() => {
+    // 1. Check if this is a fresh reload (type: 'reload')
+    const isReload = window.performance
+      .getEntriesByType("navigation")
+      .map((nav) => nav.type)
+      .includes("reload");
 
-  // 2. Logic: If it's a reload, ignore the hash and go to top
-  if (isReload) {
-    window.scrollTo(0, 0);
-    // Optional: Remove the hash from the URL without triggering a re-render
-    window.history.replaceState(null, '', window.location.pathname);
-    return;
-  }
-
-  // 3. Normal Behavior: Scroll to hash if it exists and it's NOT a reload
-  if (hash) {
-    const id = hash.replace('#', '');
-    const element = document.getElementById(id);
-    if (element) {
-      setTimeout(() => {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
+    // 2. Logic: If it's a reload, ignore the hash and go to top
+    if (isReload) {
+      window.scrollTo(0, 0);
+      // Optional: Remove the hash from the URL without triggering a re-render
+      window.history.replaceState(null, "", window.location.pathname);
+      return;
     }
-  } else {
-    window.scrollTo(0, 0);
-  }
-}, [hash]);
-const [isChatOpen,setIsChatOpen]=useState(false);
+
+    // 3. Normal Behavior: Scroll to hash if it exists and it's NOT a reload
+    if (hash) {
+      const id = hash.replace("#", "");
+      const element = document.getElementById(id);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [hash]);
+  const [isChatOpen, setIsChatOpen] = useState(false);
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen ">
       <ChatAssistant isOpen={isChatOpen} setIsOpen={setIsChatOpen} />
       {/* Changed h-screen to min-h-screen and added pt-20 to account for Navbar height */}
       <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden px-6 py-20 md:py-32">
@@ -194,9 +194,14 @@ const [isChatOpen,setIsChatOpen]=useState(false);
         </div>
 
         {/* Content Container - Using flex-col and gap for precise vertical spacing */}
-        <div onClick={()=>{setIsChatOpen(true)}} className="relative z-10 flex flex-col items-center text-center text-white max-w-6xl mx-auto gap-10 md:gap-14 lg:gap-16">
+        <div
+          onClick={() => {
+            setIsChatOpen(true);
+          }}
+          className="relative z-10 flex flex-col items-center text-center text-white max-w-6xl mx-auto gap-10 md:gap-14 lg:gap-16"
+        >
           {/* Top Pill Button - Added glassmorphism style from image 2 */}
-          <button  className="flex items-center gap-2 bg-white/5 backdrop-blur-md border border-white/20 rounded-full text-white px-6 py-2 transition-all duration-300 hover:bg-white/10 text-sm md:text-base shadow-xl">
+          <button className="flex items-center gap-2 bg-white/5 backdrop-blur-md border border-white/20 rounded-full text-white px-6 py-2 transition-all duration-300 hover:bg-white/10 text-sm md:text-base shadow-xl">
             <span className="text-yellow-400">✦</span> What Is AEH Sustainable
             Development?
           </button>
@@ -231,7 +236,7 @@ const [isChatOpen,setIsChatOpen]=useState(false);
         </div>
       </section>
 
-      <section className="bg-WhiteBg py-10 text-center text-black md:max-w-[80%] mx-auto space-y-5">
+      <section className="bg-WhiteBg py-10 px-6 text-center text-black md:max-w-[80%] mx-auto space-y-5">
         <div className="space-y-3">
           <h6 className="uppercase text-xs">solutions</h6>
           <h1 className="font-Inter md:text-4xl">
@@ -329,7 +334,7 @@ const [isChatOpen,setIsChatOpen]=useState(false);
                         Support
                       </span>
 
-                      <span className="absolute bottom-[8%] sm:bottom-[10%] md:bottom-[8%] -right-3 sm:-right-4 md:-right-5 bg-white/5 backdrop-blur-md border border-white/10 rounded-full px-2 sm:px-3 py-0.5 sm:py-1 text-[8px] sm:text-[9px] md:text-[10px] flex items-center gap-1">
+                      <span className="absolute bottom-[8%] sm:bottom-[10%] md:bottom-[8%] -right-1 sm:-right-4 md:-right-5 bg-white/5 backdrop-blur-md border border-white/10 rounded-full px-2 sm:px-3 py-0.5 sm:py-1 text-[8px] sm:text-[9px] md:text-[10px] flex items-center gap-1">
                         <ShieldCheck className="w-2 sm:w-2.5 md:w-3" />
                         <span className="hidden sm:inline">Data</span>
                         Security
@@ -370,13 +375,13 @@ const [isChatOpen,setIsChatOpen]=useState(false);
           })}
         </div>
 
-        <div className="flex gap-4">
+        <div className="flex flex-col sm:flex-row gap-4">
           {serviceData.map((item, index) => {
             if (item.name == "Creative Design") {
               return (
                 <div
                   key={index}
-                  className="group relative w-[80%] p-5 px-6  bg-BgGreen  h-[380px] md:h-[438px] rounded-[12px]  text-white text-start flex flex-col overflow-hidden transition-all duration-500 "
+                  className="group relative sm:w-[80%] p-5 px-6  bg-BgGreen  h-[380px] md:h-[438px] rounded-[12px]  text-white text-start flex flex-col overflow-hidden transition-all duration-500 "
                 >
                   <div className="space-y-2 relative z-10">
                     <h3 className="text-xl md:text-2xl font-bold font-Popine text-white">
@@ -416,7 +421,7 @@ const [isChatOpen,setIsChatOpen]=useState(false);
                   key={index}
                   className="group relative  p-5 px-6 w-full md:col-span-1 lg:col-span-2 bg-BgGreen  rounded-[12px]  text-white text-start flex flex-col "
                 >
-                  <div className="space-y-2 relative z-10">
+                  <div className=" space-y-4 sm:space-y-2 relative z-10">
                     <h3 className="text-xl md:text-2xl font-bold font-Popine">
                       {item.name}
                     </h3>
@@ -424,7 +429,7 @@ const [isChatOpen,setIsChatOpen]=useState(false);
                   </div>
 
                   {/* IT Services Icon Grid */}
-                  <div className="relative flex-1 mt-6 sm:mt-8 flex items-end justify-center">
+                  <div className="relative flex-1 mt-12 sm:mt-8 flex items-end justify-center">
                     <div className="grid grid-cols-7 gap-3 w-full items-center">
                       {/* Colonne 1 : Normal */}
                       <div className="flex flex-col gap-3 ">
@@ -523,7 +528,7 @@ const [isChatOpen,setIsChatOpen]=useState(false);
         </div>
       </section>
 
-      <section className="bg-WhiteBg py-10 text-center text-black md:max-w-[80%] mx-auto space-y-8">
+      <section className="bg-WhiteBg py-10 px-6 text-center text-black md:max-w-[80%] mx-auto space-y-8">
         <div className="space-y-3">
           <h6 className="uppercase text-xs">solutions</h6>
           <h1 className="font-Inter md:text-4xl">
@@ -541,7 +546,7 @@ const [isChatOpen,setIsChatOpen]=useState(false);
             and impactful.
           </p>
         </div>
-        <div className="flex justify-between items-center">
+        <div className="grid grid-cols-3 sm:grid-cols-6 items-center">
           {TechSolutions.map((item, index) => (
             <Link
               key={index}
@@ -584,13 +589,16 @@ const [isChatOpen,setIsChatOpen]=useState(false);
         </div>
       </section>
 
-      <section id="work" className="bg-PrimaryGreen py-16  text-center text-white w-full mx-auto space-y-10 scroll-mt-24">
+      <section
+        id="work"
+        className="bg-PrimaryGreen py-16  text-center text-white w-full mx-auto space-y-10 scroll-mt-24"
+      >
         <div className="space-y-3">
           <h6 className="uppercase text-xs">our work</h6>
           <h1 className="font-Inter md:text-4xl">
             A Curated Selection Of Our{" "}
             <span className="font-instrumentSerif italic">Recent Projects</span>{" "}
-            And Case Studies  
+            And Case Studies
           </h1>
         </div>
         <div className="flex gap-6 overflow-x-auto pb-10 scrollbar-hide snap-x">
@@ -649,42 +657,45 @@ const [isChatOpen,setIsChatOpen]=useState(false);
         </div>
         <div className="mt-10">
           {/*Processes */}
-          <div className="relative mx-auto max-w-6xl space-y-20 mt-14">
+          <div className="relative mx-auto max-w-6xl space-y-12 md:space-y-20 mt-14 px-6 md:px-0">
             {processes.map((process) => (
               <div
                 key={process.id}
-                className="grid grid-cols-[1fr_auto_1fr] items-center"
+                /* Mobile: 1 column | Laptop: 3 columns (exactly as you had it) */
+                className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-center gap-6 md:gap-0"
               >
                 {/* LEFT CARD */}
                 {process.side === "left" ? (
-                  <div className="relative flex justify-end pr-10">
-                    <ProcessCard process={process} align="right" />
-                    {/* horizontal line */}
-                    <span className="absolute right-0 top-1/2 h-[2px] w-10 bg-emerald-900" />
+                  <div className="relative flex justify-start md:justify-end md:pr-10 order-2 md:order-1">
+                    <ProcessCard process={process} align="left" />
+                    {/* horizontal line - Hidden on mobile, visible on laptop */}
+                    <span className="hidden md:block absolute right-0 top-1/2 h-[2px] w-10 bg-emerald-900" />
                   </div>
                 ) : (
-                  <div />
+                  /* Hidden on mobile to prevent empty spaces, visible on laptop as a spacer */
+                  <div className="hidden md:block md:order-1" />
                 )}
 
                 {/* CENTER DOT */}
-                <div className="relative z-10 flex flex-col items-center">
+                <div className="relative z-10 flex flex-col items-center order-1 md:order-2">
                   <div className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-600 text-sm font-semibold text-white">
                     {process.id}
                   </div>
-                  <span className="mt-4 rounded-full bg-emerald-700 px-4 py-1 text-xs text-white">
+                  <span className="mt-2 md:mt-4 rounded-full bg-emerald-700 px-4 py-1 text-xs text-white whitespace-nowrap">
                     {process.duration}
                   </span>
                 </div>
 
                 {/* RIGHT CARD */}
                 {process.side === "right" ? (
-                  <div className="relative flex justify-start pl-10">
+                  <div className="relative flex justify-start md:pl-10 order-2 md:order-3">
                     <ProcessCard process={process} align="left" />
-                    {/* horizontal line */}
-                    <span className="absolute left-0 top-1/2 h-[2px] w-10 bg-emerald-900" />
+                    {/* horizontal line - Hidden on mobile, visible on laptop */}
+                    <span className="hidden md:block absolute left-0 top-1/2 h-[2px] w-10 bg-emerald-900" />
                   </div>
                 ) : (
-                  <div />
+                  /* Hidden on mobile, visible on laptop as a spacer */
+                  <div className="hidden md:block md:order-3" />
                 )}
               </div>
             ))}
@@ -733,7 +744,7 @@ const [isChatOpen,setIsChatOpen]=useState(false);
         </div>
       </section>
 
-      <section className="bg-YellowBg py-16 px-6 md:pl-16 pr-0   text-PrimaryGreen">
+      <section className="bg-YellowBg py-16 px-6 md:pl-16    text-PrimaryGreen">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Left Content Side */}
@@ -783,7 +794,7 @@ const [isChatOpen,setIsChatOpen]=useState(false);
         </div>
       </section>
 
-      <section className="bg-white py-12 px-3 md:px-10">
+      <section className="bg-white  sm:py-12 px-3 md:px-10">
         <div className="max-w-8xl mx-auto">
           <div className="relative group overflow-hidden rounded-[12px] cursor-pointer">
             {/* Main Image Container */}
@@ -796,20 +807,20 @@ const [isChatOpen,setIsChatOpen]=useState(false);
             </div>
 
             {/* Content Overlay */}
-            <div className="absolute inset-0 flex flex-col justify-end  md:px-10 py-14 space-y-4">
-              <h2 className="text-white text-xl md:text-3xl lg:text-5xl font-Inter max-w-2xl leading-relaxed">
+            <div className="absolute top-28 inset-0  flex flex-col justify-end px-10 py-6 sm:py-20  space-y-2 sm:space-y-4">
+              <h2 className="text-white text-lg md:text-3xl lg:text-5xl font-Inter max-w-2xl leading-relaxed">
                 Intelligent Cancer Data <br /> Preservation
               </h2>
 
-              <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-                <p className="text-white/80 text-sm md:text-md max-w-lg font-Popine ">
+              <div className="flex flex-col md:flex-row md:items-end justify-between gap-2 sm:gap-6">
+                <p className="text-white/80 text-xs md:text-md max-w-lg font-Popine ">
                   Leveraging advanced AI algorithms, our platform seamlessly
                   captures, organizes, and preserves vital cancer patient
                   information across multiple touchpoints.
                 </p>
 
                 <button className="flex items-center gap-2 text-white border-b border-[#931145] pb-1 hover:border-white transition-all group/btn self-start md:self-auto">
-                  <span className="text-sm font-semibold tracking-wider">
+                  <span className="text-xs font-semibold tracking-wider">
                     View Case Study
                   </span>
                   <svg
@@ -829,7 +840,7 @@ const [isChatOpen,setIsChatOpen]=useState(false);
           </div>
         </div>
       </section>
-      
+
       <section className="bg-white   pt-10 px-3 md:px-10">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
@@ -899,7 +910,6 @@ const [isChatOpen,setIsChatOpen]=useState(false);
           </div>
         </div>
       </section>
-
     </div>
   );
 }

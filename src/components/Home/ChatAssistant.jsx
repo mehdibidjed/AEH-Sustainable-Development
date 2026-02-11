@@ -47,9 +47,9 @@ const ChatAssistant = ({ isOpen, setIsOpen }) => {
       {!isOpen && (
         <button
           onClick={toggleChat}
-          className="relative bg-SecondaryBlue p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center border border-white/20"
+          className="relative bg-SecondaryBlue p-4  rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center border border-white/20"
         >
-          <Sparkles className="w-8 h-8 text-white" />
+          <Sparkles className="w-5 h-5 sm:w-8 sm:h-8 text-white" />
         </button>
       )}
 
@@ -71,7 +71,7 @@ const ChatAssistant = ({ isOpen, setIsOpen }) => {
             {messages.map((msg, i) => (
               <div key={i} className={`flex gap-2 ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                 {msg.role === 'assistant' && (
-                  <div className="w-8 h-8 flex-shrink-0 bg-white rounded-full border border-gray-100 p-1">
+                  <div className="w-8 h-8 flex-shrink-0  ">
                     <img src={Assets.Icons.Icon2} alt="AI" className="w-full h-full object-contain" />
                   </div>
                 )}
