@@ -10,10 +10,10 @@ function NavBar() {
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
 
   const navItems = [
-    { id: "services", label: "Services" },
-    { id: "work", label: "Our work" },
-    { id: "industry", label: "Industry" },
-    { id: "about", label: "About us" },
+    { id: "services", label: "Services", path: "/services" },
+    { id: "work", label: "Our work", path: "/#work" }, // Add the # hash here
+    { id: "industry", label: "Industry", path: "/industry" },
+    { id: "about", label: "About us", path: "/about" },
   ];
 
   const servicesData = [
@@ -74,7 +74,21 @@ function NavBar() {
       image: Assets.Images.Common.CreativeDesignLG,
     },
   ];
-
+  const handleNavClick = (path, id) => {
+    setIsMobileMenuOpen(false);
+    setActiveDropdown(null);
+  
+    // If the target is a hash on the current page
+    if (path.startsWith("/#")) {
+      const targetId = path.replace("/#", "");
+      const element = document.getElementById(targetId);
+      
+      if (element) {
+        // Force smooth scroll even if hash hasn't "changed" in state
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
   return (
     <>
       <div className="fixed top-0 left-0 right-0 z-[60] transition-transform duration-300 px-6 md:px-10 py-4 flex items-center justify-between bg-white shadow-sm">
@@ -97,7 +111,10 @@ function NavBar() {
             <div
               key={item.id}
               className="relative"
-              onClick={() => {
+              onClick={(e) => {
+                if (item.label == "Our work") {
+                  handleNavClick(item.path,item.id);
+                }
                 if (item.id == "services" && activeDropdown == null) {
                   setActiveDropdown(item.id);
                 } else {
@@ -105,7 +122,8 @@ function NavBar() {
                 }
               }}
             >
-              <button
+              <Link
+                to={item.path}
                 className={`py-2 px-3 text-black hover:text-blue-600 transition-colors font-medium flex items-center gap-1`}
               >
                 {item.label}
@@ -116,7 +134,7 @@ function NavBar() {
                     }`}
                   />
                 )}
-              </button>
+              </Link>
             </div>
           ))}
         </nav>

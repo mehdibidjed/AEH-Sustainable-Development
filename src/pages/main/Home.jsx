@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Assets } from "../../assets/Asset";
 import {
   ArrowRight,
@@ -16,8 +16,9 @@ import {
   Users,
   Workflow,
 } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import ContactSection from "../../components/common/ContactSection";
+import ChatAssistant from "../../components/Home/ChatAssistant";
 function Home() {
   const [openIndex, setOpenIndex] = useState(0);
   const features = [
@@ -70,40 +71,35 @@ function Home() {
   ];
   const RecentProjects = [
     {
-      name: "AI-Driven Healthcare Solutions",
+      name: "AI-Driven ",
+      italicPart:"Healthcare Solutions  ",
       image: Assets.Images.Home.HealthCr,
     },
     {
-      name: "Smart Retail Security with AI",
-      image: Assets.Images.Home.SmartSec,
+      name: "Redefining Vehicle Connectivity",
+      image: Assets.Images.Home.Car,
+      italicPart:"Vehicle Connectivity"
     },
     {
       name: "Smart Retail Security with AI",
       image: Assets.Images.Home.SmartSec,
-    },
-    {
-      name: "Smart Retail Security with AI",
-      image: Assets.Images.Home.SmartSec,
-    },
-    {
-      name: "Smart Retail Security with AI",
-      image: Assets.Images.Home.SmartSec,
-    },
+      italicPart:"Retail Security"
+    }
   ];
   const processes = [
-    {
-      id: 2,
-      title: "Planning & Architecture",
-      duration: "1 week",
-      desc: "We translate insights into structured plans, workflows, and system architecture. Every solution is thoughtfully designed to fit real needs and scale efficiently.",
-      side: "left",
-    },
     {
       id: 1,
       title: "Strategy & Research",
       duration: "1 week",
       desc: "We start by understanding your goals, challenges, and constraints. Through research and stakeholder alignment, we define a clear direction that turns complexity into opportunity.",
       side: "right",
+    },
+    {
+      id: 2,
+      title: "Planning & Architecture",
+      duration: "1 week",
+      desc: "We translate insights into structured plans, workflows, and system architecture. Every solution is thoughtfully designed to fit real needs and scale efficiently.",
+      side: "left",
     },
     {
       id: 3,
@@ -150,9 +146,40 @@ function Home() {
       </div>
     );
   };
+  const { hash } = useLocation();
 
+useEffect(() => {
+  // 1. Check if this is a fresh reload (type: 'reload')
+  const isReload = window.performance
+    .getEntriesByType('navigation')
+    .map((nav) => nav.type)
+    .includes('reload');
+
+  // 2. Logic: If it's a reload, ignore the hash and go to top
+  if (isReload) {
+    window.scrollTo(0, 0);
+    // Optional: Remove the hash from the URL without triggering a re-render
+    window.history.replaceState(null, '', window.location.pathname);
+    return;
+  }
+
+  // 3. Normal Behavior: Scroll to hash if it exists and it's NOT a reload
+  if (hash) {
+    const id = hash.replace('#', '');
+    const element = document.getElementById(id);
+    if (element) {
+      setTimeout(() => {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    }
+  } else {
+    window.scrollTo(0, 0);
+  }
+}, [hash]);
+const [isChatOpen,setIsChatOpen]=useState(false);
   return (
     <div className="min-h-screen">
+      <ChatAssistant isOpen={isChatOpen} setIsOpen={setIsChatOpen} />
       {/* Changed h-screen to min-h-screen and added pt-20 to account for Navbar height */}
       <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden px-6 py-20 md:py-32">
         {/* Background Layer */}
@@ -167,9 +194,9 @@ function Home() {
         </div>
 
         {/* Content Container - Using flex-col and gap for precise vertical spacing */}
-        <div className="relative z-10 flex flex-col items-center text-center text-white max-w-6xl mx-auto gap-10 md:gap-14 lg:gap-16">
+        <div onClick={()=>{setIsChatOpen(true)}} className="relative z-10 flex flex-col items-center text-center text-white max-w-6xl mx-auto gap-10 md:gap-14 lg:gap-16">
           {/* Top Pill Button - Added glassmorphism style from image 2 */}
-          <button className="flex items-center gap-2 bg-white/5 backdrop-blur-md border border-white/20 rounded-full text-white px-6 py-2 transition-all duration-300 hover:bg-white/10 text-sm md:text-base shadow-xl">
+          <button  className="flex items-center gap-2 bg-white/5 backdrop-blur-md border border-white/20 rounded-full text-white px-6 py-2 transition-all duration-300 hover:bg-white/10 text-sm md:text-base shadow-xl">
             <span className="text-yellow-400">✦</span> What Is AEH Sustainable
             Development?
           </button>
@@ -557,20 +584,20 @@ function Home() {
         </div>
       </section>
 
-      <section className="bg-PrimaryGreen py-16  text-center text-white w-full mx-auto space-y-10">
+      <section id="work" className="bg-PrimaryGreen py-16  text-center text-white w-full mx-auto space-y-10 scroll-mt-24">
         <div className="space-y-3">
           <h6 className="uppercase text-xs">our work</h6>
           <h1 className="font-Inter md:text-4xl">
             A Curated Selection Of Our{" "}
             <span className="font-instrumentSerif italic">Recent Projects</span>{" "}
-            And Case Studies
+            And Case Studies  
           </h1>
         </div>
         <div className="flex gap-6 overflow-x-auto pb-10 scrollbar-hide snap-x">
           {RecentProjects.map((project, index) => (
             <div
               key={index}
-              className="group relative flex-shrink-0 w-[85vw] md:w-[450px] snap-start cursor-pointer transition-all duration-500"
+              className="group relative flex-shrink-0 w-[85vw] md:w-[400px] snap-start cursor-pointer transition-all duration-500"
             >
               {/* Inner Container for Border Effect */}
               <div className="rounded-2xl p-4 border border-transparent group-hover:border-white/30 transition-all duration-500">
@@ -586,9 +613,8 @@ function Home() {
                 {/* Project Title */}
                 <div className="space-y-3 text-start">
                   <h3 className="text-white text-xl md:text-2xl font-medium leading-tight">
-                    {/* Logic to italicize part of the name based on your image */}
                     {project.name.split(project.italicPart)[0]}
-                    <span className="font-Instrument_Serif italic font-light">
+                    <span className="font-Instrument_Serif italic">
                       {project.italicPart}
                     </span>
                     {project.name.split(project.italicPart)[1]}

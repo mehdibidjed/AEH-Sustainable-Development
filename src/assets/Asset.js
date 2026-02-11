@@ -115,7 +115,8 @@ import Goverment from "./images/industries/goverment.jpg";
 import Security from "./images/industries/security.jpg";
 import Satellite from "./images/industries/satellite.jpg"
 import Icon2 from "./icons/app_icon2.svg"
-import HealthHero from "./images/case_studies/health_hero.svg"
+import HealthHero from "./images/case_studies/health_hero.svg";
+import Car from "./images/home/car.jpg"
 export const Assets = {
   Icons: {
     AppIcon: AppIcon,
@@ -219,6 +220,7 @@ export const Assets = {
       EcomerceLG: ECLG,
       Moussa: Moussa,
       Moussa2: Moussa2,
+
     },
     Home: {
       BG1: BG1,
@@ -236,6 +238,7 @@ export const Assets = {
       ExceptionalTalent: ExpT,
       CancerDetection: CD,
       Hardware: HD,
+      Car:Car
     },
     About: {
       Men1: Men1,
