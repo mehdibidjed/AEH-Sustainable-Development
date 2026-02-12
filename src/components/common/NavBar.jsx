@@ -341,21 +341,22 @@ function NavBar() {
       {/* Desktop Services Dropdown Overlay */}
       {activeDropdown === "services" && (
         <div className="hidden md:block fixed top-20 left-0 right-0 w-full bg-[#080808] text-white z-50 border-t border-white/10 shadow-2xl animate-slideDown">
-            <div className="max-h-[85vh] overflow-y-auto scrollbar-thin scrollbar-hide sscrollbar-track-transparent hover:scrollbar-thumb-white/40">
+          <div className="max-h-[85vh] overflow-y-auto scrollbar-thin">
             <div className="max-w-7xl mx-auto px-10 py-12 grid grid-cols-4 gap-8 ">
               {servicesData.map((service) => (
                 <div
                   key={service.name}
                   className="space-y-4 border-l border-white/10 pl-6"
                 >
+                  {/* Title Link */}
                   <Link
                     to={service.path}
+                    onClick={() => setActiveDropdown(null)} // Closes the dropdown
                     className="text-lg font-bold text-white hover:text-blue-400 cursor-pointer transition-colors"
                   >
                     {service.name}
                   </Link>
 
-                  {/* Added aspect-ratio to keep images consistent during scroll */}
                   <div className="rounded-lg overflow-hidden aspect-video mb-4">
                     <img
                       src={service.image}
@@ -366,12 +367,18 @@ function NavBar() {
 
                   <ul className="space-y-2">
                     {service.data.map((item) => (
-                      <li
-                        key={item}
-                        className="text-gray-400 text-sm hover:text-white transition-colors cursor-pointer flex items-start"
-                      >
-                        <span className="mr-2">•</span>
-                        <span>{item}</span>
+                      <li key={item}>
+                        <Link
+                          // Using a dynamic path generator if sub-item paths aren't in your data
+                          to={`/services/${item
+                            .toLowerCase()
+                            .replace(/\s+/g, "-")}`}
+                          onClick={() => setActiveDropdown(null)} // Closes the dropdown
+                          className="text-gray-400 text-sm hover:text-white transition-colors cursor-pointer flex items-start"
+                        >
+                          <span className="mr-2">•</span>
+                          <span>{item}</span>
+                        </Link>
                       </li>
                     ))}
                   </ul>

@@ -15,12 +15,21 @@ import {
 } from "../data/service_data.js";
 import CreativeDesignService from "../pages/services/CreativeDesignService.jsx";
 import SoftwareDev from "../pages/services/SoftwareDev.jsx";
-import IndustryLayout from '../layout/IndustryLayout';
-import { agricultureData, healthCareData, intelligenceData, satellitesData, securityData } from "../data/industry_data.js";
+import IndustryLayout from "../layout/IndustryLayout";
+import {
+  agricultureData,
+  govermentData,
+  healthCareData,
+  intelligenceData,
+  satellitesData,
+  securityData,
+} from "../data/industry_data.js";
 import HealthCare from "../pages/industries/HealthCare.jsx";
 import Ehealth from "../pages/caseStudies/Ehealth.jsx";
 import SmartCars from "../pages/caseStudies/SmartCars.jsx";
 import Security from "../pages/caseStudies/Security.jsx";
+import SecuritySec from "../pages/industries/Security.jsx";
+import Intellignece from "../pages/industries/Intellignece.jsx";
 
 function AppRoutes() {
   return (
@@ -37,33 +46,50 @@ function AppRoutes() {
           </Route>
           <Route element={<ServiceLayout serviceData={creativeDesignData} />}>
             <Route
-              path="/creative-design-service"
+              path="/services/creative-design"
               element={<CreativeDesignService />}
             />
           </Route>
           <Route element={<ServiceLayout serviceData={SoftwareDevData} />}>
-            <Route path="softdev-service" element={<SoftwareDev />} />
+            <Route
+              path="/services/software-development"
+              element={<SoftwareDev />}
+            />
           </Route>
           <Route
-            path="ecomerce-service"
+            path="/services/e-commerce"
             element={<ServiceLayout serviceData={EcomerceSolData} />}
           />
           <Route
-            path="it-msp-service"
+            path="/services/it-msprovider"
             element={
               <ServiceLayout serviceData={ItManagedServiceProviderData} />
             }
           />
-        <Route   element={<IndustryLayout industryData={healthCareData}/>}>
-        <Route path="health-industry" element={<HealthCare />} />
-        </Route>
-        <Route path="agriculture-industry" element ={<IndustryLayout industryData={agricultureData}/>}/>
-        <Route path="satellite-industry" element ={<IndustryLayout industryData={satellitesData}/>}/>
-        <Route path="security-industry" element ={<IndustryLayout industryData={securityData}/>}/>
-        <Route path="intelligence-industry" element ={<IndustryLayout industryData={intelligenceData}/>}/>
-        <Route path="health-case-study" element={<Ehealth/>}/>
-        <Route path="smart-car-study" element={<SmartCars/>}/>
-        <Route path="security-study" element={<Security/>}/>
+          <Route element={<IndustryLayout industryData={healthCareData} />}>
+            <Route path="/industry/healthcare" element={<HealthCare />} />
+          </Route>
+          <Route
+            path="/industry/agriculture"
+            element={<IndustryLayout industryData={agricultureData} />}
+          />
+          <Route
+            path="/industry/satellite"
+            element={<IndustryLayout industryData={satellitesData} />}
+          />
+          <Route element={<IndustryLayout industryData={securityData} />}>
+            <Route path="/industry/law-immigration" element={<SecuritySec />} />
+          </Route>
+          <Route
+            path="/industry/government"
+            element={<IndustryLayout industryData={govermentData} />}
+          />
+          <Route element={<IndustryLayout industryData={intelligenceData} />}>
+            <Route path="/industry/intelligence" element={<Intellignece />} />
+          </Route>
+          <Route path="case-study/healthcare" element={<Ehealth />} />
+          <Route path="case-study/smartcar" element={<SmartCars />} />
+          <Route path="case-study/security" element={<Security />} />
         </Route>
       </Routes>
     </HashRouter>

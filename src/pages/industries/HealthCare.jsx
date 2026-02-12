@@ -1,5 +1,6 @@
 import React from 'react'
 import { Assets } from '../../assets/Asset'
+import { Link } from 'react-router-dom'
 function HealthCare() {
 
   return (
@@ -34,9 +35,9 @@ function HealthCare() {
                 <p className="text-black mb-6">
                   A Comprehensive Medical Case Study
                 </p>
-                <button className="px-8 py-3 bg-[#013934] text-white rounded-full text-sm  font-Inter hover:bg-[#002a22] transition-colors">
+                <Link to="/case-study/healthcare" className="px-8 py-3 bg-[#013934] text-white rounded-full text-sm  font-Inter hover:bg-[#002a22] transition-colors">
                   View Case Studies
-                </button>
+                </Link>
               </div>
             </div>
 
