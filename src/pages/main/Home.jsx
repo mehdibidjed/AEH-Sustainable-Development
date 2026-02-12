@@ -194,18 +194,18 @@ function Home() {
         </div>
 
         {/* Content Container - Using flex-col and gap for precise vertical spacing */}
-        <div
-          onClick={() => {
-            setIsChatOpen(true);
-          }}
-          className="relative z-10 flex flex-col items-center text-center text-white max-w-6xl mx-auto gap-10 md:gap-14 lg:gap-16"
-        >
+        <div className="relative z-10 flex flex-col items-center text-center text-white max-w-6xl mx-auto gap-10 md:gap-14 lg:gap-16">
           {/* Top Pill Button - Added glassmorphism style from image 2 */}
-          <button className="flex items-center gap-2 bg-white/5 backdrop-blur-md border border-white/20 rounded-full text-white px-6 py-2 transition-all duration-300 hover:bg-white/10 text-sm md:text-base shadow-xl">
+          <button
+            className="flex items-center gap-2 bg-white/5 backdrop-blur-md border border-white/20 rounded-full text-white px-6 py-2 transition-all duration-300 hover:bg-white/10 text-sm md:text-base shadow-xl"
+            onClick={() => {
+              setIsChatOpen(true);
+            }}
+          >
             <span className="text-yellow-400">✦</span> What Is AEH Sustainable
             Development?
           </button>
-
+            
           {/* Title and Paragraph Group */}
           <div className="space-y-8 md:space-y-10">
             <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold font-Popine leading-[1.1]">
@@ -812,7 +812,7 @@ function Home() {
                 Intelligent Cancer Data <br /> Preservation
               </h2>
 
-              <div className="flex flex-col md:flex-row md:items-end justify-between gap-2 sm:gap-6">
+              <div className="flex flex-col md:flex-row md:items-end justify-between gap-2   sm:gap-6">
                 <p className="text-white/80 text-xs md:text-md max-w-lg font-Popine ">
                   Leveraging advanced AI algorithms, our platform seamlessly
                   captures, organizes, and preserves vital cancer patient

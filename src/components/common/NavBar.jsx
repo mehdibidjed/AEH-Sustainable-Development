@@ -8,11 +8,21 @@ function NavBar() {
   const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const [industryDropdownOpen, setIndustryDropdownOpen] = useState(false);
+  const [mobileIndustryOpen, setMobileIndustryOpen] = useState(false);
 
+  const industryListData = [
+    "Agriculture",
+    "Satellite",
+    "Law & Immigration",
+    "Healthcare",
+    "Government",
+    "Intelligence",
+  ];
   const navItems = [
-    { id: "services", label: "Services", path: "/services" },
+    { id: "services", label: "Services", path: "" },
     { id: "work", label: "Our work", path: "/#work" }, // Add the # hash here
-    { id: "industry", label: "Industry", path: "/industry" },
+    { id: "industry", label: "Industry", path: "  " },
     { id: "about", label: "About us", path: "/about" },
   ];
 
@@ -27,6 +37,7 @@ function NavBar() {
         "AI Integration in Digital Products",
       ],
       image: Assets.Images.Common.MachineLearningLG,
+      path: "/services/machine-learning",
     },
     {
       name: "Software Development",
@@ -38,6 +49,7 @@ function NavBar() {
         "System Architecture & Maintenance",
       ],
       image: Assets.Images.Common.SoftwareDevLG,
+      path: "/services/software-development",
     },
     {
       name: "E-Commerce Solutions",
@@ -49,6 +61,7 @@ function NavBar() {
         "Performance & Conversion Optimizations",
       ],
       image: Assets.Images.Common.EcomerceLG,
+      path: "/services/e-commerce",
     },
     {
       name: "Crearive Desing",
@@ -61,6 +74,7 @@ function NavBar() {
         "Branding",
       ],
       image: Assets.Images.Common.CreativeDesignLG,
+      path: "/services/creative-design",
     },
     {
       name: "It Managed Services Provider",
@@ -72,17 +86,18 @@ function NavBar() {
         "Network & IT Strategy Consulting",
       ],
       image: Assets.Images.Common.CreativeDesignLG,
+      path: "/services/it-msprovider",
     },
   ];
   const handleNavClick = (path, id) => {
     setIsMobileMenuOpen(false);
     setActiveDropdown(null);
-  
+
     // If the target is a hash on the current page
     if (path.startsWith("/#")) {
       const targetId = path.replace("/#", "");
       const element = document.getElementById(targetId);
-      
+
       if (element) {
         // Force smooth scroll even if hash hasn't "changed" in state
         element.scrollIntoView({ behavior: "smooth" });
@@ -95,14 +110,6 @@ function NavBar() {
         {/* Logo */}
         <div className="relative flex gap-3 items-center w-[50%] md:w-[15%] ">
           <img src={Assets.Icons.AppIcon} alt="App Icon" className="h-20 " />
-          {/* <div className="font-Poppins text-PrimaryBlue">
-            <h1 className="text-xl font-regular font-Popine leading-7 tracking-tight">
-              A E H
-            </h1>
-            <p className="text-[10px]  tracking-tighter">
-              sustainable development
-            </p>
-          </div> */}
         </div>
 
         {/* Desktop Nav */}
@@ -112,29 +119,68 @@ function NavBar() {
               key={item.id}
               className="relative"
               onClick={(e) => {
-                if (item.label == "Our work") {
-                  handleNavClick(item.path,item.id);
+                // Prevent clicking the "label" from navigating if it's a dropdown
+                if (item.id === "services" || item.id === "industry") {
+                  e.preventDefault();
                 }
-                if (item.id == "services" && activeDropdown == null) {
-                  setActiveDropdown(item.id);
+
+                if (item.label === "Our work") {
+                  handleNavClick(item.path, item.id);
+                }
+
+                if (item.id === "services") {
+                  // Toggle logic: if already open, close it.
+                  setActiveDropdown(
+                    activeDropdown === "services" ? null : "services"
+                  );
+                  setIndustryDropdownOpen(false);
+                } else if (item.id === "industry") {
+                  setIndustryDropdownOpen(!industryDropdownOpen);
+                  setActiveDropdown(null);
                 } else {
                   setActiveDropdown(null);
+                  setIndustryDropdownOpen(false);
                 }
               }}
             >
-              <Link
-                to={item.path}
-                className={`py-2 px-3 text-black hover:text-blue-600 transition-colors font-medium flex items-center gap-1`}
-              >
+              {/* Change: Use 'div' or button for triggers that shouldn't navigate.
+         If you must use Link, set to="/#" to stay on page.
+      */}
+              <div className="py-2 px-3 text-black hover:text-blue-600 transition-colors font-medium flex items-center gap-1 cursor-pointer">
                 {item.label}
-                {item.id === "services" && (
+                {(item.id === "services" || item.id === "industry") && (
                   <ChevronDown
                     className={`w-4 h-4 transition-transform ${
-                      activeDropdown ? "rotate-180" : ""
+                      (item.id === "services" && activeDropdown) ||
+                      (item.id === "industry" && industryDropdownOpen)
+                        ? "rotate-180"
+                        : ""
                     }`}
                   />
                 )}
-              </Link>
+              </div>
+
+              {/* Industry Dropdown */}
+              {item.id === "industry" && industryDropdownOpen && (
+                <div className="absolute top-10 left-0 bg-[#080808] text-white rounded-lg py-3 w-52 shadow-2xl z-[70] border border-white/10 animate-fadeIn">
+                  {industryListData.map((name) => (
+                    <Link
+                      key={name}
+                      to={`/industry/${name
+                        .toLowerCase()
+                        .replace(/ & /g, "-")
+                        .replace(/\s+/g, "-")}`}
+                      className="block px-6 py-3 hover:bg-blue-600 cursor-pointer text-[15px] transition-colors"
+                      onClick={(e) => {
+                        e.stopPropagation(); // Stop click from bubbling back to parent div
+                        setIndustryDropdownOpen(false);
+                      }}
+                    >
+                      {name}
+                    </Link>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
         </nav>
@@ -191,34 +237,42 @@ function NavBar() {
       {/* MOBILE MENU OVERLAY (The "Accenture" Style) */}
       <div
         className={`fixed inset-0 bg-[#080808] z-50 transform transition-transform duration-500 ease-in-out ${
-          isMobileMenuOpen ? "translate-x-0" : "translate-x-full duration-500"
+          isMobileMenuOpen ? "translate-x-0" : "translate-x-full duration-700"
         } md:hidden overflow-y-auto`}
       >
-        <div className="pt-24 px-8 pb-10">
+        <div className="pt-32 px-8 pb-10">
           <div className="flex flex-col space-y-6">
             {navItems.map((item) => (
               <div key={item.id} className="border-b border-white/10 pb-4">
                 <div
                   className="flex justify-between items-center text-white text-2xl font-semibold py-2"
-                  onClick={() =>
-                    item.id === "services" &&
-                    setMobileServicesOpen(!mobileServicesOpen)
-                  }
+                  onClick={() => {
+                    if (item.id === "services")
+                      setMobileServicesOpen(!mobileServicesOpen);
+                    if (item.id === "industry")
+                      setMobileIndustryOpen(!mobileIndustryOpen);
+                  }}
                 >
-                  <Link
-                    to={`/${item.id}`}
-                    onClick={() =>
-                      item.id !== "services" && setIsMobileMenuOpen(false)
-                    }
-                  >
-                    {item.label}
-                  </Link>
-                  {item.id === "services" &&
-                    (mobileServicesOpen ? (
-                      <Minus className="text-blue-400" />
-                    ) : (
-                      <Plus />
-                    ))}
+                  {item.id === "services" || item.id === "industry" ? (
+                    <span>{item.label}</span>
+                  ) : (
+                    <Link
+                      to={item.path}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                  )}
+                  {(item.id === "services" || item.id === "industry") && (
+                    <div className="text-blue-400">
+                      {(item.id === "services" && mobileServicesOpen) ||
+                      (item.id === "industry" && mobileIndustryOpen) ? (
+                        <Minus />
+                      ) : (
+                        <Plus />
+                      )}
+                    </div>
+                  )}
                 </div>
 
                 {/* Mobile Sub-menu for Services */}
@@ -241,6 +295,24 @@ function NavBar() {
                           ))}
                         </ul>
                       </div>
+                    ))}
+                  </div>
+                )}
+                {/* Mobile Sub-menu for Industry */}
+                {item.id === "industry" && mobileIndustryOpen && (
+                  <div className="mt-4 ml-4 flex flex-col space-y-4 animate-fadeIn">
+                    {industryListData.map((name) => (
+                      <Link
+                        key={name}
+                        to={`/industry/${name
+                          .toLowerCase()
+                          .replace(/ & /g, "-")
+                          .replace(/\s+/g, "-")}`}
+                        className="text-gray-400 text-lg hover:text-white py-1"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                      >
+                        {name}
+                      </Link>
                     ))}
                   </div>
                 )}
@@ -269,19 +341,19 @@ function NavBar() {
       {/* Desktop Services Dropdown Overlay */}
       {activeDropdown === "services" && (
         <div className="hidden md:block fixed top-20 left-0 right-0 w-full bg-[#080808] text-white z-50 border-t border-white/10 shadow-2xl animate-slideDown">
-          {/* Added max-height to ensure it doesn't go off-screen.
-        Added custom scrollbar styling for a "Pro" look.
-    */}
-          <div className="max-h-[85vh] overflow-y-auto scrollbar-thin scrollbar-hide sscrollbar-track-transparent hover:scrollbar-thumb-white/40">
+            <div className="max-h-[85vh] overflow-y-auto scrollbar-thin scrollbar-hide sscrollbar-track-transparent hover:scrollbar-thumb-white/40">
             <div className="max-w-7xl mx-auto px-10 py-12 grid grid-cols-4 gap-8 ">
               {servicesData.map((service) => (
                 <div
                   key={service.name}
                   className="space-y-4 border-l border-white/10 pl-6"
                 >
-                  <h3 className="text-lg font-bold text-white hover:text-blue-400 cursor-pointer transition-colors">
+                  <Link
+                    to={service.path}
+                    className="text-lg font-bold text-white hover:text-blue-400 cursor-pointer transition-colors"
+                  >
                     {service.name}
-                  </h3>
+                  </Link>
 
                   {/* Added aspect-ratio to keep images consistent during scroll */}
                   <div className="rounded-lg overflow-hidden aspect-video mb-4">

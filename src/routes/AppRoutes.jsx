@@ -19,6 +19,8 @@ import IndustryLayout from '../layout/IndustryLayout';
 import { agricultureData, healthCareData, intelligenceData, satellitesData, securityData } from "../data/industry_data.js";
 import HealthCare from "../pages/industries/HealthCare.jsx";
 import Ehealth from "../pages/caseStudies/Ehealth.jsx";
+import SmartCars from "../pages/caseStudies/SmartCars.jsx";
+import Security from "../pages/caseStudies/Security.jsx";
 
 function AppRoutes() {
   return (
@@ -31,7 +33,7 @@ function AppRoutes() {
           <Route path="/contact" element={<Contact />} />
 
           <Route element={<ServiceLayout serviceData={mlServiceData} />}>
-            <Route path="/ml-service" element={<MlService />} />
+            <Route path="/services/machine-learning" element={<MlService />} />
           </Route>
           <Route element={<ServiceLayout serviceData={creativeDesignData} />}>
             <Route
@@ -59,8 +61,10 @@ function AppRoutes() {
         <Route path="satellite-industry" element ={<IndustryLayout industryData={satellitesData}/>}/>
         <Route path="security-industry" element ={<IndustryLayout industryData={securityData}/>}/>
         <Route path="intelligence-industry" element ={<IndustryLayout industryData={intelligenceData}/>}/>
-        </Route>
         <Route path="health-case-study" element={<Ehealth/>}/>
+        <Route path="smart-car-study" element={<SmartCars/>}/>
+        <Route path="security-study" element={<Security/>}/>
+        </Route>
       </Routes>
     </HashRouter>
   );

@@ -116,7 +116,13 @@ import Security from "./images/industries/security.jpg";
 import Satellite from "./images/industries/satellite.jpg"
 import Icon2 from "./icons/app_icon2.svg"
 import HealthHero from "./images/case_studies/health_hero.svg";
-import Car from "./images/home/car.jpg"
+import Car from "./images/home/car.jpg";
+import CarHero from "./images/case_studies/car_hero.svg";
+import Car1 from "./images/case_studies/car1.svg"
+import Right1 from "./images/case_studies/right1.svg"
+import Right2 from "./images/case_studies/right2.svg"
+import Left1 from "./images/case_studies/left1.svg"
+import Security2 from "./images/case_studies/security.svg"
 export const Assets = {
   Icons: {
     AppIcon: AppIcon,
@@ -279,7 +285,13 @@ export const Assets = {
       Satellite:Satellite
     },
     CaseStudy:{
-      HealthHero:HealthHero
+      HealthHero:HealthHero,
+      CarHero :CarHero,
+      Car1:Car1,
+      Right1:Right1,
+      Right2:Right2,
+      Left1:Left1,
+      Security:Security2
     }
   },
 };

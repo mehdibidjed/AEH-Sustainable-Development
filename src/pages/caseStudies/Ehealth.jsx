@@ -98,10 +98,10 @@ const Ehealth = () => {
   return (
     <div className="bg-white text-slate-900 font-sans selection:bg-emerald-100">
       {/* HERO SECTION */}
-      <section className="relative h-[60vh] flex items-center justify-start px-6 md:px-24  overflow-hidden">
+      <section className="relative h-[100vh] flex items-center justify-start px-6 md:px-24 py-10 overflow-hidden">
         <div className="absolute inset-0 opacity-100">
           {/* Placeholder for high-tech dashboard image */}
-          <img src={Assets.Images.CaseStudy.HealthHero} />
+          <img src={Assets.Images.CaseStudy.HealthHero} className="object-cover h-full" />
         </div>
         <div className="relative z-10 max-w-3xl text-white">
           <nav className="flex items-center space-x-2 text-xs uppercase tracking-widest  mb-8">
