@@ -225,19 +225,21 @@ function NavBar() {
         {/* Mobile Toggle Button */}
         <button
           className="md:hidden p-2 text-black"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          
         >
           {isMobileMenuOpen ? (
-            <X size={28} />
+            <X size={28} onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} />
           ) : (
-            <div className=" flex gap-5 items-center">
-              <Link
-                to="/contact"
-                className="bg-YellowGreen text-xs  px-2 py-2  md:text-base text-PrimaryGreen font-bold rounded-full md:px-6 md:py-3 hover:scale-105 transition-transform"
-              >
-                Connect with us
-              </Link>{" "}
-              <Menu size={28} />
+            <div className="flex items-center gap-5">
+              <div className=" flex gap-5 items-center">
+                <Link
+                  to="/contact"
+                  className="bg-YellowGreen text-xs  px-2 py-2  md:text-base text-PrimaryGreen font-bold rounded-full md:px-6 md:py-3 hover:scale-105 transition-transform"
+                >
+                  Connect With Us
+                </Link>{" "}
+              </div>
+              <Menu size={28} onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} />
             </div>
           )}
         </button>
@@ -289,7 +291,11 @@ function NavBar() {
                   <div className="mt-4 ml-4 flex flex-col space-y-6 animate-fadeIn">
                     {servicesData.map((service) => (
                       <div key={service.name} className="space-y-3">
-                        <Link to={service.path} className="text-PrimaryBlue  font-bold uppercase text-sm tracking-widest" onClick={() => setIsMobileMenuOpen(false)}>
+                        <Link
+                          to={service.path}
+                          className="text-PrimaryBlue  font-bold uppercase text-sm tracking-widest"
+                          onClick={() => setIsMobileMenuOpen(false)}
+                        >
                           {service.name}
                         </Link>
                         <ul className="space-y-2">

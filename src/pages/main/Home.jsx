@@ -19,7 +19,7 @@ import {
 import { Link, useLocation } from "react-router-dom";
 import ContactSection from "../../components/common/ContactSection";
 import ChatAssistant from "../../components/Home/ChatAssistant";
-function Home({isChatOpen,setIsChatOpen}) {
+function Home({ isChatOpen, setIsChatOpen }) {
   const [openIndex, setOpenIndex] = useState(0);
   const features = [
     {
@@ -62,31 +62,31 @@ function Home({isChatOpen,setIsChatOpen}) {
     },
   ];
   const TechSolutions = [
-    "Agriculture",
-    "Satellite",
-    "Law & Immigration",
-    "Healthcare",
-    "Goverment",
-    "Intelligence",
+    { name: "Agriculture", path: "/industry/agriculture" },
+    {name:"Satellite",path:"industry/satellite"},
+    {name:"Law & Immigration",path:"/industry/law-immigration"},
+    {name:"Healthcare",path:"/industry/healthcare"},
+    {name:"Goverment",path:"/industry/government"},
+    {name:"Intelligence",path:"/industry/intelligence"},
   ];
   const RecentProjects = [
     {
       name: "AI-Driven ",
       italicPart: "Healthcare Solutions  ",
       image: Assets.Images.Home.HealthCr,
-      path:"case-study/healthcare"
+      path: "case-study/healthcare",
     },
     {
       name: "Redefining Vehicle Connectivity",
       image: Assets.Images.Home.Car,
       italicPart: "Vehicle Connectivity",
-      path:"case-study/smartcar"
+      path: "case-study/smartcar",
     },
     {
       name: "Smart Retail Security with AI",
       image: Assets.Images.Home.SmartSec,
       italicPart: "Retail Security",
-      path:"case-study/security"
+      path: "case-study/security",
     },
   ];
   const processes = [
@@ -179,7 +179,7 @@ function Home({isChatOpen,setIsChatOpen}) {
       window.scrollTo(0, 0);
     }
   }, [hash]);
-  
+
   return (
     <div className="min-h-screen ">
       {/* Changed h-screen to min-h-screen and added pt-20 to account for Navbar height */}
@@ -207,7 +207,7 @@ function Home({isChatOpen,setIsChatOpen}) {
             <span className="text-yellow-400">✦</span> What Is AEH Sustainable
             Development?
           </button>
-            
+
           {/* Title and Paragraph Group */}
           <div className="space-y-8 md:space-y-10">
             <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold font-Popine leading-[1.1]">
@@ -228,12 +228,18 @@ function Home({isChatOpen,setIsChatOpen}) {
 
           {/* Action Buttons - Fully Responsive */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6 w-full sm:w-auto">
-            <button className="w-full sm:w-auto bg-YellowGreen text-black font-bold rounded-full px-10 py-4 hover:brightness-110 transition-all shadow-lg text-lg">
+            <Link
+              to="/contact"
+              className="w-full sm:w-auto bg-YellowGreen text-black font-bold rounded-full px-10 py-4 hover:brightness-110 transition-all shadow-lg text-lg"
+            >
               Start Your Project
-            </button>
-            <button className="w-full sm:w-auto border border-white/40 backdrop-blur-sm rounded-full px-16 py-4 hover:bg-white/10 transition-all text-lg">
+            </Link>
+            <Link
+              to="/about"
+              className="w-full sm:w-auto border border-white/40 backdrop-blur-sm rounded-full px-16 py-4 hover:bg-white/10 transition-all text-lg"
+            >
               About Us
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -552,13 +558,13 @@ function Home({isChatOpen,setIsChatOpen}) {
           {TechSolutions.map((item, index) => (
             <Link
               key={index}
-              to="#"
+              to={item.path}
               className={`
               font-inter font-medium p-3
               ${item === "Agriculture" ? "border-b-2 border-[#06986F]" : ""}
             `}
             >
-              {item}
+              {item.name}
             </Link>
           ))}
         </div>
@@ -632,7 +638,10 @@ function Home({isChatOpen,setIsChatOpen}) {
 
                   {/* Hidden "View Case Study" Link (appears on hover) */}
                   <div className="overflow-hidden h-0 group-hover:h-8 transition-all duration-500">
-                    <Link to={project.path} className="flex items-center gap-2 text-white text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                    <Link
+                      to={project.path}
+                      className="flex items-center gap-2 text-white text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+                    >
                       View Case Study
                       <svg
                         width="16"
@@ -704,7 +713,10 @@ function Home({isChatOpen,setIsChatOpen}) {
           </div>
           <div className="w-full flex justify-center mt-5">
             {" "}
-            <Link to="/contact" className="rounded-full bg-YellowGreen px-14 py-2 text-black font-Inter">
+            <Link
+              to="/contact"
+              className="rounded-full bg-YellowGreen px-14 py-2 text-black font-Inter"
+            >
               Let's Connect
             </Link>
           </div>
