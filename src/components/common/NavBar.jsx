@@ -146,19 +146,28 @@ function NavBar() {
               {/* Change: Use 'div' or button for triggers that shouldn't navigate.
          If you must use Link, set to="/#" to stay on page.
       */}
-              <div className="py-2 px-3 text-black hover:text-blue-600 transition-colors font-medium flex items-center gap-1 cursor-pointer">
-                {item.label}
-                {(item.id === "services" || item.id === "industry") && (
-                  <ChevronDown
-                    className={`w-4 h-4 transition-transform ${
-                      (item.id === "services" && activeDropdown) ||
-                      (item.id === "industry" && industryDropdownOpen)
-                        ? "rotate-180"
-                        : ""
-                    }`}
-                  />
-                )}
-              </div>
+              {item.id === "about" ? (
+                <Link
+                  to={item.path}
+                  className="py-2 px-3 text-black hover:text-blue-600 transition-colors font-medium flex items-center gap-1 cursor-pointer"
+                >
+                  {item.label}
+                </Link>
+              ) : (
+                <div className="py-2 px-3 text-black hover:text-blue-600 transition-colors font-medium flex items-center gap-1 cursor-pointer">
+                  {item.label}
+                  {(item.id === "services" || item.id === "industry") && (
+                    <ChevronDown
+                      className={`w-4 h-4 transition-transform ${
+                        (item.id === "services" && activeDropdown) ||
+                        (item.id === "industry" && industryDropdownOpen)
+                          ? "rotate-180"
+                          : ""
+                      }`}
+                    />
+                  )}
+                </div>
+              )}
 
               {/* Industry Dropdown */}
               {item.id === "industry" && industryDropdownOpen && (
@@ -280,18 +289,19 @@ function NavBar() {
                   <div className="mt-4 ml-4 flex flex-col space-y-6 animate-fadeIn">
                     {servicesData.map((service) => (
                       <div key={service.name} className="space-y-3">
-                        <h4 className="text-PrimaryBlue  font-bold uppercase text-sm tracking-widest">
+                        <Link to={service.path} className="text-PrimaryBlue  font-bold uppercase text-sm tracking-widest" onClick={() => setIsMobileMenuOpen(false)}>
                           {service.name}
-                        </h4>
+                        </Link>
                         <ul className="space-y-2">
                           {service.data.map((subItem) => (
-                            <li
+                            <div
+                              to={service.path}
                               key={subItem}
                               className="text-gray-400 text-lg hover:text-white"
                               onClick={() => setIsMobileMenuOpen(false)}
                             >
                               {subItem}
-                            </li>
+                            </div>
                           ))}
                         </ul>
                       </div>

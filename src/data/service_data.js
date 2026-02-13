@@ -127,6 +127,7 @@ export const services = [
       "Data-Driven Decision Systems",
       "AI Integration in Digital Products",
     ],
+    link:"/services/machine-learning"
   },
   {
     name: "Software Development",
@@ -138,6 +139,7 @@ export const services = [
       "API Development & Integration",
       "System Architecture & Maintenance",
     ],
+    link:"services/software-development"
   },
   {
     name: "E-Commerce Solutions",
@@ -149,6 +151,7 @@ export const services = [
       "Product & Order Management Systems",
       "Performance & Conversion Optimization",
     ],
+    link:"/services/e-commerce"
   },
   {
     name: "Creative Design",
@@ -161,6 +164,7 @@ export const services = [
       "Branding",
     ],
     image: Assets.Images.Common.CreativeDesignLG,
+    link:"/services/creative-design"
   },
   {
     name: "IT managed services providers (MSP)",
@@ -172,6 +176,7 @@ export const services = [
       "Network & IT Strategy Consulting",
     ],
     image: Assets.Images.Common.CreativeDesignLG,
+    link:"/services/it-msprovider"
   },
 ];
 

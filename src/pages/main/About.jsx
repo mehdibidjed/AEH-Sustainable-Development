@@ -32,7 +32,7 @@ function About() {
     <div className="min-h-screen">
       {/* Changed h-screen to min-h-screen and added pt-20 to account for Navbar height */}
       {/* Changed h-screen to min-h-screen and added pt-20 to account for Navbar height */}
-      <section className="min-h-screen w-full font-Inter  py-24 sm:py-28 md:py-28  lg:py-32 bg-PrimaryGreen px-10 md:px-32 space-y-5 text-center  mx-auto  overflow-hidden">
+      <section className="min-h-screen w-full font-Inter  py-32 bg-PrimaryGreen px-10 md:px-32 space-y-5 text-center  mx-auto  overflow-hidden">
         <h1 className=" text-2xl md:text-4xl lg:text-6xl text-center font-medium text-white  ">
           We’re a Strategy-First Digital <br /> Product Agency.
         </h1>

@@ -1,5 +1,6 @@
 import { services } from "../../data/service_data";
 import { Assets } from "../../assets/Asset";
+import { Link } from "react-router-dom";
 
 const OtherServices = ({ actual_service }) => {
   return (
@@ -27,9 +28,11 @@ const OtherServices = ({ actual_service }) => {
 
                   <div className="pl-8">
                     {/* Service Title */}
-                    <h3 className="text-lg md:text-xl font-bold mb-8 leading-tight">
-                      {service.name}
-                    </h3>
+                    <Link to={service.link}>
+                      <h3 className="text-lg md:text-xl font-bold mb-8 leading-tight">
+                        {service.name}
+                      </h3>
+                    </Link>
 
                     {/* Gradient Card */}
                     <img

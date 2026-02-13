@@ -31,12 +31,12 @@ export const healthCareData = {
   moreIndustrieTitle: "Agriculture AI App",
   moreIndustrieText:
     "The agriculture app is designed to simplify daily farm management by bringing essential tools into one easy-to-use platform. From monitoring crop health and tracking irrigation schedules to analyzing soil data and weather conditions...",
-  moreIndustrieImage:Assets.Images.Industries.Agriculture
+  moreIndustrieImage: Assets.Images.Home.Agriculture,
 };
 export const agricultureData = {
   title: "Digital Solutions for Smarter, Sustainable Agriculture",
   desc: "Agriculture is evolving beyond traditional farming. Data, automation, and intelligent systems now play a critical role in increasing yields, reducing waste, and ensuring long-term sustainability.We help agri-businesses, startups, and cooperatives design and build digital platforms that simplify farm operations, enable real-time decision-making, and scale with growing demands. From AI-powered crop monitoring to farm management systems and supply chain platforms, our solutions turn complex agricultural data into actionable insights.",
-  heroImage: Assets.Images.Industries.Agriculture,
+  heroImage: Assets.Images.Home.Agriculture,
   cardTitle: "How AEH Sustainable Development Supports Law & Immigration",
   cardDescription:
     "We help legal and immigration professionals streamline operations, improve client experiences, and maintain trust through secure digital solutions.",
@@ -66,7 +66,7 @@ export const agricultureData = {
   moreIndustrieTitle: "Ai Healthcare App",
   moreIndustrieText:
     "The agriculture app is designed to simplify daily farm management by bringing essential tools into one easy-to-use platform. From monitoring crop health and tracking irrigation schedules to analyzing soil data and weather conditions...",
-  moreIndustrieImage:Assets.Images.Industries.WomanHealthcare
+  moreIndustrieImage: Assets.Images.Industries.WomanHealthcare,
 };
 export const satellitesData = {
   title: "Transforming Satellite Data into Meaningful Insights",
@@ -98,6 +98,10 @@ export const satellitesData = {
         "Robust architectures designed to protect sensitive data while ensuring accessibility and reliability.",
     },
   ],
+  moreIndustrieTitle: "Ai Healthcare App",
+  moreIndustrieText:
+    "The agriculture app is designed to simplify daily farm management by bringing essential tools into one easy-to-use platform. From monitoring crop health and tracking irrigation schedules to analyzing soil data and weather conditions...",
+  moreIndustrieImage: Assets.Images.Industries.WomanHealthcare,
 };
 export const securityData = {
   title:
@@ -132,6 +136,10 @@ We design systems that prioritize clarity, usability, and confidentiality, ensur
         "Automated processes that reduce manual work, minimize errors, and speed up case handling.",
     },
   ],
+  moreIndustrieTitle: "Ai Healthcare App",
+  moreIndustrieText:
+    "The agriculture app is designed to simplify daily farm management by bringing essential tools into one easy-to-use platform. From monitoring crop health and tracking irrigation schedules to analyzing soil data and weather conditions...",
+  moreIndustrieImage: Assets.Images.Industries.WomanHealthcare,
 };
 export const govermentData = {
   title: "Digital Transformation for Modern Public Services",
@@ -164,6 +172,10 @@ At AEH Sustainable Development, we partner with government institutions to desig
         "Inclusive interfaces that ensure services are usable by all citizens.",
     },
   ],
+  moreIndustrieTitle: "Ai Healthcare App",
+  moreIndustrieText:
+    "The agriculture app is designed to simplify daily farm management by bringing essential tools into one easy-to-use platform. From monitoring crop health and tracking irrigation schedules to analyzing soil data and weather conditions...",
+  moreIndustrieImage: Assets.Images.Industries.WomanHealthcare,
 };
 export const intelligenceData = {
   title: "Intelligent Digital Systems for Data-Driven Decision Making",
@@ -196,4 +208,8 @@ At AEH Sustainable Development, we design and build intelligent platforms that c
         "Interfaces designed to make complex information clear, usable, and actionable.",
     },
   ],
+  moreIndustrieTitle: "Agriculture AI App",
+  moreIndustrieText:
+    "The agriculture app is designed to simplify daily farm management by bringing essential tools into one easy-to-use platform. From monitoring crop health and tracking irrigation schedules to analyzing soil data and weather conditions...",
+  moreIndustrieImage: Assets.Images.Home.Agriculture,
 };

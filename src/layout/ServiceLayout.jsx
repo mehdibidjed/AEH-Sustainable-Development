@@ -1,8 +1,9 @@
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { Assets } from "../assets/Asset";
 import ServiceCard from "../components/service/ServiceCard";
 import OtherServices from "../components/service/OtherService";
 import Contact from "../components/common/ContactSection";
+import { useState } from "react";
 
 const ServiceLayout = ({ serviceData }) => {
   return (
@@ -20,9 +21,9 @@ const ServiceLayout = ({ serviceData }) => {
             <p className="text-base md:text-lg leading-relaxed text-black/80 mb-8">
               {serviceData.description}
             </p>
-            <button className="bg-DarkGreen hover:bg-black text-white rounded-full px-8 py-3 font-semibold transition-colors duration-300">
+            <Link to="/contact" className="bg-DarkGreen hover:bg-black text-white rounded-full px-8 py-3 font-semibold transition-colors duration-300">
               Contact Us
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -37,46 +38,45 @@ const ServiceLayout = ({ serviceData }) => {
           <div className="overflow-hidden max-w-6xl rounded-[12px ] mx-auto bg-[#F5F5F5] py-5 ">
             <div className="ticker-track">
               {/* Row 1 */}
-            <div className="flex justify-center items-center pr-28">
-              <div className="flex items-center justify-between gap-28  ">
-                {serviceData.icons.map((icon, index) => (
-                  <div
-                    key={`second-${index}`}
-                    className="flex items-center justify-center gap-4 text-[#6F6F6F] whitespace-nowrap"
-                  >
-                    <img
-                      src={icon.icon}
-                      alt={icon.label}
-                      className="w-6 h-6 md:w-10 md:h-10"
-                    />
-                    <p className="text-xs md:text-sm font-Inter">
-                      {icon.label}
-                    </p>
-                  </div>
-                ))}
+              <div className="flex justify-center items-center pr-28">
+                <div className="flex items-center justify-between gap-28  ">
+                  {serviceData.icons.map((icon, index) => (
+                    <div
+                      key={`second-${index}`}
+                      className="flex items-center justify-center gap-4 text-[#6F6F6F] whitespace-nowrap"
+                    >
+                      <img
+                        src={icon.icon}
+                        alt={icon.label}
+                        className="w-6 h-6 md:w-10 md:h-10"
+                      />
+                      <p className="text-xs md:text-sm font-Inter">
+                        {icon.label}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-            {/* Row2 */}
-            <div className="flex justify-center items-center pr-28">
-              <div className="flex items-center justify-between gap-28  ">
-                {serviceData.icons.map((icon, index) => (
-                  <div
-                    key={`second-${index}`}
-                    className="flex items-center justify-center gap-4 text-[#6F6F6F] whitespace-nowrap"
-                  >
-                    <img
-                      src={icon.icon}
-                      alt={icon.label}
-                      className="w-6 h-6 md:w-10 md:h-10"
-                    />
-                    <p className="text-xs md:text-sm font-Inter">
-                      {icon.label}
-                    </p>
-                  </div>
-                ))}
+              {/* Row2 */}
+              <div className="flex justify-center items-center pr-28">
+                <div className="flex items-center justify-between gap-28  ">
+                  {serviceData.icons.map((icon, index) => (
+                    <div
+                      key={`second-${index}`}
+                      className="flex items-center justify-center gap-4 text-[#6F6F6F] whitespace-nowrap"
+                    >
+                      <img
+                        src={icon.icon}
+                        alt={icon.label}
+                        className="w-6 h-6 md:w-10 md:h-10"
+                      />
+                      <p className="text-xs md:text-sm font-Inter">
+                        {icon.label}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-
             </div>
           </div>
         )}
@@ -84,46 +84,45 @@ const ServiceLayout = ({ serviceData }) => {
           <div className="overflow-hidden max-w-6xl rounded-[12px] mx-auto bg-[#F5F5F5] py-5 ">
             <div className="ticker-track">
               {/* Row 1 */}
-            <div className="flex justify-center items-center pr-28">
-              <div className="flex items-center justify-between gap-28  ">
-                {serviceData.icons.map((icon, index) => (
-                  <div
-                    key={`second-${index}`}
-                    className="flex items-center justify-center gap-4 text-[#6F6F6F] whitespace-nowrap"
-                  >
-                    <img
-                      src={icon.icon}
-                      alt={icon.label}
-                      className="w-6 h-6 md:w-10 md:h-10"
-                    />
-                    <p className="text-xs md:text-sm font-Inter">
-                      {icon.label}
-                    </p>
-                  </div>
-                ))}
+              <div className="flex justify-center items-center pr-28">
+                <div className="flex items-center justify-between gap-28  ">
+                  {serviceData.icons.map((icon, index) => (
+                    <div
+                      key={`second-${index}`}
+                      className="flex items-center justify-center gap-4 text-[#6F6F6F] whitespace-nowrap"
+                    >
+                      <img
+                        src={icon.icon}
+                        alt={icon.label}
+                        className="w-6 h-6 md:w-10 md:h-10"
+                      />
+                      <p className="text-xs md:text-sm font-Inter">
+                        {icon.label}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-            {/* Row2 */}
-            <div className="flex justify-center items-center pr-28">
-              <div className="flex items-center justify-between gap-28  ">
-                {serviceData.icons.map((icon, index) => (
-                  <div
-                    key={`second-${index}`}
-                    className="flex items-center justify-center gap-4 text-[#6F6F6F] whitespace-nowrap"
-                  >
-                    <img
-                      src={icon.icon}
-                      alt={icon.label}
-                      className="w-6 h-6 md:w-10 md:h-10"
-                    />
-                    <p className="text-xs md:text-sm font-Inter">
-                      {icon.label}
-                    </p>
-                  </div>
-                ))}
+              {/* Row2 */}
+              <div className="flex justify-center items-center pr-28">
+                <div className="flex items-center justify-between gap-28  ">
+                  {serviceData.icons.map((icon, index) => (
+                    <div
+                      key={`second-${index}`}
+                      className="flex items-center justify-center gap-4 text-[#6F6F6F] whitespace-nowrap"
+                    >
+                      <img
+                        src={icon.icon}
+                        alt={icon.label}
+                        className="w-6 h-6 md:w-10 md:h-10"
+                      />
+                      <p className="text-xs md:text-sm font-Inter">
+                        {icon.label}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-
             </div>
           </div>
         )}

@@ -19,7 +19,7 @@ import {
 import { Link, useLocation } from "react-router-dom";
 import ContactSection from "../../components/common/ContactSection";
 import ChatAssistant from "../../components/Home/ChatAssistant";
-function Home() {
+function Home({isChatOpen,setIsChatOpen}) {
   const [openIndex, setOpenIndex] = useState(0);
   const features = [
     {
@@ -74,16 +74,19 @@ function Home() {
       name: "AI-Driven ",
       italicPart: "Healthcare Solutions  ",
       image: Assets.Images.Home.HealthCr,
+      path:"case-study/healthcare"
     },
     {
       name: "Redefining Vehicle Connectivity",
       image: Assets.Images.Home.Car,
       italicPart: "Vehicle Connectivity",
+      path:"case-study/smartcar"
     },
     {
       name: "Smart Retail Security with AI",
       image: Assets.Images.Home.SmartSec,
       italicPart: "Retail Security",
+      path:"case-study/security"
     },
   ];
   const processes = [
@@ -176,10 +179,9 @@ function Home() {
       window.scrollTo(0, 0);
     }
   }, [hash]);
-  const [isChatOpen, setIsChatOpen] = useState(false);
+  
   return (
     <div className="min-h-screen ">
-      <ChatAssistant isOpen={isChatOpen} setIsOpen={setIsChatOpen} />
       {/* Changed h-screen to min-h-screen and added pt-20 to account for Navbar height */}
       <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden px-6 py-20 md:py-32">
         {/* Background Layer */}
@@ -630,7 +632,7 @@ function Home() {
 
                   {/* Hidden "View Case Study" Link (appears on hover) */}
                   <div className="overflow-hidden h-0 group-hover:h-8 transition-all duration-500">
-                    <button className="flex items-center gap-2 text-white text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                    <Link to={project.path} className="flex items-center gap-2 text-white text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-700">
                       View Case Study
                       <svg
                         width="16"
@@ -642,7 +644,7 @@ function Home() {
                       >
                         <path d="M7 17L17 7M17 7H7M17 7V17" />
                       </svg>
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -702,9 +704,9 @@ function Home() {
           </div>
           <div className="w-full flex justify-center mt-5">
             {" "}
-            <button className="rounded-full bg-YellowGreen px-14 py-2 text-black font-Inter">
+            <Link to="/contact" className="rounded-full bg-YellowGreen px-14 py-2 text-black font-Inter">
               Let's Connect
-            </button>
+            </Link>
           </div>
         </div>
         <div className="space-y-3 px-12 mx-auto py-5">
