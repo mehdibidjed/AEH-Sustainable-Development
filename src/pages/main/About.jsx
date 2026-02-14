@@ -30,8 +30,62 @@ const features = [
 function About() {
   return (
     <div className="min-h-screen">
-      {/* Changed h-screen to min-h-screen and added pt-20 to account for Navbar height */}
-      {/* Changed h-screen to min-h-screen and added pt-20 to account for Navbar height */}
+      <section className="bg-PrimaryGreen   pt-36  px-6 md:px-16 ">
+        <div className="max-w-7xl mx-auto">
+          {/* Section Heading */}
+          <h2 className="text-white text-3xl md:text-5xl font-medium font-Inter mb-12 md:mb-12">
+            Leadership
+          </h2>
+
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+            {/* Left Side: Portrait Image */}
+            <div className="lg:col-span-5 xl:col-span-4">
+              <div className=" overflow-hidden shadow-2xl">
+                <img
+                  src={Assets.Images.Common.Moussa}
+                  alt="Moussa Abdallah El Hirtsi"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Right Side: Bio Content */}
+            <div className="lg:col-span-7 px-2 md:px-16  xl:col-span-8 text-white space-y-8">
+              <div className="space-y-2">
+                <h3 className="text-3xl md:text-4xl font-bold">
+                  Moussa Abdallah El Hirtsi
+                </h3>
+                <p className="text-lg opacity-80 font-light">
+                  CEO And Founder Of AEH Sustainable Development
+                </p>
+              </div>
+
+              <div className="space-y-6 text-sm  leading-relaxed font-light opacity-90 max-w-3xl">
+                <p>
+                  Moussa's core expertise brings over 14 years of combined
+                  experience in the energy, real estate, and international
+                  business sectors, with 5 years focused on oil and gas
+                  operations and 9 years specializing in international
+                  negotiations, sales strategy, and cross-border partnerships.
+                  As the lead Negotiation Specialist for the Middle East and
+                  Africa region, he plays a pivotal role in forging strategic
+                  alliances and securing high-value deals across the region.
+                </p>
+
+                <p>
+                  With expertise spanning both technical and commercial aspects
+                  of the energy and real estate industries, Moussa excels in
+                  diplomatic engagement with government and private sector
+                  entities. His contributions have been instrumental in
+                  expanding the company's footprint through multinational
+                  partnerships, helping position Star of Texas as a competitive
+                  player in well entry and revitalization projects.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="min-h-screen w-full font-Inter  py-32 bg-PrimaryGreen px-10 md:px-32 space-y-5 text-center  mx-auto  overflow-hidden">
         <h1 className=" text-2xl md:text-4xl lg:text-6xl text-center font-medium text-white  ">
           We’re a Strategy-First Digital <br /> Product Agency.
@@ -59,7 +113,7 @@ function About() {
           />
         </div>
       </section>
-      <section className="bg-white  py-24  text-black mx-auto max-w-[95%] space-y-10">
+      <section className="bg-white  pb-24  text-black mx-auto    space-y-10 px-5 md:px-32">
         <div className="space-y-5">
           <div className=" grid grid-cols-1 md:grid-cols-3  mx-auto">
             <div className="px-10 py-10  flex justify-start  items-center">
@@ -171,62 +225,6 @@ function About() {
             </div>
 
             {/* Pink Indicator Line from Image */}
-          </div>
-        </div>
-      </section>
-      <section className="bg-PrimaryGreen py-16 px-6 md:px-16 lg:py-24">
-        <div className="max-w-7xl mx-auto">
-          {/* Section Heading */}
-          <h2 className="text-white text-3xl md:text-5xl font-medium font-Inter mb-12 md:mb-12">
-            Leadership
-          </h2>
-
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
-            {/* Left Side: Portrait Image */}
-            <div className="lg:col-span-5 xl:col-span-4">
-              <div className=" overflow-hidden shadow-2xl">
-                <img
-                  src={Assets.Images.Common.Moussa}
-                  alt="Moussa Abdallah El Hirtsi"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-
-            {/* Right Side: Bio Content */}
-            <div className="lg:col-span-7 px-2 md:px-16  xl:col-span-8 text-white space-y-8">
-              <div className="space-y-2">
-                <h3 className="text-3xl md:text-4xl font-bold">
-                  Moussa Abdallah El Hirtsi
-                </h3>
-                <p className="text-lg opacity-80 font-light">
-                  CEO And Founder Of AEH Sustainable Development
-                </p>
-              </div>
-
-              <div className="space-y-6 text-sm  leading-relaxed font-light opacity-90 max-w-3xl">
-                <p>
-                  Moussa's core expertise brings over 14 years of combined
-                  experience in the energy, real estate, and international
-                  business sectors, with 5 years focused on oil and gas
-                  operations and 9 years specializing in international
-                  negotiations, sales strategy, and cross-border partnerships.
-                  As the lead Negotiation Specialist for the Middle East and
-                  Africa region, he plays a pivotal role in forging strategic
-                  alliances and securing high-value deals across the region.
-                </p>
-
-                <p>
-                  With expertise spanning both technical and commercial aspects
-                  of the energy and real estate industries, Moussa excels in
-                  diplomatic engagement with government and private sector
-                  entities. His contributions have been instrumental in
-                  expanding the company's footprint through multinational
-                  partnerships, helping position Star of Texas as a competitive
-                  player in well entry and revitalization projects.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>

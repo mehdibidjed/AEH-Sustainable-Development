@@ -3,7 +3,7 @@ import Navbar from "../components/common/NavBar";
 import Footer from "../components/common/Footer.jsx";
 import { Outlet } from "react-router-dom";
 import ContactSection from "../components/common/ContactSection.jsx";
-import ChatAssistant from "../components/Home/ChatAssistant.jsx";
+import ChatAssistant from "../components/common/ChatAssistant.jsx";
 
 const MainLayout = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);

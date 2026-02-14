@@ -9,18 +9,18 @@ import { ChevronRight } from "lucide-react";
 import ServiceCard from "../components/service/ServiceCard";
 
 function IndustryLayout({ industryData }) {
-  const TechSolutions = [
-    "Agriculture",
-    "Satellite",
-    "Law & Immigration",
-    "Healthcare",
-    "Goverment",
-    "Intelligence",
+  const   TechSolutions = [
+    { name: "Agriculture", path: "/industry/agriculture" },
+    { name: "Satellite", path: "industry/satellite" },
+    { name: "Law & Immigration", path: "/industry/law-immigration" },
+    { name: "Healthcare", path: "/industry/healthcare" },
+    { name: "Goverment", path: "/industry/government" },
+    { name: "Intelligence", path: "/industry/intelligence" },
   ];
   return (
     <div className="flex flex-col w-full   min-h-screen bg-white pt-12  ">
       <section className="relative py-20 lg:py-32  bg-white overflow-hidden px-6 md:px-8 lg:px-12">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 space-y-5" >
           <div className="text-left space-y-10">
             <h1 className="text-3xl lg:text-5xl font-Inter text-slate-900 mb-8 leading-relaxed">
               <span className="font-light font-instrumentSerif italic  block">
@@ -32,7 +32,7 @@ function IndustryLayout({ industryData }) {
               {industryData.desc}
             </p>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap justify-center md:justify-start gap-4">
               <Link to="/contact" className="px-8 py-3 bg-[#013934] text-white rounded-full font-medium hover:bg-[#002a22] transition-colors">
                 Get Started
               </Link>
@@ -43,7 +43,7 @@ function IndustryLayout({ industryData }) {
           </div>
 
           {/* Right Image */}
-          <div className=" h-full flex justify-end">
+          <div className=" h-full w-full flex justify-center md:justify-end">
             <img
               src={industryData.heroImage}
               alt="Healthcare Innovation"
@@ -121,13 +121,13 @@ function IndustryLayout({ industryData }) {
           {TechSolutions.map((item, index) => (
             <Link
               key={index}
-              to="#"
+              to={item.path}
               className={`
               font-inter font-medium p-3
-              ${item === "Agriculture" ? "border-b-2 border-[#06986F]" : ""}
+              ${item.name  === "Agriculture" ? "border-b-2 border-[#06986F]" : ""}
             `}
             >
-              {item}
+              {item.name}
             </Link>
           ))}
         </div>

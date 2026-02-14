@@ -51,10 +51,10 @@
 .ticker-track {
   display: flex;
   width: max-content;
-  animation: infiniteTickerL 20s linear infinite;
+  animation: infiniteTickerL 30s linear infinite;
 }
 .ticker-trackR {
   display: flex;
   width: max-content;
-  animation: infiniteTickerR 20s linear infinite;
+  animation: infiniteTickerR 30s linear infinite;
 }

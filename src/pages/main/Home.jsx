@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import ContactSection from "../../components/common/ContactSection";
-import ChatAssistant from "../../components/Home/ChatAssistant";
+import ChatAssistant from "../../components/common/ChatAssistant";
 function Home({ isChatOpen, setIsChatOpen }) {
   const [openIndex, setOpenIndex] = useState(0);
   const features = [
@@ -63,11 +63,11 @@ function Home({ isChatOpen, setIsChatOpen }) {
   ];
   const TechSolutions = [
     { name: "Agriculture", path: "/industry/agriculture" },
-    {name:"Satellite",path:"industry/satellite"},
-    {name:"Law & Immigration",path:"/industry/law-immigration"},
-    {name:"Healthcare",path:"/industry/healthcare"},
-    {name:"Goverment",path:"/industry/government"},
-    {name:"Intelligence",path:"/industry/intelligence"},
+    { name: "Satellite", path: "industry/satellite" },
+    { name: "Law & Immigration", path: "/industry/law-immigration" },
+    { name: "Healthcare", path: "/industry/healthcare" },
+    { name: "Goverment", path: "/industry/government" },
+    { name: "Intelligence", path: "/industry/intelligence" },
   ];
   const RecentProjects = [
     {
@@ -246,7 +246,7 @@ function Home({ isChatOpen, setIsChatOpen }) {
 
       <section className="bg-WhiteBg py-10 px-6 text-center text-black md:max-w-[80%] mx-auto space-y-5">
         <div className="space-y-3">
-          <h6 className="uppercase text-xs">solutions</h6>
+          <h6 className="uppercase text-xs">services</h6>
           <h1 className="font-Inter md:text-4xl">
             What AEH{" "}
             <span className="font-instrumentSerif italic">
@@ -561,7 +561,7 @@ function Home({ isChatOpen, setIsChatOpen }) {
               to={item.path}
               className={`
               font-inter font-medium p-3
-              ${item === "Agriculture" ? "border-b-2 border-[#06986F]" : ""}
+              ${item.name === "Agriculture" ? "border-b-2 border-[#06986F]" : ""}
             `}
             >
               {item.name}
@@ -601,7 +601,7 @@ function Home({ isChatOpen, setIsChatOpen }) {
         id="work"
         className="bg-PrimaryGreen py-16  text-center text-white w-full mx-auto space-y-10 scroll-mt-24"
       >
-        <div className="space-y-3">
+        <div className="space-y-4 ">
           <h6 className="uppercase text-xs">our work</h6>
           <h1 className="font-Inter md:text-4xl">
             A Curated Selection Of Our{" "}
@@ -609,7 +609,7 @@ function Home({ isChatOpen, setIsChatOpen }) {
             And Case Studies
           </h1>
         </div>
-        <div className="flex gap-6 overflow-x-auto pb-10 scrollbar-hide snap-x">
+        <div className="flex gap-[12px] md:gap-4     md:px-4   overflow-x-auto pb-10 scrollbar-hide ">
           {RecentProjects.map((project, index) => (
             <div
               key={index}
@@ -692,9 +692,9 @@ function Home({ isChatOpen, setIsChatOpen }) {
                   <div className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-600 text-sm font-semibold text-white">
                     {process.id}
                   </div>
-                  <span className="mt-2 md:mt-4 rounded-full bg-emerald-700 px-4 py-1 text-xs text-white whitespace-nowrap">
+                  {/* <span className="mt-2 md:mt-4 rounded-full bg-emerald-700 px-4 py-1 text-xs text-white whitespace-nowrap">
                     {process.duration}
-                  </span>
+                  </span> */}
                 </div>
 
                 {/* RIGHT CARD */}
@@ -769,7 +769,7 @@ function Home({ isChatOpen, setIsChatOpen }) {
                 </p>
                 {/* Using border-t to simulate the divider line in the image */}
                 <div className="w-full border-t border-1 border-PrimaryGreen pt-8">
-                  <h2 className="text-42xl md:text-3xl lg:text-4xl font-bold leading-[1.1]">
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1]">
                     Exceptional Talent, <br />
                     Ready to{" "}
                     <span className="font-serif italic font-light">
@@ -857,9 +857,9 @@ function Home({ isChatOpen, setIsChatOpen }) {
 
       <section className="bg-white   pt-10 px-3 md:px-10">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
+          <div className="grid grid-cols-1   lg:grid-cols-2 gap-8 lg:gap-10 items-start">
             {/* Left Side: Hardware Image */}
-            <div className="rounded-[12px] overflow-hidden shadow-2xl sticky top-24">
+            <div className="rounded-[12px] order-2 md:order-1 overflow-hidden shadow-2xl sticky top-24">
               <img
                 src={Assets.Images.Home.Hardware}
                 alt="Hardware Systems"
