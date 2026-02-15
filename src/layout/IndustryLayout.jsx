@@ -19,7 +19,7 @@ function IndustryLayout({ industryData }) {
   ];
   return (
     <div className="flex flex-col w-full   min-h-screen bg-white pt-12  ">
-      <section className="relative py-20 lg:py-32  bg-white overflow-hidden px-6 md:px-8 lg:px-12">
+      <section className="relative py-20 lg:pt-32  pb-0 bg-white overflow-hidden px-6 md:px-8 lg:px-12">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 space-y-5" >
           <div className="text-left space-y-10">
             <h1 className="text-3xl lg:text-5xl font-Inter text-slate-900 mb-8 leading-relaxed">
@@ -43,7 +43,7 @@ function IndustryLayout({ industryData }) {
           </div>
 
           {/* Right Image */}
-          <div className=" h-full w-full flex justify-center md:justify-end">
+          <div className=" h-full md:h-[75%] w-full flex justify-center md:justify-end">
             <img
               src={industryData.heroImage}
               alt="Healthcare Innovation"
@@ -106,7 +106,7 @@ function IndustryLayout({ industryData }) {
       <TechStack />
       <section className="bg-white py-10 text-center text-black px-6 md:px-8 lg:px-12  mx-auto space-y-8">
         <div className="space-y-3">
-          <h1 className="font-Inter md:text-4xl">
+          <h1 className="font-Inter text-2xl md:text-3xl lg:text-4xl">
             Discover More Industries We Help
           </h1>
           <p className="text-black opacity-70 font-Inter pt-3 px-10 ">

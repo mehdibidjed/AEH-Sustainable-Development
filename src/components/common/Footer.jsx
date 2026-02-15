@@ -66,10 +66,10 @@ function Footer() {
 
             <div className="space-y-3 text-sm text-gray-300 font-Inter">
               <a href="tel:+155895548855" className="flex items-center gap-3 hover:text-YellowGreen transition-colors">
-                <Phone size={16} className="text-YellowGreen" /> +1 5589 55488 55
+                <Phone size={16} className="text-YellowGreen" /> + 213770792729
               </a>
               <a href="mailto:info@example.com" className="flex items-center gap-3 hover:text-YellowGreen transition-colors">
-                <Mail size={16} className="text-YellowGreen" /> info@example.com
+                <Mail size={16} className="text-YellowGreen" /> moussaabdelleh21@gmail.com
               </a>
             </div>
 

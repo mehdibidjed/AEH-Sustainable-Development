@@ -36,7 +36,7 @@ export const healthCareData = {
 export const agricultureData = {
   title: "Digital Solutions for Smarter, Sustainable Agriculture",
   desc: "Agriculture is evolving beyond traditional farming. Data, automation, and intelligent systems now play a critical role in increasing yields, reducing waste, and ensuring long-term sustainability.We help agri-businesses, startups, and cooperatives design and build digital platforms that simplify farm operations, enable real-time decision-making, and scale with growing demands. From AI-powered crop monitoring to farm management systems and supply chain platforms, our solutions turn complex agricultural data into actionable insights.",
-  heroImage: Assets.Images.Home.Agriculture,
+  heroImage: Assets.Images.Industries.Agriculture,
   cardTitle: "How AEH Sustainable Development Supports Law & Immigration",
   cardDescription:
     "We help legal and immigration professionals streamline operations, improve client experiences, and maintain trust through secure digital solutions.",

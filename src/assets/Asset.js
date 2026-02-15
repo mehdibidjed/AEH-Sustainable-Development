@@ -110,10 +110,10 @@ import Xgboost from "./icons/industries/xgboost.svg";
 import Moussa2 from "./images/common/moussa2.svg";
 import Dashboard from "./images/industries/dashboard.svg";
 import AgricultureInd from "./images/industries/agriculture.svg";
-import Intelligence from "./images/industries/intelligent_system.jpg";
-import Goverment from "./images/industries/goverment.jpg";
-import Security from "./images/industries/security.jpg";
-import Satellite from "./images/industries/satellite.jpg"
+import Intelligence from "./images/industries/intelligent_system.svg";
+import Goverment from "./images/industries/goverment.svg";
+import Security from "./images/industries/security.svg";
+import Satellite from "./images/industries/satellite.svg"
 import Icon2 from "./icons/app_icon2.svg"
 import HealthHero from "./images/case_studies/health_hero.svg";
 import Car from "./images/home/car.jpg";
