@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Create axios instance with base configuration
 const chatbotApi = axios.create({
-  baseURL: 'http://ai.assistance.aehsustainabledevelopment.com', // Replace with your backend URL
+  baseURL: 'https://ai.assistance.aehsustainabledevelopment.com', // Replace with your backend URL
   timeout: 10000, // 10 seconds timeout
   headers: {
     'Content-Type': 'application/json',
