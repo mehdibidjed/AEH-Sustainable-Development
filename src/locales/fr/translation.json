@@ -1,0 +1,38 @@
+{
+    
+        "navbar": {
+          "services": "Services",
+          "our_work": "Nos réalisations",
+          "industry": "Industrie",
+          "about_us": "À propos de nous",
+          "connect": "Connectez-vous avec nous"
+        },
+        "navbar.services": {
+          "ml_models": "Modèles d'apprentissage automatique",
+          "ai_apps": "Applications alimentées par l'IA",
+          "predictive": "Analyse prédictive",
+          "data_decision": "Systèmes de prise de décision basés sur les données",
+          "ai_integration": "Intégration de l'IA dans les produits numériques",
+          "web_dev": "Développement d'applications web",
+          "mobile_dev": "Développement d'applications mobiles",
+          "custom_software": "Solutions logicielles sur mesure",
+          "api_dev": "Développement et intégration d'API",
+          "system_arch": "Architecture et maintenance des systèmes",
+          "ecom_design": "Conception de sites e-commerce",
+          "online_store": "Développement de boutiques en ligne",
+          "payment": "Intégration de passerelles de paiement",
+          "order_mgmt": "Systèmes de gestion des produits et commandes",
+          "performance_opt": "Optimisation des performances et des conversions",
+          "ui_ux": "Design UI/UX",
+          "app_design": "Design d'applications web et mobiles",
+          "user_research": "Recherche utilisateur et wireframing",
+          "prototyping": "Prototypage et systèmes de design",
+          "visual_design": "Design visuel et interactif",
+          "branding": "Identité visuelle",
+          "monitoring": "Surveillance et support proactif 24/7",
+          "cloud_mgmt": "Gestion de l'infrastructure cloud",
+          "cybersecurity": "Cybersécurité et protection contre les menaces",
+          "backup": "Sauvegarde des données et reprise après sinistre",
+          "it_strategy": "Consulting en stratégie réseau et IT"
+        }
+      }

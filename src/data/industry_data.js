@@ -31,7 +31,7 @@ export const healthCareData = {
   moreIndustrieTitle: "Agriculture AI App",
   moreIndustrieText:
     "The agriculture app is designed to simplify daily farm management by bringing essential tools into one easy-to-use platform. From monitoring crop health and tracking irrigation schedules to analyzing soil data and weather conditions...",
-  moreIndustrieImage: Assets.Images.Home.Agriculture,
+  moreIndustrieImage: Assets.Images.Industries.Agriculture,
 };
 export const agricultureData = {
   title: "Digital Solutions for Smarter, Sustainable Agriculture",
@@ -65,8 +65,8 @@ export const agricultureData = {
   ],
   moreIndustrieTitle: "Ai Healthcare App",
   moreIndustrieText:
-    "The agriculture app is designed to simplify daily farm management by bringing essential tools into one easy-to-use platform. From monitoring crop health and tracking irrigation schedules to analyzing soil data and weather conditions...",
-  moreIndustrieImage: Assets.Images.Industries.WomanHealthcare,
+    "An AI healthcare app uses artificial intelligence to analyze health data and provide personalized medical insights. It can assess symptoms, monitor vital signs, and offer recommendations based on machine learning models. These apps help users make informed health decisions and support doctors with data-driven assistance.",
+  moreIndustrieImage: Assets.Images.Industries.HealthApp,
 };
 export const satellitesData = {
   title: "Transforming Satellite Data into Meaningful Insights",
@@ -100,8 +100,8 @@ export const satellitesData = {
   ],
   moreIndustrieTitle: "Ai Healthcare App",
   moreIndustrieText:
-    "The agriculture app is designed to simplify daily farm management by bringing essential tools into one easy-to-use platform. From monitoring crop health and tracking irrigation schedules to analyzing soil data and weather conditions...",
-  moreIndustrieImage: Assets.Images.Industries.WomanHealthcare,
+    "An AI healthcare app uses artificial intelligence to analyze health data and provide personalized medical insights. It can assess symptoms, monitor vital signs, and offer recommendations based on machine learning models. These apps help users make informed health decisions and support doctors with data-driven assistance.",
+  moreIndustrieImage: Assets.Images.Industries.HealthApp,
 };
 export const securityData = {
   title:
@@ -138,8 +138,8 @@ We design systems that prioritize clarity, usability, and confidentiality, ensur
   ],
   moreIndustrieTitle: "Ai Healthcare App",
   moreIndustrieText:
-    "The agriculture app is designed to simplify daily farm management by bringing essential tools into one easy-to-use platform. From monitoring crop health and tracking irrigation schedules to analyzing soil data and weather conditions...",
-  moreIndustrieImage: Assets.Images.Industries.WomanHealthcare,
+    "An AI healthcare app uses artificial intelligence to analyze health data and provide personalized medical insights. It can assess symptoms, monitor vital signs, and offer recommendations based on machine learning models. These apps help users make informed health decisions and support doctors with data-driven assistance.",
+  moreIndustrieImage: Assets.Images.Industries.HealthApp,
 };
 export const govermentData = {
   title: "Digital Transformation for Modern Public Services",
@@ -172,10 +172,10 @@ At AEH Sustainable Development, we partner with government institutions to desig
         "Inclusive interfaces that ensure services are usable by all citizens.",
     },
   ],
-  moreIndustrieTitle: "Ai Healthcare App",
+  moreIndustrieTitle: "Agriculture AI App",
   moreIndustrieText:
     "The agriculture app is designed to simplify daily farm management by bringing essential tools into one easy-to-use platform. From monitoring crop health and tracking irrigation schedules to analyzing soil data and weather conditions...",
-  moreIndustrieImage: Assets.Images.Industries.WomanHealthcare,
+  moreIndustrieImage: Assets.Images.Industries.Agriculture,
 };
 export const intelligenceData = {
   title: "Intelligent Digital Systems for Data-Driven Decision Making",
@@ -211,5 +211,5 @@ At AEH Sustainable Development, we design and build intelligent platforms that c
   moreIndustrieTitle: "Agriculture AI App",
   moreIndustrieText:
     "The agriculture app is designed to simplify daily farm management by bringing essential tools into one easy-to-use platform. From monitoring crop health and tracking irrigation schedules to analyzing soil data and weather conditions...",
-  moreIndustrieImage: Assets.Images.Home.Agriculture,
-};
+  moreIndustrieImage: Assets.Images.Industries.Agriculture,
+}

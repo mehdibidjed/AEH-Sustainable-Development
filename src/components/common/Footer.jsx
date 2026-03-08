@@ -69,7 +69,7 @@ function Footer() {
                 <Phone size={16} className="text-YellowGreen" /> + 213770792729
               </a>
               <a href="mailto:info@example.com" className="flex items-center gap-3 hover:text-YellowGreen transition-colors">
-                <Mail size={16} className="text-YellowGreen" /> moussaabdelleh21@gmail.com
+                <Mail size={16} className="text-YellowGreen" /> contact@aehsustainabledevelopment.com
               </a>
             </div>
 

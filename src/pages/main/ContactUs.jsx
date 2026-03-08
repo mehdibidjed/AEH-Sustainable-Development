@@ -147,7 +147,7 @@ function Contact() {
                 </p>
                 <div className="w-8 h-[2px] bg-PrimaryGreen mb-4"></div>
                 <p className="text-black font-bold text-sm">
-                  aehsustainabledevelopment@info.com
+                  contact@aehsustainabledevelopment.com
                 </p>
                 <p className="text-black text-sm">
                   Assistance hours:
@@ -161,7 +161,7 @@ function Contact() {
                   Number
                 </p>
                 <div className="w-8 h-[2px] bg-PrimaryGreen mb-4"></div>
-                <p className="text-black font-bold">(808) 986-34259</p>
+                <p className="text-black font-bold">+213 770792729</p>
                 <p className="text-black text-sm">
                   Assistance hours:
                   <br />

@@ -123,6 +123,7 @@ import Right1 from "./images/case_studies/right1.svg"
 import Right2 from "./images/case_studies/right2.svg"
 import Left1 from "./images/case_studies/left1.svg"
 import Security2 from "./images/case_studies/security.svg"
+import HealthApp from "./images/industries/healthcare_app.svg"
 export const Assets = {
   Icons: {
     AppIcon: AppIcon,
@@ -282,7 +283,8 @@ export const Assets = {
       Intelligence: Intelligence,
       Goverment: Goverment,
       Security: Security,
-      Satellite:Satellite
+      Satellite:Satellite,
+      HealthApp:HealthApp
     },
     CaseStudy:{
       HealthHero:HealthHero,

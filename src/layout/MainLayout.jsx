@@ -12,7 +12,7 @@ const MainLayout = () => {
       <Navbar className=" fixed z-50" />
       <main>
         <ChatAssistant isOpen={isChatOpen} setIsOpen={setIsChatOpen} />
-        <Outlet />
+        <Outlet context={{setIsChatOpen}} />
         <section className="bg-white   py-10 px-3 md:px-10">
           <ContactSection />
         </section>

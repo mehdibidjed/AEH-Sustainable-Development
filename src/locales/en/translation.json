@@ -1,0 +1,204 @@
+{
+  "navbar": {
+    "services": "Services",
+    "our_work": "Our work",
+    "industry": "Industry",
+    "about_us": "About us",
+    "connect": "Connect with us"  
+  },
+  "navbar_services": {
+    "ml_models": "Machine Learning Models",
+    "ai_apps": "AI-Powered Applications",
+    "predictive": "Predictive Analytics",
+    "data_decision": "Data-Driven Decision Systems",
+    "ai_integration": "AI Integration in Digital Products",
+    "web_dev": "Web Application Development",
+    "mobile_dev": "Mobile Application Development",
+    "custom_software": "Custom Software Solutions",
+    "api_dev": "API Development & Integration",
+    "system_arch": "System Architecture & Maintenance",
+    "ecom_design": "E-Commerce Website Design",
+    "online_store": "Online Store Development",
+    "payment": "Payment Gateway Integration",
+    "order_mgmt": "Product & Order Management Systems",
+    "performance_opt": "Performance & Conversion Optimizations",
+    "ui_ux": "UI/UX Design",
+    "app_design": "Web & Mobile App Design",
+    "user_research": "User Research & Wireframing",
+    "prototyping": "Prototyping & Design Systems",
+    "visual_design": "Visual & Interactive Design",
+    "branding": "Branding",
+    "monitoring": "24/7 Proactive Monitoring & Support",
+    "cloud_mgmt": "Cloud Infrastructure Management",
+    "cybersecurity": "Cybersecurity & Threat Protection",
+    "backup": "Data Backup & Disaster Recovery",
+    "it_strategy": "Network & IT Strategy Consulting"
+  },
+  "hero": {
+    "pill": "What Is AEH Sustainable Development?",
+    "title": "Building Practical <italic>Technology</italic> for Sustainable Growth",
+    "description": "We deliver practical tech solutions that solve real business challenges across industries from agriculture to healthcare. We help overcome limited AI access, high costs, and regulatory constraints with clear, effective implementation.",
+    "cta_start": "Start Your Project",
+    "cta_about": "About Us"
+  },
+
+  "services": {
+    "label": "services",
+    "title": "What <italic>AEH Sustainable Development</italic> Can Do For You",
+    "description": "Our technology solutions help businesses adapt, optimize, and grow in an evolving digital environment. By combining thoughtful design, intelligent systems, and scalable development, we turn complex challenges into efficient, future-ready solutions."
+  },
+
+  "service_items": {
+    "ml_ai": {
+      "name": "Machine learning & AI",
+      "desc": "Choose from 100+ expert-made templates. Use your brand colors and custom fonts.",
+      "tag_automation": "Automation Integration",
+      "tag_users": "User Adoption",
+      "tag_scalability": "Scalability",
+      "tag_realtime": "Real-Time Monitoring",
+      "tag_support": "Proactive Support",
+      "tag_security": "Data Security"
+    },
+    "software": {
+      "name": "Software Development",
+      "desc": "Share your presentation with a live link. Present with notes, a timer, and other aids."
+    },
+    "ecommerce": {
+      "name": "E-Commerce Solutions",
+      "desc": "Create, craft and share stories together with real time collaboration."
+    },
+    "creative": {
+      "name": "Creative Design",
+      "desc": "Choose from 100+ expert-made templates. Use your brand colors and custom fonts."
+    },
+    "msp": {
+      "name": "IT managed services provider (MSP)",
+      "desc": "Quickly add visuals to slides, import your data, and keep your team in sync."
+    }
+  },
+
+  "solutions": {
+    "label": "solutions",
+    "title": "Comprehensive <italic>Technology Solutions,</italic> Built for impact",
+    "description": "We design and build complete digital solutions that simplify complexity and elevate every interaction. Driven by transparency, advanced research, and skilled professionals, we work collaboratively to deliver products that are intelligent, scalable, and impactful."
+  },
+
+  "agriculture_showcase": {
+    "title": "Agriculture AI App",
+    "description": "The agriculture app is designed to simplify daily farm management by bringing essential tools into one easy-to-use platform.<br/> From monitoring crop health and tracking irrigation schedules to analyzing soil data and weather conditions...",
+    "view_details": "View Details"
+  },
+
+  "industries": {
+    "agriculture": "Agriculture",
+    "satellite": "Satellite",
+    "law_immigration": "Law & Immigration",
+    "healthcare": "Healthcare",
+    "government": "Government",
+    "intelligence": "Intelligence"
+  },
+
+  "work": {
+    "label": "our work",
+    "title": "A Curated Selection Of Our <italic>Recent Projects</italic> And Case Studies",
+    "view_case": "View Case Study",
+    "projects": [
+      {
+        "name": "AI-Driven ",
+        "italic": "Healthcare Solutions",
+        "path": "case-study/healthcare"
+      },
+      {
+        "name": "Redefining ",
+        "italic": "Vehicle Connectivity",
+        "path": "case-study/smartcar"
+      },
+      {
+        "name": "Smart Retail Security with ",
+        "italic": "AI",
+        "path": "case-study/security"
+      }
+    ]
+  },
+
+  "process": {
+    "label": "our process",
+    "title": "Turning Complex Challenges Into Reliable Digital Solutions",
+    "connect": "Let's Connect"
+  },
+
+  "processes": [
+    {
+      "title": "Strategy & Research",
+      "duration": "1 week",
+      "desc": "We start by understanding your goals, challenges, and constraints. Through research and stakeholder alignment, we define a clear direction that turns complexity into opportunity."
+    },
+    {
+      "title": "Planning & Architecture",
+      "duration": "1 week",
+      "desc": "We translate insights into structured plans, workflows, and system architecture. Every solution is thoughtfully designed to fit real needs and scale efficiently."
+    },
+    {
+      "title": "Creative Design",
+      "duration": "1 week",
+      "desc": "Our team crafts intuitive, engaging experiences that balance usability and aesthetics. Every interface is designed to feel natural, clear, and purposeful."
+    },
+    {
+      "title": "Development",
+      "duration": "1 week",
+      "desc": "We build secure, scalable, and high-performance solutions using modern technologies. Clean code, reliability, and long-term maintainability are always priorities."
+    },
+    {
+      "title": "Launch & Optimization",
+      "duration": "1 week",
+      "desc": "We deploy with confidence and continue optimizing post-launch. Ongoing support, monitoring, and improvements help your solution grow and evolve."
+    },
+    {
+      "title": "Quality Assurance",
+      "duration": "1 week",
+      "desc": "Each product is rigorously tested for performance, security, and stability to ensure stability, compliance, and a seamless user experience."
+    }
+  ],
+
+  "templates": {
+    "label": "our templates",
+    "title": "Ready-Made <italic>Templates</italic> For Instant Success",
+    "description": "Our library of 500+ ready-to-use templates lets you test ideas, launch campaigns, and ship professional assets fast — while your team stays focused on strategy and growth instead of pixel-by-pixel grunt work. Drag, drop, customize, go live in hours. Built for real businesses, not just pretty mockups."
+  },
+
+  "talent": {
+    "label": "Work With Us",
+    "title": "Exceptional Talent, <italic>Ready to Work With You</italic>",
+    "description": "Collaborate with a trusted network of skilled professionals across design, development, strategy, and emerging technologies. Our team integrates seamlessly into your workflow, delivering high-quality work with clear communication, flexibility, and results you can rely on from start to finish.",
+    "cta": "Contact Us"
+  },
+
+  "why_us": {
+    "label": "Why Us",
+    "title": "What Sets <italic>AEH S.D</italic> Apart",
+    "features": [
+      {
+        "title": "Experienced, multidisciplinary experts",
+        "desc": "Our team brings together designers, engineers, and technologists with deep experience across product design, development, and intelligent systems ready to integrate seamlessly with your workflow."
+      },
+      {
+        "title": "Practical solutions, not theory",
+        "desc": "We focus on what works in production. Every solution is designed to be usable, scalable, and cost-efficient—built to solve real operational challenges, not just look good on paper."
+      },
+      {
+        "title": "Progress you can measure",
+        "desc": "We apply modern technologies where they create real value—improving efficiency, unlocking insights, and helping businesses move faster without unnecessary complexity."
+      },
+      {
+        "title": "Credibility through execution",
+        "desc": "From internal platforms to customer-facing products, our work supports growth, trust, and long-term performance in competitive digital environments."
+      }
+    ]
+  },
+
+  "cancer_case": {
+    "title": "Intelligent Cancer Data Preservation",
+    "description": "Leveraging advanced AI algorithms, our platform seamlessly captures, organizes, and preserves vital cancer patient information across multiple touchpoints.",
+    "view_case": "View Case Study"
+  }
+}
