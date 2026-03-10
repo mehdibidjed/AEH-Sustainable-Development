@@ -4,25 +4,29 @@ import ServiceCard from "../components/service/ServiceCard";
 import OtherServices from "../components/service/OtherService";
 import Contact from "../components/common/ContactSection";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const ServiceLayout = ({ serviceData }) => {
+  const { t } = useTranslation();
+  const key = serviceData.i18nKey || "ml_ai"; // Fallback to ml_ai for safety during transition
+
   return (
     <div className="flex flex-col w-full   min-h-screen bg-white pt-24 md:pt-32 ">
       <div className="max-w-7xl mx-auto w-full">
         <h1 className="text-xl md:text-3xl lg:text-4xl  pt-10 sm:pt-8 font-bold text-black mb-12 leading-tight px-6 md:px-8 lg:px-12">
-          {serviceData.title}
+          {t(`service_pages.${key}.title`)}
         </h1>
 
         <div className="flex flex-col lg:flex-row  items-start  mb-16 px-6 md:px-8 lg:px-12">
           <p className="text-2xl md:text-3xl lg:text-6xl italic font-instrumentSerif  text-black leading-snug max-w-2xl text-start flex-shrink-0">
-            {serviceData.subtitle}
+            {t(`service_pages.${key}.subtitle`)}
           </p>
           <div className="flex-1 min-w-0">
             <p className="text-base md:text-lg leading-relaxed text-black/80 mb-8">
-              {serviceData.description}
+              {t(`service_pages.${key}.description`)}
             </p>
             <Link to="/contact" className="bg-DarkGreen hover:bg-black text-white rounded-full px-8 py-3 font-semibold transition-colors duration-300">
-              Contact Us
+              {t("service_pages.common.get_started")}
             </Link>
           </div>
         </div>
@@ -30,7 +34,7 @@ const ServiceLayout = ({ serviceData }) => {
         <img
           src={serviceData.serviceImage}
           className="mt-12 mb-8 w-full object-cover rounded-2xl px-6 md:px-8 lg:px-12"
-          alt="AI Service"
+          alt={t(`service_pages.${key}.title`)}
         />
 
         {/* The tech bar */}
@@ -128,57 +132,57 @@ const ServiceLayout = ({ serviceData }) => {
         )}
         {(serviceData.title == "Machine Learning & AI" ||
           serviceData.title == "Creative Design") && (
-          <div className="overflow-hidden w-screen bg-black py-5 px-0">
-            <div className="ticker-track">
-              {/* First row */}
-              <div className="flex ">
-                <div className="flex items-center  justify-between  gap-20  pr-20">
-                  {serviceData.icons.map((icon, index) => (
-                    <div
-                      key={`first-${index}`}
-                      className="flex items-center gap-4 text-white/80 whitespace-nowrap"
-                    >
-                      <img
-                        src={icon.icon}
-                        alt={icon.label}
-                        className="w-6 h-6 md:w-10 md:h-10"
-                      />
-                      <p className="text-xs md:text-sm font-medium">
-                        {icon.label}
-                      </p>
-                    </div>
-                  ))}
-                </div>
+            <div className="overflow-hidden w-screen bg-black py-5 px-0">
+              <div className="ticker-track">
+                {/* First row */}
+                <div className="flex ">
+                  <div className="flex items-center  justify-between  gap-20  pr-20">
+                    {serviceData.icons.map((icon, index) => (
+                      <div
+                        key={`first-${index}`}
+                        className="flex items-center gap-4 text-white/80 whitespace-nowrap"
+                      >
+                        <img
+                          src={icon.icon}
+                          alt={icon.label}
+                          className="w-6 h-6 md:w-10 md:h-10"
+                        />
+                        <p className="text-xs md:text-sm font-medium">
+                          {icon.label}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
 
-                {/* Second row (required) */}
-                <div className="flex items-center justify-between gap-20  pr-20">
-                  {serviceData.icons.map((icon, index) => (
-                    <div
-                      key={`second-${index}`}
-                      className="flex items-center gap-4 text-white/80 whitespace-nowrap"
-                    >
-                      <img
-                        src={icon.icon}
-                        alt={icon.label}
-                        className="w-6 h-6 md:w-10 md:h-10"
-                      />
-                      <p className="text-xs md:text-sm font-medium">
-                        {icon.label}
-                      </p>
-                    </div>
-                  ))}
+                  {/* Second row (required) */}
+                  <div className="flex items-center justify-between gap-20  pr-20">
+                    {serviceData.icons.map((icon, index) => (
+                      <div
+                        key={`second-${index}`}
+                        className="flex items-center gap-4 text-white/80 whitespace-nowrap"
+                      >
+                        <img
+                          src={icon.icon}
+                          alt={icon.label}
+                          className="w-6 h-6 md:w-10 md:h-10"
+                        />
+                        <p className="text-xs md:text-sm font-medium">
+                          {icon.label}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        )}
+          )}
         {/* The Hero Section */}
         <div className="flex flex-col  items-center text-center mt-24 md:mt-32 mb-16 md:mb-20 px-6 md:px-8 lg:px-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-black mb-6 leading-tight">
-            {serviceData.heroTitle}
+            {t(`service_pages.${key}.hero_title`)}
           </h2>
           <p className="text-base md:text-lg text-black/70 max-w-4xl leading-relaxed">
-            {serviceData.heroDescription}
+            {t(`service_pages.${key}.hero_description`)}
           </p>
         </div>
 
@@ -188,11 +192,11 @@ const ServiceLayout = ({ serviceData }) => {
           <div className="flex flex-col lg:flex-row gap-8 mb-20 md:mb-24 px-6 md:px-8 lg:px-12">
             {/* LEFT SIDE (first 2 cards) */}
             <div className="flex-1 flex flex-col gap-8">
-              {serviceData.cards.slice(0, 2).map((card, index) => (
+              {serviceData.cards.slice(0, 2).map((_, index) => (
                 <ServiceCard
                   key={index}
-                  title={card.title}
-                  description={card.description}
+                  title={t(`service_pages.${key}.cards.${index}.title`)}
+                  description={t(`service_pages.${key}.cards.${index}.description`)}
                 />
               ))}
             </div>
@@ -208,11 +212,11 @@ const ServiceLayout = ({ serviceData }) => {
 
             {/* RIGHT SIDE (last 2 cards) */}
             <div className="flex-1 flex flex-col gap-8">
-              {serviceData.cards.slice(2, 4).map((card, index) => (
+              {serviceData.cards.slice(2, 4).map((_, index) => (
                 <ServiceCard
-                  key={index}
-                  title={card.title}
-                  description={card.description}
+                  key={index + 2}
+                  title={t(`service_pages.${key}.cards.${index + 2}.title`)}
+                  description={t(`service_pages.${key}.cards.${index + 2}.description`)}
                 />
               ))}
             </div>
@@ -222,11 +226,11 @@ const ServiceLayout = ({ serviceData }) => {
           <div className="flex flex-col lg:flex-row gap-8 mb-20 md:mb-24 px-6 md:px-8 lg:px-12">
             {/* LEFT SIDE (first 2 cards) */}
             <div className="flex-1 flex flex-col gap-8">
-              {serviceData.cards.slice(0, 2).map((card, index) => (
+              {serviceData.cards.slice(0, 2).map((_, index) => (
                 <ServiceCard
                   key={index}
-                  title={card.title}
-                  description={card.description}
+                  title={t(`service_pages.${key}.cards.${index}.title`)}
+                  description={t(`service_pages.${key}.cards.${index}.description`)}
                 />
               ))}
             </div>
@@ -240,13 +244,13 @@ const ServiceLayout = ({ serviceData }) => {
               />
             </div>
 
-            {/* RIGHT SIDE (last 2 cards) */}
+            {/* RIGHT SIDE (last 3 cards) */}
             <div className="flex-1 flex flex-col gap-8">
-              {serviceData.cards.slice(2, 5).map((card, index) => (
+              {serviceData.cards.slice(2, 5).map((_, index) => (
                 <ServiceCard
-                  key={index}
-                  title={card.title}
-                  description={card.description}
+                  key={index + 2}
+                  title={t(`service_pages.${key}.cards.${index + 2}.title`)}
+                  description={t(`service_pages.${key}.cards.${index + 2}.description`)}
                 />
               ))}
             </div>
@@ -254,13 +258,13 @@ const ServiceLayout = ({ serviceData }) => {
         )}
         {serviceData.cardsType == "3-3" && (
           <div className="flex flex-col lg:flex-row gap-8 mb-20 md:mb-24 px-6 md:px-8 lg:px-12">
-            {/* LEFT SIDE (first 2 cards) */}
+            {/* LEFT SIDE (first 3 cards) */}
             <div className="flex-1 flex flex-col gap-8">
-              {serviceData.cards.slice(0, 3).map((card, index) => (
+              {serviceData.cards.slice(0, 3).map((_, index) => (
                 <ServiceCard
                   key={index}
-                  title={card.title}
-                  description={card.description}
+                  title={t(`service_pages.${key}.cards.${index}.title`)}
+                  description={t(`service_pages.${key}.cards.${index}.description`)}
                 />
               ))}
             </div>
@@ -274,13 +278,13 @@ const ServiceLayout = ({ serviceData }) => {
               />
             </div>
 
-            {/* RIGHT SIDE (last 2 cards) */}
+            {/* RIGHT SIDE (last 3 cards) */}
             <div className="flex-1 flex flex-col gap-8">
-              {serviceData.cards.slice(3, 6).map((card, index) => (
+              {serviceData.cards.slice(3, 6).map((_, index) => (
                 <ServiceCard
-                  key={index}
-                  title={card.title}
-                  description={card.description}
+                  key={index + 3}
+                  title={t(`service_pages.${key}.cards.${index + 3}.title`)}
+                  description={t(`service_pages.${key}.cards.${index + 3}.description`)}
                 />
               ))}
             </div>
@@ -295,7 +299,7 @@ const ServiceLayout = ({ serviceData }) => {
 
       {/* Other Services */}
       <div className="w-screen ">
-        <OtherServices actual_service={serviceData.title} />
+        <OtherServices actual_service={t(`service_pages.${key}.title`)} />
       </div>
 
       {/* Contact Section */}

@@ -1,6 +1,7 @@
 import { Assets } from "../assets/Asset";
 
 export const healthCareData = {
+  i18nKey: "healthcare",
   title: "Pioneering Healthcare Innovation",
   desc: `Technology is revolutionizing the healthcare landscape, enabling more efficient, patient-centered care and operational excellence. Organizations that integrate digital strategies report enhanced revenue growth, higher patient satisfaction, and improved health outcomes. At Techno, innovation is our core strength—we excel at evaluating needs, crafting strategies, and deploying cutting-edge solutions that drive real impact .
   From emerging startups to established healthcare giants, Techno delivers expert, scalable software solutions—on time, on budget, and tailored to your vision.`,
@@ -34,6 +35,7 @@ export const healthCareData = {
   moreIndustrieImage: Assets.Images.Industries.Agriculture,
 };
 export const agricultureData = {
+  i18nKey: "agriculture",
   title: "Digital Solutions for Smarter, Sustainable Agriculture",
   desc: "Agriculture is evolving beyond traditional farming. Data, automation, and intelligent systems now play a critical role in increasing yields, reducing waste, and ensuring long-term sustainability.We help agri-businesses, startups, and cooperatives design and build digital platforms that simplify farm operations, enable real-time decision-making, and scale with growing demands. From AI-powered crop monitoring to farm management systems and supply chain platforms, our solutions turn complex agricultural data into actionable insights.",
   heroImage: Assets.Images.Industries.Agriculture,
@@ -69,6 +71,7 @@ export const agricultureData = {
   moreIndustrieImage: Assets.Images.Industries.HealthApp,
 };
 export const satellitesData = {
+  i18nKey: "satellite",
   title: "Transforming Satellite Data into Meaningful Insights",
   desc: "Satellite technologies generate vast amounts of complex data. The real challenge lies in transforming that data into information that organizations can understand, trust, and act upon. At AEH Sustainable Development, we build advanced digital platforms that help organizations collect, process, visualize, and analyze satellite data efficiently. Our solutions support decision-making across sectors such as agriculture, environmental monitoring, infrastructure planning, and security. By combining robust backend systems with intuitive user interfaces, we ensure satellite data becomes a strategic asset—not an operational burden.",
   heroImage: Assets.Images.Industries.Satellite,
@@ -104,6 +107,7 @@ export const satellitesData = {
   moreIndustrieImage: Assets.Images.Industries.HealthApp,
 };
 export const securityData = {
+  i18nKey: "law",
   title:
     "Secure, Reliable Digital Platforms for Legal and Immigration Services",
   desc: `Legal and immigration services rely on accuracy, trust, and compliance. Manual processes and outdated systems can slow operations, increase errors, and create friction for both professionals and clients.
@@ -142,6 +146,7 @@ We design systems that prioritize clarity, usability, and confidentiality, ensur
   moreIndustrieImage: Assets.Images.Industries.HealthApp,
 };
 export const govermentData = {
+  i18nKey: "government",
   title: "Digital Transformation for Modern Public Services",
   desc: `Public sector organizations are expected to deliver transparent, accessible, and efficient services—often while working with legacy systems and complex regulations.
 At AEH Sustainable Development, we partner with government institutions to design secure, scalable digital solutions that improve service delivery and internal operations. Our approach focuses on usability, accessibility, and long-term sustainability, ensuring technology works for both public servants and citizens.`,
@@ -178,6 +183,7 @@ At AEH Sustainable Development, we partner with government institutions to desig
   moreIndustrieImage: Assets.Images.Industries.Agriculture,
 };
 export const intelligenceData = {
+  i18nKey: "intelligence",
   title: "Intelligent Digital Systems for Data-Driven Decision Making",
   desc: `Organizations operating in intelligence-driven environments depend on speed, accuracy, and secure access to information. Fragmented systems and poor usability can slow critical decisions.
 At AEH Sustainable Development, we design and build intelligent platforms that centralize data, enhance analysis, and support real-time decision-making. Our solutions combine advanced data processing with intuitive interfaces, enabling users to interpret complex information quickly and confidently.`,

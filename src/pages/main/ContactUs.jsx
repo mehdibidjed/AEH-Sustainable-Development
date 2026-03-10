@@ -1,9 +1,11 @@
 import React, { useRef, useState, useEffect } from "react";
+import { useTranslation, Trans } from "react-i18next";
 import emailjs from "@emailjs/browser";
 import { CircleCheck, X } from "lucide-react";
 import { Assets } from "../../assets/Asset";
 
 function Contact() {
+  const { t } = useTranslation();
   const form = useRef();
   const [showPopup, setShowPopup] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -65,7 +67,7 @@ function Contact() {
             {!isSuccess ? (
               <div className="space-y-4">
                 <h3 className="text-xl font-bold text-black">
-                  Sending Message...
+                  {t("contact.popup.sending")}
                 </h3>
                 <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
                   <div
@@ -74,7 +76,7 @@ function Contact() {
                   />
                 </div>
                 <p className="text-sm text-gray-500 font-medium">
-                  {progress}% Complete
+                  {t("contact.popup.complete", { progress })}
                 </p>
               </div>
             ) : (
@@ -83,16 +85,16 @@ function Contact() {
                   <CircleCheck className="w-16 h-16 text-green-500 animate-bounce" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-black">Message Sent!</h3>
+                  <h3 className="text-2xl font-bold text-black">{t("contact.popup.sent_title")}</h3>
                   <p className="text-gray-600 mt-2">
-                    We'll get back to you shortly.
+                    {t("contact.popup.sent_desc")}
                   </p>
                 </div>
                 <button
                   onClick={closePopup}
                   className="bg-PrimaryGreen text-white px-8 py-2 rounded-full font-semibold hover:bg-black transition-colors w-full"
                 >
-                  Close
+                  {t("contact.popup.close")}
                 </button>
               </div>
             )}
@@ -114,7 +116,7 @@ function Contact() {
         {/* Content Container */}
         <div className="z-10 flex justify-start items-center">
           <h3 className="text-white z-10 font-bold font-Popine text-3xl md:text-6xl">
-            Contact
+            {t("contact.hero.title")}
           </h3>
         </div>
       </section>
@@ -126,16 +128,16 @@ function Contact() {
           <div className="space-y-10">
             <div className="space-y-6">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-PrimaryGreen leading-tight">
-                Collaborate With Us To <br />
-                Create Meaningful, <br />
-                <span className="font-serif italic font-light">
-                  Innovative Solutions
-                </span>
+                <Trans
+                  i18nKey="contact.info.title"
+                  components={{
+                    italic: <span className="font-serif italic font-light" />,
+                    br: <br />,
+                  }}
+                />
               </h2>
               <p className="text-gray-600 text-sm max-w-md font-light">
-                Are you driven by collaboration and business growth? We believe
-                the best solutions are created when talented people work
-                together.
+                {t("contact.info.description")}
               </p>
             </div>
 
@@ -143,29 +145,29 @@ function Contact() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-20 pt-5">
               <div className="space-y-2">
                 <p className="text-sm font-bold uppercase tracking-widest text-PrimaryGreen">
-                  Email Address
+                  {t("contact.details.email_label")}
                 </p>
                 <div className="w-8 h-[2px] bg-PrimaryGreen mb-4"></div>
                 <p className="text-black font-bold text-sm">
                   contact@aehsustainabledevelopment.com
                 </p>
                 <p className="text-black text-sm">
-                  Assistance hours:
+                  {t("contact.details.assistance_hours")}
                   <br />
-                  Monday - Friday 9 am to <br /> 8 pm EST
+                  {t("contact.details.working_hours")}
                 </p>
               </div>
 
               <div className="space-y-2">
                 <p className="text-sm font-bold uppercase tracking-widest text-PrimaryGreen">
-                  Number
+                  {t("contact.details.phone_label")}
                 </p>
                 <div className="w-8 h-[2px] bg-PrimaryGreen mb-4"></div>
                 <p className="text-black font-bold">+213 770792729</p>
                 <p className="text-black text-sm">
-                  Assistance hours:
+                  {t("contact.details.assistance_hours")}
                   <br />
-                  Monday - Friday 9 am to <br /> 8 pm EST
+                  {t("contact.details.working_hours")}
                 </p>
               </div>
             </div>
@@ -175,18 +177,17 @@ function Contact() {
           <div className="bg-YellowBg px-8 py-1 md:px-8 md:py-10 rounded-[12px] shadow-sm">
             <div className="mb-10">
               <h3 className="text-2xl font-bold text-PrimaryGreen mb-2">
-                Get In Touch
+                {t("contact.form.title")}
               </h3>
               <p className="text-gray-600 text-sm font-light">
-                Built on collaboration. Powered by talented teams. Designed for
-                growth.
+                {t("contact.form.subtitle")}
               </p>
             </div>
 
             <form ref={form} onSubmit={sendEmail} className="space-y-8">
               <div className="relative border-b border-black/10 pb-2 focus-within:border-PrimaryGreen transition-colors">
                 <label className="block text-PrimaryGreen text-sm font-bold mb-4">
-                  Your Name
+                  {t("contact.form.name_label")}
                 </label>
                 <input
                   type="text"
@@ -198,7 +199,7 @@ function Contact() {
 
               <div className="relative border-b border-black/10 pb-2 focus-within:border-PrimaryGreen transition-colors">
                 <label className="block text-PrimaryGreen text-sm font-bold mb-4">
-                  Email Address
+                  {t("contact.form.email_label")}
                 </label>
                 <input
                   type="email"
@@ -210,7 +211,7 @@ function Contact() {
 
               <div className="relative border-b border-black/10 pb-2 focus-within:border-PrimaryGreen transition-colors">
                 <label className="block text-PrimaryGreen text-sm font-bold mb-4">
-                  Phone Number
+                  {t("contact.form.phone_label")}
                 </label>
                 <input
                   type="tel"
@@ -221,7 +222,7 @@ function Contact() {
 
               <div className="relative border-b border-black/10 pb-2 focus-within:border-PrimaryGreen transition-colors">
                 <label className="block text-PrimaryGreen text-sm font-bold mb-4">
-                  Project Description
+                  {t("contact.form.desc_label")}
                 </label>
                 <textarea
                   name="message"
@@ -236,7 +237,7 @@ function Contact() {
                   type="submit"
                   className="w-full md:w-auto bg-PrimaryGreen text-white px-24 py-3 rounded-full text-sm font-bold hover:brightness-110 transition-all active:scale-95 shadow-lg"
                 >
-                  Submit
+                  {t("contact.form.submit")}
                 </button>
               </div>
             </form>

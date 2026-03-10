@@ -79,7 +79,7 @@ function Home() {
               <Trans
                 i18nKey="hero.title"
                 components={{
-                  italic: <span className="font-Instrument_Serif italic font-light" />,
+                  italic: <span className="font-instrumentSerif italic font-light" />,
                 }}
               />
             </h1>
@@ -139,7 +139,7 @@ function Home() {
               <div className="relative w-full max-w-[180px] sm:max-w-[220px] md:max-w-[240px] aspect-square flex items-center justify-center">
                 <img
                   src={Assets.Images.Home.ML}
-                  alt="service illustration"
+                  alt={t("service_items.ml_ai.alt")}
                   className="w-[80%] h-auto object-contain z-10"
                 />
                 <div className="absolute inset-0 bg-[#D9FF7E]/5 blur-[60px] rounded-full"></div>
@@ -151,13 +151,13 @@ function Home() {
                   <span className="hidden sm:inline">
                     {t("service_items.ml_ai.tag_automation")}
                   </span>
-                  <span className="sm:hidden">Auto</span>
+                  <span className="sm:hidden">{t("service_items.service_tags.automation")}</span>
                 </span>
 
                 <span className="absolute top-[25%] sm:top-[28%] md:top-[30%] -left-3 sm:-left-4 md:-left-5 bg-white/5 backdrop-blur-md border border-white/10 rounded-full px-2 sm:px-3 py-0.5 sm:py-1 text-[8px] sm:text-[9px] md:text-[10px] flex items-center gap-1">
                   <Users className="w-2 sm:w-2.5 md:w-3" />
                   <span className="hidden sm:inline">{t("service_items.ml_ai.tag_users")}</span>
-                  <span className="sm:hidden">Users</span>
+                  <span className="sm:hidden">{t("service_items.service_tags.users")}</span>
                 </span>
 
                 <span className="absolute bottom-[8%] sm:bottom-[10%] md:bottom-[8%] -left-3 sm:-left-4 md:-left-5 bg-white/5 backdrop-blur-md border border-white/10 rounded-full px-2 sm:px-3 py-0.5 sm:py-1 text-[8px] sm:text-[9px] md:text-[10px] flex items-center gap-1">
@@ -168,19 +168,19 @@ function Home() {
                 <span className="absolute -top-3 sm:-top-4 md:-top-5 -right-2 sm:-right-3 md:-right-4 bg-white/5 backdrop-blur-md border border-white/10 rounded-full px-2 sm:px-3 py-0.5 sm:py-1 text-[8px] sm:text-[9px] md:text-[10px] flex items-center gap-1">
                   <Brain className="w-2 sm:w-2.5 md:w-3" />
                   <span className="hidden sm:inline">{t("service_items.ml_ai.tag_realtime")}</span>
-                  <span className="sm:hidden">Real-time</span>
+                  <span className="sm:hidden">{t("service_items.service_tags.realtime")}</span>
                 </span>
 
                 <span className="absolute top-[25%] sm:top-[28%] md:top-[30%] -right-2 sm:-right-3 md:-right-4 bg-white/5 backdrop-blur-md border border-white/10 rounded-full px-2 sm:px-3 py-0.5 sm:py-1 text-[8px] sm:text-[9px] md:text-[10px] flex items-center gap-1">
                   <Headset className="w-2 sm:w-2.5 md:w-3" />
                   <span className="hidden sm:inline">{t("service_items.ml_ai.tag_support")}</span>
-                  <span className="sm:hidden">Support</span>
+                  <span className="sm:hidden">{t("service_items.service_tags.support")}</span>
                 </span>
 
                 <span className="absolute bottom-[8%] sm:bottom-[10%] md:bottom-[8%] -right-1 sm:-right-4 md:-right-5 bg-white/5 backdrop-blur-md border border-white/10 rounded-full px-2 sm:px-3 py-0.5 sm:py-1 text-[8px] sm:text-[9px] md:text-[10px] flex items-center gap-1">
                   <ShieldCheck className="w-2 sm:w-2.5 md:w-3" />
                   <span className="hidden sm:inline">{t("service_items.ml_ai.tag_security")}</span>
-                  <span className="sm:hidden">Security</span>
+                  <span className="sm:hidden">{t("service_items.service_tags.security")}</span>
                 </span>
               </div>
             </div>
@@ -216,7 +216,7 @@ function Home() {
             <div className="mt-auto flex items-end justify-center pb-4">
               <img
                 src={Assets.Images.Home.BuyNow}
-                alt="Buy Now"
+                alt={t("service_items.ecommerce.alt")}
                 className="w-[85%] sm:w-[90%] md:w-full max-w-[280px] mx-auto object-contain"
               />
             </div>
@@ -239,14 +239,14 @@ function Home() {
               <div className="w-[50%]">
                 <img
                   src={Assets.Images.Home.CD}
-                  alt="Creative Designer"
+                  alt={t("service_items.creative.alt")}
                   className="w-full h-full object-contain object-bottom"
                 />
               </div>
               <div className="w-full">
                 <img
                   src={Assets.Images.Home.CreativeChat}
-                  alt="Design Chat Interface"
+                  alt={t("service_items.creative.alt_chat")}
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -331,9 +331,8 @@ function Home() {
             <Link
               key={item.key}
               to={item.path}
-              className={`font-inter font-medium p-3 ${
-                item.key === "agriculture" ? "border-b-2 border-[#06986F]" : ""
-              }`}
+              className={`font-inter font-medium p-3 ${item.key === "agriculture" ? "border-b-2 border-[#06986F]" : ""
+                }`}
             >
               {t(`industries.${item.key}`)}
             </Link>
@@ -382,7 +381,7 @@ function Home() {
           </h1>
         </div>
 
-        <div className="flex gap-[12px] md:gap-4 md:px-4 overflow-x-auto pb-10 scrollbar-hide">
+        <div className="flex justify-center gap-[12px] md:gap-4 md:px-4 overflow-x-auto pb-10 scrollbar-hide">
           {[
             {
               image: Assets.Images.Home.HealthCr,
@@ -419,7 +418,7 @@ function Home() {
                 <div className="space-y-3 text-start">
                   <h3 className="text-white text-xl md:text-2xl font-medium leading-tight">
                     <Trans i18nKey={project.nameKey} />{" "}
-                    <span className="font-Instrument_Serif italic">
+                    <span className="font-instrumentSerif italic">
                       <Trans i18nKey={project.italicKey} />
                     </span>
                   </h3>
@@ -444,10 +443,17 @@ function Home() {
         {/* PROCESS */}
         <div className="space-y-3 px-12">
           <h6 className="uppercase text-xs">{t("process.label")}</h6>
-          <h1 className="font-Inter md:text-4xl">{t("process.title")}</h1>
+          <h1 className="font-Inter md:text-4xl text-white">
+            <Trans
+              i18nKey="process.title"
+              components={{
+                italic: <span className="font-instrumentSerif italic" />,
+              }}
+            />
+          </h1>
         </div>
 
-        <div className="relative mx-auto max-w-6xl space-y-12 md:space-y-20 mt-14 px-6 md:px-0">
+        <div dir="ltr" className="relative mx-auto max-w-6xl space-y-12 md:space-y-20 mt-14 px-6 md:px-0">
           {t("processes", { returnObjects: true }).map((process, idx) => {
             const isRight = process.side === "right" || idx % 2 === 1;
             return (
@@ -512,7 +518,7 @@ function Home() {
           <p className="text-sm text-white/70">{t("templates.description")}</p>
         </div>
 
-        <div className="overflow-hidden w-full py-5 space-y-8">
+        <div dir="ltr" className="overflow-hidden w-full py-5 space-y-8">
           <div className="ticker-track">
             <img src={Assets.Images.Home.Row1} alt="" />
             <img src={Assets.Images.Home.Row1} alt="" />
@@ -580,7 +586,7 @@ function Home() {
             <div className="w-full bg-cover">
               <img
                 src={Assets.Images.Home.CancerDetection}
-                alt="Intelligent Cancer Data Preservation"
+                alt={t("cancer_case.alt")}
                 className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
               />
             </div>
@@ -624,7 +630,7 @@ function Home() {
             <div className="rounded-[12px] order-2 md:order-1 overflow-hidden shadow-2xl sticky top-24">
               <img
                 src={Assets.Images.Home.Hardware}
-                alt="Hardware Systems"
+                alt={t("why_us.alt")}
                 className="w-full h-full object-cover aspect-square md:aspect-[4/5] lg:aspect-square"
               />
             </div>
@@ -651,9 +657,8 @@ function Home() {
                       className="w-full flex justify-between items-center text-left group"
                     >
                       <span
-                        className={`text-lg md:text-xl font-bold transition-colors ${
-                          openIndex === index ? "text-PrimaryGreen" : "text-black/80 group-hover:text-PrimaryGreen"
-                        }`}
+                        className={`text-lg md:text-xl font-bold transition-colors ${openIndex === index ? "text-PrimaryGreen" : "text-black/80 group-hover:text-PrimaryGreen"
+                          }`}
                       >
                         {feature.title}
                       </span>
@@ -665,9 +670,8 @@ function Home() {
                     </button>
 
                     <div
-                      className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                        openIndex === index ? "max-h-40 opacity-100 mt-4" : "max-h-0 opacity-0"
-                      }`}
+                      className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === index ? "max-h-40 opacity-100 mt-4" : "max-h-0 opacity-0"
+                        }`}
                     >
                       <p className="text-black/70 leading-relaxed font-light text-sm md:text-md">
                         {feature.desc}

@@ -118,9 +118,9 @@ function NavBar() {
     <>
       <div className="fixed top-0 left-0 right-0 z-[60] transition-transform duration-300 px-6 md:px-10 py-4 flex items-center justify-between bg-white shadow-sm">
         {/* Logo */}
-        <div className="relative flex gap-3 items-center w-[50%] md:w-[15%]">
+        <Link to="/" className="relative flex gap-3 items-center w-[50%] md:w-[15%]">
           <img src={Assets.Icons.AppIcon} alt="App Icon" className="h-20" />
-        </div>
+        </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center space-x-6">

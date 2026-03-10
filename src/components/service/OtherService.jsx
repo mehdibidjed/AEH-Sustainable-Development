@@ -1,19 +1,21 @@
 import { services } from "../../data/service_data";
 import { Assets } from "../../assets/Asset";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const OtherServices = ({ actual_service }) => {
+  const { t } = useTranslation();
+
   return (
     <div className="bg-black text-white py-20 md:py-25 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            Other Services
+            {t("service_pages.common.other_services_title")}
           </h2>
           <p className="text-base md:text-lg text-white/70 max-w-3xl mx-auto leading-relaxed">
-            Technical solutions built to bring designs to life with performance,
-            scalability, and reliability in mind.
+            {t("service_pages.common.other_services_desc")}
           </p>
         </div>
 
@@ -21,7 +23,7 @@ const OtherServices = ({ actual_service }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8">
           {services.map(
             (service, index) =>
-              actual_service != service.name && (
+              actual_service != t(`service_pages.${service.i18nKey}.title`) && (
                 <div key={index} className="relative group">
                   {/* Vertical line on the left */}
                   <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-white/40 to-white/10 group-hover:from-white/60 transition-colors duration-300" />
@@ -30,7 +32,7 @@ const OtherServices = ({ actual_service }) => {
                     {/* Service Title */}
                     <Link to={service.link}>
                       <h3 className="text-lg md:text-xl font-bold mb-8 leading-tight">
-                        {service.name}
+                        {t(`service_pages.${service.i18nKey}.title`)}
                       </h3>
                     </Link>
 
@@ -38,18 +40,18 @@ const OtherServices = ({ actual_service }) => {
                     <img
                       src={service.image}
                       className="mb-8 rounded-lg"
-                      alt={service.name}
+                      alt={t(`service_pages.${service.i18nKey}.title`)}
                     />
 
                     {/* Sub-services List */}
                     <ul className="space-y-3">
-                      {service.subServices.map((subService, subIndex) => (
+                      {service.subServices.map((_, subIndex) => (
                         <li key={subIndex} className="flex items-start gap-3">
                           <span className="text-white/50  flex-shrink-0">
                             •
                           </span>
                           <span className="text-sm  text-white/90 leading-relaxed">
-                            {subService}
+                            {t(`service_pages.${service.i18nKey}.cards.${subIndex}.title`)}
                           </span>
                         </li>
                       ))}

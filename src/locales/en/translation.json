@@ -4,7 +4,7 @@
     "our_work": "Our work",
     "industry": "Industry",
     "about_us": "About us",
-    "connect": "Connect with us"  
+    "connect": "Connect with us"
   },
   "navbar_services": {
     "ml_models": "Machine Learning Models",
@@ -41,13 +41,11 @@
     "cta_start": "Start Your Project",
     "cta_about": "About Us"
   },
-
   "services": {
     "label": "services",
     "title": "What <italic>AEH Sustainable Development</italic> Can Do For You",
     "description": "Our technology solutions help businesses adapt, optimize, and grow in an evolving digital environment. By combining thoughtful design, intelligent systems, and scalable development, we turn complex challenges into efficient, future-ready solutions."
   },
-
   "service_items": {
     "ml_ai": {
       "name": "Machine learning & AI",
@@ -57,38 +55,47 @@
       "tag_scalability": "Scalability",
       "tag_realtime": "Real-Time Monitoring",
       "tag_support": "Proactive Support",
-      "tag_security": "Data Security"
+      "tag_security": "Data Security",
+      "alt": "Machine Learning Illustration"
+    },
+    "service_tags": {
+      "automation": "Auto",
+      "users": "Users",
+      "realtime": "Real-time",
+      "support": "Support",
+      "security": "Security"
     },
     "software": {
       "name": "Software Development",
-      "desc": "Share your presentation with a live link. Present with notes, a timer, and other aids."
+      "desc": "Share your presentation with a live link. Present with notes, a timer, and other aids.",
+      "alt": "Software Development Technology"
     },
     "ecommerce": {
       "name": "E-Commerce Solutions",
-      "desc": "Create, craft and share stories together with real time collaboration."
+      "desc": "Create, craft and share stories together with real time collaboration.",
+      "alt": "Buy Now Illustration"
     },
     "creative": {
       "name": "Creative Design",
-      "desc": "Choose from 100+ expert-made templates. Use your brand colors and custom fonts."
+      "desc": "Choose from 100+ expert-made templates. Use your brand colors and custom fonts.",
+      "alt": "Creative Design Illustration",
+      "alt_chat": "Design Chat Interface"
     },
     "msp": {
       "name": "IT managed services provider (MSP)",
       "desc": "Quickly add visuals to slides, import your data, and keep your team in sync."
     }
   },
-
   "solutions": {
     "label": "solutions",
     "title": "Comprehensive <italic>Technology Solutions,</italic> Built for impact",
     "description": "We design and build complete digital solutions that simplify complexity and elevate every interaction. Driven by transparency, advanced research, and skilled professionals, we work collaboratively to deliver products that are intelligent, scalable, and impactful."
   },
-
   "agriculture_showcase": {
     "title": "Agriculture AI App",
     "description": "The agriculture app is designed to simplify daily farm management by bringing essential tools into one easy-to-use platform.<br/> From monitoring crop health and tracking irrigation schedules to analyzing soil data and weather conditions...",
     "view_details": "View Details"
   },
-
   "industries": {
     "agriculture": "Agriculture",
     "satellite": "Satellite",
@@ -97,7 +104,6 @@
     "government": "Government",
     "intelligence": "Intelligence"
   },
-
   "work": {
     "label": "our work",
     "title": "A Curated Selection Of Our <italic>Recent Projects</italic> And Case Studies",
@@ -120,13 +126,11 @@
       }
     ]
   },
-
   "process": {
     "label": "our process",
     "title": "Turning Complex Challenges Into Reliable Digital Solutions",
     "connect": "Let's Connect"
   },
-
   "processes": [
     {
       "title": "Strategy & Research",
@@ -159,46 +163,462 @@
       "desc": "Each product is rigorously tested for performance, security, and stability to ensure stability, compliance, and a seamless user experience."
     }
   ],
-
   "templates": {
     "label": "our templates",
     "title": "Ready-Made <italic>Templates</italic> For Instant Success",
     "description": "Our library of 500+ ready-to-use templates lets you test ideas, launch campaigns, and ship professional assets fast — while your team stays focused on strategy and growth instead of pixel-by-pixel grunt work. Drag, drop, customize, go live in hours. Built for real businesses, not just pretty mockups."
   },
-
   "talent": {
     "label": "Work With Us",
     "title": "Exceptional Talent, <italic>Ready to Work With You</italic>",
     "description": "Collaborate with a trusted network of skilled professionals across design, development, strategy, and emerging technologies. Our team integrates seamlessly into your workflow, delivering high-quality work with clear communication, flexibility, and results you can rely on from start to finish.",
     "cta": "Contact Us"
   },
-
   "why_us": {
     "label": "Why Us",
     "title": "What Sets <italic>AEH S.D</italic> Apart",
     "features": [
       {
-        "title": "Experienced, multidisciplinary experts",
-        "desc": "Our team brings together designers, engineers, and technologists with deep experience across product design, development, and intelligent systems ready to integrate seamlessly with your workflow."
+        "title": "Results That Matter",
+        "desc": "Success is measured by outcomes, not activity. We focus on achieving the specific goals defined with our clients and delivering solutions that create real operational and business impact. Through disciplined project execution and experienced technical teams, we move efficiently from concept to deployment."
       },
       {
-        "title": "Practical solutions, not theory",
-        "desc": "We focus on what works in production. Every solution is designed to be usable, scalable, and cost-efficient—built to solve real operational challenges, not just look good on paper."
+        "title": "Adaptable By Design",
+        "desc": "Our teams are built to adjust as projects evolve. We scale resources up or down as needed, respond quickly to changing requirements, and remain flexible throughout the engagement to ensure progress stays aligned with business priorities."
       },
       {
-        "title": "Progress you can measure",
-        "desc": "We apply modern technologies where they create real value—improving efficiency, unlocking insights, and helping businesses move faster without unnecessary complexity."
+        "title": "Open And Transparent Collaboration",
+        "desc": "We believe trust is built through visibility. Clients stay informed through clear communication, consistent updates, and shared tracking tools. This approach ensures alignment, accountability, and full clarity at every stage of the project."
       },
       {
         "title": "Credibility through execution",
         "desc": "From internal platforms to customer-facing products, our work supports growth, trust, and long-term performance in competitive digital environments."
       }
-    ]
+    ],
+    "alt": "Hardware Systems"
   },
-
   "cancer_case": {
     "title": "Intelligent Cancer Data Preservation",
     "description": "Leveraging advanced AI algorithms, our platform seamlessly captures, organizes, and preserves vital cancer patient information across multiple touchpoints.",
-    "view_case": "View Case Study"
+    "view_case": "View Case Study",
+    "alt": "Intelligent Cancer Data Preservation"
+  },
+  "about": {
+    "leadership": {
+      "label": "Leadership",
+      "name": "Moussa Abdallah El Hirtsi",
+      "role": "CEO And Founder Of AEH Sustainable Development",
+      "bio_p1": "Moussa's core expertise brings over 14 years of combined experience in the energy, real estate, and international business sectors, with 5 years focused on oil and gas operations and 9 years specializing in international negotiations, sales strategy, and cross-border partnerships. As the lead Negotiation Specialist for the Middle East and Africa region, he plays a pivotal role in forging strategic alliances and securing high-value deals across the region.",
+      "bio_p2": "With expertise spanning both technical and commercial aspects of the energy and real estate industries, Moussa excels in diplomatic engagement with government and private sector entities. His contributions have been instrumental in expanding the company's footprint through multinational partnerships, helping position Star of Texas as a competitive player in well entry and revitalization projects."
+    },
+    "agency": {
+      "title": "We’re a Strategy-First Digital <italic>Product Agency.</italic>",
+      "description": "AEH Sustainable Development is a technology and AI development company focused on delivering real, production-ready solutions for organizations operating in complex and regulated environments."
+    },
+    "who_we_are": {
+      "title": "Who We Are",
+      "p1": "AEH Sustainable Development is a multidisciplinary technology firm combining software engineering, artificial intelligence, automation, and strategic design. Our work spans industries where reliability, compliance, and long-term performance matter.",
+      "p2": "We don't chase trends. We focus on clarity, execution, and systems that work in the real world — from day one and long after launch.",
+      "p3": "Our teams collaborate closely with stakeholders to translate complex requirements into clean architecture, secure systems, and scalable digital products."
+    },
+    "mission_vision": {
+      "title": "Missions And Vison",
+      "description": "AEH Sustainable Development was founded to turn bold ideas into technology that works in the real world. We saw organizations held back by overcomplicated systems, inaccessible AI, and solutions that failed beyond the concept stage. Today, we focus on practical strategy, clear design, and reliable execution, partnering with organizations in complex and regulated industries to build technology that scales, performs, and lasts.",
+      "cards": {
+        "vision": {
+          "title": "Our Vision",
+          "desc": "To make advanced technology practical, scalable, and accessible for organizations building long-term, sustainable growth."
+        },
+        "mission": {
+          "title": "Our Mission",
+          "desc": "We design and deliver production-ready software and automation that solve real-world challenges in complex and regulated environments."
+        }
+      }
+    },
+    "why_us": {
+      "title": "Why Us ?",
+      "features": {
+        "results": {
+          "title": "Results That Matter",
+          "desc": "Success is measured by outcomes, not activity. We focus on achieving the specific goals defined with our clients and delivering solutions that create real operational and business impact. Through disciplined project execution and experienced technical teams, we move efficiently from concept to deployment."
+        },
+        "adaptable": {
+          "title": "Adaptable By Design",
+          "desc": "Our teams are built to adjust as projects evolve. We scale resources up or down as needed, respond quickly to changing requirements, and remain flexible throughout the engagement to ensure progress stays aligned with business priorities."
+        },
+        "collaboration": {
+          "title": "Open And Transparent Collaboration",
+          "desc": "We believe trust is built through visibility. Clients stay informed through clear communication, consistent updates, and shared tracking tools. This approach ensures alignment, accountability, and full clarity at every stage of the project."
+        }
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact"
+    },
+    "info": {
+      "title": "Collaborate With Us To Create <italic>Meaningful, Innovative Solutions</italic>",
+      "description": "Are you driven by collaboration and business growth? We believe the best solutions are created when talented people work together."
+    },
+    "details": {
+      "email_label": "Email Address",
+      "assistance_hours": "Assistance hours:",
+      "working_hours": "Monday - Friday 9 am to 8 pm EST",
+      "phone_label": "Number"
+    },
+    "form": {
+      "title": "Get In Touch",
+      "subtitle": "Built on collaboration. Powered by talented teams. Designed for growth.",
+      "name_label": "Your Name",
+      "email_label": "Email Address",
+      "phone_label": "Phone Number",
+      "desc_label": "Project Description",
+      "submit": "Submit"
+    },
+    "popup": {
+      "sending": "Sending Message...",
+      "complete": "{{progress}}% Complete",
+      "sent_title": "Message Sent!",
+      "sent_desc": "We'll get back to you shortly.",
+      "close": "Close"
+    }
+  },
+  "service_pages": {
+    "ml_ai": {
+      "title": "Machine Learning & AI",
+      "subtitle": "AI that Grows Your Business",
+      "description": "Empower operations with end-to-end AI services. From consulting to custom apps, we optimize workflows for sectors like agriculture, healthcare, and finance.",
+      "hero_title": "Intelligent AI & Machine Learning Solutions",
+      "hero_description": "We help businesses unlock the power of artificial intelligence by designing and deploying scalable, data-driven solutions. From automation to advanced analytics, our AI services are built to improve efficiency, enhance decision-making, and create measurable business impact.",
+      "cards": [
+        {
+          "title": "Machine Learning Engineering",
+          "description": "We design and deploy intelligent AI solutions that help businesses automate processes, extract insights, and build smarter digital products."
+        },
+        {
+          "title": "Data Science & Analytics",
+          "description": "We turn complex data into clear insights through data mining, analysis, business intelligence, and visualization for better decision-making."
+        },
+        {
+          "title": "ML Model Building",
+          "description": "Custom ML models built for real-world use, including NLP, computer vision, predictive analytics, and recommendation systems that scale with your business."
+        },
+        {
+          "title": "AI-Powered Applications",
+          "description": "Intelligent applications such as chatbots, virtual assistants, fraud detection, and automation tools designed to improve efficiency and user experience."
+        }
+      ],
+      "process_title": "Our AI Delivery Process at AEH Sustainable Development",
+      "process_description": "A structured, data-driven approach that turns complex AI challenges into scalable, production-ready solutions."
+    },
+    "creative": {
+      "title": "Creative Design",
+      "subtitle": "Crafting Engaging UI/UX for Innovation",
+      "description": "Research-driven designs that balance aesthetics with usability, creating engaging experiences that drive conversions and delight users.",
+      "hero_title": "Creative, Design & Production Services Expert",
+      "hero_description": "We ideate and strategize digital design concepts for web and mobile, blending the right technologies, impactful design, and content to build strong, recognizable brands.",
+      "cards": [
+        {
+          "title": "UI/UX Design",
+          "description": "Responsive, user-centered web interfaces designed to convert visitors into customers while ensuring clarity, usability, and performance across all devices."
+        },
+        {
+          "title": "Mobile App Design",
+          "description": "Intuitive and engaging mobile experiences crafted for both iOS and Android, focusing on usability, accessibility, and seamless user journeys."
+        },
+        {
+          "title": "Brand Identity",
+          "description": "Strategic logos, color palettes, and visual systems built to express your brand’s personality, values, and story with consistency and impact."
+        },
+        {
+          "title": "Design Systems",
+          "description": "Scalable, well-documented component libraries that ensure visual consistency, faster development, and long-term design alignment across products."
+        }
+      ]
+    },
+    "software": {
+      "title": "Software Development",
+      "subtitle": "Growth-Driven & Custom Software Development Solutions",
+      "description": "Transform with comprehensive development for web, mobile, and custom solutions. Built with modern technologies and agile methodologies for rapid delivery.",
+      "hero_title": "Growth-Driven & Custom Software Solutions for all Businesses",
+      "hero_description": "We ideate and strategize digital design concepts for web and mobile, blending the right technologies, impactful design, and content to build strong, recognizable brands.",
+      "cards": [
+        {
+          "title": "Web Application Development",
+          "description": "Scalable, responsive web apps with modern frameworks like React, Next.js, and Vue."
+        },
+        {
+          "title": "Mobile App Development",
+          "description": "Native and cross-platform mobile solutions for iOS and Android."
+        },
+        {
+          "title": "Custom Software Solutions",
+          "description": "Tailored enterprise software built to your exact specifications."
+        },
+        {
+          "title": "Cloud Development",
+          "description": "Cloud-native applications on AWS, Azure, and Google Cloud."
+        },
+        {
+          "title": "API Development",
+          "description": "Robust REST and GraphQL APIs for seamless integrations."
+        }
+      ]
+    },
+    "ecommerce": {
+      "title": "E-Commerce Solutions",
+      "subtitle": "Launch, Grow & Expand Your Online Business",
+      "description": "World-class e-commerce services from strategy to innovation. We help businesses and brands build, optimize, and scale their online presence.",
+      "hero_title": "Our E-Commerce Solutions",
+      "hero_description": "Elevate your online business with our end-to-end services tailored for seamless digital retail experiences.",
+      "cards": [
+        {
+          "title": "E-Commerce Website Design",
+          "description": "Beautiful, conversion-optimized storefronts that captivate customers and drive sales."
+        },
+        {
+          "title": "Store Development",
+          "description": "Custom Shopify, WooCommerce, and Magento builds designed to fit your unique business needs."
+        },
+        {
+          "title": "Payment Integration",
+          "description": "Secure payment gateways and smooth checkout flows to ensure safe and efficient transactions."
+        },
+        {
+          "title": "Analytics & Insights",
+          "description": "Detailed sales tracking and customer behavior analysis to inform strategic decisions."
+        },
+        {
+          "title": "SEO Optimization",
+          "description": "Targeted search engine strategies to improve visibility, attract organic traffic, and boost your store's rankings."
+        },
+        {
+          "title": "Customer Experience",
+          "description": "Engaging loyalty programs and personalization features to build lasting relationships."
+        }
+      ]
+    },
+    "msp": {
+      "title": "IT managed services provider (MSP)",
+      "subtitle": "Elevate Your Tech Infrastructure",
+      "description": "We help growing businesses adapt and thrive amidst ever-changing technology. We solve your biggest IT challenges to keep your business running.",
+      "hero_title": "Fully Managed IT Services",
+      "hero_description": "Our fully managed business IT services include 24/7 monitoring, help desk support, proactive patching, endpoint security, backups, onsite support, and IT strategy planning.",
+      "cards": [
+        {
+          "title": "Managed IT Support",
+          "description": "Proactive monitoring, 24/7 helpdesk assistance, and on-demand troubleshooting to minimize downtime."
+        },
+        {
+          "title": "Cybersecurity Management",
+          "description": "Advanced threat detection, vulnerability assessments, and compliance services to protect your data."
+        },
+        {
+          "title": "Backup & Disaster Recovery",
+          "description": "Automated data backups and rapid recovery planning to ensure business continuity."
+        },
+        {
+          "title": "Cloud Services",
+          "description": "Seamless cloud migration and management for platforms like AWS, Azure, or Google Cloud."
+        }
+      ]
+    },
+    "common": {
+      "other_services_title": "Other Services",
+      "other_services_desc": "Technical solutions built to bring designs to life with performance, scalability, and reliability in mind.",
+      "get_started": "Get Started",
+      "learn_more": "Learn More",
+      "view_details": "View Details",
+      "connect_expert_title": "Make The Most Of Technology Solutions With AEH Sustainable Development",
+      "connect_expert_desc": "Our experts are two clicks away and ready to join your IT project.",
+      "connect_expert_button": "Connect With Our Experts"
+    }
+  },
+  "industry_pages": {
+    "healthcare": {
+      "title": "Pioneering Healthcare Innovation",
+      "description": "Technology is revolutionizing the healthcare landscape, enabling more efficient, patient-centered care and operational excellence.",
+      "description_p2": "From emerging startups to established healthcare giants, we deliver expert, scalable software solutions—on time, on budget, and tailored to your vision.",
+      "service_section_title_before": "Our Custom",
+      "service_section_title_highlight": "Healthcare",
+      "service_section_title_after": "Software Development Services",
+      "service_section_desc": "From virtual health systems to intelligent diagnostic tools — we develop custom software solutions for healthcare that are completely compliant, flexible, and geared toward achieving tangible outcomes.",
+      "services": [
+        {
+          "title": "Custom Healthcare Software Development",
+          "description": "As a custom healthcare software development company, we create and implement specialized healthcare platforms that fit your specific operations—be it an AI-supported clinical application, a full hospital operations system, or a niche SaaS for medical professionals."
+        },
+        {
+          "title": "Healthcare CRM & Patient Engagement Systems",
+          "description": "Our skilled healthcare software developers design CRMs that surpass simple booking functions, featuring elements like individualized health monitoring, reminder automation, protected messaging, and audience grouping."
+        },
+        {
+          "title": "Healthcare E-Commerce Development",
+          "description": "As a medical software development company, we build protected, HIPAA-aligned e-commerce sites for drugstores, health brands, and digital wellness ventures."
+        },
+        {
+          "title": "Healthcare Data Analytics Platforms",
+          "description": "Our software development services for healthcare include robust data systems—from collecting EMR/EHR info, device data, and test outputs to building protected visualizations."
+        },
+        {
+          "title": "Healthcare Software Integration Services",
+          "description": "As a medical software firm, we specialize in linking outdated and new setups—through HL7 connections, FHIR interfaces, outside applications, testing gear, and connected gadgets."
+        },
+        {
+          "title": "Healthcare Chatbots & AI Assistants",
+          "description": "Our healthcare software developers craft smart dialogue systems trained on medical data sets for handling initial assessments, common questions, reservations, notifications, and treatment follow-ups."
+        },
+        {
+          "title": "Healthcare Workflow Automation Software",
+          "description": "We optimize everyday tasks such as payment handling, booking verifications, document intake, and coverage checks using clever processes."
+        },
+        {
+          "title": "Healthcare Legacy Software Modernization",
+          "description": "From initial ideas to modernized outputs, we deliver complete healthcare software development, featuring fast models, protected core structures, adaptive user interfaces, and cloud-ready implementations."
+        },
+        {
+          "title": "Patient Monitoring Healthcare Software",
+          "description": "As a custom software healthcare development company, we construct remote patient oversight (RPM) platforms that gather live data from trackers, wireless tools, and sensors."
+        }
+      ],
+      "more_title": "Agriculture AI App",
+      "more_text": "The agriculture app is designed to simplify daily farm management by bringing essential tools into one easy-to-use platform."
+    },
+    "agriculture": {
+      "title": "Digital Solutions for Smarter, Sustainable Agriculture",
+      "description": "Agriculture is evolving beyond traditional farming. Data, automation, and intelligent systems now play a critical role in increasing yields, reducing waste, and ensuring long-term sustainability.",
+      "card_title": "How AEH Sustainable Development Supports Agriculture",
+      "card_description": "We help agri-businesses, startups, and cooperatives design and build digital platforms that simplify farm operations.",
+      "cards": [
+        {
+          "title": "Farm Management Systems",
+          "description": "Digital platforms that organize farm operations, irrigation, and data efficiently."
+        },
+        {
+          "title": "Crop Health Monitoring",
+          "description": "AI-powered tools that analyze crop health and soil conditions in real-time."
+        },
+        {
+          "title": "Supply Chain Platforms",
+          "description": "Secure systems that track agricultural products from farm to market."
+        },
+        {
+          "title": "Actionable Insights",
+          "description": "Turning complex data into clear recommendations for better yields."
+        }
+      ],
+      "more_title": "AI Healthcare App",
+      "more_text": "An AI healthcare app uses artificial intelligence to analyze health data and provide personalized medical insights."
+    },
+    "satellite": {
+      "title": "Transforming Satellite Data into Meaningful Insights",
+      "description": "Satellite technologies generate vast amounts of complex data. The real challenge lies in transforming that data into information that organizations can understand, trust, and act upon.",
+      "card_title": "How AEH Sustainable Development Supports Satellite Solutions",
+      "card_description": "We design intelligent platforms that transform complex satellite data into clear, reliable insights.",
+      "cards": [
+        {
+          "title": "Geospatial Data Visualization",
+          "description": "Clear, intuitive dashboards that transform complex satellite data into visual insights."
+        },
+        {
+          "title": "High-Performance Data Processing",
+          "description": "Scalable systems built to handle large volumes of satellite data efficiently."
+        },
+        {
+          "title": "Real-Time Monitoring Platforms",
+          "description": "Solutions that provide continuous visibility into geographic and environmental changes."
+        },
+        {
+          "title": "Secure Data Management",
+          "description": "Robust architectures designed to protect sensitive data while ensuring accessibility."
+        }
+      ],
+      "more_title": "AI Healthcare App",
+      "more_text": "An AI healthcare app uses artificial intelligence to analyze health data and provide personalized medical insights."
+    },
+    "law": {
+      "title": "Secure, Reliable Digital Platforms for Legal and Immigration Services",
+      "description": "Legal and immigration services rely on accuracy, trust, and compliance. We help law firms and legal service providers modernize their digital infrastructure.",
+      "card_title": "How AEH Sustainable Development Supports Law & Immigration",
+      "card_description": "We help legal and immigration professionals streamline operations and maintain trust through secure digital solutions.",
+      "cards": [
+        {
+          "title": "Case & Document Management",
+          "description": "Digital platforms that organize cases, documents, and timelines securely and efficiently."
+        },
+        {
+          "title": "Secure Client Portals",
+          "description": "Confidential communication tools that improve transparency and trust."
+        },
+        {
+          "title": "Compliance-Focused Design",
+          "description": "Systems built with security, privacy, and regulatory requirements at the core."
+        },
+        {
+          "title": "Workflow Automation",
+          "description": "Automated processes that reduce manual work and speed up case handling."
+        }
+      ],
+      "more_title": "AI Healthcare App",
+      "more_text": "An AI healthcare app uses artificial intelligence to analyze health data and provide personalized medical insights."
+    },
+    "government": {
+      "title": "Digital Transformation for Modern Public Services",
+      "description": "We partner with government institutions to design secure, scalable digital solutions that improve service delivery and internal operations.",
+      "card_title": "How AEH Sustainable Development Supports Government",
+      "card_description": "We support public sector organizations in delivering transparent, accessible, and efficient digital services.",
+      "cards": [
+        {
+          "title": "Citizen Service Portals",
+          "description": "User-friendly platforms that make public services more accessible and transparent."
+        },
+        {
+          "title": "Internal Management Systems",
+          "description": "Digital tools that improve coordination, efficiency, and reporting across departments."
+        },
+        {
+          "title": "Secure & Compliant Infrastructure",
+          "description": "Solutions designed to meet strict regulatory, security, and data protection standards."
+        },
+        {
+          "title": "Accessible UX Design",
+          "description": "Inclusive interfaces that ensure services are usable by all citizens."
+        }
+      ],
+      "more_title": "Agriculture AI App",
+      "more_text": "The agriculture app is designed to simplify daily farm management by bringing essential tools into one easy-to-use platform."
+    },
+    "intelligence": {
+      "title": "Intelligent Digital Systems for Decision Making",
+      "description": "We design and build intelligent platforms that centralize data, enhance analysis, and support real-time decision-making.",
+      "card_title": "How AEH Sustainable Development Supports Intelligence Operations",
+      "card_description": "We build secure, high-performance digital platforms that help organizations analyze data faster.",
+      "cards": [
+        {
+          "title": "Data Intelligence Platforms",
+          "description": "Centralized systems that bring multiple data sources together in one secure environment."
+        },
+        {
+          "title": "Advanced Analytics & AI",
+          "description": "Tools that support faster analysis, pattern recognition, and informed decision-making."
+        },
+        {
+          "title": "Secure Information Management",
+          "description": "High-trust systems designed to protect sensitive data and control access."
+        },
+        {
+          "title": "UX for Complex Data",
+          "description": "Interfaces designed to make complex information clear, usable, and actionable."
+        }
+      ],
+      "more_title": "Agriculture AI App",
+      "more_text": "The agriculture app is designed to simplify daily farm management by bringing essential tools into one easy-to-use platform."
+    },
+    "common": {
+      "discover_more_industries": "Discover More Industries We Help",
+      "industries_desc": "We design and build complete digital solutions that simplify complexity and elevate every interaction.",
+      "view_details": "View Details"
+    }
   }
 }

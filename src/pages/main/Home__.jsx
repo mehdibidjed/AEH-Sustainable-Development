@@ -136,9 +136,8 @@ function Home() {
   const ProcessCard = ({ process, align }) => {
     return (
       <div
-        className={`max-w-md rounded-xl bg-[#eaf7f2] p-6 shadow-lg ${
-          align === "right" ? "text-right" : "text-left"
-        }`}
+        className={`max-w-md rounded-xl bg-[#eaf7f2] p-6 shadow-lg ${align === "right" ? "text-right" : "text-left"
+          }`}
       >
         <h3 className="mb-2 text-lg font-semibold text-emerald-900">
           {process.title}
@@ -561,9 +560,8 @@ function Home() {
               to={item.path}
               className={`
               font-inter font-medium p-3
-              ${
-                item.name === "Agriculture" ? "border-b-2 border-[#06986F]" : ""
-              }
+              ${item.name === "Agriculture" ? "border-b-2 border-[#06986F]" : ""
+                }
             `}
             >
               {item.name}
@@ -893,11 +891,10 @@ function Home() {
                       className="w-full flex justify-between items-center text-left group"
                     >
                       <span
-                        className={`text-lg md:text-xl font-bold transition-colors ${
-                          openIndex === index
+                        className={`text-lg md:text-xl font-bold transition-colors ${openIndex === index
                             ? "text-PrimaryGreen"
                             : "text-black/80 group-hover:text-PrimaryGreen"
-                        }`}
+                          }`}
                       >
                         {feature.title}
                       </span>
@@ -909,11 +906,10 @@ function Home() {
                     </button>
 
                     <div
-                      className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                        openIndex === index
+                      className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === index
                           ? "max-h-40 opacity-100 mt-4"
                           : "max-h-0 opacity-0"
-                      }`}
+                        }`}
                     >
                       <p className="text-black/70  leading-relaxed font-light text-sm md:text-md">
                         {feature.desc}

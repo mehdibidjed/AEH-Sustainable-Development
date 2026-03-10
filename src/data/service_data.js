@@ -42,14 +42,15 @@ export const aiDeliveryProcessData = {
     },
   ],
 };
+
 export const creativeDesignProcessData = {
   sectionTitle: "OUR PROCESS",
   mainTitle: {
-    before: "Full-Cycle Mobile App Development Process at Techno ",
+    before: "Our Creative Design Process at ",
     highlighted: "Techno",
   },
   subtitle:
-    "From audience research, design, and development to ongoing support and maintenance - our team offers full-cycle mobile app development services.",
+    "From audience research, design, and prototyping to ongoing support and brand consistency - our team offers full-cycle creative design services.",
 
   steps: [
     {
@@ -79,10 +80,11 @@ export const creativeDesignProcessData = {
     },
   ],
 };
+
 export const SoftwareDevProcessData = {
   sectionTitle: "OUR PROCESS",
   mainTitle: {
-    before: "Our Software Development Approach at",
+    before: "Our Software Development Approach at ",
     highlighted: "Techno",
   },
   subtitle:
@@ -116,9 +118,11 @@ export const SoftwareDevProcessData = {
     },
   ],
 };
+
 export const services = [
   {
     name: "Machine Learning & AI",
+    i18nKey: "ml_ai",
     image: Assets.Images.Common.MachineLearningLG,
     subServices: [
       "Machine Learning Models",
@@ -127,10 +131,11 @@ export const services = [
       "Data-Driven Decision Systems",
       "AI Integration in Digital Products",
     ],
-    link:"/services/machine-learning"
+    link: "/services/machine-learning",
   },
   {
     name: "Software Development",
+    i18nKey: "software",
     image: Assets.Images.Common.SoftwareDevLG,
     subServices: [
       "Web Application Development",
@@ -139,10 +144,11 @@ export const services = [
       "API Development & Integration",
       "System Architecture & Maintenance",
     ],
-    link:"services/software-development"
+    link: "/services/software-development",
   },
   {
     name: "E-Commerce Solutions",
+    i18nKey: "ecommerce",
     image: Assets.Images.Common.EcomerceLG,
     subServices: [
       "E-Commerce Website Design",
@@ -151,10 +157,11 @@ export const services = [
       "Product & Order Management Systems",
       "Performance & Conversion Optimization",
     ],
-    link:"/services/e-commerce"
+    link: "/services/e-commerce",
   },
   {
     name: "Creative Design",
+    i18nKey: "creative",
     subServices: [
       "UI/UX Design",
       "Web & Mobile App Design",
@@ -164,10 +171,11 @@ export const services = [
       "Branding",
     ],
     image: Assets.Images.Common.CreativeDesignLG,
-    link:"/services/creative-design"
+    link: "/services/creative-design",
   },
   {
     name: "IT managed services providers (MSP)",
+    i18nKey: "msp",
     subServices: [
       "24/7 Proactive Monitoring & Support",
       "Cloud Infrastructure Management",
@@ -176,11 +184,12 @@ export const services = [
       "Network & IT Strategy Consulting",
     ],
     image: Assets.Images.Common.CreativeDesignLG,
-    link:"/services/it-msprovider"
+    link: "/services/it-msprovider",
   },
 ];
 
 export const mlServiceData = {
+  i18nKey: "ml_ai",
   title: "Machine Learning & AI",
   subtitle: "AI that Grows Your Business",
   description:
@@ -190,31 +199,31 @@ export const mlServiceData = {
   cardsType: "2-2",
   icons: [
     {
-      label: "Microsoft ",
+      label: "Microsoft",
       icon: Assets.Icons.Services.ML.Microsoft,
     },
     {
-      label: "Metaai ",
+      label: "Meta AI",
       icon: Assets.Icons.Services.ML.MetaAi,
     },
     {
-      label: "Leptonai ",
+      label: "Lepton AI",
       icon: Assets.Icons.Services.ML.Leptonia,
     },
     {
-      label: "AWS ",
+      label: "AWS",
       icon: Assets.Icons.Services.ML.AWS,
     },
     {
-      label: "Apache ",
+      label: "Apache",
       icon: Assets.Icons.Services.ML.Apache,
     },
     {
-      label: "oepani ",
+      label: "OpenAI",
       icon: Assets.Icons.Services.ML.OpenAI,
     },
     {
-      label: "Hugging Face ",
+      label: "Hugging Face",
       icon: Assets.Icons.Services.ML.HaggingFace,
     },
   ],
@@ -234,7 +243,7 @@ export const mlServiceData = {
         "We turn complex data into clear insights through data mining, analysis, business intelligence, and visualization for better decision-making.",
     },
     {
-      title: "Machine Learning Engineering",
+      title: "Custom ML Models",
       description:
         "Custom ML models built for real-world use, including NLP, computer vision, predictive analytics, and recommendation systems that scale with your business",
     },
@@ -246,7 +255,7 @@ export const mlServiceData = {
     },
   ],
   process: {
-    title: "our process Our AI Delivery Process at Process at Techno",
+    title: "Our AI Delivery Process at Techno",
     description:
       "A structured, data-driven approach that turns complex AI challenges into scalable, production-ready solutions.",
   },
@@ -284,7 +293,9 @@ export const mlServiceData = {
     },
   ],
 };
+
 export const creativeDesignData = {
+  i18nKey: "creative",
   title: "Creative Design",
   subtitle: "Crafting Engaging UI/UX for Algerian Innovation",
   description:
@@ -294,11 +305,11 @@ export const creativeDesignData = {
   cardsType: "2-2",
   icons: [
     {
-      label: "Adobe Xd ",
+      label: "Adobe XD",
       icon: Assets.Icons.Services.CD.Xd,
     },
     {
-      label: "Farmer",
+      label: "Framer",
       icon: Assets.Icons.Services.CD.Farmer,
     },
     {
@@ -353,7 +364,9 @@ export const creativeDesignData = {
     },
   ],
 };
+
 export const SoftwareDevData = {
+  i18nKey: "software",
   title: "Software Development",
   subtitle:
     "Growth-Driven & Custom Software Development Solutions for all Businesses",
@@ -363,31 +376,31 @@ export const SoftwareDevData = {
   cardsType: "2-3",
   icons: [
     {
-      label: "Microsoft ",
+      label: "Microsoft",
       icon: Assets.Icons.Services.ML.Microsoft,
     },
     {
-      label: "Metaai ",
+      label: "Meta AI",
       icon: Assets.Icons.Services.ML.MetaAi,
     },
     {
-      label: "Leptonai ",
+      label: "Lepton AI",
       icon: Assets.Icons.Services.ML.Leptonia,
     },
     {
-      label: "AWS ",
+      label: "AWS",
       icon: Assets.Icons.Services.ML.AWS,
     },
     {
-      label: "Apache ",
+      label: "Apache",
       icon: Assets.Icons.Services.ML.Apache,
     },
     {
-      label: "oepani ",
+      label: "OpenAI",
       icon: Assets.Icons.Services.ML.OpenAI,
     },
     {
-      label: "Hugging Face ",
+      label: "Hugging Face",
       icon: Assets.Icons.Services.ML.HaggingFace,
     },
   ],
@@ -422,7 +435,9 @@ export const SoftwareDevData = {
     },
   ],
 };
+
 export const EcomerceSolData = {
+  i18nKey: "ecommerce",
   title: "E-Commerce Solutions",
   subtitle: "Launch, Grow & Expand Your Online Business",
   description:
@@ -431,11 +446,11 @@ export const EcomerceSolData = {
   cardsType: "3-3",
   icons: [
     {
-      label: "WooCommerce ",
+      label: "WooCommerce",
       icon: Assets.Icons.Services.EC.Woo_Commerce,
     },
     {
-      label: "BigCommerce ",
+      label: "BigCommerce",
       icon: Assets.Icons.Services.EC.Big_Commerce,
     },
     {
@@ -449,7 +464,7 @@ export const EcomerceSolData = {
     {
       label: "Magneto",
       icon: Assets.Icons.Services.EC.Magneto,
-    }
+    },
   ],
   heroTitle: "Our E-Commerce Solutions",
   heroDescription:
@@ -488,7 +503,9 @@ export const EcomerceSolData = {
     },
   ],
 };
+
 export const ItManagedServiceProviderData = {
+  i18nKey: "msp",
   title: "IT managed services providers (MSP)",
   subtitle: "Elevate Your Tech Infrastructure",
   description:
@@ -542,6 +559,5 @@ export const ItManagedServiceProviderData = {
       description:
         "Seamless cloud migration, infrastructure management, and optimization for platforms like AWS, Azure, or Google Cloud, enabling flexible scaling and cost efficiency.",
     },
-
   ],
 };

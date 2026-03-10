@@ -1,38 +1,624 @@
 {
-    
-        "navbar": {
-          "services": "Services",
-          "our_work": "Nos réalisations",
-          "industry": "Industrie",
-          "about_us": "À propos de nous",
-          "connect": "Connectez-vous avec nous"
+  "navbar": {
+    "services": "Services",
+    "our_work": "Nos réalisations",
+    "industry": "Industrie",
+    "about_us": "À propos de nous",
+    "connect": "Connectez-vous avec nous"
+  },
+  "navbar_services": {
+    "ml_models": "Modèles d'apprentissage automatique",
+    "ai_apps": "Applications alimentées par l'IA",
+    "predictive": "Analyse prédictive",
+    "data_decision": "Systèmes de prise de décision basés sur les données",
+    "ai_integration": "Intégration de l'IA dans les produits numériques",
+    "web_dev": "Développement d'applications web",
+    "mobile_dev": "Développement d'applications mobiles",
+    "custom_software": "Solutions logicielles sur mesure",
+    "api_dev": "Développement et intégration d'API",
+    "system_arch": "Architecture et maintenance des systèmes",
+    "ecom_design": "Conception de sites e-commerce",
+    "online_store": "Développement de boutiques en ligne",
+    "payment": "Intégration de passerelles de paiement",
+    "order_mgmt": "Systèmes de gestion des produits et commandes",
+    "performance_opt": "Optimisation des performances et des conversions",
+    "ui_ux": "Design UI/UX",
+    "app_design": "Design d'applications web et mobiles",
+    "user_research": "Recherche utilisateur et wireframing",
+    "prototyping": "Prototypage et systèmes de design",
+    "visual_design": "Design visuel et interactif",
+    "branding": "Identité visuelle",
+    "monitoring": "Surveillance et support proactif 24/7",
+    "cloud_mgmt": "Gestion de l'infrastructure cloud",
+    "cybersecurity": "Cybersécurité et protection contre les menaces",
+    "backup": "Sauvegarde des données et reprise après sinistre",
+    "it_strategy": "Consulting en stratégie réseau et IT"
+  },
+  "hero": {
+    "pill": "Qu'est-ce que AEH Sustainable Development ?",
+    "title": "Bâtir une <italic>technologie</italic> pratique pour une croissance durable",
+    "description": "Nous fournissons des solutions technologiques pratiques qui résolvent les défis réels des entreprises dans tous les secteurs, de l'agriculture à la santé. Nous aidons à surmonter l'accès limité à l'IA, les coûts élevés et les contraintes réglementaires avec une mise en œuvre claire et efficace.",
+    "cta_start": "Commencez votre projet",
+    "cta_about": "À propos de nous"
+  },
+  "services": {
+    "label": "services",
+    "title": "Ce que <italic>AEH Sustainable Development</italic> peut faire pour vous",
+    "description": "Nos solutions technologiques aident les entreprises à s'adapter, à s'optimiser et à croître dans un environnement numérique en évolution. En combinant un design réfléchi, des systèmes intelligents et un développement évolutif, nous transformons des défis complexes en solutions efficaces et prêtes pour l'avenir."
+  },
+  "service_items": {
+    "ml_ai": {
+      "name": "Apprentissage automatique & IA",
+      "desc": "Choisissez parmi plus de 100 modèles conçus par des experts. Utilisez vos couleurs de marque et des polices personnalisées.",
+      "tag_automation": "Intégration de l'automatisation",
+      "tag_users": "Adoption par l'utilisateur",
+      "tag_scalability": "Évolutivité",
+      "tag_realtime": "Surveillance en temps réel",
+      "tag_support": "Support proactif",
+      "tag_security": "Sécurité des données",
+      "alt": "Illustration d'apprentissage automatique"
+    },
+    "service_tags": {
+      "automation": "Auto",
+      "users": "Utilisateurs",
+      "realtime": "Temps réel",
+      "support": "Support",
+      "security": "Sécurité"
+    },
+    "software": {
+      "name": "Développement de logiciels",
+      "desc": "Partagez votre présentation avec un lien direct. Présentez avec des notes, un minuteur et d'autres outils.",
+      "alt": "Technologie de développement logiciel"
+    },
+    "ecommerce": {
+      "name": "Solutions E-Commerce",
+      "desc": "Créez et partagez des histoires ensemble avec une collaboration en temps réel.",
+      "alt": "Illustration d'achat"
+    },
+    "creative": {
+      "name": "Design créatif",
+      "desc": "Choisissez parmi plus de 100 modèles conçus par des experts. Utilisez vos couleurs de marque et des polices personnalisées.",
+      "alt": "Illustration de design créatif",
+      "alt_chat": "Interface de chat design"
+    },
+    "msp": {
+      "name": "Prestataire de services managés IT (MSP)",
+      "desc": "Ajoutez rapidement des visuels aux diapositives, importez vos données et gardez votre équipe synchronisée."
+    }
+  },
+  "solutions": {
+    "label": "solutions",
+    "title": "Solutions <italic>technologiques complètes,</italic> conçues pour l'impact",
+    "description": "Nous concevons et construisons des solutions numériques complètes qui simplifient la complexité et améliorent chaque interaction. Guidés par la transparence, la recherche avancée et des professionnels qualifiés, nous travaillons en collaboration pour livrer des produits intelligents, évolutifs et percutants."
+  },
+  "agriculture_showcase": {
+    "title": "Application IA pour l'agriculture",
+    "description": "L'application agricole est conçue pour simplifier la gestion quotidienne de la ferme en regroupant des outils essentiels dans une plateforme facile à utiliser.<br/> Du suivi de la santé des cultures et de l'irrigation à l'analyse des données du sol et des conditions météorologiques...",
+    "view_details": "Voir les détails"
+  },
+  "industries": {
+    "agriculture": "Agriculture",
+    "satellite": "Satellite",
+    "law_immigration": "Droit & Immigration",
+    "healthcare": "Santé",
+    "government": "Gouvernement",
+    "intelligence": "Renseignement"
+  },
+  "work": {
+    "label": "nos réalisations",
+    "title": "Une sélection de nos <italic>projets récents</italic> et études de cas",
+    "view_case": "Voir l'étude de cas",
+    "projects": [
+      {
+        "name": "Solutions de ",
+        "italic": "santé pilotées par l'IA",
+        "path": "case-study/healthcare"
+      },
+      {
+        "name": "Redéfinir la ",
+        "italic": "connectivité des véhicules",
+        "path": "case-study/smartcar"
+      },
+      {
+        "name": "Sécurité intelligente du commerce avec l'",
+        "italic": "IA",
+        "path": "case-study/security"
+      }
+    ]
+  },
+  "process": {
+    "label": "notre processus",
+    "title": "Transformer des défis complexes en solutions numériques fiables",
+    "connect": "Contactez-nous"
+  },
+  "processes": [
+    {
+      "title": "Stratégie & Recherche",
+      "duration": "1 semaine",
+      "desc": "Nous commençons par comprendre vos objectifs, vos défis et vos contraintes. Grâce à la recherche et à l'alignement des parties prenantes, nous définissons une direction claire qui transforme la complexité en opportunité."
+    },
+    {
+      "title": "Planification & Architecture",
+      "duration": "1 semaine",
+      "desc": "Nous traduisons les idées en plans structurés, flux de travail et architecture système. Chaque solution est pensée pour répondre aux besoins réels et évoluer efficacement."
+    },
+    {
+      "title": "Design créatif",
+      "duration": "1 semaine",
+      "desc": "Notre équipe conçoit des expériences intuitives et engageantes qui équilibrent utilisabilité et esthétique. Chaque interface est conçue pour être naturelle, claire et pertinente."
+    },
+    {
+      "title": "Développement",
+      "duration": "1 semaine",
+      "desc": "Nous construisons des solutions sécurisées, évolutives et performantes en utilisant des technologies modernes. Le code propre, la fiabilité et la maintenabilité à long terme sont toujours prioritaires."
+    },
+    {
+      "title": "Lancement & Optimisation",
+      "duration": "1 semaine",
+      "desc": "Nous déployons en toute confiance et continuons l'optimisation après le lancement. Un support continu, une surveillance et des améliorations aident votre solution à croître et à évoluer."
+    },
+    {
+      "title": "Assurance qualité",
+      "duration": "1 semaine",
+      "desc": "Chaque produit est rigoureusement testé pour ses performances, sa sécurité et sa stabilité afin de garantir la conformité et une expérience utilisateur fluide."
+    }
+  ],
+  "templates": {
+    "label": "nos modèles",
+    "title": "Modèles <italic>prêts à l'emploi</italic> pour un succès instantané",
+    "description": "Notre bibliothèque de plus de 500 modèles prêts à l'emploi vous permet de tester des idées et de lancer des produits rapidement, pendant que votre équipe reste concentrée sur la stratégie."
+  },
+  "talent": {
+    "label": "Travaillez avec nous",
+    "title": "Un talent exceptionnel, <italic>prêt à travailler avec vous</italic>",
+    "description": "Collaborez avec un réseau de confiance de professionnels qualifiés en design, développement et stratégie.",
+    "cta": "Contactez-nous"
+  },
+  "why_us": {
+    "label": "Pourquoi nous",
+    "title": "Ce qui distingue <italic>AEH S.D</italic>",
+    "features": [
+      {
+        "title": "Des résultats qui comptent",
+        "desc": "Le succès se mesure par les résultats, pas par l'activité. Nous nous concentrons sur la réalisation des objectifs spécifiques définis avec nos clients et sur la fourniture de solutions qui créent un réel impact opérationnel et commercial. Grâce à une exécution de projet disciplinée et à des équipes techniques expérimentées, nous passons efficacement du concept au déploiement."
+      },
+      {
+        "title": "Adaptable par conception",
+        "desc": "Nos équipes sont formées pour s'adapter à mesure que les projets évoluent. Nous ajustons les ressources à la hausse ou à la baisse selon les besoins, répondons rapidement aux changements d'exigences et restons flexibles tout au long de l'engagement pour garantir que les progrès restent alignés sur les priorités de l'entreprise."
+      },
+      {
+        "title": "Collaboration ouverte et transparente",
+        "desc": "Nous pensons que la confiance se construit par la visibilité. Les clients restent informés via une communication claire, des mises à jour cohérentes et des outils de suivi partagés. Cette approche garantit l'alignement, la responsabilité et une clarté totale à chaque étape du projet."
+      },
+      {
+        "title": "Credibilité par l'exécution",
+        "desc": "Des plateformes internes aux produits destinés aux clients, notre travail soutient la croissance, la confiance et la performance à long terme dans des environnements numériques concurrentiels."
+      }
+    ],
+    "alt": "Systèmes matériels"
+  },
+  "cancer_case": {
+    "title": "Préservation intelligente des données sur le cancer",
+    "description": "Grâce à des algorithmes d'IA avancés, notre plateforme capture et préserve les informations vitales des patients.",
+    "view_case": "Voir l'étude de cas",
+    "alt": "Préservation intelligente des données sur le cancer"
+  },
+  "about": {
+    "leadership": {
+      "label": "Leadership",
+      "name": "Moussa Abdallah El Hirtsi",
+      "role": "PDG et fondateur de AEH Sustainable Development",
+      "bio_p1": "L'expertise de Moussa s'appuie sur plus de 14 ans d'expérience combinée dans les secteurs de l'énergie, de l'immobilier et des affaires internationales, avec 5 ans axés sur les opérations pétrolières et gazières et 9 ans spécialisés dans les négociations internationales, la stratégie de vente et les partenariats transfrontaliers. En tant que spécialiste principal des négociations pour la région Moyen-Orient et Afrique, il joue un rôle pivot dans la création d'alliances stratégiques et la conclusion d'accords de haute valeur dans toute la région.",
+      "bio_p2": "Avec une expertise couvrant les aspects techniques et commerciaux des industries de l'énergie et de l'immobilier, Moussa excelle dans l'engagement diplomatique avec les entités gouvernementales et privées. Ses contributions ont été déterminantes pour étendre l'empreinte de l'entreprise grâce à des partenariats multinationaux, aidant à positionner Star of Texas comme un acteur compétitif dans les projets d'entrée et de revitalisation de puits."
+    },
+    "agency": {
+      "title": "Nous sommes une agence de <italic>produits numériques</italic> axée sur la stratégie d'abord.",
+      "description": "AEH Sustainable Development est une entreprise de développement technologique et d'IA axée sur la fourniture de solutions réelles et prêtes pour la production pour les organisations opérant dans des environnements complexes et réglementés."
+    },
+    "who_we_are": {
+      "title": "Qui nous sommes",
+      "p1": "AEH Sustainable Development est une entreprise technologique multidisciplinaire combinant ingénierie logicielle, intelligence artificielle, automatisation et design stratégique. Notre travail s'étend aux industries où la fiabilité, la conformité et la performance à long terme comptent.",
+      "p2": "Nous ne suivons pas les tendances. Nous nous concentrons sur la clarté, l'exécution et les systèmes qui fonctionnent dans le monde réel — dès le premier jour et longtemps après le lancement.",
+      "p3": "Nos équipes collaborent étroitement avec les parties prenantes pour traduire des exigences complexes en une architecture propre, des systèmes sécurisés et des produits numériques évolutifs."
+    },
+    "mission_vision": {
+      "title": "Missions et Vision",
+      "description": "AEH Sustainable Development a été fondée pour transformer des idées audacieuses en une technologie qui fonctionne dans le monde réel. Nous avons vu des organisations freinées par des systèmes sur-complexifiés, une IA inaccessible et des solutions qui ont échoué au-delà de l'étape du concept. Aujourd'hui, nous nous concentrons sur la stratégie pratique, un design clair et une exécution fiable, en partenariat avec des organisations dans des industries complexes et réglementées pour construire une technologie qui évolue, performe et dure.",
+      "cards": {
+        "vision": {
+          "title": "Notre Vision",
+          "desc": "Rendre la technologie avancée pratique, évolutive et accessible pour les organisations qui construisent une croissance durable à long terme."
         },
-        "navbar.services": {
-          "ml_models": "Modèles d'apprentissage automatique",
-          "ai_apps": "Applications alimentées par l'IA",
-          "predictive": "Analyse prédictive",
-          "data_decision": "Systèmes de prise de décision basés sur les données",
-          "ai_integration": "Intégration de l'IA dans les produits numériques",
-          "web_dev": "Développement d'applications web",
-          "mobile_dev": "Développement d'applications mobiles",
-          "custom_software": "Solutions logicielles sur mesure",
-          "api_dev": "Développement et intégration d'API",
-          "system_arch": "Architecture et maintenance des systèmes",
-          "ecom_design": "Conception de sites e-commerce",
-          "online_store": "Développement de boutiques en ligne",
-          "payment": "Intégration de passerelles de paiement",
-          "order_mgmt": "Systèmes de gestion des produits et commandes",
-          "performance_opt": "Optimisation des performances et des conversions",
-          "ui_ux": "Design UI/UX",
-          "app_design": "Design d'applications web et mobiles",
-          "user_research": "Recherche utilisateur et wireframing",
-          "prototyping": "Prototypage et systèmes de design",
-          "visual_design": "Design visuel et interactif",
-          "branding": "Identité visuelle",
-          "monitoring": "Surveillance et support proactif 24/7",
-          "cloud_mgmt": "Gestion de l'infrastructure cloud",
-          "cybersecurity": "Cybersécurité et protection contre les menaces",
-          "backup": "Sauvegarde des données et reprise après sinistre",
-          "it_strategy": "Consulting en stratégie réseau et IT"
+        "mission": {
+          "title": "Notre Mission",
+          "desc": "Nous concevons et livrons des logiciels et de l'automatisation prêts pour la production qui résolvent les défis du monde réel dans des environnements complexes et réglementés."
         }
       }
+    },
+    "why_us": {
+      "title": "Pourquoi nous ?",
+      "features": {
+        "results": {
+          "title": "Des résultats qui comptent",
+          "desc": "Le succès se mesure par les résultats, pas par l'activité. Nous nous concentrons sur la réalisation des objectifs spécifiques définis avec nos clients et sur la fourniture de solutions qui créent un réel impact opérationnel et commercial. Grâce à une exécution de projet disciplinée et à des équipes techniques expérimentées, nous passons efficacement du concept au déploiement."
+        },
+        "adaptable": {
+          "title": "Adaptable par conception",
+          "desc": "Nos équipes sont formées pour s'adapter à mesure que les projets évoluent. Nous ajustons les ressources à la hausse ou à la baisse selon les besoins, répondons rapidement aux changements d'exigences et restons flexibles tout au long de l'engagement pour garantir que les progrès restent alignés sur les priorités de l'entreprise."
+        },
+        "collaboration": {
+          "title": "Collaboration ouverte et transparente",
+          "desc": "Nous pensons que la confiance se construit par la visibilité. Les clients restent informés via une communication claire, des mises à jour cohérentes et des outils de suivi partagés. Cette approche garantit l'alignement, la responsabilité et une clarté totale à chaque étape du projet."
+        }
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact"
+    },
+    "info": {
+      "title": "Collaborons pour créer des <italic>solutions innovantes et significatives</italic>",
+      "description": "Êtes-vous motivé par la collaboration et la croissance des entreprises ? Nous pensons que les meilleures solutions sont créées lorsque des personnes talentueuses travaillent ensemble."
+    },
+    "details": {
+      "email_label": "Adresse e-mail",
+      "assistance_hours": "Heures d'assistance :",
+      "working_hours": "Lundi - Vendredi de 9h à 20h EST",
+      "phone_label": "Numéro"
+    },
+    "form": {
+      "title": "Contactez-nous",
+      "subtitle": "Construit sur la collaboration. Propulsé par des équipes talentueuses. Conçu pour la croissance.",
+      "name_label": "Votre nom",
+      "email_label": "Adresse e-mail",
+      "phone_label": "Numéro de téléphone",
+      "desc_label": "Description du projet",
+      "submit": "Envoyer"
+    },
+    "popup": {
+      "sending": "Envoi du message...",
+      "complete": "{{progress}}% Terminé",
+      "sent_title": "Message envoyé !",
+      "sent_desc": "Nous reviendrons vers vous sous peu.",
+      "close": "Fermer"
+    }
+  },
+  "service_pages": {
+    "ml_ai": {
+      "title": "Apprentissage Automatique et IA",
+      "subtitle": "Une IA qui fait croître votre entreprise",
+      "description": "Donnez du pouvoir à vos opérations avec des services d'IA de bout en bout. Du conseil aux applications personnalisées, nous optimisons les flux de travail pour des secteurs comme l'agriculture, la santé et la finance.",
+      "hero_title": "Solutions Intelligentes d'IA et d'Apprentissage Automatique",
+      "hero_description": "Nous aidons les entreprises à libérer la puissance de l'intelligence artificielle en concevant et en déployant des solutions évolutives basées sur les données. De l'automatisation aux analyses avancées, nos services d'IA sont conçus pour améliorer l'efficacité, renforcer la prise de décision et créer un impact commercial mesurable.",
+      "cards": [
+        {
+          "title": "Ingénierie de l'Apprentissage Automatique",
+          "description": "Nous concevons et déployons des solutions d'IA intelligentes qui aident les entreprises à automatiser les processus, à extraire des informations et à créer des produits numériques plus intelligents."
+        },
+        {
+          "title": "Science des Données et Analyses",
+          "description": "Nous transformons des données complexes en informations claires grâce à l'exploration de données, l'analyse, l'intelligence d'affaires et la visualisation pour une meilleure prise de décision."
+        },
+        {
+          "title": "Construction de Modèles ML",
+          "description": "Modèles ML personnalisés conçus pour une utilisation réelle, incluant le NLP, la vision par ordinateur, les analyses prédictives et les systèmes de recommandation qui évoluent avec votre entreprise."
+        },
+        {
+          "title": "Applications Propulsées par l'IA",
+          "description": "Applications intelligentes telles que les chatbots, les assistants virtuels, la détection de fraude et les outils d'automatisation conçus pour améliorer l'efficacité et l'expérience utilisateur."
+        }
+      ],
+      "process_title": "Notre Processus de Livraison d'IA chez AEH Sustainable Development",
+      "process_description": "Une approche structurée et axée sur les données qui transforme les défis complexes de l'IA en solutions évolutives et prêtes pour la production."
+    },
+    "creative": {
+      "title": "Design Créatif",
+      "subtitle": "Concevoir une UX/UI Engageante pour l'Innovation",
+      "description": "Des designs basés sur la recherche qui équilibrent l'esthétique et la convivialité, créant des expériences engageantes qui stimulent les conversions et ravissent les utilisateurs.",
+      "hero_title": "Expert en Services de Création, Design et Production",
+      "hero_description": "Nous imaginons et élaborons des concepts de design numérique pour le web et le mobile, en mélangeant les bonnes technologies, un design percutant et du contenu pour construire des marques fortes et reconnaissables.",
+      "cards": [
+        {
+          "title": "Design UI/UX",
+          "description": "Interfaces web réactives et centrées sur l'utilisateur, conçues pour convertir les visiteurs en clients tout en garantissant clarté, convivialité et performance sur tous les appareils."
+        },
+        {
+          "title": "Design d'Applications Mobiles",
+          "description": "Expériences mobiles intuitives et engageantes conçues pour iOS et Android, axées sur la convivialité, l'accessibilité et les parcours utilisateurs fluides."
+        },
+        {
+          "title": "Identité de Marque",
+          "description": "Logos stratégiques, palettes de couleurs et systèmes visuels conçus pour exprimer la personnalité, les valeurs et l'histoire de votre marque avec cohérence et impact."
+        },
+        {
+          "title": "Systèmes de Design",
+          "description": "Bibliothèques de composants évolutives et bien documentées qui garantissent la cohérence visuelle, un développement plus rapide et un alignement du design à long terme."
+        }
+      ]
+    },
+    "software": {
+      "title": "Développement de Logiciels",
+      "subtitle": "Solutions de Développement de Logiciels Personnalisés et Axées sur la Croissance",
+      "description": "Transformez-vous avec un développement complet pour le web, le mobile et des solutions personnalisées. Construit avec des technologies modernes et des méthodologies agiles pour une livraison rapide.",
+      "hero_title": "Solutions Logiciels Personnalisées et Axées sur la Croissance pour toutes les Entreprises",
+      "hero_description": "Nous imaginons et élaborons des concepts de design numérique pour le web et le mobile, en mélangeant les bonnes technologies, un design percutant et du contenu pour construire des marques fortes et reconnaissables.",
+      "cards": [
+        {
+          "title": "Développement d'Applications Web",
+          "description": "Applications web évolutives et réactives avec des frameworks modernes comme React, Next.js et Vue."
+        },
+        {
+          "title": "Développement d'Applications Mobiles",
+          "description": "Solutions mobiles natives et multiplateformes pour iOS et Android."
+        },
+        {
+          "title": "Solutions Logicielles Personnalisées",
+          "description": "Logiciels d'entreprise sur mesure conçus selon vos spécifications exactes."
+        },
+        {
+          "title": "Développement Cloud",
+          "description": "Applications cloud-natives sur AWS, Azure et Google Cloud."
+        },
+        {
+          "title": "Développement d'API",
+          "description": "APIs REST et GraphQL robustes pour des intégrations fluides."
+        }
+      ]
+    },
+    "ecommerce": {
+      "title": "Solutions de Commerce Électronique",
+      "subtitle": "Lancez, Développez et Étendez votre Entreprise en Ligne",
+      "description": "Services de commerce électronique de classe mondiale, de la stratégie à l'innovation. Nous aidons les entreprises et les marques à construire, optimiser et étendre leur présence en ligne.",
+      "hero_title": "Nos Solutions de Commerce Électronique",
+      "hero_description": "Élevez votre entreprise en ligne avec nos services de bout en bout conçus pour des expériences de vente au détail numérique fluides.",
+      "cards": [
+        {
+          "title": "Design de Sites de Commerce Électronique",
+          "description": "Vitrines magnifiques et optimisées pour la conversion qui captivent les clients et stimulent les ventes."
+        },
+        {
+          "title": "Développement de Boutiques",
+          "description": "Constructions personnalisées Shopify, WooCommerce et Magento conçues pour répondre aux besoins uniques de votre entreprise."
+        },
+        {
+          "title": "Intégration de Paiement",
+          "description": "Passerelles de paiement sécurisées et flux de paiement fluides pour garantir des transactions sûres et efficaces."
+        },
+        {
+          "title": "Analyses et Informations",
+          "description": "Suivi détaillé des ventes et analyse du comportement des clients pour éclairer les décisions stratégiques."
+        },
+        {
+          "title": "Optimisation SEO",
+          "description": "Stratégies de moteur de recherche ciblées pour améliorer la visibilité, attirer du trafic organique et augmenter le classement de votre boutique."
+        },
+        {
+          "title": "Expérience Client",
+          "description": "Programmes de fidélité engageants et fonctionnalités de personnalisation pour établir des relations durables."
+        }
+      ]
+    },
+    "msp": {
+      "title": "Prestataire de Services Managés (MSP)",
+      "subtitle": "Élevez votre Infrastructure Technologique",
+      "description": "Nous aidons les entreprises en croissance à s'adapter et à prospérer face à une technologie en constante évolution. Nous résolvons vos plus grands défis informatiques pour maintenir votre entreprise en activité.",
+      "hero_title": "Services Informatiques Entièrement Gérés",
+      "hero_description": "Nos services informatiques d'entreprise entièrement gérés comprennent la surveillance 24/7, le support technique, les correctifs proactifs, la sécurité des terminaux, les sauvegardes et la planification stratégique informatique.",
+      "cards": [
+        {
+          "title": "Support Informatique Géré",
+          "description": "Surveillance proactive, assistance technique 24/7 et dépannage à la demande pour minimiser les temps d'arrêt."
+        },
+        {
+          "title": "Gestion de la Cybersécurité",
+          "description": "Détection avancée des menaces, évaluations de vulnérabilité et services de conformité pour protéger vos données."
+        },
+        {
+          "title": "Sauvegarde et Récupération après Sinistre",
+          "description": "Sauvegardes de données automatisées et planification de récupération rapide pour assurer la continuité des activités."
+        },
+        {
+          "title": "Services Cloud",
+          "description": "Migration et gestion cloud fluides pour des plateformes comme AWS, Azure ou Google Cloud."
+        }
+      ]
+    },
+    "common": {
+      "other_services_title": "Autres Services",
+      "other_services_desc": "Solutions techniques conçues pour donner vie aux designs avec performance, évolutivité et fiabilité à l'esprit.",
+      "get_started": "Commencer",
+      "learn_more": "En savoir plus",
+      "view_details": "Voir les détails",
+      "connect_expert_title": "Tirez le meilleur parti des solutions technologiques avec AEH Sustainable Development",
+      "connect_expert_desc": "Nos experts sont à deux clics et prêts à rejoindre votre projet informatique.",
+      "connect_expert_button": "Contactez nos experts"
+    }
+  },
+  "industry_pages": {
+    "healthcare": {
+      "title": "Innover le Futur de la Santé",
+      "description": "La technologie révolutionne le paysage des soins de santé, permettant des soins plus efficaces et centrés sur le patient ainsi qu'une excellence opérationnelle.",
+      "description_p2": "Des startups émergentes aux géants de la santé, nous livrons des solutions logicielles expertes et évolutives — à temps, en respectant le budget et adaptées à votre vision.",
+      "service_section_title_before": "Nos Services",
+      "service_section_title_highlight": "Santé",
+      "service_section_title_after": "Personnalisés",
+      "service_section_desc": "Des systèmes de santé virtuels aux outils de diagnostic intelligents — nous développons des solutions logicielles personnalisées pour la santé qui sont complètement conformes, flexibles et axées sur l'obtention de résultats tangibles.",
+      "services": [
+        {
+          "title": "Développement de logiciels de santé personnalisés",
+          "description": "En tant qu'entreprise de développement de logiciels de santé personnalisés, nous créons et implémentons des plateformes de santé spécialisées qui s'adaptent à vos opérations spécifiques — qu'il s'agisse d'une application clinique assistée par l'IA, d'un système complet d'opérations hospitalières ou d'un SaaS de niche pour les professionnels de la santé."
+        },
+        {
+          "title": "CRM de santé et systèmes d'engagement des patients",
+          "description": "Nos développeurs de logiciels de santé qualifiés conçoivent des CRM qui dépassent les simples fonctions de réservation, avec des éléments tels que la surveillance de santé individualisée, l'automatisation des rappels, la messagerie sécurisée et le regroupement d'audience."
+        },
+        {
+          "title": "Développement e-commerce pour la santé",
+          "description": "En tant qu'entreprise de développement de logiciels médicaux, nous construisons des sites de vente en ligne protégés et conformes à la loi HIPAA pour les pharmacies, les marques de santé et les entreprises de bien-être numérique."
+        },
+        {
+          "title": "Plateformes d'analyse de données de santé",
+          "description": "Nos services de développement de logiciels pour la santé incluent des systèmes de données robustes — de la collecte d'informations EMR/EHR, des données d'appareils et des résultats de tests à la création de visualisations protégées."
+        },
+        {
+          "title": "Services d'intégration de logiciels de santé",
+          "description": "En tant qu'entreprise de logiciels médicaux, nous nous spécialisons dans la liaison de configurations anciennes et nouvelles — via des connexions HL7, des interfaces FHIR, des applications externes, des équipements de test et des gadgets connectés."
+        },
+        {
+          "title": "Chatbots de santé et assistants IA",
+          "description": "Nos développeurs de logiciels de santé conçoivent des systèmes de dialogue intelligents formés sur des ensembles de données médicales pour gérer les évaluations initiales, les questions courantes, les réservations, les notifications et les suivis de traitement."
+        },
+        {
+          "title": "Logiciel d'automatisation des flux de travail de santé",
+          "description": "Nous optimisons les tâches quotidiennes telles que le traitement des paiements, les vérifications de réservation, la réception de documents et les vérifications de couverture grâce à des processus intelligents."
+        },
+        {
+          "title": "Modernisation des logiciels de santé hérités",
+          "description": "Des idées initiales aux résultats modernisés, nous fournissons un développement complet de logiciels de santé, avec des modèles rapides, des structures de base protégées, des interfaces utilisateur adaptatives et des implémentations prêtes pour le cloud."
+        },
+        {
+          "title": "Logiciel de surveillance des patients",
+          "description": "En tant qu'entreprise de développement de logiciels de santé personnalisés, nous construisons des plateformes de surveillance à distance des patients (RPM) qui collectent des données en direct à partir de trackers, d'outils sans fil et de capteurs."
+        }
+      ],
+      "more_title": "Appli IA pour l'Agriculture",
+      "more_text": "L'application agricole est conçue pour simplifier la gestion quotidienne de la ferme en regroupant des outils essentiels dans une plateforme facile à utiliser."
+    },
+    "agriculture": {
+      "title": "Solutions Numériques pour une Agriculture Plus Intelligente et Durable",
+      "description": "L'agriculture évolue au-delà de l'agriculture traditionnelle. Les données, l'automatisation et les systèmes intelligents jouent désormais un rôle crucial dans l'augmentation des rendements, la réduction des déchets et la durabilité à long terme.",
+      "card_title": "Comment AEH Sustainable Development Soutient l'Agriculture",
+      "card_description": "Nous aidons les agro-industries, les startups et les coopératives à concevoir et à construire des plateformes numériques qui simplifient les opérations agricoles.",
+      "cards": [
+        {
+          "title": "Systèmes de Gestion de Ferme",
+          "description": "Plateformes numériques qui organisent efficacement les opérations agricoles, l'irrigation et les données."
+        },
+        {
+          "title": "Suivi de la Santé des Cultures",
+          "description": "Outils alimentés par l'IA qui analysent la santé des cultures et les conditions du sol en temps réel."
+        },
+        {
+          "title": "Plateformes de Chaîne d'Approvisionnement",
+          "description": "Systèmes sécurisés qui suivent les produits agricoles de la ferme au marché."
+        },
+        {
+          "title": "Informations Actionnables",
+          "description": "Transformer des données complexes en recommandations claires pour de meilleurs rendements."
+        }
+      ],
+      "more_title": "Appli IA pour la Santé",
+      "more_text": "Une application de santé par IA utilise l'intelligence artificielle pour analyser les données de santé et fournir des informations médicales personnalisées."
+    },
+    "satellite": {
+      "title": "Transformer les Données Satellites en Informations Significatives",
+      "description": "Les technologies satellites génèrent de vastes quantités de données complexes. Le véritable défi consiste à transformer ces données en informations que les organisations peuvent comprendre, croire et utiliser.",
+      "card_title": "Comment AEH Sustainable Development Soutient les Solutions Satellites",
+      "card_description": "Nous concevons des plateformes intelligentes qui transforment les données satellites complexes en informations claires et fiables.",
+      "cards": [
+        {
+          "title": "Visualisation de Données Géospatiales",
+          "description": "Tableaux de bord clairs et intuitifs qui transforment les données satellites complexes en informations visuelles."
+        },
+        {
+          "title": "Traitement de Données Haute Performance",
+          "description": "Systèmes évolutifs conçus pour gérer de gros volumes de données satellites de manière efficace."
+        },
+        {
+          "title": "Plateformes de Surveillance en Temps Réel",
+          "description": "Solutions qui offrent une visibilité continue sur les changements géographiques et environnementaux."
+        },
+        {
+          "title": "Gestion de Données Sécurisée",
+          "description": "Architectures robustes conçues pour protéger les données sensibles tout en garantissant l'accessibilité."
+        }
+      ],
+      "more_title": "Appli IA pour la Santé",
+      "more_text": "Une application de santé par IA utilise l'intelligence artificielle pour analyser les données de santé et fournir des informations médicales personnalisées."
+    },
+    "law": {
+      "title": "Plateformes Numériques Sécurisées et Fiables pour les Services Juridiques et d'Immigration",
+      "description": "Les services juridiques et d'immigration reposent sur la précision, la confiance et la conformité. Nous aidons les cabinets d'avocats et les prestataires de services juridiques à moderniser leur infrastructure numérique.",
+      "card_title": "Comment AEH Sustainable Development Soutient le Droit et l'Immigration",
+      "card_description": "Nous aidons les professionnels du droit et de l'immigration à simplifier leurs opérations et à maintenir la confiance grâce à des solutions numériques sécurisées.",
+      "cards": [
+        {
+          "title": "Gestion des Cas et des Documents",
+          "description": "Plateformes numériques qui organisent les dossiers, les documents et les échéances de manière sécurisée et efficace."
+        },
+        {
+          "title": "Portails Clients Sécurisés",
+          "description": "Outils de communication confidentiels qui améliorent la transparence et la confiance."
+        },
+        {
+          "title": "Conception Axée sur la Conformité",
+          "description": "Systèmes conçus avec la sécurité, la confidentialité et les exigences réglementaires au cœur."
+        },
+        {
+          "title": "Automatisation des Flux de Travail",
+          "description": "Processus automatisés qui réduisent le travail manuel et accélèrent le traitement des dossiers."
+        }
+      ],
+      "more_title": "Appli IA pour la Santé",
+      "more_text": "Une application de santé par IA utilise l'intelligence artificielle pour analyser les données de santé et fournir des informations médicales personnalisées."
+    },
+    "government": {
+      "title": "Transformation Numérique pour les Services Publics Modernes",
+      "description": "Nous travaillons en partenariat avec les institutions gouvernementales pour concevoir des solutions numériques sécurisées et évolutives qui améliorent la prestation de services et les opérations internes.",
+      "card_title": "Comment AEH Sustainable Development Soutient le Gouvernement",
+      "card_description": "Nous aidons les organisations du secteur public à fournir des services numériques transparents, accessibles et efficaces.",
+      "cards": [
+        {
+          "title": "Portails de Services aux Citoyens",
+          "description": "Plateformes conviviales qui rendent les services publics plus accessibles et transparents."
+        },
+        {
+          "title": "Systèmes de Gestion Interne",
+          "description": "Outils numériques qui améliorent la coordination, l'efficacité et les rapports entre les départements."
+        },
+        {
+          "title": "Infrastructure Sécurisée et Conforme",
+          "description": "Solutions conçues pour répondre aux normes réglementaires, de sécurité et de protection des données les plus strictes."
+        },
+        {
+          "title": "Conception UX Accessible",
+          "description": "Interfaces inclusives qui garantissent que les services sont utilisables par tous les citoyens."
+        }
+      ],
+      "more_title": "Appli IA pour l'Agriculture",
+      "more_text": "L'application agricole est conçue pour simplifier la gestion quotidienne de la ferme en regroupant des outils essentiels dans une plateforme facile à utiliser."
+    },
+    "intelligence": {
+      "title": "Systèmes Numériques Intelligents pour la Prise de Décision",
+      "description": "Nous concevons et construisons des plateformes intelligentes qui centralisent les données, améliorent l'analyse et soutiennent la prise de décision en temps réel.",
+      "card_title": "Comment AEH Sustainable Development Soutient les Opérations de Renseignement",
+      "card_description": "Nous construisons des plateformes numériques sécurisées et performantes qui aident les organisations à analyser les données plus rapidement.",
+      "cards": [
+        {
+          "title": "Plateformes d'Intelligence de Données",
+          "description": "Systèmes centralisés qui regroupent plusieurs sources de données dans un environnement sécurisé unique."
+        },
+        {
+          "title": "Analyses Avancées et IA",
+          "description": "Outils qui soutiennent une analyse plus rapide, la reconnaissance des formes et la prise de décision éclairée."
+        },
+        {
+          "title": "Gestion Sécurisée des Informations",
+          "description": "Systèmes de haute confiance conçus pour protéger les données sensibles et contrôler l'accès."
+        },
+        {
+          "title": "UX pour Données Complexes",
+          "description": "Interfaces conçues pour rendre les informations complexes claires, utilisables et exploitables."
+        }
+      ],
+      "more_title": "Appli IA pour l'Agriculture",
+      "more_text": "L'application agricole est conçue pour simplifier la gestion quotidienne de la ferme en regroupant des outils essentiels dans une plateforme facile à utiliser."
+    },
+    "common": {
+      "discover_more_industries": "Découvrez d'autres industries que nous aidons",
+      "industries_desc": "Nous concevons et construisons des solutions numériques complètes qui simplifient la complexité et élèvent chaque interaction.",
+      "view_details": "Voir les détails"
+    }
+  }
+}
