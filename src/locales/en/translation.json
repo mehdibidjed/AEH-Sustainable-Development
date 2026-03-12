@@ -65,15 +65,15 @@
       "support": "Support",
       "security": "Security"
     },
-    "software": {
-      "name": "Software Development",
-      "desc": "Share your presentation with a live link. Present with notes, a timer, and other aids.",
-      "alt": "Software Development Technology"
-    },
     "ecommerce": {
       "name": "E-Commerce Solutions",
       "desc": "Create, craft and share stories together with real time collaboration.",
       "alt": "Buy Now Illustration"
+    },
+    "software": {
+      "name": "Software Development",
+      "desc": "Share your presentation with a live link. Present with notes, a timer, and other aids.",
+      "alt": "Software Development Technology"
     },
     "creative": {
       "name": "Creative Design",
@@ -254,6 +254,8 @@
     }
   },
   "contact": {
+    "title": "Contact Us",
+    "ready_to_move": "Ready To Move Forward?",
     "hero": {
       "title": "Contact"
     },
@@ -270,10 +272,19 @@
     "form": {
       "title": "Get In Touch",
       "subtitle": "Built on collaboration. Powered by talented teams. Designed for growth.",
+      "name": "Your Name",
       "name_label": "Your Name",
+      "email": "Email Address",
       "email_label": "Email Address",
+      "phone": "Phone Number",
       "phone_label": "Phone Number",
+      "project": "Project Description",
       "desc_label": "Project Description",
+      "send": "Send Message",
+      "sending": "Sending Message...",
+      "success_title": "Email Sent!",
+      "success_msg": "Thank you for your message. We will get back to you soon!",
+      "close": "Close",
       "submit": "Submit"
     },
     "popup": {
@@ -310,7 +321,33 @@
         }
       ],
       "process_title": "Our AI Delivery Process at AEH Sustainable Development",
-      "process_description": "A structured, data-driven approach that turns complex AI challenges into scalable, production-ready solutions."
+      "process_description": "A structured, data-driven approach that turns complex AI challenges into scalable, production-ready solutions.",
+      "process_steps": [
+        {
+          "title": "Strategic Discovery",
+          "desc": "We begin by fully understanding your business goals, use-cases, and desired outcomes to ensure AI solutions deliver real impact."
+        },
+        {
+          "title": "Data Preparation",
+          "desc": "We collect, clean, label, and preprocess your data so it's ready for accurate modeling and analytics."
+        },
+        {
+          "title": "Model Building & Training",
+          "desc": "Our experts design and train custom machine learning and AI models using the right algorithms and tools for your use-case."
+        },
+        {
+          "title": "Testing & Validation",
+          "desc": "We evaluate performance with rigorous testing and iterate until your models meet reliability and accuracy standards."
+        },
+        {
+          "title": "Deployment & Integration",
+          "desc": "We seamlessly integrate your AI solution into your systems or cloud environment with clear APIs and workflows."
+        },
+        {
+          "title": "Monitoring & Support",
+          "desc": "Post-deployment, we monitor results, retrain models as needed, and continuously optimize performance to ensure ongoing value."
+        }
+      ]
     },
     "creative": {
       "title": "Creative Design",
@@ -334,6 +371,30 @@
         {
           "title": "Design Systems",
           "description": "Scalable, well-documented component libraries that ensure visual consistency, faster development, and long-term design alignment across products."
+        }
+      ],
+      "process_title": "Our Creative Design Process at AEH Sustainable Development",
+      "process_description": "From audience research, design, and prototyping to ongoing support and brand consistency - our team offers full-cycle creative design services.",
+      "process_steps": [
+        {
+          "title": "Discovery and planning",
+          "desc": "You define your product idea, and we start researching your target market. We outline key features, project roadmap, and budget."
+        },
+        {
+          "title": "Design And Prototyping",
+          "desc": "After we develop user personas, our designers start drafting UI/UX elements, and we build an interactive prototype."
+        },
+        {
+          "title": "Development and API integration",
+          "desc": "At this step, we begin your mobile app development. Our developers implement core functionalities and features and integrate APIs."
+        },
+        {
+          "title": "Testing & QA",
+          "desc": "Once we have your mobile app ready, we begin testing, debugging, fixing identified issues, and optimizing the app's performance."
+        },
+        {
+          "title": "Launch and support",
+          "desc": "Once we submit your mobile app to app stores, we monitor its performance and gather user feedback to provide suitable support."
         }
       ]
     },
@@ -363,6 +424,30 @@
         {
           "title": "API Development",
           "description": "Robust REST and GraphQL APIs for seamless integrations."
+        }
+      ],
+      "process_title": "Our Software Development Approach at AEH Sustainable Development",
+      "process_description": "We follow a structured yet flexible process to deliver high-quality custom software solutions tailored to your business needs.",
+      "process_steps": [
+        {
+          "title": "Business Planning Stage",
+          "desc": "This phase, often starting with consultations, evaluates company operations, tools, and culture to align designs with genuine value."
+        },
+        {
+          "title": "Interface and Experience Design",
+          "desc": "Emphasizes crafting user-friendly interfaces and scalable products, integrating advanced tech like data analytics or AI."
+        },
+        {
+          "title": "Core Building Phase",
+          "desc": "Involves creating tailored systems, mobile apps, web solutions, and cloud setups. Also includes rapid prototyping."
+        },
+        {
+          "title": "Assurance and Validation",
+          "desc": "Applies thorough checks across the project to secure systems, resolve issues, and uphold standards."
+        },
+        {
+          "title": "Launch and Upgrades",
+          "desc": "Handles modernization of old systems while keeping essential logic, manages full rollout, and ensures adaptability."
         }
       ]
     },
@@ -488,6 +573,7 @@
     "agriculture": {
       "title": "Digital Solutions for Smarter, Sustainable Agriculture",
       "description": "Agriculture is evolving beyond traditional farming. Data, automation, and intelligent systems now play a critical role in increasing yields, reducing waste, and ensuring long-term sustainability.",
+      "description_p2": "We help agri-businesses, startups, and cooperatives design and build digital platforms that simplify farm operations, enable real-time decision-making, and scale with growing demands. From AI-powered crop monitoring to farm management systems and supply chain platforms, our solutions turn complex agricultural data into actionable insights.",
       "card_title": "How AEH Sustainable Development Supports Agriculture",
       "card_description": "We help agri-businesses, startups, and cooperatives design and build digital platforms that simplify farm operations.",
       "cards": [
@@ -514,6 +600,7 @@
     "satellite": {
       "title": "Transforming Satellite Data into Meaningful Insights",
       "description": "Satellite technologies generate vast amounts of complex data. The real challenge lies in transforming that data into information that organizations can understand, trust, and act upon.",
+      "description_p2": "At AEH Sustainable Development, we build advanced digital platforms that help organizations collect, process, visualize, and analyze satellite data efficiently. Our solutions support decision-making across sectors such as agriculture, environmental monitoring, infrastructure planning, and security. By combining robust backend systems with intuitive user interfaces, we ensure satellite data becomes a strategic asset—not an operational burden.",
       "card_title": "How AEH Sustainable Development Supports Satellite Solutions",
       "card_description": "We design intelligent platforms that transform complex satellite data into clear, reliable insights.",
       "cards": [
@@ -539,7 +626,8 @@
     },
     "law": {
       "title": "Secure, Reliable Digital Platforms for Legal and Immigration Services",
-      "description": "Legal and immigration services rely on accuracy, trust, and compliance. We help law firms and legal service providers modernize their digital infrastructure.",
+      "description": "Legal and immigration services rely on accuracy, trust, and compliance. Manual processes and outdated systems can slow operations, increase errors, and create friction for both professionals and clients.",
+      "description_p2": "At AEH Sustainable Development, we help law firms, immigration consultancies, and legal service providers modernize their digital infrastructure. Our solutions streamline case management, automate workflows, and improve client communication—while maintaining strict data security and regulatory compliance.We design systems that prioritize clarity, usability, and confidentiality, ensuring legal professionals can focus on what matters mos",
       "card_title": "How AEH Sustainable Development Supports Law & Immigration",
       "card_description": "We help legal and immigration professionals streamline operations and maintain trust through secure digital solutions.",
       "cards": [
@@ -566,6 +654,7 @@
     "government": {
       "title": "Digital Transformation for Modern Public Services",
       "description": "We partner with government institutions to design secure, scalable digital solutions that improve service delivery and internal operations.",
+      "description_p2": "At AEH Sustainable Development, we partner with government institutions to design secure, scalable digital solutions that improve service delivery and internal operations. Our approach focuses on usability, accessibility, and long-term sustainability, ensuring technology works for both public servants and citizens.",
       "card_title": "How AEH Sustainable Development Supports Government",
       "card_description": "We support public sector organizations in delivering transparent, accessible, and efficient digital services.",
       "cards": [
@@ -592,6 +681,7 @@
     "intelligence": {
       "title": "Intelligent Digital Systems for Decision Making",
       "description": "We design and build intelligent platforms that centralize data, enhance analysis, and support real-time decision-making.",
+      "description_p2": "At AEH Sustainable Development, we design and build intelligent platforms that centralize data, enhance analysis, and support real-time decision-making. Our solutions combine advanced data processing with intuitive interfaces, enabling users to interpret complex information quickly and confidently.",
       "card_title": "How AEH Sustainable Development Supports Intelligence Operations",
       "card_description": "We build secure, high-performance digital platforms that help organizations analyze data faster.",
       "cards": [
@@ -620,5 +710,339 @@
       "industries_desc": "We design and build complete digital solutions that simplify complexity and elevate every interaction.",
       "view_details": "View Details"
     }
+  },
+  "chatbot": {
+    "title": "AEH Support",
+    "welcome": "Welcome! How can I help you understand our Federated Learning solutions?",
+    "input_placeholder": "Type your question here...",
+    "error_default": "Thank you for your message. Our team will get back to you soon.",
+    "error_connection": "Sorry, I'm having trouble connecting right now. Please try again later."
+  },
+  "industry_sections": {
+    "solutions_delivered": {
+      "title": "Solutions We’ve Delivered",
+      "subtitle": "We help businesses grow by delivering impactful, user-centered digital solutions"
+    },
+    "tech_stack": {
+      "title": "Seamless Integration With Your Favourite Tools",
+      "categories": {
+        "mldl": "ML/DL",
+        "embeddings": "Embeddings & Search",
+        "llmops": "LLMops",
+        "data_eng": "Data Engineering & Pipelines",
+        "cloud_devops": "Cloud, DevOps & CI/ CD",
+        "backend": "Backend & Microservices",
+        "frontend": "Frontend & UX"
+      }
+    }
+  },
+  "case_studies": {
+    "common": {
+      "breadcrumb_home": "Home",
+      "breadcrumb_case_studies": "Case Studies",
+      "context_label": "The Context",
+      "problem_label": "The Problem",
+      "architecture_label": "Architecture",
+      "process_label": "The Process",
+      "technical_approach_label": "Technical Approach",
+      "results_label": "Outcomes & Impact",
+      "measurable_results": "Measurable Results",
+      "view_case_studies": "View Case Studies",
+      "breadcrumbs": {
+        "home": "Home",
+        "case_studies": "Case Studies"
+      },
+      "sections": {
+        "context": "The Context",
+        "problem": "The Problem",
+        "architecture": "Architecture",
+        "process": "The Process",
+        "results": "Outcomes & Impact",
+        "solution": "Solution",
+        "features": "Key Features"
+      }
+    },
+    "ehealth": {
+      "title": "Federated Learning for E-Health",
+      "subtitle": "Enabling privacy-preserving AI collaboration between healthcare institutions—training intelligent models without ever sharing sensitive patient data.",
+      "context": {
+        "title": "Collaborative Healthcare AI",
+        "desc": "In modern healthcare, multiple institutions hold valuable patient data that could revolutionize AI-driven diagnostics and treatment. However, the path to collaboration is blocked by fundamental privacy and regulatory challenges.",
+        "collaboration": {
+          "title": "Multi-institution Collaboration",
+          "desc": "Hospitals, clinics, and health apps work together to build smarter AI systems."
+        },
+        "data": {
+          "title": "Sensitive Patient Data",
+          "desc": "Medical records and diagnostic imaging require the highest level of data protection."
+        },
+        "regulatory": {
+          "title": "Regulatory Constraints",
+          "desc": "HIPAA, GDPR, and local healthcare regulations govern how data is shared."
+        }
+      },
+      "problem": {
+        "title": "Healthcare Data Is Trapped",
+        "desc": "Traditional machine learning requires aggregating all training data in one location. In healthcare, this approach is fundamentally incompatible with privacy requirements and regulatory frameworks.",
+        "quote": "How do we train AI models that benefit from millions of patient records across hundreds of institutions—without ever seeing a single patient's data?"
+      },
+      "problems": {
+        "centralization": {
+          "title": "Data Cannot Be Centralized",
+          "desc": "Healthcare regulations and patient consent requirements prohibit moving sensitive data to external servers for training."
+        },
+        "silos": {
+          "title": "Data Exists in Silos",
+          "desc": "Each hospital, clinic, and healthcare app maintains its own isolated database with no mechanism for secure data sharing."
+        },
+        "collaborative": {
+          "title": "Need for Collaborative Intelligence",
+          "desc": "Despite these barriers, there's an urgent need to leverage collective insights across institutions to improve patient outcomes."
+        }
+      },
+      "architecture": {
+        "title": "Federated Learning System Design",
+        "subtitle": "A decentralized architecture where intelligence travels to data, not data to intelligence.",
+        "server": "Aggregation Server",
+        "global_model": "Global Model",
+        "nodes": {
+          "hospital_a": "Hospital A",
+          "hospital_b": "Hospital B",
+          "hospital_c": "Hospital C",
+          "hospital_d": "Hospital D",
+          "hospital_e": "Hospital E",
+          "health_app": "Health App"
+        },
+        "steps": {
+          "distribute": "Distribute Global Model",
+          "training": "Local Training",
+          "updates": "Send Model Updates",
+          "aggregate": "Aggregate & Improve"
+        }
+      },
+      "process": {
+        "title": "How It Works",
+        "subtitle": "A four-step cycle that enables continuous learning across institutions while maintaining complete data privacy.",
+        "distribution": {
+          "title": "Global Model Distribution",
+          "desc": "The central aggregation server sends the current global model to all participating healthcare institutions. Each hospital receives the same starting point."
+        },
+        "training": {
+          "title": "Local Training",
+          "desc": "Each hospital trains the model on its own private patient data. The data never leaves the institution—only the learning happens locally."
+        },
+        "transmission": {
+          "title": "Secure Model Update Transmission",
+          "desc": "Hospitals send only their model updates (gradients or weights) back to the server. No raw patient data is transmitted—just the learned patterns."
+        },
+        "improvement": {
+          "title": "Aggregation & Model Improvement",
+          "desc": "The server combines all updates using secure aggregation techniques, creating an improved global model that benefits from everyone's data without exposing any of it."
+        },
+        "cycle_msg": "This cycle repeats continuously, improving the model with each iteration"
+      },
+      "approach": {
+        "title": "Our Approach",
+        "vfl": {
+          "title": "Vertical Federated Learning (VFL)",
+          "desc": "Our implementation uses Vertical Federated Learning (VFL), specifically designed for healthcare scenarios where different institutions hold different types of data about the same patients.",
+          "label": "Used in this project",
+          "status": "Active",
+          "example": "Different features for the same patients. Example: Hospital A has lab data, Hospital B has imaging, both for Patient X.",
+          "highlights": {
+            "contribution": "Institutions contribute different features (lab results, imaging, prescriptions)",
+            "encryption": "Patient identifiers are encrypted and matched securely",
+            "sovereignty": "Each institution maintains sovereignty over their data domain",
+            "learning": "Model learns from complementary data sources"
+          },
+          "diagram": {
+            "patient_x": "Patient X",
+            "labs": "Lab Results",
+            "vitals": "Vitals Data",
+            "imaging": "Diagnostic Imaging",
+            "notes": "Clinical Notes"
+          }
+        },
+        "hfl": {
+          "label": "Alternative approach",
+          "status": "Inactive",
+          "example": "Same features for different patients. Example: All hospitals have the same data types but for different patient populations.",
+          "diagram": {
+            "patients_am": "Patients A-M",
+            "patients_nz": "Patients N-Z",
+            "all_features": "All Features"
+          }
+        }
+      },
+      "results": {
+        "title": "Outcomes & Impact",
+        "accuracy": {
+          "value": "40%",
+          "label": "Improved AI Accuracy",
+          "desc": "Models trained on federated data outperformed single-institution models significantly."
+        },
+        "privacy": {
+          "value": "Zero",
+          "label": "Patient Data Exposure",
+          "desc": "Full privacy maintained through entire training process; data never left hospital premises."
+        },
+        "collaboration": {
+          "value": "6+",
+          "label": "Institutions Collaborating",
+          "desc": "Scalable architecture supporting hospitals and clinics across different regions."
+        }
+      }
+    },
+    "security": {
+      "title": "Smart Retail Security With AI",
+      "subtitle": "AIVILON transforms surveillance cameras into intelligent security agents that detect, analyze, and respond to dangerous behaviors in real time.",
+      "problem": {
+        "title": "Traditional Security Limitations",
+        "desc": "Traditional surveillance systems are reactive, relying on manual monitoring and delayed response times, which often fails to prevent incidents."
+      },
+      "problems": {
+        "visibility": {
+          "title": "No Real-Time Visibility",
+          "desc": "Security teams cannot maintain continuous eyes on every camera feed, leading to missed incidents and slow response times."
+        },
+        "fragmentation": {
+          "title": "Fragmented Surveillance",
+          "desc": "Managing hundreds of camera feeds across different locations with disparate systems creates a fragmented and inefficient security operation."
+        },
+        "visualization": {
+          "title": "Information Overload",
+          "desc": "The high volume of video data makes it difficult to distinguish between normal activity and suspicious behavior at a glance."
+        }
+      },
+      "capabilities": {
+        "title": "Core Capabilities",
+        "highlight": "Intelligent Security at City Scale",
+        "subtitle": "Transforming passive surveillance into proactive security intelligence through advanced behavioral analysis.",
+        "detection": {
+          "title": "AI Behavior Detection",
+          "desc": "Detect physical aggression, panic movement, suspicious loitering, and crowd anomalies with confidence scoring."
+        },
+        "intelligence": {
+          "title": "Real-Time Video Intelligence",
+          "desc": "Continuous analysis of live camera feeds with visual overlays, bounding boxes, and timestamped event tracking."
+        },
+        "regulatory": {
+          "title": "Privacy & Compliance",
+          "desc": "Face blurring and privacy masking ensure compliance with GDPR and local privacy regulations while maintaining security."
+        },
+        "alert": {
+          "title": "Alert & Decision Support",
+          "desc": "Real-time alerts prioritized by risk level with instant context review and behavioral scoring."
+        }
+      }
+    },
+    "smartcars": {
+      "title": "Redefining Vehicle Connectivity",
+      "subtitle": "Connecting vehicles to the digital ecosystem providing real-time data and remote control capabilities.",
+      "problem": {
+        "title": "Traditional Vehicle Limitations",
+        "desc": "Modern drivers expect their vehicles to behave like smart devices, but current systems fall short of delivering a truly connected experience."
+      },
+      "problems": {
+        "visibility": {
+          "title": "No Real-Time Visibility",
+          "desc": "Users can't monitor vehicle status when away, leading to uncertainty about security, battery levels, and system health."
+        },
+        "fragmentation": {
+          "title": "Fragmented Controls",
+          "desc": "Critical functions scattered across physical buttons and multiple interfaces create a disjointed user experience."
+        },
+        "visualization": {
+          "title": "Poor System Visualization",
+          "desc": "Complex vehicle systems lack intuitive representation, making it difficult to understand car status at a glance."
+        }
+      },
+      "solution": {
+        "title": "Connected Smart Vehicle Ecosystem",
+        "subtitle": "A futuristic, system-driven interface that mirrors your car's digital architecture and puts control at your fingertips."
+      },
+      "design_principles": {
+        "title": "Key Design Principles",
+        "subtitle": "Our approach combines intuitive interaction patterns with a futuristic visual language that feels both premium and functional.",
+        "ui": {
+          "title": "Dark UI with Neon Accents",
+          "desc": "High-tech automotive aesthetic with cyan highlights"
+        },
+        "controls": {
+          "title": "Action-First Controls",
+          "desc": "Immediate access to essential vehicle functions"
+        },
+        "feedback": {
+          "title": "Real-Time Feedback",
+          "desc": "Clear status indicators and system health monitoring"
+        }
+      },
+      "features": {
+        "title": "Complete Vehicle Control Center",
+        "subtitle": "A unified platform that simplifies complex vehicle management into a seamless mobile experience.",
+        "control_center": {
+          "title": "Complete Vehicle Control Center",
+          "desc": "A unified interface that provides immediate access to all essential vehicle systems and environmental controls."
+        },
+        "comfort": {
+          "title": "Interior Comfort Management",
+          "desc": "Control seat heating and positioning for both driver and passenger zones."
+        },
+        "status": {
+          "title": "Vehicle Dashboard & Status",
+          "desc": "Real-time monitoring of all vehicle systems with intuitive visualizations."
+        }
+      },
+      "results": {
+        "title": "Outcomes & Impact",
+        "unified": {
+          "value": "100%",
+          "label": "Unified Interface",
+          "desc": "All vehicle controls in a single mobile experience"
+        },
+        "satisfaction": {
+          "value": "98%",
+          "label": "User Satisfaction",
+          "desc": "Rated highly for intuitive design and reliability"
+        },
+        "anxiety": {
+          "value": "80%",
+          "label": "Reduced Anxiety",
+          "desc": "Users feel more confident about vehicle status"
+        }
+      }
+    },
+    "healthcare_industry": {
+      "card_title": "An AI-Driven Predictive System for Early Cancer Detection and Risk Assessment",
+      "card_desc": "A Comprehensive Medical Case Study"
+    }
+  },
+  "footer": {
+    "description": "Ready to elevate your online presence? Contact us today to discuss your project and discover how we can bring your vision to life.",
+    "sections": {
+      "services": {
+        "title": "Services",
+        "ml": "Machine Learning & AI",
+        "software": "Software Development",
+        "ecommerce": "E-Commerce Solutions",
+        "creative": "Creative Design",
+        "msp": "IT Managed Services"
+      },
+      "industry": {
+        "title": "Industry",
+        "healthcare": "Healthcare",
+        "law": "Law & Immigration",
+        "government": "Government",
+        "satellite": "Satellite",
+        "agriculture": "Agriculture"
+      },
+      "navigation": {
+        "title": "Navigation",
+        "home": "Home",
+        "about": "About Us",
+        "contact": "Contact Us"
+      }
+    },
+    "all_rights_reserved": "All rights reserved."
   }
 }

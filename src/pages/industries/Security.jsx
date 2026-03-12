@@ -1,18 +1,21 @@
 import React from "react";
 import { Assets } from "../../assets/Asset";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 function SecuritySec() {
+  const { t } = useTranslation();
+
   return (
     <section className="py-14  bg-white overflow-hidden px-6 md:px-8 lg:px-12">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
-            Solutions We’ve Delivered
+            {t("industry_sections.solutions_delivered.title")}
           </h2>
           <p className="text-slate-600 text-lg">
-            We help businesses grow by delivering impactful, user-centered
-            digital solutions
+            {t("industry_sections.solutions_delivered.subtitle")}
           </p>
         </div>
 
@@ -28,10 +31,10 @@ function SecuritySec() {
             </div>
             <div className="p-6 font-semibold text-xl">
               <h3 className=" font-bold text-black mb-7 leading-tight">
-              Smart Retail Security With AI
+                {t("case_studies.security.title")}
               </h3>
-              <Link  to="/case-study/security" className="px-8 py-3 bg-[#013934] text-white rounded-full text-sm  font-Inter hover:bg-[#002a22] transition-colors">
-                View Case Studies
+              <Link to="/case-study/security" className="px-8 py-3 bg-[#013934] text-white rounded-full text-sm  font-Inter hover:bg-[#002a22] transition-colors">
+                {t("case_studies.common.view_case_studies")}
               </Link>
             </div>
           </div>

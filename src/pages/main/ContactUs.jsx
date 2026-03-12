@@ -142,7 +142,7 @@ function Contact() {
             </div>
 
             {/* Contact Details Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-20 pt-5">
+            <div dir className="grid grid-cols-1 md:grid-cols-2 gap-28 pt-5">
               <div className="space-y-2">
                 <p className="text-sm font-bold uppercase tracking-widest text-PrimaryGreen">
                   {t("contact.details.email_label")}
@@ -163,7 +163,7 @@ function Contact() {
                   {t("contact.details.phone_label")}
                 </p>
                 <div className="w-8 h-[2px] bg-PrimaryGreen mb-4"></div>
-                <p className="text-black font-bold">+213 770792729</p>
+                <p  className="text-black font-bold">+213 770792729</p>
                 <p className="text-black text-sm">
                   {t("contact.details.assistance_hours")}
                   <br />

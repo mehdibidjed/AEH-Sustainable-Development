@@ -1,16 +1,12 @@
 import React from "react";
-import { creativeDesignProcessData } from "../../data/service_data";
 import ProcessTimeline from "../../components/service/ProcessTimline";
 
-function CreativeDesignService() {
+const CreativeDesignService = () => {
   return (
     <ProcessTimeline
-      sectionTitle={creativeDesignProcessData.sectionTitle}
-      mainTitle={creativeDesignProcessData.mainTitle}
-      subtitle={creativeDesignProcessData.subtitle}
-      steps={creativeDesignProcessData.steps}
+      i18nKey="service_pages.creative"
     />
   );
-}
+};
 
 export default CreativeDesignService;

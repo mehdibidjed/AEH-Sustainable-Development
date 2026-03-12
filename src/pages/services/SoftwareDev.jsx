@@ -1,18 +1,12 @@
 import React from "react";
-import { SoftwareDevProcessData } from "../../data/service_data";
 import ProcessTimeline from "../../components/service/ProcessTimline";
 
-function SoftwareDev() {
+const SoftwareDev = () => {
   return (
-    <div>
-      <ProcessTimeline
-        sectionTitle={SoftwareDevProcessData.sectionTitle}
-        mainTitle={SoftwareDevProcessData.mainTitle}
-        subtitle={SoftwareDevProcessData.subtitle}
-        steps={SoftwareDevProcessData.steps}
-      />
-    </div>
+    <ProcessTimeline
+      i18nKey="service_pages.software"
+    />
   );
-}
+};
 
 export default SoftwareDev;

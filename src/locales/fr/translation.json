@@ -135,7 +135,7 @@
     {
       "title": "Stratégie & Recherche",
       "duration": "1 semaine",
-      "desc": "Nous commençons par comprendre vos objectifs, vos défis et vos contraintes. Grâce à la recherche et à l'alignement des parties prenantes, nous définissons une direction claire qui transforme la complexité en opportunité."
+      "desc": "Nous commençons par comprendre vos objectifs, vos défis et vos contraintes. Grâce à la recherche et à l'alignement des parties prenantes, nous définons une direction claire qui transforme la complexité en opportunité."
     },
     {
       "title": "Planification & Architecture",
@@ -254,6 +254,8 @@
     }
   },
   "contact": {
+    "title": "Contactez-nous",
+    "ready_to_move": "Prêt à aller de l'avant ?",
     "hero": {
       "title": "Contact"
     },
@@ -270,10 +272,19 @@
     "form": {
       "title": "Contactez-nous",
       "subtitle": "Construit sur la collaboration. Propulsé par des équipes talentueuses. Conçu pour la croissance.",
+      "name": "Votre Nom",
       "name_label": "Votre nom",
+      "email": "Adresse E-mail",
       "email_label": "Adresse e-mail",
+      "phone": "Numéro de Téléphone",
       "phone_label": "Numéro de téléphone",
+      "project": "Description du Projet",
       "desc_label": "Description du projet",
+      "send": "Envoyer le Message",
+      "sending": "Envoi du message...",
+      "success_title": "E-mail Envoyé !",
+      "success_msg": "Merci pour votre message. Nous vous répondrons bientôt !",
+      "close": "Fermer",
       "submit": "Envoyer"
     },
     "popup": {
@@ -310,12 +321,39 @@
         }
       ],
       "process_title": "Notre Processus de Livraison d'IA chez AEH Sustainable Development",
-      "process_description": "Une approche structurée et axée sur les données qui transforme les défis complexes de l'IA en solutions évolutives et prêtes pour la production."
+      "process_description": "Une approche structurée et axée sur les données qui transforme les défis complexes de l'IA en solutions évolutives et prêtes pour la production.",
+      "process_steps": [
+        {
+          "title": "Découverte Stratégique",
+          "desc": "Nous commençons par comprendre pleinement vos objectifs commerciaux, vos cas d'utilisation et les résultats souhaités pour garantir que les solutions d'IA apportent un réel impact."
+        },
+        {
+          "title": "Préparation des Données",
+          "desc": "Nous collectons, nettoyons, étiquetons et prétraitons vos données afin qu'elles soient prêtes pour une modélisation et des analyses précises."
+        },
+        {
+          "title": "Construction et Entraînement de Modèles",
+          "desc": "Nos experts conçoivent et entraînent des modèles d'apprentissage automatique et d'IA personnalisés en utilisant les bons algorithmes et outils pour votre cas d'utilisation."
+        },
+        {
+          "title": "Tests et Validation",
+          "desc": "Nous évaluons les performances avec des tests rigoureux et itérons jusqu'à ce que vos modèles répondent aux normes de fiabilité et d'exactitude."
+        },
+        {
+          "title": "Déploiement et Intégration",
+          "desc": "Nous intégrons de manière transparente votre solution d'IA dans vos systèmes ou votre environnement cloud avec des API et des flux de travail clairs."
+        },
+        {
+          "title": "Surveillance et Support",
+          "desc": "Après le déploiement, nous surveillons les résultats, réentraînons les modèles si nécessaire et optimisons en permanence les performances pour garantir une valeur continue."
+        }
+      ]
     },
     "creative": {
       "title": "Design Créatif",
       "subtitle": "Concevoir une UX/UI Engageante pour l'Innovation",
-      "description": "Des designs basés sur la recherche qui équilibrent l'esthétique et la convivialité, créant des expériences engageantes qui stimulent les conversions et ravissent les utilisateurs.",
+      "description": "Nous donnons aux agriculteurs et aux entreprises agricoles les moyens d’agir grâce à des solutions d’IA de pointe qui optimisent les rendements des cultures, surveillent la santé des sols et garantissent des pratiques agricoles durables.",
+      "description_p2": "Nous permettons aux agriculteurs d'optimiser les rendements des cultures et de réduire les déchets grâce à des analyses de données basées sur l'IA, garantissant un avenir agricole plus durable.",
       "hero_title": "Expert en Services de Création, Design et Production",
       "hero_description": "Nous imaginons et élaborons des concepts de design numérique pour le web et le mobile, en mélangeant les bonnes technologies, un design percutant et du contenu pour construire des marques fortes et reconnaissables.",
       "cards": [
@@ -335,11 +373,35 @@
           "title": "Systèmes de Design",
           "description": "Bibliothèques de composants évolutives et bien documentées qui garantissent la cohérence visuelle, un développement plus rapide et un alignement du design à long terme."
         }
+      ],
+      "process_title": "Notre Processus de Design Créatif chez AEH Sustainable Development",
+      "process_description": "De la recherche d'audience, du design et du prototypage au support continu et à la cohérence de la marque - notre équipe propose des services de design créatif à cycle complet.",
+      "process_steps": [
+        {
+          "title": "Découverte et planification",
+          "desc": "Vous définissez votre idée de produit, et nous commençons à rechercher votre marché cible. Nous définissons les fonctionnalités clés, la feuille de route du projet et le budget."
+        },
+        {
+          "title": "Design et Prototypage",
+          "desc": "Après avoir développé les personas d'utilisateur, nos designers commencent à rédiger les éléments UI/UX, et nous construisons un prototype interactif."
+        },
+        {
+          "title": "Développement et intégration d'API",
+          "desc": "À cette étape, nous commençons le développement de votre application mobile. Nos développeurs implémentent les fonctionnalités de base et intègrent les API."
+        },
+        {
+          "title": "Tests et QA",
+          "desc": "Une fois votre application mobile prête, nous commençons les tests, le débogage, la correction des problèmes identifiés et l'optimisation des performances."
+        },
+        {
+          "title": "Lancement et support",
+          "desc": "Une fois l'application soumise aux boutiques d'applications, nous surveillons ses performances et recueillons les retours des utilisateurs."
+        }
       ]
     },
     "software": {
       "title": "Développement de Logiciels",
-      "subtitle": "Solutions de Développement de Logiciels Personnalisés et Axées sur la Croissance",
+      "subtitle": "Solutions de Développement de Logiciels Personnalisées et Axées sur la Croissance",
       "description": "Transformez-vous avec un développement complet pour le web, le mobile et des solutions personnalisées. Construit avec des technologies modernes et des méthodologies agiles pour une livraison rapide.",
       "hero_title": "Solutions Logiciels Personnalisées et Axées sur la Croissance pour toutes les Entreprises",
       "hero_description": "Nous imaginons et élaborons des concepts de design numérique pour le web et le mobile, en mélangeant les bonnes technologies, un design percutant et du contenu pour construire des marques fortes et reconnaissables.",
@@ -363,6 +425,30 @@
         {
           "title": "Développement d'API",
           "description": "APIs REST et GraphQL robustes pour des intégrations fluides."
+        }
+      ],
+      "process_title": "Notre Approche de Développement de Logiciels chez AEH Sustainable Development",
+      "process_description": "Nous suivons un processus structuré mais flexible pour livrer des solutions logicielles personnalisées de haute qualité adaptées à vos besoins.",
+      "process_steps": [
+        {
+          "title": "Étape de Planification Commerciale",
+          "desc": "Cette phase évalue les opérations, les outils et la culture de l'entreprise pour aligner les conceptions sur la valeur réelle."
+        },
+        {
+          "title": "Design d'Interface et d'Expérience",
+          "desc": "Met l'accent sur la création d'interfaces conviviales et de produits évolutifs, intégrant l'IA ou l'analyse de données."
+        },
+        {
+          "title": "Phase de Construction de Base",
+          "desc": "Implique la création de systèmes personnalisés, d'applications mobiles, de solutions web et de configurations cloud."
+        },
+        {
+          "title": "Assurance et Validation",
+          "desc": "Applique des contrôles approfondis sur tout le projet pour sécuriser les systèmes, résoudre les problèmes et maintenir les normes."
+        },
+        {
+          "title": "Lancement et Mises à Niveau",
+          "desc": "Gère la modernisation des anciens systèmes tout en conservant la logique essentielle, et gère le déploiement complet."
         }
       ]
     },
@@ -438,8 +524,8 @@
   "industry_pages": {
     "healthcare": {
       "title": "Innover le Futur de la Santé",
-      "description": "La technologie révolutionne le paysage des soins de santé, permettant des soins plus efficaces et centrés sur le patient ainsi qu'une excellence opérationnelle.",
-      "description_p2": "Des startups émergentes aux géants de la santé, nous livrons des solutions logicielles expertes et évolutives — à temps, en respectant le budget et adaptées à votre vision.",
+      "description": "Nous menons la transformation numérique dans le secteur de la santé avec des solutions d’IA personnalisées qui améliorent les soins aux patients et simplifient les processus médicaux.",
+      "description_p2": "Nous offrons la prochaine génération d'excellence médicale grâce à l'IA, transformant les données de santé en informations exploitables et renforçant la précision diagnostique.",
       "service_section_title_before": "Nos Services",
       "service_section_title_highlight": "Santé",
       "service_section_title_after": "Personnalisés",
@@ -487,7 +573,8 @@
     },
     "agriculture": {
       "title": "Solutions Numériques pour une Agriculture Plus Intelligente et Durable",
-      "description": "L'agriculture évolue au-delà de l'agriculture traditionnelle. Les données, l'automatisation et les systèmes intelligents jouent désormais un rôle crucial dans l'augmentation des rendements, la réduction des déchets et la durabilité à long terme.",
+      "description": "L'agriculture évolue au-delà de l'agriculture traditionnelle. Les données, l'automatisation et les systèmes intelligents jouent désormais un rôle crucial dans l'augmentation des rendements.",
+      "description_p2": "Nous aidons les agro-industries, les startups et les coopératives à concevoir et à construire des plateformes numériques qui simplifient les opérations agricoles, permettent une prise de décision en temps réel et s'adaptent aux demandes croissantes. Du suivi des cultures assisté par l'IA aux systèmes de gestion de ferme et aux plateformes de chaîne d'approvisionnement, nos solutions transforment les données agricoles complexes en informations exploitables.",
       "card_title": "Comment AEH Sustainable Development Soutient l'Agriculture",
       "card_description": "Nous aidons les agro-industries, les startups et les coopératives à concevoir et à construire des plateformes numériques qui simplifient les opérations agricoles.",
       "cards": [
@@ -513,7 +600,8 @@
     },
     "satellite": {
       "title": "Transformer les Données Satellites en Informations Significatives",
-      "description": "Les technologies satellites génèrent de vastes quantités de données complexes. Le véritable défi consiste à transformer ces données en informations que les organisations peuvent comprendre, croire et utiliser.",
+      "description": "Les technologies satellites génèrent de vastes quantités de données complexes. Le réel défi consiste à transformer ces données en informations.",
+      "description_p2": "Chez AEH Sustainable Development, nous construisons des plateformes numériques avancées qui aident les organisations à collecter, traiter, visualiser et analyser efficacement les données satellitaires. Nos solutions soutiennent la prise de décision dans des secteurs tels que l'agriculture, la surveillance environnementale, la planification des infrastructures et la sécurité. En combinant des systèmes backend robustes avec des interfaces utilisateur intuitives, nous veillons à ce que les données satellitaires deviennent un atout stratégique — et non un fardeau opérationnel.",
       "card_title": "Comment AEH Sustainable Development Soutient les Solutions Satellites",
       "card_description": "Nous concevons des plateformes intelligentes qui transforment les données satellites complexes en informations claires et fiables.",
       "cards": [
@@ -539,7 +627,8 @@
     },
     "law": {
       "title": "Plateformes Numériques Sécurisées et Fiables pour les Services Juridiques et d'Immigration",
-      "description": "Les services juridiques et d'immigration reposent sur la précision, la confiance et la conformité. Nous aidons les cabinets d'avocats et les prestataires de services juridiques à moderniser leur infrastructure numérique.",
+      "description": "Les services juridiques et d'immigration reposent sur l'exactitude, la confiance et la conformité. Les processus manuels et les systèmes obsolètes peuvent ralentir les opérations.",
+      "description_p2": "Chez AEH Sustainable Development, nous aidons les cabinets d'avocats, les agences de conseil en immigration et les prestataires de services juridiques à moderniser leur infrastructure numérique. Nos solutions rationalisent la gestion des dossiers, automatisent les flux de travail et améliorent la communication avec les clients — tout en maintenant une sécurité des données stricte et une conformité réglementaire. Nous concevons des systèmes qui donnent la priorité à la clarté, à la convivialité et à la confidentialité, garantissant que les professionnels du droit peuvent se concentrer sur ce qui compte le plus.",
       "card_title": "Comment AEH Sustainable Development Soutient le Droit et l'Immigration",
       "card_description": "Nous aidons les professionnels du droit et de l'immigration à simplifier leurs opérations et à maintenir la confiance grâce à des solutions numériques sécurisées.",
       "cards": [
@@ -565,7 +654,8 @@
     },
     "government": {
       "title": "Transformation Numérique pour les Services Publics Modernes",
-      "description": "Nous travaillons en partenariat avec les institutions gouvernementales pour concevoir des solutions numériques sécurisées et évolutives qui améliorent la prestation de services et les opérations internes.",
+      "description": "Les organisations du secteur public sont censées fournir des services transparents, accessibles et efficaces. Nous aidons les institutions gouvernementales.",
+      "description_p2": "Chez AEH Sustainable Development, nous collaborons avec des institutions gouvernementales pour concevoir des solutions numériques sécurisées et évolutives qui améliorent la prestation de services et les opérations internes. Notre approche met l'accent sur la convivialité, l'accessibilité et la durabilité à l'échelle, garantissant que la technologie fonctionne tant pour les agents publics que pour les citoyens.",
       "card_title": "Comment AEH Sustainable Development Soutient le Gouvernement",
       "card_description": "Nous aidons les organisations du secteur public à fournir des services numériques transparents, accessibles et efficaces.",
       "cards": [
@@ -590,8 +680,9 @@
       "more_text": "L'application agricole est conçue pour simplifier la gestion quotidienne de la ferme en regroupant des outils essentiels dans une plateforme facile à utiliser."
     },
     "intelligence": {
-      "title": "Systèmes Numériques Intelligents pour la Prise de Décision",
-      "description": "Nous concevons et construisons des plateformes intelligentes qui centralisent les données, améliorent l'analyse et soutiennent la prise de décision en temps réel.",
+      "title": "Systèmes Numériques Intelligents pour la Prise de Décision Fondée sur les Données",
+      "description": "Les organisations opérant dans des environnements axés sur le renseignement dépendent de la rapidité, de l'exactitude et de l'accès sécurisé à l'information.",
+      "description_p2": "Chez AEH Sustainable Development, nous concevons et construisons des plateformes intelligentes qui centralisent les données, améliorent l'analyse et soutiennent la prise de décision en temps réel. Nos solutions combinent un traitement de données avancé avec des interfaces intuitives, permettant aux utilisateurs d'interpréter rapidement et en toute confiance des informations complexes.",
       "card_title": "Comment AEH Sustainable Development Soutient les Opérations de Renseignement",
       "card_description": "Nous construisons des plateformes numériques sécurisées et performantes qui aident les organisations à analyser les données plus rapidement.",
       "cards": [
@@ -620,5 +711,339 @@
       "industries_desc": "Nous concevons et construisons des solutions numériques complètes qui simplifient la complexité et élèvent chaque interaction.",
       "view_details": "Voir les détails"
     }
+  },
+  "chatbot": {
+    "title": "Support AEH",
+    "welcome": "Bienvenue ! Comment puis-je vous aider à comprendre nos solutions de Federated Learning ?",
+    "input_placeholder": "Tapez votre question ici...",
+    "error_default": "Merci pour votre message. Notre équipe vous répondra bientôt.",
+    "error_connection": "Désolé, j'ai des problèmes de connexion en ce moment. Veuillez réessayer plus tard."
+  },
+  "industry_sections": {
+    "solutions_delivered": {
+      "title": "Solutions que nous avons livrées",
+      "subtitle": "Nous aidons les entreprises à se développer en fournissant des solutions numériques percutantes et centrées sur l'utilisateur"
+    },
+    "tech_stack": {
+      "title": "Intégration transparente avec vos outils préférés",
+      "categories": {
+        "mldl": "ML/DL",
+        "embeddings": "Embeddings & Recherche",
+        "llmops": "LLMops",
+        "data_eng": "Ingénierie des données & Pipelines",
+        "cloud_devops": "Cloud, DevOps & CI/ CD",
+        "backend": "Backend & Microservices",
+        "frontend": "Frontend & UX"
+      }
+    }
+  },
+  "case_studies": {
+    "common": {
+      "breadcrumb_home": "Accueil",
+      "breadcrumb_case_studies": "Études de cas",
+      "context_label": "Le Contexte",
+      "problem_label": "Le Problème",
+      "architecture_label": "Architecture",
+      "process_label": "Le Processus",
+      "technical_approach_label": "Approche Technique",
+      "results_label": "Résultats & Impact",
+      "measurable_results": "Résultats Mesurables",
+      "view_case_studies": "Voir les études de cas",
+      "breadcrumbs": {
+        "home": "Accueil",
+        "case_studies": "Études de cas"
+      },
+      "sections": {
+        "context": "Le Contexte",
+        "problem": "Le Problème",
+        "architecture": "Architecture",
+        "process": "Le Processus",
+        "results": "Résultats & Impact",
+        "solution": "Solution",
+        "features": "Caractéristiques Clés"
+      }
+    },
+    "ehealth": {
+      "title": "Federated Learning pour l'E-Santé",
+      "subtitle": "Permettre la collaboration en IA préservant la confidentialité entre les institutions de santé — entraîner des modèles intelligents sans jamais partager de données de patients sensibles.",
+      "context": {
+        "title": "IA de santé collaborative",
+        "desc": "Dans la santé moderne, plusieurs institutions détiennent des données précieuses sur les patients qui pourraient révolutionner les diagnostics et les traitements basés sur l'IA. Cependant, la voie vers la collaboration est bloquée par des défis fondamentaux en matière de confidentialité et de réglementation.",
+        "collaboration": {
+          "title": "Collaboration multi-institutionnelle",
+          "desc": "Hôpitaux, cliniques et applications de santé travaillent ensemble pour construire des systèmes d'IA plus intelligents."
+        },
+        "data": {
+          "title": "Données de patients sensibles",
+          "desc": "Les dossiers médicaux et l'imagerie diagnostique nécessitent le plus haut niveau de protection des données."
+        },
+        "regulatory": {
+          "title": "Contraintes réglementaires",
+          "desc": "L'HIPAA, le RGPD et les réglementations locales en matière de santé régissent la manière dont les données sont partagées."
+        }
+      },
+      "problem": {
+        "title": "Les données de santé sont piégées",
+        "desc": "L'apprentissage automatique traditionnel nécessite l'agrégation de toutes les données d'entraînement en un seul endroit. Dans le domaine de la santé, cette approche est fondamentalement incompatible avec les exigences de confidentialité et les cadres réglementaires.",
+        "quote": "Comment entraîner des modèles d'IA qui bénéficient de millions de dossiers de patients dans des centaines d'institutions — sans jamais voir une seule donnée de patient ?"
+      },
+      "problems": {
+        "centralization": {
+          "title": "Les données ne peuvent pas être centralisées",
+          "desc": "Les réglementations en matière de santé et les exigences de consentement des patients interdisent le transfert de données sensibles vers des serveurs externes pour l'entraînement."
+        },
+        "silos": {
+          "title": "Les données existent en silos",
+          "desc": "Chaque hôpital, clinique et application de santé gère sa propre base de données isolée sans mécanisme de partage sécurisé des données."
+        },
+        "collaborative": {
+          "title": "Besoin d'intelligence collaborative",
+          "desc": "Malgré ces obstacles, il est urgent de tirer parti des connaissances collectives entre les institutions pour améliorer les résultats pour les patients."
+        }
+      },
+      "architecture": {
+        "title": "Conception du système de Federated Learning",
+        "subtitle": "Une architecture décentralisée où l'intelligence voyage vers les données, et non l'inverse.",
+        "server": "Serveur d'agrégation",
+        "global_model": "Modèle global",
+        "nodes": {
+          "hospital_a": "Hôpital A",
+          "hospital_b": "Hôpital B",
+          "hospital_c": "Hôpital C",
+          "hospital_d": "Hôpital D",
+          "hospital_e": "Hôpital E",
+          "health_app": "App Santé"
+        },
+        "steps": {
+          "distribute": "Distribuer le modèle global",
+          "training": "Entraînement local",
+          "updates": "Envoyer les mises à jour du modèle",
+          "aggregate": "Agréger et améliorer"
+        }
+      },
+      "process": {
+        "title": "Comment ça fonctionne",
+        "subtitle": "Un cycle en quatre étapes qui permet un apprentissage continu à travers les institutions tout en maintenant une confidentialité totale des données.",
+        "distribution": {
+          "title": "Distribution du modèle global",
+          "desc": "Le serveur d'agrégation central envoie le modèle global actuel à toutes les institutions de santé participantes. Chaque hôpital reçoit le même point de départ."
+        },
+        "training": {
+          "title": "Entraînement local",
+          "desc": "Chaque hôpital entraîne le modèle sur ses propres données de patients privées. Les données ne quittent jamais l'institution — seul l'apprentissage se fait localement."
+        },
+        "transmission": {
+          "title": "Transmission sécurisée des mises à jour du modèle",
+          "desc": "Les hôpitaux envoient uniquement leurs mises à jour de modèle (gradients ou poids) au serveur. Aucune donnée brute de patient n'est transmise — seulement les modèles appris."
+        },
+        "improvement": {
+          "title": "Agrégation et amélioration du modèle",
+          "desc": "Le serveur combine toutes les mises à jour à l'aide de techniques d'agrégation sécurisées, créant un modèle global amélioré qui bénéficie des données de tous sans en exposer aucune."
+        },
+        "cycle_msg": "Ce cycle se répète continuellement, améliorant le modèle à chaque itération"
+      },
+      "approach": {
+        "title": "Notre Approche",
+        "vfl": {
+          "title": "Vertical Federated Learning (VFL)",
+          "desc": "Notre implémentation utilise le Vertical Federated Learning (VFL), spécifiquement conçu pour les scénarios de santé où différentes institutions détiennent différents types de données sur les mêmes patients.",
+          "label": "Utilisé dans ce projet",
+          "status": "Actif",
+          "example": "Différentes caractéristiques pour les mêmes patients. Exemple : L'Hôpital A dispose de données de laboratoire, l'Hôpital B dispose d'imagerie, les deux pour le Patient X.",
+          "highlights": {
+            "contribution": "Les institutions apportent différentes caractéristiques (résultats de laboratoire, imagerie, ordonnances)",
+            "encryption": "Les identifiants des patients sont cryptés et appariés de manière sécurisée",
+            "sovereignty": "Chaque institution maintient sa souveraineté sur son domaine de données",
+            "learning": "Le modèle apprend à partir de sources de données complémentaires"
+          },
+          "diagram": {
+            "patient_x": "Patient X",
+            "labs": "Résultats Labo",
+            "vitals": "Données Vitales",
+            "imaging": "Imagerie Médicale",
+            "notes": "Notes Cliniques"
+          }
+        },
+        "hfl": {
+          "label": "Approche alternative",
+          "status": "Inactif",
+          "example": "Mêmes caractéristiques pour différents patients. Exemple : Tous les hôpitaux ont les mêmes types de données mais pour des populations de patients différentes.",
+          "diagram": {
+            "patients_am": "Patients A-M",
+            "patients_nz": "Patients N-Z",
+            "all_features": "Toutes caractéristiques"
+          }
+        }
+      },
+      "results": {
+        "title": "Résultats & Impact",
+        "accuracy": {
+          "value": "40%",
+          "label": "Précision de l'IA Améliorée",
+          "desc": "Les modèles entraînés sur des données fédérées ont surpassé de manière significative les modèles à institution unique."
+        },
+        "privacy": {
+          "value": "Zéro",
+          "label": "Exposition des Données Patients",
+          "desc": "Confidentialité totale maintenue tout au long du processus d'entraînement ; les données n'ont jamais quitté l'enceinte de l'hôpital."
+        },
+        "collaboration": {
+          "value": "6+",
+          "label": "Institutions Collaboratrices",
+          "desc": "Architecture évolutive prenant en charge des hôpitaux et des cliniques dans différentes régions."
+        }
+      }
+    },
+    "security": {
+      "title": "Sécurité de détail intelligente avec l'IA",
+      "subtitle": "AIVILON transforme les caméras de surveillance en agents de sécurité intelligents qui détectent, analysent et répondent aux comportements dangereux en temps réel.",
+      "problem": {
+        "title": "Limitations de la Sécurité Traditionnelle",
+        "desc": "Les systèmes de surveillance traditionnels sont réactifs, s'appuyant sur une surveillance manuelle et des temps de réponse retardés, ce qui échoue souvent à prévenir les incidents."
+      },
+      "problems": {
+        "visibility": {
+          "title": "Pas de Visibilité en Temps Réel",
+          "desc": "Les équipes de sécurité ne peuvent pas surveiller en permanence chaque flux de caméra, ce qui entraîne des incidents manqués et des temps de réponse lents."
+        },
+        "fragmentation": {
+          "title": "Surveillance Fragmentée",
+          "desc": "La gestion de centaines de flux de caméras sur différents sites avec des systèmes disparates crée une opération de sécurité fragmentée et inefficace."
+        },
+        "visualization": {
+          "title": "Surcharge d'Information",
+          "desc": "Le volume élevé de données vidéo rend difficile la distinction entre une activité normale et un comportement suspect d'un seul coup d'œil."
+        }
+      },
+      "capabilities": {
+        "title": "Capacités de base",
+        "highlight": "Sécurité intelligente à l'échelle de la ville",
+        "subtitle": "Transformer la surveillance passive en intelligence de sécurité proactive grâce à une analyse comportementale avancée.",
+        "detection": {
+          "title": "Détection de comportement par l'IA",
+          "desc": "Détecter l'agression physique, les mouvements de panique, le flânage suspect et les anomalies de foule avec un score de confiance."
+        },
+        "intelligence": {
+          "title": "Intelligence vidéo en temps réel",
+          "desc": "Analyse continue des flux de caméras en direct avec des superpositions visuelles, des boîtes englobantes et un suivi des événements horodaté."
+        },
+        "regulatory": {
+          "title": "Confidentialité et Conformité",
+          "desc": "Le floutage des visages et le masquage de la confidentialité garantissent la conformité au RGPD et aux réglementations locales tout en maintenant la sécurité."
+        },
+        "alert": {
+          "title": "Alerte et aide à la décision",
+          "desc": "Alertes en temps réel prioritaires par niveau de risque avec révision instantanée du contexte et notation comportementale."
+        }
+      }
+    },
+    "smartcars": {
+      "title": "Redéfinir la connectivité des véhicules",
+      "subtitle": "Connecter les véhicules à l'écosystème numérique en fournissant des données en temps réel et des capacités de contrôle à distance.",
+      "problem": {
+        "title": "Limitations des véhicules traditionnels",
+        "desc": "Les conducteurs modernes s'attendent à ce que leurs véhicules se comportent comme des appareils intelligents, mais les systèmes actuels ne parviennent pas à fournir une expérience véritablement connectée."
+      },
+      "problems": {
+        "visibility": {
+          "title": "Pas de visibilité en temps réel",
+          "desc": "Les utilisateurs ne peuvent pas surveiller l'état du véhicule à distance, ce qui entraîne une incertitude sur la sécurité, les niveaux de batterie et la santé du système."
+        },
+        "fragmentation": {
+          "title": "Commandes fragmentées",
+          "desc": "Les fonctions critiques dispersées sur des boutons physiques et de multiples interfaces créent une expérience utilisateur décousue."
+        },
+        "visualization": {
+          "title": "Mauvaise visualisation du système",
+          "desc": "Les systèmes complexes du véhicule manquent de représentation intuitive, ce qui rend difficile la compréhension de l'état de la voiture en un coup d'œil."
+        }
+      },
+      "solution": {
+        "title": "Écosystème de véhicules intelligents connectés",
+        "subtitle": "Une interface futuriste, axée sur le système, qui reflète l'architecture numérique de votre voiture et vous donne le contrôle."
+      },
+      "design_principles": {
+        "title": "Principes de conception clés",
+        "subtitle": "Notre approche combine des schémas d'interaction intuitifs avec un langage visuel futuriste qui semble à la fois premium et fonctionnel.",
+        "ui": {
+          "title": "UI sombre avec des accents néon",
+          "desc": "Esthétique automobile de haute technologie avec des reflets cyan"
+        },
+        "controls": {
+          "title": "Commandes axées sur l'action",
+          "desc": "Accès immédiat aux fonctions essentielles du véhicule"
+        },
+        "feedback": {
+          "title": "Retour d'information en temps réel",
+          "desc": "Indicateurs d'état clairs et surveillance de la santé du système"
+        }
+      },
+      "features": {
+        "title": "Centre de contrôle complet du véhicule",
+        "subtitle": "Une plateforme unifiée qui simplifie la gestion complexe du véhicule en une expérience mobile fluide.",
+        "control_center": {
+          "title": "Centre de contrôle complet du véhicule",
+          "desc": "Une interface unifiée qui offre un accès immédiat à tous les systèmes essentiels du véhicule et aux commandes environnementales."
+        },
+        "comfort": {
+          "title": "Gestion du confort intérieur",
+          "desc": "Contrôlez le chauffage des sièges et le positionnement pour les zones conducteur et passager."
+        },
+        "status": {
+          "title": "Tableau de bord et état du véhicule",
+          "desc": "Surveillance en temps réel de tous les systèmes du véhicule avec des visualisations intuitives."
+        }
+      },
+      "results": {
+        "title": "Résultats & Impact",
+        "unified": {
+          "value": "100%",
+          "label": "Interface unifiée",
+          "desc": "Toutes les commandes du véhicule dans une seule expérience mobile"
+        },
+        "satisfaction": {
+          "value": "98%",
+          "label": "Satisfaction de l'utilisateur",
+          "desc": "Très bien noté pour sa conception intuitive et sa fiabilité"
+        },
+        "anxiety": {
+          "value": "80%",
+          "label": "Réduction de l'anxiété",
+          "desc": "Les utilisateurs se sentent plus en confiance quant à l'état du véhicule et sa sécurité"
+        }
+      }
+    },
+    "healthcare_industry": {
+      "card_title": "Un système prédictif piloté par l’IA pour la détection précoce du cancer et l’évaluation des risques",
+      "card_desc": "Une étude de cas médicale complète"
+    }
+  },
+  "footer": {
+    "description": "Prêt à rehausser votre présence en ligne ? Contactez-nous dès aujourd'hui pour discuter de votre projet et découvrir comment nous pouvons donner vie à votre vision.",
+    "sections": {
+      "services": {
+        "title": "Services",
+        "ml": "Apprentissage automatique & IA",
+        "software": "Développement de logiciels",
+        "ecommerce": "Solutions E-Commerce",
+        "creative": "Design créatif",
+        "msp": "Services managés IT"
+      },
+      "industry": {
+        "title": "Industrie",
+        "healthcare": "Santé",
+        "law": "Droit & Immigration",
+        "government": "Gouvernement",
+        "satellite": "Satellite",
+        "agriculture": "Agriculture"
+      },
+      "navigation": {
+        "title": "Navigation",
+        "home": "Accueil",
+        "about": "À propos de nous",
+        "contact": "Contactez-nous"
+      }
+    },
+    "all_rights_reserved": "Tous droits réservés."
   }
 }

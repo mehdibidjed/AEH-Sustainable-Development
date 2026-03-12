@@ -1,28 +1,19 @@
 import React, { useRef, useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import emailjs from "@emailjs/browser";
-import { CircleCheck, X } from "lucide-react"; // Make sure lucide-react is installed
+import { CircleCheck, X, Check } from "lucide-react"; // Make sure lucide-react is installed, added Check
 
 function ContactSection() {
+  const { t } = useTranslation();
   const form = useRef();
-  const [showPopup, setShowPopup] = useState(false);
-  const [progress, setProgress] = useState(0);
   const [isSuccess, setIsSuccess] = useState(false);
-
-  // Handle the progress bar animation
-  useEffect(() => {
-    let interval;
-    if (showPopup && !isSuccess) {
-      setProgress(0);
-      interval = setInterval(() => {
-        setProgress((prev) => (prev < 90 ? prev + 10 : prev));
-      }, 200);
-    }
-    return () => clearInterval(interval);
-  }, [showPopup, isSuccess]);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [isSending, setIsSending] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setShowPopup(true);
+    setIsPopupOpen(true);
+    setIsSending(true);
     setIsSuccess(false);
 
     emailjs
@@ -34,45 +25,35 @@ function ContactSection() {
       )
       .then(
         () => {
-          setProgress(100);
-          setTimeout(() => {
-            setIsSuccess(true);
-          }, 500);
+          setIsSending(false);
+          setIsSuccess(true);
+          form.current.reset();
         },
         (error) => {
-          alert("Échec de l'envoi : " + error.text);
-          setShowPopup(false);
+          console.error("Échec de l'envoi : ", error.text);
+          setIsSending(false);
+          setIsSuccess(false);
+          setIsPopupOpen(false);
         }
       );
   };
 
   const closePopup = () => {
-    setShowPopup(false);
+    setIsPopupOpen(false);
     setIsSuccess(false);
-    setProgress(0);
-    form.current.reset();
+    setIsSending(false);
   };
 
   return (
     <section className="bg-YellowBg rounded-[12px] py-16 px-8 md:px-20 lg:px-24 my-20 relative">
       {/* POPUP OVERLAY */}
-      {showPopup && (
+      {isPopupOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
           <div className="bg-white p-8 rounded-2xl shadow-2xl w-[90%] max-w-sm text-center relative animate-in fade-in zoom-in duration-300">
-            {!isSuccess ? (
+            {isSending ? (
               <div className="space-y-4">
-                <h3 className="text-xl font-bold text-black">
-                  Sending Email...
-                </h3>
-                <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
-                  <div
-                    className="bg-SecondaryBlue h-full transition-all duration-300 ease-out"
-                    style={{ width: `${progress}%` }}
-                  />
-                </div>
-                <p className="text-sm text-gray-500 font-medium">
-                  {progress}% Complete
-                </p>
+                <div className="w-16 h-16 border-4 border-[#013934]/20 border-t-[#013934] rounded-full animate-spin mx-auto mb-4" />
+                <p className="text-[#013934] font-medium">{t("contact.form.sending")}</p>
               </div>
             ) : (
               <div className="space-y-6">
@@ -80,16 +61,16 @@ function ContactSection() {
                   <CircleCheck className="w-16 h-16 text-green-500 animate-bounce" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-black">Email Sent!</h3>
+                  <h3 className="text-2xl font-bold text-black">{t("contact.form.success_title")}</h3>
                   <p className="text-gray-600 mt-2">
-                    We'll get back to you shortly.
+                    {t("contact.form.success_msg")}
                   </p>
                 </div>
                 <button
                   onClick={closePopup}
                   className="bg-black text-white px-8 py-2 rounded-full font-semibold hover:bg-SecondaryBlue transition-colors w-full"
                 >
-                  Close
+                  {t("contact.form.close")}
                 </button>
               </div>
             )}
@@ -97,14 +78,13 @@ function ContactSection() {
         </div>
       )}
 
-      {/* REST OF YOUR FORM COMPONENT */}
       <div className="max-w-7xl mx-auto">
         <div className="text-center space-y-6 mb-20 text-black">
           <p className="uppercase text-xs md:text-sm font-semibold tracking-widest text-black/60">
-            Get In Touch
+            {t("contact.title")}
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-            Ready To Move Forward?
+            {t("contact.ready_to_move")}
           </h2>
         </div>
 
@@ -119,20 +99,20 @@ function ContactSection() {
               name="full_name"
               required
               className="w-full bg-transparent outline-none py-4 text-base border-b-2 border-black/20 focus:border-black transition-colors"
-              placeholder="Your Name"
+              placeholder={t("contact.form.name")}
             />
             <input
               type="email"
               name="email"
               required
               className="w-full bg-transparent outline-none py-4 text-base border-b-2 border-black/20 focus:border-black transition-colors"
-              placeholder="Email Address"
+              placeholder={t("contact.form.email")}
             />
             <input
               name="phone"
               type="tel"
               className="w-full bg-transparent outline-none py-4 text-base border-b-2 border-black/20 focus:border-black transition-colors"
-              placeholder="Phone Number"
+              placeholder={t("contact.form.phone")}
             />
           </div>
 
@@ -141,7 +121,7 @@ function ContactSection() {
             required
             rows="1"
             className="w-full bg-transparent outline-none py-4 text-base border-b-2 border-black/20 focus:border-black resize-none"
-            placeholder="Tell us about your project"
+            placeholder={t("contact.form.project")}
           />
 
           <div className="pt-6 flex justify-start">
@@ -149,7 +129,7 @@ function ContactSection() {
               type="submit"
               className="bg-SecondaryBlue text-white px-10 md:px-12 py-3 md:py-4 rounded-full text-sm md:text-base font-semibold hover:bg-black hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
             >
-              Send Message
+              {t("contact.form.send")}
             </button>
           </div>
         </form>

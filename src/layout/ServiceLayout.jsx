@@ -11,13 +11,13 @@ const ServiceLayout = ({ serviceData }) => {
   const key = serviceData.i18nKey || "ml_ai"; // Fallback to ml_ai for safety during transition
 
   return (
-    <div className="flex flex-col w-full   min-h-screen bg-white pt-24 md:pt-32 ">
-      <div className="max-w-7xl mx-auto w-full">
+    <div className="flex flex-col w-screen   min-h-screen bg-white pt-24 md:pt-32 ">
+      <div className="max-w-7xl mx-auto  w-full">
         <h1 className="text-xl md:text-3xl lg:text-4xl  pt-10 sm:pt-8 font-bold text-black mb-12 leading-tight px-6 md:px-8 lg:px-12">
           {t(`service_pages.${key}.title`)}
         </h1>
 
-        <div className="flex flex-col lg:flex-row  items-start  mb-16 px-6 md:px-8 lg:px-12">
+        <div className="flex flex-col lg:flex-row gap-5  items-start  mb-16 px-6 md:px-8 lg:px-12">
           <p className="text-2xl md:text-3xl lg:text-6xl italic font-instrumentSerif  text-black leading-snug max-w-2xl text-start flex-shrink-0">
             {t(`service_pages.${key}.subtitle`)}
           </p>
@@ -39,7 +39,7 @@ const ServiceLayout = ({ serviceData }) => {
 
         {/* The tech bar */}
         {serviceData.title == "IT managed services providers (MSP)" && (
-          <div className="overflow-hidden max-w-6xl rounded-[12px ] mx-auto bg-[#F5F5F5] py-5 ">
+          <div dir="ltr" className="overflow-hidden max-w-6xl rounded-[12px ] mx-auto bg-[#F5F5F5] py-5 ">
             <div className="ticker-track">
               {/* Row 1 */}
               <div className="flex justify-center items-center pr-28">
@@ -85,7 +85,7 @@ const ServiceLayout = ({ serviceData }) => {
           </div>
         )}
         {serviceData.title == "E-Commerce Solutions" && (
-          <div className="overflow-hidden max-w-6xl rounded-[12px] mx-auto bg-[#F5F5F5] py-5 ">
+          <div dir="ltr" className="overflow-hidden max-w-6xl rounded-[12px] mx-auto bg-[#F5F5F5] py-5 ">
             <div className="ticker-track">
               {/* Row 1 */}
               <div className="flex justify-center items-center pr-28">
@@ -131,11 +131,11 @@ const ServiceLayout = ({ serviceData }) => {
           </div>
         )}
         {(serviceData.title == "Machine Learning & AI" ||
-          serviceData.title == "Creative Design") && (
-            <div className="overflow-hidden w-screen bg-black py-5 px-0">
+          serviceData.title == "Creative Design" || serviceData.title == "Software Development") && (
+            <div dir="ltr" className="overflow-hidden w-screen bg-black py-5 px-0 ">
               <div className="ticker-track">
                 {/* First row */}
-                <div className="flex ">
+                <div className="flex">
                   <div className="flex items-center  justify-between  gap-20  pr-20">
                     {serviceData.icons.map((icon, index) => (
                       <div

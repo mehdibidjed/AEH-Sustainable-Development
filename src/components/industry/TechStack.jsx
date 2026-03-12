@@ -1,7 +1,9 @@
 import React from "react";
 import { Assets } from "../../assets/Asset";
+import { useTranslation } from "react-i18next";
 
 const TechStack = () => {
+  const { t } = useTranslation();
   const stackCategories = [
     {
       title: "ML/DL",
@@ -93,7 +95,7 @@ const TechStack = () => {
     <section className="py-20 bg-white px-6 md:px-8 lg:px-12">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-3xl lg:text-4xl font-medium font-Inter text-center mb-16 text-slate-900">
-          Seamless Integration With Your Favourite Tools
+          {t("industry_sections.tech_stack.title")}
         </h2>
 
         {/* Grid Container */}

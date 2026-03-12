@@ -123,7 +123,7 @@ function Home() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto py-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto py-4 gap-8">
           {/* Machine learning & AI */}
           <div className="group relative p-5 px-6 w-full md:w-[320px] h-[380px] md:h-[438px] rounded-[12px] bg-BgGreen text-white text-start flex flex-col overflow-hidden transition-all duration-500 hover:shadow-2xl mx-auto">
             <div className="relative z-10 space-y-2">

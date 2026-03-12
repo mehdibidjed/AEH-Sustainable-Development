@@ -2,35 +2,39 @@ import React from "react";
 import { Assets } from "../../assets/Asset";
 import { Link } from "react-router-dom";
 import { Facebook, Twitter, Instagram, Linkedin, Phone, Mail } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation();
+  const currentYear = new Date().getFullYear();
+
   const footerSections = [
     {
-      title: "Services",
+      title: t("footer.sections.services.title"),
       links: [
-        { name: "Machine Learning & AI", path: "/services/machine-learning" },
-        { name: "Software Development", path: "/services/software-development" },
-        { name: "E-Commerce Solutions", path: "/services/e-commerce" },
-        { name: "Creative Design", path: "/services/creative-design" },
-        { name: "IT Managed Services", path: "/services/it-msprovider" },
+        { name: t("footer.sections.services.ml"), path: "/services/machine-learning" },
+        { name: t("footer.sections.services.software"), path: "/services/software-development" },
+        { name: t("footer.sections.services.ecommerce"), path: "/services/e-commerce" },
+        { name: t("footer.sections.services.creative"), path: "/services/creative-design" },
+        { name: t("footer.sections.services.msp"), path: "/services/it-msprovider" },
       ],
     },
     {
-      title: "Industry",
+      title: t("footer.sections.industry.title"),
       links: [
-        { name: "Healthcare", path: "/industry/healthcare" },
-        { name: "Law & Immigration", path: "/industry/law-immigration" },
-        { name: "Government", path: "/industry/government" },
-        { name: "Satellite", path: "/industry/satellite" },
-        { name: "Agriculture", path: "/industry/agriculture" },
+        { name: t("footer.sections.industry.healthcare"), path: "/industry/healthcare" },
+        { name: t("footer.sections.industry.law"), path: "/industry/law-immigration" },
+        { name: t("footer.sections.industry.government"), path: "/industry/government" },
+        { name: t("footer.sections.industry.satellite"), path: "/industry/satellite" },
+        { name: t("footer.sections.industry.agriculture"), path: "/industry/agriculture" },
       ],
     },
     {
-      title: "Navigation",
+      title: t("footer.sections.navigation.title"),
       links: [
-        { name: "Home", path: "/" },
-        { name: "About Us", path: "/about" },
-        { name: "Contact Us", path: "/contact" },
+        { name: t("footer.sections.navigation.home"), path: "/" },
+        { name: t("footer.sections.navigation.about"), path: "/about" },
+        { name: t("footer.sections.navigation.contact"), path: "/contact" },
       ],
     },
   ];
@@ -46,7 +50,7 @@ function Footer() {
     <footer className="bg-PrimaryFooterBg text-white pt-16 ">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">
-          
+
           {/* Section 1: Brand & Contact - Spans 2 columns on large screens */}
           <div className="lg:col-span-2 space-y-6">
             <Link to="/" className="flex items-center gap-3 w-fit">
@@ -60,8 +64,7 @@ function Footer() {
             </Link>
 
             <p className="text-white/70 text-sm leading-relaxed max-w-sm">
-              Ready to elevate your online presence? Contact us today to discuss
-              your project and discover how we can bring your vision to life.
+              {t("footer.description")}
             </p>
 
             <div className="space-y-3 text-sm text-gray-300 font-Inter">
@@ -75,9 +78,9 @@ function Footer() {
 
             <div className="flex gap-4">
               {socialLinks.map((social, idx) => (
-                <a 
-                  key={idx} 
-                  href={social.path} 
+                <a
+                  key={idx}
+                  href={social.path}
                   className="p-2 rounded-full border border-white/10 hover:bg-YellowGreen hover:text-PrimaryGreen transition-all duration-300"
                 >
                   {social.icon}
@@ -111,7 +114,7 @@ function Footer() {
 
       {/* Bottom Bar */}
       <div className="mt-16 py-6 bg-SecondaryFooterBg/50 border-t border-white/5 text-center text-[11px] text-gray-400 tracking-wider">
-        © {new Date().getFullYear()} <span className="text-white font-medium">AEH Sustainable Development</span>. All Rights Reserved.
+        © {currentYear} <span className="text-white font-medium">AEH Sustainable Development</span>. {t("footer.all_rights_reserved")}
       </div>
     </footer>
   );
